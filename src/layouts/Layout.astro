@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+const { title, description, canonical } = Astro.props;
+const canonicalURL = canonical || `https://painelsaude.com.br${Astro.url.pathname}`;
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6423824976813529" crossorigin="anonymous"></script>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: system-ui, sans-serif; color: #1a1a1a; line-height: 1.6; }
+      main { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
+      a { color: #0066cc; }
+      header.site-header { background: #1565c0; color: white; padding: 1rem; text-align: center; }
+      header.site-header a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: 700; }
+      footer { background: #f5f5f5; text-align: center; padding: 2rem; margin-top: 3rem; font-size: 0.875rem; color: #666; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/">Painel Saúde</a>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>© 2026 Painel Saúde — Informações de saúde pública para todos os brasileiros</p>
+      <p style="margin-top:0.5rem;font-size:0.75rem">As informações deste site são de caráter informativo. Consulte sempre um profissional de saúde.</p>
+    </footer>
+  </body>
+</html>

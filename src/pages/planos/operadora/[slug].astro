@@ -1,0 +1,87 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import operadoras from '../../../data/operadoras.json';
+
+export async function getStaticPaths() {
+  return operadoras.slice(0, 200).map((op) => ({
+    params: { slug: op.slug },
+    props: { op },
+  }));
+}
+
+const { op } = Astro.props;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": op.nome,
+  "description": `${op.nome} é uma operadora de planos de saúde registrada na ANS com ${op.total_planos} planos disponíveis.`,
+  "url": `https://painelsaude.com.br/planos/operadora/${op.slug}`
+};
+---
+<Layout
+  title={`${op.nome} — Planos de Saúde | Painel Saúde`}
+  description={`Conheça os planos de saúde da ${op.nome}. ${op.total_planos} planos disponíveis. Informações sobre cobertura, segmentação e contratação.`}
+  canonical={`https://painelsaude.com.br/planos/operadora/${op.slug}`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <nav style="font-size:0.875rem;margin-bottom:1.5rem;color:#666">
+    <a href="/">Início</a> › <a href="/planos">Planos de Saúde</a> › {op.nome}
+  </nav>
+
+  <article>
+    <header style="margin-bottom:2rem">
+      <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">
+        {op.modalidade}
+      </span>
+      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{op.nome}</h1>
+      <p style="color:#666;margin-top:0.5rem">Registro ANS: {op.registro_ans}</p>
+    </header>
+
+    <section style="background:#f8f9fa;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
+      <h2 style="font-size:1rem;margin-bottom:1rem;color:#333">Resumo da operadora</h2>
+      <dl style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem">
+        <dt style="color:#666;font-size:0.875rem">Total de planos ativos</dt>
+        <dd style="font-weight:500">{op.total_planos}</dd>
+        <dt style="color:#666;font-size:0.875rem">Modalidade</dt>
+        <dd style="font-weight:500">{op.modalidade}</dd>
+        <dt style="color:#666;font-size:0.875rem">Tipos de contratação</dt>
+        <dd style="font-weight:500">{op.contratacoes.join(", ")}</dd>
+        <dt style="color:#666;font-size:0.875rem">Abrangência</dt>
+        <dd style="font-weight:500">{op.abrangencias.slice(0,2).join(", ")}</dd>
+      </dl>
+    </section>
+
+    <section style="margin-bottom:2rem">
+      <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Tipos de cobertura disponíveis</h2>
+      <ul style="display:flex;flex-wrap:wrap;gap:0.5rem;list-style:none">
+        {op.segmentacoes.map((s) => (
+          <li style="background:#e8f5e9;color:#2e7d32;padding:0.25rem 0.75rem;border-radius:99px;font-size:0.875rem">{s}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section style="margin-bottom:2rem">
+      <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Planos disponíveis</h2>
+      <div style="display:grid;gap:1rem">
+        {op.planos.slice(0, 10).map((plano) => (
+          <div style="border:1px solid #e0e0e0;border-radius:8px;padding:1rem">
+            <p style="font-weight:600;margin-bottom:0.5rem">{plano.nome}</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.875rem;color:#666">
+              <span>Cobertura: {plano.segmentacao}</span>
+              <span>Contratação: {plano.contratacao}</span>
+              <span>Abrangência: {plano.abrangencia}</span>
+              <span>Acomodação: {plano.acomodacao}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">
+      <p style="font-weight:600;color:#e65100;margin-bottom:0.25rem">⚠️ Informação importante</p>
+      <p style="font-size:0.9rem;color:#444">Os dados são fornecidos pela ANS e podem não refletir os preços atuais. Entre em contato diretamente com a operadora para cotação atualizada.</p>
+    </section>
+  </article>
+</Layout>
