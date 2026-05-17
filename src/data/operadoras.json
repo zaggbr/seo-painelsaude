@@ -310,7 +310,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Hapvida Assistência Médica S.A. é uma operadora de planos de saúde que atua na modalidade de medicina de grupo, mantendo atualmente 3.071 planos ativos em sua carteira. A empresa oferece diferentes tipos de cobertura aos beneficiários, incluindo hospitalar com obstetrícia, hospitalar sem obstetrícia e ambulatorial combinado com odontológico.\n\nA operadora disponibiliza opções de contratação variadas para atender diferentes perfis de clientes: coletivo empresarial, coletivo por adesão e individual ou familiar. Quanto à área de atuação, a Hapvida possui planos com abrangência municipal e nacional, permitindo aos beneficiários escolherem a extensão da cobertura geográfica mais adequada às suas necessidades de atendimento médico-hospitalar."
   },
   {
     "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
@@ -611,7 +612,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Portomed - Porto Seguro Serviços De Saúde Ltda** é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com um portfólio robusto de 1.730 planos ativos. A empresa oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nA operadora trabalha exclusivamente com a contratação do tipo Coletivo Empresarial, focando no atendimento a empresas e seus colaboradores. Sua atuação possui abrangência tanto em grupo de municípios quanto nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes regiões do país, o que representa uma vantagem para empresas com equipes distribuídas geograficamente."
   },
   {
     "slug": "notre-dame-intermedica-saude-s-a",
@@ -922,7 +924,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Notre Dame Intermédica Saúde S.A.\n\nA Notre Dame Intermédica Saúde S.A. é uma operadora de planos de saúde na modalidade Medicina de Grupo, com ampla atuação no mercado brasileiro. A empresa mantém um portfólio robusto de 1.219 planos ativos, oferecendo diversas opções de cobertura aos beneficiários, incluindo planos hospitalares sem obstetrícia, hospitalares com obstetrícia e ambulatoriais com hospitalar e obstetrícia.\n\nA operadora disponibiliza flexibilidade nas formas de contratação, atendendo diferentes perfis de clientes por meio de planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua abrangência geográfica inclui opções municipais e nacionais, permitindo que os beneficiários escolham a extensão territorial de cobertura mais adequada às suas necessidades de deslocamento e atendimento médico-hospitalar."
   },
   {
     "slug": "sul-america-companhia-de-seguro-saude",
@@ -1229,7 +1232,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "A Sul America Companhia De Seguro Saúde é uma operadora de planos de saúde que atua na modalidade de seguradora, oferecendo atualmente 914 planos ativos em seu portfólio. A empresa disponibiliza coberturas nas categorias hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia e odontológica, atendendo diferentes necessidades de assistência à saúde.\n\nOs planos são comercializados por meio de contratação coletiva por adesão e coletivo empresarial, não oferecendo opções individuais. A abrangência geográfica dos produtos varia entre grupo de municípios e grupo de estados, permitindo atendimento em diferentes regiões do território nacional. Esta estrutura possibilita que a operadora atenda tanto empresas quanto entidades de classe que buscam soluções em saúde suplementar para seus colaboradores e associados."
   },
   {
     "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
@@ -1540,7 +1544,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Sul América Paraná Clínicas Serviços De Saúde S.A. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, mantendo atualmente 695 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nOs planos da operadora estão disponíveis em três formas de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de beneficiários. Quanto à área de atuação, a Sul América Paraná Clínicas oferece opções de abrangência municipal e nacional, permitindo aos usuários escolherem entre cobertura local ou em todo território brasileiro."
   },
   {
     "slug": "odontoprev-s-a",
@@ -1844,7 +1849,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Odontoprev S/A é uma operadora de planos de saúde que atua na modalidade Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica no Brasil. Com um portfólio robusto de 694 planos ativos, a empresa se destaca no segmento de saúde bucal suplementar do país.\n\nA operadora disponibiliza diferentes tipos de contratação para atender diversos públicos: Coletivo empresarial, Coletivo por adesão e Individual ou Familiar. Sua atuação possui abrangência tanto municipal quanto nacional, permitindo que beneficiários tenham acesso à rede credenciada em diferentes localidades. Esta diversidade de opções de contratação e cobertura geográfica posiciona a Odontoprev como uma alternativa acessível para empresas, entidades de classe e pessoas físicas que buscam assistência odontológica suplementar."
   },
   {
     "slug": "select-operadora-de-plano-de-saude-ltda",
@@ -2151,7 +2157,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Select Operadora de Plano de Saúde Ltda é uma operadora de medicina de grupo que atua no mercado brasileiro com um portfólio expressivo de 571 planos ativos. A empresa oferece diferentes tipos de cobertura para seus beneficiários, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos odontológicos.\n\nA operadora disponibiliza flexibilidade nas formas de contratação, atendendo clientes por meio de planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação abrange tanto grupos de municípios quanto cobertura nacional, permitindo atender diferentes perfis de beneficiários em diversas regiões do país. Esta diversidade de opções possibilita que a Select atenda desde pequenas empresas até contratações individuais."
   },
   {
     "slug": "amil-assistencia-medica-internacional-s-a",
@@ -2458,7 +2465,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Amil Assistência Médica Internacional S.A. é uma operadora de planos de saúde que atua na modalidade Medicina de Grupo, mantendo um portfólio expressivo de 527 planos ativos. A operadora oferece diferentes tipos de cobertura para atender às necessidades variadas de seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nA Amil disponibiliza opções de contratação em três formatos: coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade para diferentes perfis de clientes. Sua atuação possui abrangência municipal e nacional, permitindo que os beneficiários tenham acesso aos serviços de saúde em diferentes localidades do território brasileiro."
   },
   {
     "slug": "unimed-nacional-cooperativa-central",
@@ -2764,7 +2772,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Nacional - Cooperativa Central\n\nA Unimed Nacional - Cooperativa Central é uma operadora de planos de saúde na modalidade de cooperativa médica, oferecendo atualmente 436 planos ativos em seu portfólio. A operadora disponibiliza opções de cobertura que incluem hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos de referência, atendendo diferentes necessidades de seus beneficiários.\n\nOs planos são comercializados nas modalidades coletivo por adesão e coletivo empresarial, não oferecendo contratação individual. A abrangência geográfica contempla desde grupos de municípios específicos até cobertura nacional, proporcionando flexibilidade para empresas e entidades de classe que buscam soluções em saúde suplementar para seus colaboradores e associados em diferentes regiões do país."
   },
   {
     "slug": "bradesco-saude-s-a",
@@ -3068,7 +3077,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Bradesco Saúde S.A.\n\nA Bradesco Saúde S.A. é uma operadora de planos de saúde que atua na modalidade de seguradora, oferecendo atualmente 369 planos ativos no mercado brasileiro. A operadora disponibiliza diferentes tipos de cobertura, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos de referência, proporcionando opções variadas para seus beneficiários.\n\nOs planos da Bradesco Saúde estão disponíveis nas modalidades de contratação coletiva por adesão e coletiva empresarial. A operadora possui ampla atuação territorial, com planos de abrangência nacional e também opções regionais que cobrem grupos de municípios, permitindo atender diferentes perfis de clientes e necessidades geográficas em todo o país."
   },
   {
     "slug": "porto-seguro-seguro-saude-s-a",
@@ -3371,7 +3381,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Porto Seguro - Seguro Saúde S/A é uma operadora de planos de saúde que atua na modalidade de seguradora, disponibilizando atualmente 328 planos ativos em seu portfólio. A empresa oferece diversas opções de cobertura, incluindo planos de referência, ambulatorial + hospitalar com obstetrícia e odontológico, atendendo diferentes necessidades de seus beneficiários.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo empresarial e coletivo por adesão, com abrangências que variam entre municipal e grupo de municípios. Esta estrutura permite que a operadora atenda tanto empresas quanto entidades de classe, oferecendo soluções em saúde suplementar com diferentes níveis de cobertura geográfica conforme o plano escolhido."
   },
   {
     "slug": "notre-dame-intermedica-minas-gerais-saude-s-a",
@@ -3678,7 +3689,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Notre Dame Intermédica Minas Gerais Saúde S.A. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 268 planos ativos no mercado. A empresa disponibiliza diferentes tipos de cobertura, incluindo ambulatorial + hospitalar com obstetrícia, planos odontológicos e de referência.\n\nA operadora trabalha com diversas opções de contratação para atender diferentes perfis de beneficiários: coletivo empresarial, coletivo por adesão e individual ou familiar. Sua atuação possui abrangência nacional e também por grupo de municípios, permitindo flexibilidade na escolha conforme a necessidade de cobertura geográfica dos contratantes."
   },
   {
     "slug": "clinipam-clinica-paranaense-de-assistencia-medica-ltda",
@@ -3984,7 +3996,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Clinipam Clinica Paranaense De Assistencia Medica Ltda é uma operadora de saúde que atua na modalidade Medicina de Grupo, oferecendo atualmente 260 planos ativos. A empresa disponibiliza diferentes tipos de cobertura, incluindo Ambulatorial + Hospitalar com obstetrícia, Odontológico e Referência, atendendo às diversas necessidades de seus beneficiários.\n\nA operadora trabalha com múltiplas formas de contratação, contemplando planos Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial. Sua área de atuação possui abrangência Municipal e Grupo de Municípios, concentrando seus serviços em regiões específicas. Essa configuração permite que a Clinipam ofereça atendimento focado nas localidades onde está estabelecida."
   },
   {
     "slug": "humana-saude-ltda",
@@ -4292,7 +4305,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Humana Saúde Ltda. é uma operadora de planos de saúde na modalidade Medicina de Grupo que atualmente mantém 250 planos ativos em sua carteira. A operadora oferece diferentes tipos de cobertura, incluindo ambulatorial + hospitalar com obstetrícia, odontológico e referência, permitindo aos beneficiários acesso a diversos níveis de atendimento conforme suas necessidades.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de clientes. Quanto à abrangência geográfica, a Humana Saúde disponibiliza opções de cobertura municipal e nacional, atendendo tanto beneficiários que buscam atendimento em sua região quanto aqueles que necessitam de cobertura em todo território brasileiro."
   },
   {
     "slug": "bradesco-saude-operadora-de-planos-s-a",
@@ -4594,7 +4608,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Bradesco Saúde - Operadora De Planos S/A\n\nA Bradesco Saúde - Operadora De Planos S/A é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo. Atualmente, a operadora mantém 217 planos ativos em seu portfólio, oferecendo exclusivamente a contratação do tipo coletivo empresarial, voltada para pessoas jurídicas e seus colaboradores.\n\nOs planos disponibilizados pela operadora apresentam diferentes tipos de cobertura, incluindo Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia, permitindo que as empresas escolham a opção mais adequada às necessidades de seus funcionários. A abrangência geográfica dos planos varia entre grupo de municípios e nacional, oferecendo flexibilidade de alcance territorial conforme o perfil da contratação."
   },
   {
     "slug": "care-plus-medicina-assistencial-ltda",
@@ -4897,7 +4912,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Care Plus Medicina Assistencial Ltda.\n\nA Care Plus Medicina Assistencial Ltda. é uma operadora de planos de saúde que atua na modalidade de medicina de grupo no Brasil. Com um portfólio expressivo de 195 planos ativos, a operadora trabalha exclusivamente com a contratação do tipo coletivo empresarial, voltando-se para o atendimento de empresas e seus colaboradores.\n\nA Care Plus oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo planos hospitalares com obstetrícia, ambulatorial + hospitalar com obstetrícia, e a opção mais completa que combina cobertura ambulatorial + hospitalar com obstetrícia + odontológica. Sua atuação possui abrangência nacional e por grupo de estados, garantindo acesso aos serviços de saúde em diferentes regiões do país."
   },
   {
     "slug": "cooperativa-central-unimed-de-cooperativas-de-assistencia-a-saude-do-rio-grande-do-sul-ltda",
@@ -5206,7 +5222,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Cooperativa Central Unimed De Cooperativas De Assistência À Saúde Do Rio Grande Do Sul Ltda. é uma operadora de planos de saúde na modalidade de cooperativa médica que atua no estado gaúcho. Atualmente, a operadora disponibiliza 186 planos ativos ao mercado, oferecendo diferentes tipos de cobertura que incluem hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, e ambulatorial + hospitalar com obstetrícia + odontológico.\n\nA operadora trabalha com diversos tipos de contratação para atender diferentes perfis de beneficiários: coletivo por adesão, individual ou familiar, e coletivo empresarial. Quanto à abrangência geográfica, os planos oferecidos podem ter cobertura municipal ou nacional, proporcionando flexibilidade de acordo com as necessidades de deslocamento dos usuários."
   },
   {
     "slug": "unimed-do-estado-de-sao-paulo-federacao-estadual-das-coop-medicas",
@@ -5509,7 +5526,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed do Estado de São Paulo - Federação Estadual das Cooperativas Médicas é uma operadora que atua sob a modalidade de cooperativa médica, oferecendo atualmente 184 planos de saúde ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nOs planos são comercializados nas modalidades coletivo empresarial e coletivo por adesão, atendendo tanto empresas quanto grupos organizados de profissionais. A abrangência da operadora contempla grupo de municípios e também oferece cobertura nacional, proporcionando flexibilidade de atendimento aos beneficiários em diferentes regiões do país."
   },
   {
     "slug": "samp-espirito-santo-assistencia-medica-sa",
@@ -5817,7 +5835,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A **Samp Espírito Santo Assistência Médica SA** é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 178 planos ativos. A empresa disponibiliza diferentes tipos de cobertura, incluindo ambulatorial + hospitalar com obstetrícia, odontológica e de referência, atendendo assim diversas necessidades de seus beneficiários.\n\nA operadora trabalha com múltiplas formas de contratação, permitindo adesão por meio de planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua atuação apresenta abrangência tanto municipal quanto nacional, possibilitando atendimento em diferentes localidades do país conforme o plano contratado. Esta variedade de opções permite que a Samp atenda desde pequenos grupos até beneficiários individuais."
   },
   {
     "slug": "grupo-hospitalar-do-rio-de-janeiro-ltda",
@@ -6123,7 +6142,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "O Grupo Hospitalar Do Rio De Janeiro Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado de saúde suplementar brasileiro. A operadora disponibiliza atualmente 164 planos ativos, oferecendo diferentes tipos de cobertura que incluem Ambulatorial + Hospitalar com obstetrícia, Odontológico, e também a opção completa de Ambulatorial + Hospitalar com obstetrícia + Odontológico.\n\nA operadora trabalha com diversas formas de contratação para atender diferentes perfis de beneficiários: Coletivo empresarial, Coletivo por adesão e Individual ou Familiar. Sua área de atuação possui abrangência Estadual e também atende Grupo de municípios, proporcionando acesso aos seus serviços de saúde em diferentes regiões do estado do Rio de Janeiro."
   },
   {
     "slug": "h-b-saude-s-a",
@@ -6431,7 +6451,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# H.B. Saúde S/A.\n\nA H.B. Saúde S/A. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 158 planos ativos no mercado brasileiro. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo opções de Ambulatorial + Hospitalar com obstetrícia, Odontológico, e também planos completos que combinam Ambulatorial + Hospitalar com obstetrícia + Odontológico.\n\nA contratação dos planos da H.B. Saúde pode ser realizada nas modalidades Coletivo por adesão, Individual ou Familiar, e Coletivo empresarial, oferecendo flexibilidade para diferentes perfis de clientes. Quanto à abrangência geográfica, a operadora possui planos que cobrem tanto Grupo de municípios quanto cobertura Nacional, permitindo atendimento em diferentes regiões do país."
   },
   {
     "slug": "unimed-seguros-saude-s-a",
@@ -6737,7 +6758,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Unimed Seguros Saúde S/A\n\nA Unimed Seguros Saúde S/A é uma operadora de planos de saúde que atua na modalidade de seguradora, oferecendo atualmente 158 planos ativos no mercado brasileiro. A empresa disponibiliza diferentes tipos de cobertura assistencial, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos de referência.\n\nOs produtos da operadora são comercializados exclusivamente nas modalidades coletivas, abrangendo tanto coletivo empresarial quanto coletivo por adesão. Quanto à área de atuação, a Unimed Seguros possui planos com abrangência nacional e também opções voltadas para grupos de municípios, permitindo diferentes alternativas conforme a necessidade de cobertura geográfica dos beneficiários."
   },
   {
     "slug": "unimed-belo-horizonte-cooperativa-de-trabalho-medico",
@@ -7042,7 +7064,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Belo Horizonte Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Com um portfólio robusto de 149 planos ativos, a operadora oferece diferentes tipos de cobertura para atender às necessidades variadas de seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nA operadora disponibiliza opções de contratação coletiva por adesão, individual ou familiar e coletiva empresarial, proporcionando flexibilidade para diferentes perfis de clientes. Sua área de atuação abrange desde grupo de municípios até cobertura nacional, permitindo assistência à saúde em diferentes localidades do país."
   },
   {
     "slug": "unimed-vitoria-cooperativa-de-trabalho-medico",
@@ -7348,7 +7371,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Vitoria Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 139 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, e referência, permitindo aos beneficiários acesso a diversos níveis de atendimento conforme suas necessidades.\n\nA operadora trabalha com múltiplas formas de contratação, atendendo clientes através de planos coletivos por adesão, individuais ou familiares, e coletivos empresariais. Sua área de atuação possui abrangência nacional e por grupo de municípios, proporcionando flexibilidade na utilização dos serviços de saúde em diferentes regiões do país."
   },
   {
     "slug": "centro-clinico-gaucho-ltda",
@@ -7657,7 +7681,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Centro Clínico Gaúcho Ltda\n\nO Centro Clínico Gaúcho Ltda é uma operadora de planos de saúde que atua na modalidade Medicina de Grupo, disponibilizando atualmente 138 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo opções de Ambulatorial + Odontológico, Ambulatorial + Hospitalar com obstetrícia, e Ambulatorial + Hospitalar com obstetrícia + Odontológico.\n\nA contratação dos planos pode ser realizada nas modalidades Coletivo por Adesão, Individual ou Familiar, e Coletivo Empresarial, proporcionando flexibilidade para diferentes perfis de clientes. A abrangência geográfica da operadora contempla tanto grupo de municípios quanto cobertura nacional, permitindo atendimento em diferentes localidades do país."
   },
   {
     "slug": "amplitude-planos-de-saude-ltda",
@@ -7959,7 +7984,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Amplitude Planos de Saúde Ltda é uma operadora de saúde suplementar brasileira que atua na modalidade de Medicina de Grupo. Com um portfólio de 135 planos ativos, a empresa oferece diferentes tipos de cobertura aos seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nA operadora disponibiliza suas soluções em saúde por meio de contratação coletiva, tanto por adesão quanto empresarial. Sua área de atuação concentra-se em abrangências municipal e de grupo de municípios, caracterizando um modelo de atendimento regionalizado. Essa configuração permite que a Amplitude atenda às necessidades de empresas e entidades de classe em regiões específicas do país."
   },
   {
     "slug": "humana-saude-nordeste-ltda",
@@ -8269,7 +8295,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Humana Saúde Nordeste Ltda.\n\nA Humana Saúde Nordeste Ltda. é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com um portfólio de 134 planos ativos. A operadora oferece diferentes tipos de cobertura assistencial, incluindo opções de hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades dos beneficiários.\n\nA empresa disponibiliza seus produtos por meio de três tipos de contratação: coletivo por adesão, individual ou familiar e coletivo empresarial. Sua atuação possui abrangência municipal e nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes localidades do país, conforme o plano contratado."
   },
   {
     "slug": "integra-assistencia-medica-sa",
@@ -8574,7 +8601,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Integra Assistência Médica S.A. é uma operadora de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com um portfólio de 134 planos ativos. A empresa oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar sem obstetrícia, permitindo aos beneficiários opções conforme suas necessidades específicas.\n\nA operadora disponibiliza seus produtos exclusivamente no formato coletivo, tanto por adesão quanto empresarial, não oferecendo planos individuais ou familiares. Sua atuação possui abrangência nacional e também em grupos de municípios, proporcionando flexibilidade geográfica na prestação de serviços de assistência médica para empresas e entidades de classe que buscam soluções em saúde suplementar para seus colaboradores e associados."
   },
   {
     "slug": "fundacao-cesp",
@@ -8877,7 +8905,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Fundação Cesp\n\nA Fundação Cesp é uma operadora de planos de saúde que atua na modalidade de autogestão, oferecendo atualmente 123 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos odontológicos, ambulatoriais e hospitalares com obstetrícia, além de opções que combinam cobertura ambulatorial, hospitalar com obstetrícia e odontológica.\n\nA contratação dos planos da Fundação Cesp é exclusivamente na modalidade coletivo empresarial. Quanto à área de atuação, a operadora possui abrangência tanto em grupos de municípios quanto nacional, permitindo que seus beneficiários tenham acesso aos serviços de saúde em diferentes regiões do país, conforme o plano contratado."
   },
   {
     "slug": "unimed-de-fortaleza-sociedade-cooperativa-medica-ltda",
@@ -9183,7 +9212,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "A Unimed De Fortaleza Sociedade Cooperativa Médica Ltda. é uma operadora de planos de saúde que atua sob a modalidade de Cooperativa Médica, oferecendo atualmente 122 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de Referência, Ambulatorial e Ambulatorial + Hospitalar sem obstetrícia.\n\nOs planos da Unimed De Fortaleza podem ser contratados nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, atendendo assim diferentes perfis de clientes. A operadora possui abrangência geográfica que contempla tanto Grupo de Municípios quanto Grupo de Estados, permitindo aos beneficiários acesso à rede credenciada em diferentes localidades."
   },
   {
     "slug": "pb-assistencia-medica-eu-ltda",
@@ -9490,7 +9520,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Pb Assistencia Medica Eu Ltda** é uma operadora de saúde na modalidade Medicina de Grupo que atua no mercado de saúde suplementar brasileiro. A empresa possui um portfólio expressivo de **118 planos ativos**, oferecendo diferentes tipos de cobertura que incluem hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos odontológicos.\n\nA operadora disponibiliza seus produtos por meio de contratação coletiva empresarial e coletivo por adesão, não trabalhando com planos individuais. Sua atuação geográfica é regionalizada, com abrangência municipal e em grupos de municípios, caracterizando um perfil de atendimento focado em regiões específicas. Esta configuração permite à operadora concentrar sua rede credenciada e serviços em áreas determinadas."
   },
   {
     "slug": "metlife-planos-odontologicos-ltda",
@@ -9792,7 +9823,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Metlife Planos Odontológicos Ltda. atua no mercado brasileiro como operadora de planos de saúde na modalidade Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa mantém atualmente 115 planos ativos em seu portfólio, proporcionando diversas opções para seus beneficiários.\n\nA operadora disponibiliza diferentes tipos de contratação para atender variados perfis de clientes: Coletivo Empresarial, Coletivo por Adesão e Individual ou Familiar. Sua atuação possui abrangência Nacional e também por Grupo de Municípios, permitindo que beneficiários em diferentes regiões do país tenham acesso aos serviços odontológicos credenciados. Esta diversidade de opções de contratação e alcance geográfico demonstra a estrutura da Metlife no segmento odontológico suplementar brasileiro."
   },
   {
     "slug": "klini-planos-de-saude-ltda",
@@ -10100,7 +10132,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Klini Planos de Saúde Ltda é uma operadora de medicina de grupo que atua no mercado brasileiro com um portfólio de 114 planos ativos. A empresa oferece diferentes tipos de cobertura, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia e odontológica, permitindo aos beneficiários opções variadas conforme suas necessidades de assistência à saúde.\n\nA operadora disponibiliza suas soluções por meio de três modalidades de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar. Sua atuação possui abrangência nacional e também em grupo de municípios, proporcionando flexibilidade geográfica no atendimento aos seus clientes em diferentes regiões do país."
   },
   {
     "slug": "brasildental-operadora-de-planos-odontologicos-s-a",
@@ -10401,7 +10434,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "# Brasildental Operadora de Planos Odontológicos S.A.\n\nA Brasildental Operadora de Planos Odontológicos S.A. é uma operadora de modalidade Odontologia de Grupo que atua no mercado brasileiro de saúde suplementar. A empresa disponibiliza atualmente 109 planos odontológicos ativos, oferecendo cobertura exclusivamente odontológica aos seus beneficiários.\n\nA operadora trabalha com diferentes modalidades de contratação para atender diversos perfis de clientes: planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação apresenta abrangência nacional, além de opções para grupos de municípios específicos, proporcionando flexibilidade geográfica na oferta de seus produtos odontológicos. Esta diversidade de opções permite que tanto pessoas físicas quanto empresas encontrem soluções adequadas às suas necessidades."
   },
   {
     "slug": "sul-america-odontologico-s-a",
@@ -10703,7 +10737,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Sul América Odontológico S/A é uma operadora de planos de saúde que atua na modalidade de Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa disponibiliza atualmente 103 planos ativos no mercado, com opções de contratação que atendem diferentes perfis de beneficiários: coletivo empresarial, coletivo por adesão e individual ou familiar.\n\nA operadora possui abrangência geográfica que contempla grupos de municípios e grupos de estados, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes regiões do país. Essa estrutura possibilita que tanto pessoas físicas quanto jurídicas contratem os serviços odontológicos de acordo com suas necessidades específicas, seja de forma individual, familiar ou corporativa."
   },
   {
     "slug": "unimed-campinas-cooperativa-de-trabalho-medico",
@@ -11006,7 +11041,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Campinas - Cooperativa De Trabalho Médico\n\nA Unimed Campinas - Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de Cooperativa Médica, oferecendo atualmente 102 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo Referência, Hospitalar com obstetrícia e Ambulatorial + Hospitalar com obstetrícia.\n\nOs planos da Unimed Campinas podem ser contratados nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade para diferentes perfis de clientes. Quanto à abrangência geográfica, a operadora oferece opções que contemplam tanto Grupo de municípios quanto cobertura Nacional, permitindo que os beneficiários escolham a extensão territorial mais adequada às suas necessidades."
   },
   {
     "slug": "unimed-do-estado-de-santa-catarina-fed-est-das-coop-med",
@@ -11313,7 +11349,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Do Estado De Santa Catarina Fed. Est. Das Coop. Méd. é uma operadora de planos de saúde que atua sob a modalidade de cooperativa médica. Com um portfólio robusto de 94 planos ativos, a operadora oferece diferentes tipos de cobertura, incluindo Referência, Ambulatorial e Ambulatorial + Hospitalar sem obstetrícia.\n\nA operadora disponibiliza opções variadas de contratação para atender diferentes perfis de beneficiários: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Quanto à área de atuação, seus planos apresentam abrangência Municipal e Nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes localidades conforme o plano contratado."
   },
   {
     "slug": "unimed-sao-jose-do-rio-preto-coop-de-trabalho-medico",
@@ -11616,7 +11653,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed São José do Rio Preto - Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua sob a modalidade de cooperativa médica, mantendo atualmente 94 planos ativos em sua carteira. A operadora oferece opções de cobertura que incluem planos de referência e ambulatorial + hospitalar com obstetrícia, proporcionando diferentes níveis de assistência aos beneficiários.\n\nEm termos de contratação, a Unimed São José do Rio Preto disponibiliza três modalidades: coletivo por adesão, individual ou familiar e coletivo empresarial, atendendo tanto pessoas físicas quanto jurídicas. Quanto à área de atuação, a operadora possui abrangência em grupo de municípios e também nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "unimed-do-est-do-rj-federacao-est-das-cooperativas-medicas",
@@ -11921,7 +11959,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed do Estado do Rio de Janeiro Federação Estadual das Cooperativas Médicas é uma operadora que atua na modalidade de cooperativa médica, oferecendo atualmente 92 planos de saúde ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura, incluindo planos de referência, ambulatorial + hospitalar com obstetrícia e odontológico, atendendo às diversas necessidades dos beneficiários.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de contratantes. Quanto à abrangência geográfica, a operadora atua em grupos de municípios e possui alcance que se estende por grupo de estados, oferecendo uma ampla rede de cobertura territorial para seus beneficiários."
   },
   {
     "slug": "caberj-integral-saude-s-a",
@@ -12226,7 +12265,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Caberj Integral Saúde S.A\n\nA Caberj Integral Saúde S.A é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com um portfólio de 90 planos ativos. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, proporcionando opções variadas conforme as necessidades dos beneficiários.\n\nA Caberj disponibiliza suas soluções em saúde por meio de três modalidades de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar. Sua atuação geográfica abrange tanto grupos de municípios quanto cobertura nacional, permitindo flexibilidade no atendimento aos beneficiários em diferentes regiões do país."
   },
   {
     "slug": "mediservice-operadora-de-planos-de-saude-s-a",
@@ -12532,7 +12572,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Mediservice Operadora De Planos De Saúde S.A.\n\nA Mediservice Operadora De Planos De Saúde S.A. é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro. Com um portfólio de 88 planos ativos, a empresa oferece opções exclusivamente para contratação coletiva empresarial, atendendo organizações e seus colaboradores.\n\nA operadora disponibiliza diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo planos ambulatoriais e hospitalares com obstetrícia, planos odontológicos e opções que combinam cobertura médica hospitalar com obstetrícia e odontológica. Sua área de atuação é regional, com abrangência municipal e em grupos de municípios, caracterizando uma presença focada em regiões específicas do território nacional."
   },
   {
     "slug": "dental-uni-cooperativa-odontologica",
@@ -12836,7 +12877,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Dental Uni - Cooperativa Odontológica\n\nA Dental Uni - Cooperativa Odontológica é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos com cobertura odontológica. A operadora possui atualmente 88 planos ativos em seu portfólio, disponibilizando opções para diferentes perfis de contratação.\n\nOs beneficiários podem contratar os planos da Dental Uni nas modalidades coletivo empresarial, coletivo por adesão ou individual/familiar, proporcionando flexibilidade conforme a necessidade de cada cliente. A operadora oferece planos com abrangência municipal e nacional, permitindo que os usuários escolham a extensão de cobertura mais adequada ao seu perfil de utilização dos serviços odontológicos."
   },
   {
     "slug": "odonto-empresas-convenios-dentarios-ltda",
@@ -13138,7 +13180,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Odonto Empresas Convênios Dentários Ltda. é uma operadora de planos de saúde que atua na modalidade Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa possui um portfólio de 88 planos ativos no mercado brasileiro, demonstrando uma presença consolidada no segmento de saúde bucal.\n\nA operadora disponibiliza diferentes modalidades de contratação para atender diversos perfis de beneficiários, incluindo planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua atuação possui abrangência nacional e em grupos de estados, permitindo que empresas e pessoas físicas de diferentes regiões do país tenham acesso aos seus serviços odontológicos por meio de uma rede credenciada de profissionais e clínicas."
   },
   {
     "slug": "uniodonto-paulista-federacao-das-cooperativas-odontologicas-do-estado-de-sao-paulo",
@@ -13441,7 +13484,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto Paulista - Federação das Cooperativas Odontológicas do Estado de São Paulo é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos de saúde com cobertura odontológica. Atualmente, a operadora mantém 87 planos ativos em seu portfólio.\n\nA Uniodonto Paulista disponibiliza opções de contratação coletiva por adesão, individual ou familiar, e coletiva empresarial, atendendo diferentes perfis de beneficiários. Sua área de atuação possui abrangência nacional e também em grupo de municípios, permitindo que os beneficiários tenham acesso à rede credenciada em diversas regiões do país, proporcionando flexibilidade no atendimento odontológico."
   },
   {
     "slug": "centro-trasmontano-de-sao-paulo",
@@ -13746,7 +13790,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "O Centro Trasmontano de São Paulo é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 80 planos ativos aos seus beneficiários. A operadora disponibiliza diferentes tipos de cobertura, incluindo opções de Ambulatorial + Hospitalar com obstetrícia, Ambulatorial + Hospitalar com obstetrícia + Odontológico, além de planos exclusivamente Odontológicos.\n\nA contratação dos planos pode ser realizada nas modalidades Coletivo por Adesão, Individual ou Familiar, e Coletivo Empresarial, proporcionando flexibilidade para diferentes perfis de clientes. A área de atuação do Centro Trasmontano de São Paulo possui abrangência Municipal e por Grupo de Municípios, atendendo beneficiários em regiões específicas do estado de São Paulo."
   },
   {
     "slug": "plena-saude-s-a",
@@ -14052,7 +14097,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Plena Saúde S.A.\n\nA Plena Saúde S.A. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 79 planos ativos no mercado. A operadora disponibiliza três tipos de cobertura para seus beneficiários: Ambulatorial + Hospitalar com obstetrícia, Ambulatorial + Hospitalar com obstetrícia + Odontológico, e Odontológico, permitindo diferentes opções conforme as necessidades de cada contratante.\n\nA empresa oferece flexibilidade nas formas de contratação, disponibilizando planos nas modalidades Coletivo por Adesão, Individual ou Familiar, e Coletivo Empresarial. Sua área de atuação possui abrangência geográfica que inclui Grupo de Municípios e Grupo de Estados, proporcionando cobertura em diferentes regiões do território brasileiro."
   },
   {
     "slug": "uniodonto-do-brasil-central-nacional-das-cooperativas-odontologicas",
@@ -14355,7 +14401,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto Do Brasil Central Nacional Das Cooperativas Odontólogicas é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos de saúde com cobertura odontológica. A operadora disponibiliza um portfólio de 77 planos ativos no mercado, proporcionando diversas opções aos seus beneficiários.\n\nA operadora oferece flexibilidade nas formas de contratação, disponibilizando planos nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar. Sua área de atuação possui abrangência geográfica que compreende grupo de municípios e grupo de estados, permitindo atendimento em diferentes regiões do país. Como cooperativa odontológica, segue o modelo cooperativista de gestão no setor de saúde suplementar."
   },
   {
     "slug": "associacao-evangelica-beneficente-de-londrina",
@@ -14661,7 +14708,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Associação Evangélica Beneficente De Londrina\n\nA Associação Evangélica Beneficente De Londrina é uma operadora de planos de saúde que atua na modalidade filantropia, oferecendo atualmente 77 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia, e cobertura de referência, atendendo às diversas necessidades dos beneficiários.\n\nOs planos podem ser contratados nas modalidades coletivo por adesão, individual ou familiar, e coletivo empresarial, proporcionando flexibilidade para diferentes perfis de clientes. A operadora possui abrangência geográfica que varia entre grupo de municípios e nacional, permitindo atendimento em diferentes regiões do país conforme o plano contratado."
   },
   {
     "slug": "geap-autogestao-em-saude",
@@ -14964,7 +15012,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Geap Autogestão em Saúde é uma operadora de planos de saúde que atua na modalidade de autogestão, oferecendo atualmente 73 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar com obstetrícia, e também a opção mais completa que inclui cobertura odontológica.\n\nA contratação dos planos da Geap é exclusivamente na modalidade coletivo empresarial. Quanto à área de atuação, a operadora apresenta flexibilidade geográfica, com planos que cobrem desde grupos de municípios específicos até abrangência nacional, permitindo atender diferentes necessidades de mobilidade dos beneficiários pelo território brasileiro."
   },
   {
     "slug": "unimed-sao-goncalo-niteroi-soc-coop-serv-med-e-hosp-ltda",
@@ -15266,7 +15315,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed-São Gonçalo - Niterói é uma cooperativa médica que opera no segmento de saúde suplementar, oferecendo atualmente 70 planos ativos no mercado. A operadora disponibiliza coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades assistenciais dos beneficiários.\n\nOs planos são comercializados nas modalidades Coletivo por Adesão e Coletivo Empresarial, voltados para grupos organizados de pessoas. Quanto à abrangência geográfica, a operadora atua em grupo de municípios e também oferece cobertura nacional, proporcionando flexibilidade de atendimento aos seus usuários tanto na região de atuação principal quanto em território nacional."
   },
   {
     "slug": "prima-vida-odontologia-de-grupo-limitada",
@@ -15568,7 +15618,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Prima Vida Odontologia De Grupo Limitada é uma operadora na modalidade de Odontologia de Grupo que atua no mercado brasileiro de saúde suplementar. Atualmente, a empresa mantém 69 planos ativos, todos com cobertura odontológica, oferecendo opções diversificadas para seus beneficiários.\n\nA operadora disponibiliza diferentes formas de contratação, incluindo planos Coletivos por Adesão, Individuais ou Familiares e Coletivos Empresariais, atendendo tanto pessoas físicas quanto empresas de diversos portes. Sua atuação possui abrangência Nacional e também em Grupo de Municípios, permitindo flexibilidade na cobertura geográfica conforme o plano contratado. Esta estrutura possibilita que a Prima Vida atenda diferentes perfis de clientes em suas necessidades de assistência odontológica."
   },
   {
     "slug": "omint-servicos-de-saude-s-a",
@@ -15872,7 +15923,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A **Omint Serviços De Saúde S.A.** é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com 68 planos ativos. A empresa oferece diferentes tipos de cobertura, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, e também opções que incluem cobertura odontológica integrada.\n\nOs planos da Omint estão disponíveis nas modalidades de contratação coletiva empresarial e coletiva por adesão, não oferecendo planos individuais/familiares. Quanto à abrangência geográfica, a operadora disponibiliza tanto planos com cobertura em grupos de municípios quanto opções de abrangência nacional, permitindo atendimento em diferentes regiões do país conforme o tipo de plano contratado."
   },
   {
     "slug": "unimed-porto-alegre-cooperativa-medica-ltda",
@@ -16179,7 +16231,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Porto Alegre - Cooperativa Médica Ltda. é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, mantendo atualmente 68 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo opções hospitalares sem obstetrícia, hospitalares com obstetrícia e ambulatoriais combinadas com cobertura hospitalar obstétrica.\n\nOs planos da Unimed Porto Alegre estão disponíveis em três modalidades de contratação: coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade para diferentes perfis de beneficiários. A operadora apresenta abrangência que varia entre grupo de municípios e nacional, permitindo atendimento em diferentes regiões conforme o plano contratado."
   },
   {
     "slug": "unimed-de-santa-barbara-d-oeste-e-americana-coop-de-trabalho-medico",
@@ -16481,7 +16534,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed de Santa Bárbara D'Oeste e Americana é uma cooperativa médica que opera no segmento de saúde suplementar, disponibilizando atualmente 67 planos de saúde ativos. A operadora oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades assistenciais dos beneficiários.\n\nA contratação dos planos pode ser realizada nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade para pessoas físicas e empresas. Quanto à abrangência geográfica, a operadora atua em grupo de municípios e também oferece cobertura nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "samedil-servicos-de-atendimento-medico-s-a",
@@ -16783,7 +16837,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Samedil Serviços De Atendimento Médico S/A\n\nA Samedil Serviços De Atendimento Médico S/A é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo. Atualmente, a empresa mantém 67 planos ativos em seu portfólio, oferecendo opções de cobertura do tipo Referência e Ambulatorial + Hospitalar sem obstetrícia.\n\nA operadora disponibiliza diferentes formas de contratação para atender diversos públicos, incluindo planos Coletivos por adesão, Individual ou Familiar e Coletivo empresarial. Sua área de atuação possui abrangência Municipal e para Grupo de municípios, caracterizando uma operação de alcance regional. Esta estrutura permite à Samedil atender tanto pessoas físicas quanto empresas que buscam soluções em saúde suplementar em sua região de cobertura."
   },
   {
     "slug": "orale-assistencia-odontologica-ltda",
@@ -17086,7 +17141,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Total"
       }
-    ]
+    ],
+    "descricao": "A **Orale Assistência Odontológica Ltda** é uma operadora de planos de saúde que atua na modalidade de Odontologia de Grupo, oferecendo cobertura exclusivamente odontológica. A empresa possui atualmente 67 planos ativos em seu portfólio, demonstrando diversidade de opções para diferentes perfis de beneficiários.\n\nA operadora disponibiliza seus produtos em três tipos de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar, permitindo flexibilidade tanto para empresas quanto para pessoas físicas. Sua área de atuação abrange grupo de municípios e grupo de estados, caracterizando uma cobertura regional ampliada. Essa estrutura permite que a Orale atenda distintas necessidades no segmento odontológico suplementar brasileiro."
   },
   {
     "slug": "care-plus-odontologia-assistencial-ltda",
@@ -17389,7 +17445,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Care Plus Odontologia Assistencial Ltda. é uma operadora de planos de saúde na modalidade Odontologia de Grupo, oferecendo atualmente 67 planos ativos no mercado brasileiro. A empresa atua exclusivamente com cobertura odontológica, disponibilizando seus serviços em diferentes formatos de contratação para atender diversos perfis de beneficiários.\n\nA operadora trabalha com três tipos de contratação: planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação possui abrangência nacional e também em grupos de municípios, permitindo que empresas, entidades de classe e pessoas físicas tenham acesso aos seus serviços odontológicos em diferentes regiões do país."
   },
   {
     "slug": "unimed-vale-do-sinos-cooperativa-de-assistencia-a-saude-ltda",
@@ -17696,7 +17753,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Vale do Sinos - Cooperativa de Assistência à Saúde Ltda\n\nA Unimed Vale do Sinos é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 66 planos ativos em seu portfólio. A operadora disponibiliza coberturas nas áreas de saúde médica e odontológica, incluindo opções hospitalares com obstetrícia, ambulatorial + hospitalar com obstetrícia e planos exclusivamente odontológicos.\n\nOs planos da Unimed Vale do Sinos estão disponíveis em diferentes modalidades de contratação: individual ou familiar, coletivo empresarial e coletivo por adesão, permitindo flexibilidade na escolha conforme o perfil do beneficiário. A operadora possui abrangência geográfica que varia entre grupo de municípios e cobertura nacional, oferecendo diferentes opções de alcance territorial em seus produtos."
   },
   {
     "slug": "uniodonto-de-campinas-cooperativa-odontologica",
@@ -17998,7 +18056,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto de Campinas Cooperativa Odontológica é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos com cobertura odontológica. Atualmente, a operadora mantém 65 planos ativos no mercado de saúde suplementar brasileiro.\n\nA cooperativa disponibiliza diferentes formas de contratação para atender diversos perfis de beneficiários, incluindo planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação abrange tanto grupos de municípios quanto cobertura nacional, proporcionando flexibilidade geográfica no acesso aos serviços odontológicos credenciados. Essa estrutura permite que a operadora atenda desde pequenas empresas até beneficiários individuais em diferentes regiões do país."
   },
   {
     "slug": "alice-operadora-ltda",
@@ -18298,7 +18357,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Alice Operadora Ltda. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 64 planos ativos em seu portfólio. A empresa disponibiliza opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nA contratação dos planos da Alice está disponível exclusivamente na modalidade Coletivo Empresarial, voltada para pessoas jurídicas que desejam oferecer assistência à saúde para seus colaboradores. Quanto à abrangência geográfica, a operadora possui planos com cobertura Municipal e Nacional, permitindo que os beneficiários escolham entre atendimento em sua região ou com alcance em todo o território brasileiro."
   },
   {
     "slug": "unimed-goiania-cooperativa-de-trabalho-medico",
@@ -18601,7 +18661,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "**Unimed Goiânia Cooperativa de Trabalho Médico**\n\nA Unimed Goiânia é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 63 planos ativos no mercado. A operadora disponibiliza coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de seus beneficiários.\n\nOs planos podem ser contratados nas modalidades coletivo por adesão, individual ou familiar, e coletivo empresarial, proporcionando flexibilidade para diversos perfis de clientes. A abrangência geográfica da Unimed Goiânia inclui grupo de municípios e nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes localidades do país."
   },
   {
     "slug": "uniao-medica-planos-de-saude-s-a",
@@ -18905,7 +18966,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# União Médica Planos De Saúde S/A\n\nA União Médica Planos De Saúde S/A é uma operadora de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 62 planos ativos no mercado. A empresa disponibiliza opções diversificadas de cobertura, incluindo planos de Referência, Ambulatorial e Ambulatorial + Hospitalar sem obstetrícia, atendendo diferentes necessidades dos beneficiários.\n\nA operadora trabalha com três tipos de contratação: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade na escolha do plano mais adequado. Sua atuação possui abrangência geográfica limitada, concentrando-se em áreas municipais e grupos de municípios específicos, característica comum em operadoras de medicina de grupo com foco regional."
   },
   {
     "slug": "unimed-de-londrina-cooperativa-de-trabalho-medico",
@@ -19209,7 +19271,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Londrina Cooperativa De Trabalho Médico\n\nA Unimed de Londrina é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, disponibilizando atualmente 60 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar sem obstetrícia, proporcionando opções variadas conforme as necessidades dos beneficiários.\n\nQuanto à contratação, a Unimed de Londrina trabalha com três modalidades: coletivo empresarial, coletivo por adesão e individual ou familiar, atendendo tanto pessoas físicas quanto jurídicas. Sua área de abrangência contempla desde grupo de municípios até cobertura nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "nossa-saude-operadora-planos-privados-de-assistencia-a-saude-ltda",
@@ -19514,7 +19577,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Nossa Saúde - Operadora Planos Privados De Assistência À Saúde Ltda. é uma operadora de medicina de grupo que atua no mercado de saúde suplementar brasileiro com um portfólio de 60 planos ativos. A empresa oferece diferentes tipos de cobertura, incluindo ambulatorial + hospitalar com obstetrícia, odontológica e referência, atendendo às diversas necessidades de seus beneficiários.\n\nA operadora disponibiliza opções de contratação nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de clientes. Sua área de atuação possui abrangência municipal e para grupo de municípios, caracterizando uma operação regional focada no atendimento de comunidades locais específicas."
   },
   {
     "slug": "ideal-saude-assistencia-medica-ambulatorial-ltda",
@@ -19819,7 +19883,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Ideal Saúde Assistência Médica Ambulatorial Ltda\n\nA Ideal Saúde Assistência Médica Ambulatorial Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo, mantendo atualmente 59 planos ativos em sua carteira. A operadora oferece diferentes tipos de cobertura assistencial, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos de referência.\n\nOs planos da Ideal Saúde estão disponíveis para contratação nas modalidades coletivo empresarial e coletivo por adesão, não oferecendo planos individuais/familiares. A abrangência geográfica dos planos é regionalizada, atendendo em níveis municipal e grupos de municípios, o que caracteriza uma atuação focada em regiões específicas do território brasileiro."
   },
   {
     "slug": "unimed-saude-e-odonto-s-a",
@@ -20123,7 +20188,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Saúde E Odonto S.A é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, mantendo atualmente 58 planos ativos em seu portfólio. A empresa oferece coberturas do tipo Referência e Odontológico, proporcionando opções tanto para assistência médica quanto para cuidados com saúde bucal.\n\nA operadora disponibiliza diferentes formas de contratação para atender diversos perfis de beneficiários, incluindo planos Coletivos por Adesão, Individuais ou Familiares e Coletivos Empresariais. Sua área de atuação possui abrangência Municipal e Grupo de Municípios, caracterizando-se como uma operadora de alcance regional que busca atender as necessidades de saúde suplementar em sua região de cobertura."
   },
   {
     "slug": "unimed-norte-nordeste-federacao-interfederativa-das-sociedades-cooperativas-de-trabalho-medico-em-recuperacao-judicial",
@@ -20426,7 +20492,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Norte/Nordeste-Federação Interfederativa Das Sociedades Cooperativas De Trabalho Médico Em Recuperação Judicial é uma operadora de planos de saúde que atua no modelo de cooperativa médica. Atualmente, encontra-se em processo de recuperação judicial e mantém 57 planos ativos em seu portfólio.\n\nA operadora oferece planos com coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, disponíveis nas modalidades de contratação coletivo por adesão, individual ou familiar e coletivo empresarial. Sua área de atuação abrange grupo de municípios e grupo de estados nas regiões Norte e Nordeste do Brasil, atendendo beneficiários em uma extensa área geográfica interfederativa."
   },
   {
     "slug": "best-senior-operadora-de-saude-ltda",
@@ -20729,7 +20796,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Best Senior Operadora de Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, disponibilizando atualmente 57 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, permitindo aos beneficiários escolherem a opção mais adequada às suas necessidades.\n\nEm relação às formas de contratação, a Best Senior disponibiliza planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Sua área de atuação compreende abrangências municipal e de grupo de municípios, caracterizando uma operadora de alcance regional que atende beneficiários em localidades específicas."
   },
   {
     "slug": "unimed-do-estado-do-parana-federacao-estadual-das-cooperativas-medicas",
@@ -21034,7 +21102,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed do Estado do Paraná Federação Estadual das Cooperativas Médicas é uma operadora na modalidade de cooperativa médica que atua no mercado de saúde suplementar brasileiro. Com 57 planos ativos em seu portfólio, a operadora oferece diferentes tipos de cobertura, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nA operadora disponibiliza opções de contratação para diversos perfis de beneficiários, abrangendo planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Sua área de abrangência contempla tanto grupo de municípios quanto cobertura nacional, proporcionando flexibilidade na escolha conforme as necessidades de deslocamento e atendimento dos beneficiários em diferentes regiões do país."
   },
   {
     "slug": "unimed-uberlandia-cooperativa-regional-trabalho-medico-ltda",
@@ -21337,7 +21406,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Uberlândia Cooperativa Regional Trabalho Médico Ltda é uma operadora de planos de saúde na modalidade de cooperativa médica que disponibiliza 56 planos ativos no mercado. A operadora oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais dos beneficiários.\n\nOs planos da Unimed Uberlândia estão disponíveis nas modalidades de contratação Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade na forma de adesão. A operadora atua com abrangência Municipal e Nacional, permitindo que seus beneficiários tenham acesso à rede credenciada tanto na região de Uberlândia quanto em território nacional."
   },
   {
     "slug": "unimed-jundiai-cooperativa-de-trabalho-medico",
@@ -21641,7 +21711,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Jundiaí - Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, disponibilizando 56 planos ativos para seus beneficiários. A operadora oferece diferentes tipos de cobertura, incluindo referência, hospitalar com obstetrícia e ambulatorial + hospitalar sem obstetrícia, proporcionando opções variadas conforme as necessidades dos usuários.\n\nOs planos da Unimed Jundiaí estão disponíveis nas modalidades de contratação coletivo por adesão e coletivo empresarial. Quanto à abrangência geográfica, a operadora oferece cobertura em grupo de municípios e também em âmbito nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes localidades do país."
   },
   {
     "slug": "unimed-nova-friburgo-soc-coop-serv-med-hosp-ltda",
@@ -21944,7 +22015,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Nova Friburgo-Soc.Coop.Serv.Med.Hosp.Ltda.\n\nA Unimed Nova Friburgo é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, mantendo atualmente 53 planos ativos em seu portfólio. A operadora oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nOs planos da Unimed Nova Friburgo estão disponíveis em três modalidades de contratação: Individual ou Familiar, Coletivo Empresarial e Coletivo por Adesão. Quanto à abrangência geográfica, a operadora disponibiliza opções que cobrem grupo de municípios e também cobertura nacional, proporcionando flexibilidade de atendimento conforme o perfil e a necessidade de deslocamento de seus clientes."
   },
   {
     "slug": "unimed-campo-grande-ms-cooperativa-de-trabalho-medico",
@@ -22248,7 +22320,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Unimed Campo Grande MS Cooperativa de Trabalho Médico\n\nA Unimed Campo Grande MS é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 53 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nOs planos da Unimed Campo Grande MS podem ser contratados nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, oferecendo flexibilidade de acordo com o perfil do contratante. A operadora possui abrangência municipal e nacional, permitindo que seus beneficiários tenham acesso à rede credenciada tanto na região de Campo Grande quanto em outras localidades do país."
   },
   {
     "slug": "ideal-odonto-assistencia-odontologica-ltda",
@@ -22550,7 +22623,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Ideal Odonto Assistência Odontológica Ltda.\n\nA Ideal Odonto Assistência Odontológica Ltda. é uma operadora de planos de saúde que atua na modalidade Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa mantém atualmente 52 planos ativos em seu portfólio, disponibilizando opções para diferentes perfis de contratação.\n\nA operadora trabalha com três modalidades de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar, permitindo flexibilidade na aquisição de seus serviços. Sua área de atuação possui abrangência municipal e para grupos de municípios, caracterizando uma operação de alcance regional. Essa estrutura possibilita atender tanto empresas quanto pessoas físicas e grupos associativos que buscam assistência odontológica."
   },
   {
     "slug": "sami-assistencia-medica-ltda",
@@ -22852,7 +22926,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Sami Assistência Médica Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 51 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, permitindo opções variadas conforme as necessidades dos contratantes.\n\nOs planos da Sami estão disponíveis nas modalidades de contratação coletiva por adesão e coletivo empresarial, não oferecendo planos individuais. Quanto à abrangência geográfica, a operadora atua em nível municipal e em grupos de municípios, caracterizando-se como uma opção regional de assistência médica suplementar no país."
   },
   {
     "slug": "proasa-saude",
@@ -23157,7 +23232,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Proasa Saúde** é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com um portfólio de 51 planos ativos. A operadora oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo planos de Referência, Hospitalar com obstetrícia e Ambulatorial + Hospitalar com obstetrícia.\n\nOs planos da Proasa Saúde estão disponíveis nas modalidades de contratação Coletivo empresarial e Coletivo por adesão, não oferecendo opções individuais ou familiares. A operadora possui abrangência tanto Municipal quanto Nacional, permitindo que os beneficiários escolham entre cobertura local ou em todo território brasileiro, conforme suas necessidades de deslocamento e atendimento médico-hospitalar."
   },
   {
     "slug": "aurora-saude-ltda",
@@ -23458,7 +23534,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Aurora Saúde Ltda\n\nA Aurora Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 51 planos ativos em seu portfólio. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial com hospitalar e obstetrícia, proporcionando opções variadas conforme as necessidades dos beneficiários.\n\nA contratação dos planos da Aurora Saúde pode ser realizada nas modalidades coletivo empresarial e coletivo por adesão. Sua área de atuação abrange um grupo de municípios, caracterizando uma cobertura regional. Esta configuração permite que a operadora atenda empresas e entidades de classe dentro de sua área geográfica de abrangência."
   },
   {
     "slug": "on-med-assistencia-medica-ltda",
@@ -23762,7 +23839,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A On Med Assistência Médica Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado de saúde suplementar brasileiro. A empresa mantém um portfólio de 50 planos ativos, oferecendo diferentes tipos de cobertura que incluem ambulatorial + hospitalar com obstetrícia, odontológica e referência.\n\nA operadora disponibiliza seus produtos exclusivamente para contratações coletivas, tanto por adesão quanto empresarial. Sua área de atuação está concentrada em abrangência municipal e em grupos de municípios, caracterizando um atendimento regionalizado. Esta configuração permite que a On Med atenda empresas e entidades de classe em regiões específicas, focando em um modelo de atendimento direcionado para o público corporativo e associativo."
   },
   {
     "slug": "unimed-encosta-da-serra-rs-sociedade-cooperativa-de-servicos-de-saude-ltda",
@@ -24067,7 +24145,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Encosta Da Serra/RS Sociedade Cooperativa De Serviços De Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de cooperativa médica no Rio Grande do Sul. A operadora mantém atualmente 50 planos de saúde ativos em seu portfólio.\n\nOs beneficiários podem contratar os planos nas modalidades coletivo por adesão, individual ou familiar, e coletivo empresarial. Quanto à cobertura, a operadora oferece opções de referência, ambulatorial e ambulatorial + hospitalar sem obstetrícia. A área de atuação da Unimed Encosta Da Serra/RS abrange grupo de municípios e grupo de estados, permitindo atendimento em uma região geográfica ampliada para seus usuários."
   },
   {
     "slug": "associacao-de-beneficencia-e-filantropia-sao-cristovao",
@@ -24371,7 +24450,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Associação De Beneficência E Filantropia São Cristovão é uma operadora de planos de saúde que atua na modalidade Filantropia, oferecendo atualmente 50 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura, incluindo planos de Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia, atendendo às diversas necessidades dos beneficiários.\n\nQuanto às formas de contratação, a operadora trabalha com três modalidades: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Sua área de atuação possui abrangência Municipal e de Grupo de municípios, oferecendo serviços de saúde suplementar para beneficiários localizados nessas regiões específicas."
   },
   {
     "slug": "unimed-nova-iguacu-cooperativa-de-trabalho-medico",
@@ -24674,7 +24754,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Nova Iguaçu Cooperativa de Trabalho Médico\n\nA Unimed Nova Iguaçu Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora mantém 49 planos de saúde ativos em seu portfólio, oferecendo opções diversificadas para diferentes perfis de beneficiários.\n\nOs planos disponibilizados incluem coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia. A operadora trabalha com três modalidades de contratação: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Quanto à abrangência geográfica, a Unimed Nova Iguaçu oferece planos com cobertura em grupo de municípios e também opções com alcance nacional, proporcionando flexibilidade territorial aos seus beneficiários."
   },
   {
     "slug": "nova-saude-operadora-integrada-de-saude-ltda",
@@ -24978,7 +25059,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Nova Saúde Operadora Integrada De Saúde Ltda\n\nA Nova Saúde Operadora Integrada De Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 49 planos ativos no mercado. A empresa disponibiliza diferentes tipos de cobertura assistencial, incluindo planos de Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia, atendendo diversas necessidades de seus beneficiários.\n\nA operadora trabalha com três modalidades de contratação: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade na forma de aquisição dos planos. Sua área de atuação possui abrangência Municipal e Grupo de municípios, concentrando seus serviços em regiões específicas do território brasileiro."
   },
   {
     "slug": "quallity-pro-saude-plano-de-assistencia-medica-ltda",
@@ -25283,7 +25365,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Quallity Pró Saúde Plano De Assistência Médica Ltda.\n\nA Quallity Pró Saúde Plano De Assistência Médica Ltda. é uma operadora de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 49 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo Ambulatorial + Odontológico, Ambulatorial + Hospitalar com obstetrícia e Odontológico.\n\nOs planos são comercializados exclusivamente nas modalidades Coletivo por adesão e Coletivo empresarial, não havendo opções de contratação individual ou familiar. A abrangência geográfica da operadora é regionalizada, atendendo em nível Municipal e em Grupos de municípios, o que caracteriza uma atuação focada em regiões específicas do território brasileiro."
   },
   {
     "slug": "fundacao-saude-itau",
@@ -25583,7 +25666,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Fundação Saúde Itaú\n\nA Fundação Saúde Itaú é uma operadora de planos de saúde que atua na modalidade de autogestão, oferecendo atualmente 48 planos ativos no mercado. A operadora disponibiliza cobertura ambulatorial e hospitalar com obstetrícia, garantindo atendimento completo aos seus beneficiários desde consultas e exames até internações e partos.\n\nA contratação dos planos é exclusivamente do tipo coletivo empresarial, voltada para empresas e seus colaboradores. A Fundação Saúde Itaú possui abrangência em grupo de estados e também nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes regiões do país, característica importante para empresas com operações em múltiplas localidades."
   },
   {
     "slug": "circulo-operario-caxiense",
@@ -25889,7 +25973,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Circulo Operario Caxiense\n\nO Circulo Operario Caxiense é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 48 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo opções de Ambulatorial + Odontológico, Ambulatorial + Hospitalar com obstetrícia, e Ambulatorial + Hospitalar com obstetrícia + Odontológico.\n\nA contratação dos planos pode ser realizada nas modalidades Coletivo por adesão, Individual ou Familiar, e Coletivo empresarial, oferecendo flexibilidade conforme as necessidades dos clientes. Quanto à área de atuação, a operadora possui abrangência que inclui grupo de municípios e estadual, garantindo acesso aos serviços de saúde em diferentes localidades da sua região de cobertura."
   },
   {
     "slug": "unimed-recife-cooperativa-de-trabalho-medico",
@@ -26192,7 +26277,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Recife Cooperativa De Trabalho Médico\n\nA Unimed Recife Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 47 planos ativos no mercado, oferecendo coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais dos beneficiários.\n\nOs planos podem ser contratados nas modalidades Coletivo por adesão e Coletivo empresarial, direcionados a grupos específicos de beneficiários. A operadora possui abrangência que varia entre Grupo de municípios e Nacional, permitindo que os usuários tenham acesso à rede credenciada em diferentes regiões do país, conforme o tipo de plano contratado."
   },
   {
     "slug": "unimed-do-sudoeste-cooperativa-de-trabalho-medico-ltda",
@@ -26497,7 +26583,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Do Sudoeste Cooperativa De Trabalho Medico Ltda\n\nA Unimed do Sudoeste é uma operadora de planos de saúde que atua sob a modalidade de cooperativa médica, disponibilizando atualmente 47 planos ativos para seus beneficiários. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, permitindo aos usuários escolher a opção mais adequada às suas necessidades.\n\nQuanto às formas de contratação, a Unimed do Sudoeste disponibiliza três modalidades: coletivo por adesão, individual ou familiar e coletivo empresarial. A operadora possui abrangência que varia entre grupo de municípios e nacional, possibilitando atendimento em diferentes localidades conforme o plano contratado."
   },
   {
     "slug": "unimed-sul-capixaba-cooperativa-de-trabalho-medico",
@@ -26801,7 +26888,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Sul Capixaba Cooperativa De Trabalho Médico\n\nA Unimed Sul Capixaba é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 47 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades de seus beneficiários.\n\nOs planos são comercializados através de contratação coletiva empresarial e coletiva por adesão. A área de atuação da operadora abrange tanto grupo de municípios quanto grupo de estados, proporcionando cobertura regional ampliada. Como cooperativa médica, segue o modelo cooperativista característico do sistema Unimed no Brasil."
   },
   {
     "slug": "unimed-juiz-de-fora-cooperativa-de-trabalho-medico-ltda",
@@ -27107,7 +27195,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Juiz de Fora Cooperativa de Trabalho Médico Ltda é uma operadora que atua na modalidade de cooperativa médica, disponibilizando atualmente 47 planos de saúde ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, proporcionando opções variadas conforme as necessidades dos beneficiários.\n\nQuanto à contratação, a Unimed Juiz de Fora trabalha com três modalidades: coletivo empresarial, coletivo por adesão e individual ou familiar, atendendo tanto pessoas físicas quanto jurídicas. A operadora possui abrangência geográfica que contempla grupo de municípios e também nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes localidades do país."
   },
   {
     "slug": "unimed-do-cariri-sociedade-cooperativa-medica-ltda",
@@ -27410,7 +27499,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Do Cariri - Sociedade Cooperativa Médica Ltda\n\nA Unimed Do Cariri é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 46 planos ativos no mercado. A operadora disponibiliza coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nOs planos da Unimed Do Cariri podem ser contratados nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade na escolha conforme o perfil do contratante. A operadora possui abrangência que varia entre grupo de municípios e nacional, permitindo atendimento tanto em sua região de atuação quanto em outras localidades do país."
   },
   {
     "slug": "associacao-dr-bartholomeu-tacchini",
@@ -27714,7 +27804,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Associação Dr. Bartholomeu Tacchini é uma operadora de planos de saúde que atua na modalidade filantropia, oferecendo atualmente 44 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e hospitalar com obstetrícia, atendendo às diversas necessidades de seus beneficiários.\n\nOs planos da Associação podem ser contratados nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para empresas e pessoas físicas. Quanto à abrangência geográfica, a operadora oferece opções que cobrem tanto grupo de municípios quanto território nacional, permitindo aos beneficiários escolherem a extensão de cobertura mais adequada ao seu perfil de utilização."
   },
   {
     "slug": "vale-s-a",
@@ -28015,7 +28106,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "A Vale S/A é uma operadora de planos de saúde que atua na modalidade de autogestão, oferecendo atualmente 44 planos ativos para seus beneficiários. A operadora disponibiliza opções de cobertura que incluem Ambulatorial + Hospitalar sem obstetrícia, Ambulatorial + Hospitalar com obstetrícia, e Ambulatorial + Hospitalar com obstetrícia + Odontológico, atendendo diferentes necessidades assistenciais.\n\nOs planos da Vale S/A são comercializados exclusivamente na modalidade coletivo empresarial, característica comum em operadoras de autogestão. A operadora possui abrangência geográfica ampla, atuando em grupo de estados e também com alcance nacional, o que possibilita cobertura assistencial para beneficiários em diferentes regiões do Brasil."
   },
   {
     "slug": "unity-servicos-integrados-de-saude-ltda",
@@ -28317,7 +28409,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unity Serviços Integrados De Saúde Ltda.\n\nA Unity Serviços Integrados De Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 44 planos ativos no mercado. A empresa disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial com hospitalar e obstetrícia, atendendo às diversas necessidades de assistência médica.\n\nA operadora trabalha exclusivamente com contratações do tipo coletivo empresarial e coletivo por adesão, não oferecendo planos individuais. Sua área de atuação possui abrangência municipal e em grupos de municípios, caracterizando uma operação de alcance regional. Esta configuração permite à Unity focar seu atendimento em regiões específicas, concentrando sua rede credenciada e serviços."
   },
   {
     "slug": "unimed-ponta-grossa-cooperativa-de-trabalho-medico",
@@ -28620,7 +28713,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Ponta Grossa Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 44 planos ativos no mercado, oferecendo opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia.\n\nOs planos da Unimed Ponta Grossa estão disponíveis nas modalidades de contratação Coletivo por adesão e Coletivo empresarial. A operadora oferece abrangência tanto para grupo de municípios quanto nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes regiões. Esta configuração atende às necessidades de empresas e entidades de classe que buscam soluções em saúde suplementar para seus colaboradores e associados."
   },
   {
     "slug": "medhealth-planos-de-saude-ltda",
@@ -28925,7 +29019,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "A **Medhealth Planos de Saúde Ltda** é uma operadora de medicina de grupo que atua no mercado de saúde suplementar brasileiro com 44 planos ativos em seu portfólio. A empresa oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar sem obstetrícia, permitindo aos beneficiários opções variadas conforme suas necessidades.\n\nA operadora disponibiliza seus produtos exclusivamente nas modalidades coletivas, tanto por adesão quanto empresarial, não oferecendo planos individuais ou familiares. Quanto à abrangência geográfica, a Medhealth possui planos que cobrem grupo de municípios e também opções com cobertura nacional, proporcionando flexibilidade territorial para empresas e entidades que contratem seus serviços."
   },
   {
     "slug": "federacao-das-sociedades-cooperativas-de-trabalho-medico-do-ac-ap-am-pa-ro-e-rr-em-recuperacao-judicial",
@@ -29229,7 +29324,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Federação Das Sociedades Cooperativas De Trabalho Médico Do AC, AP, AM, PA, RO E RR é uma operadora de planos de saúde na modalidade de cooperativa médica que atualmente encontra-se em recuperação judicial. A operadora mantém 44 planos ativos no mercado, oferecendo coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, com abrangências municipal e nacional.\n\nOs planos são comercializados nas modalidades de contratação coletiva por adesão e coletivo empresarial. A federação atua na região Norte do Brasil, abrangendo os estados do Acre, Amapá, Amazonas, Pará, Rondônia e Roraima, representando cooperativas de trabalho médico dessas localidades. O processo de recuperação judicial indica que a operadora passa por reestruturação financeira."
   },
   {
     "slug": "odontogroup-sistema-de-saude-ltda",
@@ -29531,7 +29627,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Odontogroup Sistema de Saúde Ltda. é uma operadora de planos odontológicos que atua na modalidade Odontologia de Grupo. Com 44 planos ativos em seu portfólio, a empresa oferece exclusivamente cobertura odontológica para seus beneficiários, disponibilizando opções diversificadas de acordo com o perfil de cada contratante.\n\nA operadora trabalha com três tipos de contratação: Coletivo Empresarial, Coletivo por Adesão e Individual ou Familiar, atendendo tanto pessoas físicas quanto jurídicas. Sua atuação possui abrangência geográfica variada, incluindo planos de alcance municipal e planos com cobertura em grupo de estados, oferecendo flexibilidade para diferentes necessidades de atendimento odontológico no território brasileiro."
   },
   {
     "slug": "uniodonto-piracicaba-cooperativa-odontologica",
@@ -29833,7 +29930,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto Piracicaba - Cooperativa Odontológica é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos de cobertura odontológica. Com 43 planos ativos em seu portfólio, a operadora disponibiliza opções para diferentes perfis de contratação, incluindo coletivo empresarial, coletivo por adesão e individual ou familiar.\n\nA operadora apresenta flexibilidade em sua área de atuação, oferecendo planos com abrangência que varia de grupo de municípios até cobertura nacional. Essa variedade permite que beneficiários escolham produtos adequados às suas necessidades de deslocamento e utilização dos serviços odontológicos, seja para atendimento regional ou em diferentes estados do país."
   },
   {
     "slug": "unimed-de-guarulhos-cooperativa-de-trabalho-medico",
@@ -30137,7 +30235,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Guarulhos Cooperativa De Trabalho Médico\n\nA Unimed de Guarulhos é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 43 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades de assistência à saúde.\n\nOs planos da Unimed de Guarulhos podem ser contratados nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade de acordo com o perfil do contratante. A operadora possui abrangência que varia entre grupo de municípios e nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "liv-linhas-inteligentes-de-atencao-a-vida-s-a",
@@ -30442,7 +30541,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Liv Linhas Inteligentes De Atenção À Vida S/A\n\nA Liv Linhas Inteligentes De Atenção À Vida S/A é uma operadora de planos de saúde na modalidade Medicina De Grupo, com 43 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia, permitindo aos beneficiários escolherem a opção mais adequada às suas necessidades.\n\nA contratação dos planos pode ser feita nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Quanto à área de atuação, a operadora possui abrangência em Grupo de municípios e também Nacional, oferecendo cobertura em diferentes regiões do país para atender seus beneficiários."
   },
   {
     "slug": "sempre-odonto-planos-odontologicos-ltda",
@@ -30746,7 +30846,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Sempre Odonto Planos Odontológicos Ltda é uma operadora de saúde suplementar que atua na modalidade de Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa possui um portfólio de 43 planos ativos no mercado, demonstrando variedade de opções para seus beneficiários.\n\nA operadora disponibiliza flexibilidade na contratação de seus serviços, oferecendo planos nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar. Quanto à área de atuação, a Sempre Odonto trabalha com planos de abrangência municipal e nacional, permitindo atender diferentes perfis de clientes conforme suas necessidades de cobertura geográfica para tratamentos odontológicos."
   },
   {
     "slug": "unimed-divinopolis-cooperativa-de-trabalho-medico-ltda",
@@ -31052,7 +31153,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Divinópolis - Cooperativa de Trabalho Médico Ltda é uma operadora de planos de saúde que atua sob a modalidade de cooperativa médica, disponibilizando atualmente 42 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia, permitindo aos beneficiários opções variadas conforme suas necessidades.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, atendendo tanto pessoas físicas quanto empresas de diferentes portes. Quanto à área de atuação, a Unimed Divinópolis oferece planos com abrangência estadual e nacional, proporcionando aos beneficiários acesso à rede credenciada em diferentes extensões geográficas."
   },
   {
     "slug": "unimed-nordeste-paulista-fed-intrafederativa-das-coop-medicas",
@@ -31357,7 +31459,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Unimed Nordeste Paulista - Fed. Intrafederativa Das Coop. Médicas** é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora mantém 42 planos ativos em seu portfólio, oferecendo diferentes opções de cobertura aos beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nA operadora disponibiliza três tipos de contratação para atender diversos perfis de clientes: coletivo por adesão, individual ou familiar e coletivo empresarial. Quanto à abrangência geográfica, seus planos podem cobrir tanto um grupo de municípios quanto território nacional, proporcionando flexibilidade na escolha conforme a necessidade de deslocamento dos beneficiários."
   },
   {
     "slug": "unimed-serra-gaucha-rs-cooperativa-de-assistencia-a-saude-ltda",
@@ -31660,7 +31763,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Serra Gaúcha/RS Cooperativa de Assistência à Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. A operadora disponibiliza 42 planos ativos no mercado, oferecendo diferentes tipos de cobertura que incluem referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nOs beneficiários podem contratar os serviços nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial. A operadora possui abrangência tanto em grupo de municípios quanto nacional, permitindo que os usuários tenham acesso aos serviços de saúde em diferentes localidades. Esta configuração proporciona flexibilidade nas opções de contratação e cobertura para atender às necessidades de pessoas físicas e empresas na região da Serra Gaúcha."
   },
   {
     "slug": "unimed-litoral-sul-rs-cooperativa-de-assistencia-a-saude-ltda",
@@ -31966,7 +32070,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Litoral Sul/RS - Cooperativa de Assistência à Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 41 planos ativos no mercado, oferecendo diferentes opções de cobertura aos beneficiários.\n\nA operadora trabalha com três tipos de cobertura: referência, ambulatorial e ambulatorial + hospitalar sem obstetrícia. Quanto às formas de contratação, estão disponíveis as modalidades coletivo por adesão, individual ou familiar e coletivo empresarial. Sua área de atuação contempla tanto grupo de municípios quanto abrangência nacional, proporcionando flexibilidade geográfica no atendimento aos seus beneficiários."
   },
   {
     "slug": "leve-saude-operadora-de-planos-de-saude-s-a",
@@ -32271,7 +32376,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Leve Saúde Operadora de Planos de Saúde S.A\n\nA Leve Saúde Operadora de Planos de Saúde S.A é uma operadora de medicina de grupo que atua no mercado brasileiro com 41 planos ativos. A empresa oferece diferentes tipos de cobertura, incluindo ambulatorial + hospitalar com obstetrícia, odontológico e referência, permitindo aos beneficiários opções variadas conforme suas necessidades de saúde.\n\nA operadora disponibiliza três modalidades de contratação: individual ou familiar, coletivo empresarial e coletivo por adesão. Sua área de atuação possui abrangência estadual e por grupo de municípios, atendendo diferentes regiões. Essa estrutura permite que a Leve Saúde atenda tanto pessoas físicas quanto empresas de diversos portes."
   },
   {
     "slug": "unimed-belem-cooperativa-de-trabalho-medico",
@@ -32575,7 +32681,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Belém Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 41 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, permitindo aos beneficiários escolher a opção mais adequada às suas necessidades.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, oferecendo flexibilidade para diferentes perfis de clientes. Quanto à abrangência geográfica, a Unimed Belém disponibiliza planos que cobrem tanto grupo de municípios quanto âmbito nacional, proporcionando opções de atendimento em diferentes localidades conforme o plano contratado."
   },
   {
     "slug": "gocare-planos-de-saude-ltda",
@@ -32877,7 +32984,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Gocare Planos De Saúde Ltda\n\nA Gocare Planos De Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de medicina de grupo, oferecendo atualmente 41 planos ativos no mercado. A empresa disponibiliza coberturas diversificadas, incluindo planos de referência, ambulatorial + hospitalar com obstetrícia, além de planos odontológicos.\n\nOs produtos da Gocare são comercializados exclusivamente nas modalidades coletivas, tanto coletivo empresarial quanto coletivo por adesão, não oferecendo planos individuais. Sua área de atuação possui abrangência municipal e de grupo de municípios, caracterizando-se como uma operadora de alcance regional. Essa configuração permite à empresa focar seu atendimento em regiões específicas, adaptando seus serviços às necessidades locais."
   },
   {
     "slug": "unimed-de-bebedouro-cooperativa-de-trabalho-medico",
@@ -33180,7 +33288,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Bebedouro Cooperativa De Trabalho Médico\n\nA Unimed de Bebedouro é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 40 planos ativos no mercado. A operadora disponibiliza opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de seus beneficiários.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo por adesão, individual ou familiar, e coletivo empresarial, proporcionando flexibilidade para pessoas físicas e empresas. Quanto à abrangência geográfica, a operadora oferece planos que cobrem grupo de municípios e também opções com cobertura nacional, permitindo atendimento em diferentes regiões do país."
   },
   {
     "slug": "unimed-curitiba-sociedade-cooperativa-de-medicos",
@@ -33482,7 +33591,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Curitiba - Sociedade Cooperativa De Médicos\n\nA Unimed Curitiba é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 40 planos ativos no mercado, oferecendo opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia.\n\nOs planos da Unimed Curitiba podem ser contratados nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade para diferentes perfis de beneficiários. A operadora possui abrangência geográfica que contempla tanto grupo de municípios quanto cobertura nacional, permitindo aos seus beneficiários acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "santo-andre-planos-de-assistencia-medica-ltda",
@@ -33786,7 +33896,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Santo André Planos De Assistência Médica Ltda.\n\nA Santo André Planos De Assistência Médica Ltda. é uma operadora de saúde que atua na modalidade de Medicina de Grupo, disponibilizando atualmente 40 planos ativos para seus beneficiários. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia, atendendo às diversas necessidades de seus clientes.\n\nOs planos da operadora podem ser contratados nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade de acordo com o perfil do contratante. A abrangência geográfica da Santo André Planos compreende áreas Municipal e Grupo de Municípios, concentrando sua atuação em regiões específicas para atendimento de sua rede credenciada."
   },
   {
     "slug": "unimed-de-tubarao-cooperativa-de-trabalho-medico-da-regiao-da-amurel",
@@ -34090,7 +34201,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Tubarao - Cooperativa De Trabalho Medico Da Regiao Da Amurel\n\nA Unimed de Tubarão é uma cooperativa médica que atende a região da Amurel, mantendo atualmente 40 planos de saúde ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial com hospitalar e obstetrícia.\n\nOs planos da Unimed de Tubarão estão disponíveis nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade na contratação. A operadora possui abrangência em grupo de municípios e também nacional, permitindo que seus beneficiários tenham acesso à rede credenciada tanto regionalmente quanto em outras localidades do país."
   },
   {
     "slug": "unimed-de-cacapava-cooperativa-de-trabalho-medico",
@@ -34393,7 +34505,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed De Caçapava - Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora mantém 39 planos de saúde ativos em seu portfólio, oferecendo opções de cobertura que incluem planos de referência e ambulatorial + hospitalar com obstetrícia.\n\nA operadora disponibiliza diferentes formas de contratação para atender diversos perfis de beneficiários: coletivo empresarial, coletivo por adesão e individual ou familiar. Quanto à abrangência geográfica, a Unimed De Caçapava oferece cobertura em grupo de municípios e também possui planos com abrangência nacional, proporcionando flexibilidade no atendimento aos seus usuários conforme a necessidade de cada contrato."
   },
   {
     "slug": "beneficencia-camiliana-do-sul",
@@ -34694,7 +34807,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Beneficencia Camiliana Do Sul\n\nA Beneficencia Camiliana Do Sul é uma operadora de planos de saúde que atua sob a modalidade de filantropia, mantendo atualmente 39 planos ativos em sua carteira. A operadora oferece opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, proporcionando diferentes níveis de assistência aos seus beneficiários.\n\nOs planos estão disponíveis nas modalidades de contratação Coletivo por adesão e Coletivo empresarial, atendendo tanto empresas quanto grupos organizados. A área de atuação da operadora possui abrangência Municipal e por Grupo de municípios, concentrando seus serviços em regiões específicas, o que permite um atendimento mais direcionado às comunidades locais onde está presente."
   },
   {
     "slug": "unimed-de-bauru-cooperativa-de-trabalho-medico",
@@ -34999,7 +35113,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Bauru Cooperativa De Trabalho Médico\n\nA Unimed de Bauru é uma operadora de saúde suplementar que atua na modalidade de cooperativa médica, disponibilizando atualmente 39 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos de referência, permitindo aos beneficiários opções variadas conforme suas necessidades.\n\nOs planos podem ser contratados nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de clientes. A abrangência geográfica contempla desde grupo de municípios até cobertura nacional, ampliando as possibilidades de atendimento aos beneficiários em diferentes regiões do país."
   },
   {
     "slug": "fundacao-sao-francisco-xavier",
@@ -35300,7 +35415,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Fundação São Francisco Xavier é uma operadora de planos de saúde que atua sob a modalidade filantrópica, oferecendo atualmente 39 planos ativos no mercado de saúde suplementar. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial + hospitalar com obstetrícia, além de cobertura odontológica.\n\nOs planos da Fundação São Francisco Xavier podem ser contratados nas modalidades coletivo empresarial e coletivo por adesão, atendendo tanto empresas quanto grupos organizados. A abrangência geográfica da operadora está estabelecida para um grupo de municípios, garantindo acesso aos serviços de saúde dentro de sua área de atuação regional definida."
   },
   {
     "slug": "total-assistencia-medica-hospitalar-ltda",
@@ -35603,7 +35719,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Total Assistência Médica Hospitalar Ltda\n\nA Total Assistência Médica Hospitalar Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo. Atualmente, a empresa disponibiliza 38 planos ativos no mercado, oferecendo diferentes tipos de cobertura aos beneficiários, incluindo planos de referência, ambulatorial e hospitalar com obstetrícia.\n\nA operadora trabalha com contratações nas modalidades coletivo empresarial e coletivo por adesão, não oferecendo planos individuais. Sua área de atuação possui abrangência geográfica que contempla grupo de municípios e grupo de estados, permitindo atendimento em diferentes regiões. Essa estrutura possibilita que empresas e entidades de classe contratem os serviços para seus colaboradores e associados."
   },
   {
     "slug": "unimed-de-uba-cooperativa-de-trabalho-medico",
@@ -35908,7 +36025,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Uba Cooperativa De Trabalho Medico\n\nA Unimed De Uba Cooperativa De Trabalho Medico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 38 planos ativos no mercado, oferecendo diferentes opções de cobertura aos beneficiários, incluindo planos de referência, ambulatorial e ambulatorial com hospitalar e obstetrícia.\n\nA operadora trabalha com diversas modalidades de contratação para atender diferentes públicos: coletivo empresarial, coletivo por adesão e individual ou familiar. Quanto à área de atuação, seus planos possuem abrangência em grupo de municípios e também nacional, proporcionando flexibilidade de atendimento conforme a necessidade dos beneficiários em diferentes regiões do país."
   },
   {
     "slug": "unimed-sao-lourenco-cooperativa-de-trabalho-medico",
@@ -36212,7 +36330,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed São Lourenço Cooperativa De Trabalho Médico\n\nA Unimed São Lourenço Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 38 planos ativos no mercado, oferecendo diferentes opções de cobertura aos beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nA operadora trabalha com diversos tipos de contratação para atender diferentes públicos: coletivo por adesão, individual ou familiar e coletivo empresarial. Quanto à abrangência geográfica, a Unimed São Lourenço oferece cobertura em grupo de municípios e também possui opções com abrangência nacional, proporcionando flexibilidade no atendimento conforme as necessidades de deslocamento dos beneficiários."
   },
   {
     "slug": "unimed-missoes-rs-cooperativa-de-assistencia-a-saude-ltda",
@@ -36516,7 +36635,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Missões/RS - Cooperativa de Assistência à Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora mantém 38 planos ativos disponíveis no mercado, oferecendo diferentes opções de cobertura aos beneficiários.\n\nOs planos comercializados pela Unimed Missões/RS contemplam coberturas do tipo Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia. A operadora disponibiliza três tipos de contratação: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Quanto à área de atuação, os planos possuem abrangência tanto para grupo de municípios quanto nacional, permitindo diferentes possibilidades de atendimento conforme o produto contratado."
   },
   {
     "slug": "assistencia-medica-sao-miguel-ltda",
@@ -36821,7 +36941,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Assistência Médica São Miguel Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 38 planos ativos no mercado. A empresa disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo ambulatorial + hospitalar com obstetrícia, odontológica e referência.\n\nA operadora trabalha com diversas opções de contratação, atendendo clientes através de planos coletivos por adesão, individuais ou familiares, e coletivos empresariais. Sua área de atuação possui abrangência municipal e para grupos de municípios, permitindo que beneficiários tenham acesso aos serviços de saúde dentro dessas regiões específicas de cobertura."
   },
   {
     "slug": "unimed-metropolitana-do-agreste-cooperativa-de-trabalho-medico",
@@ -37126,7 +37247,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Metropolitana do Agreste - Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua sob a modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 38 planos de saúde ativos no mercado, oferecendo diferentes opções para seus beneficiários.\n\nA operadora trabalha com coberturas do tipo Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia. Os planos podem ser contratados nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial. Sua área de atuação possui abrangência municipal e para grupos de municípios, atendendo à região do Agreste."
   },
   {
     "slug": "promedica-protecao-medica-a-empresas-s-a",
@@ -37428,7 +37550,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Promédica - Proteção Medica A Empresas S.A.\n\nA Promédica - Proteção Medica A Empresas S.A. é uma operadora de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com 38 planos ativos em seu portfólio. A operadora oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nA comercialização dos planos é realizada exclusivamente através de contratações coletivas, nas modalidades Coletivo Empresarial e Coletivo por Adesão. A área de atuação da Promédica possui abrangência Estadual e por Grupo de Municípios, proporcionando cobertura regional para empresas e entidades de classe que buscam soluções em saúde suplementar para seus colaboradores e associados."
   },
   {
     "slug": "unimed-os-bandeirantes-cooperativa-de-trabalho-medico",
@@ -37729,7 +37852,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Os Bandeirantes Cooperativa De Trabalho Médico\n\nA Unimed Os Bandeirantes Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora mantém 37 planos ativos em seu portfólio, oferecendo opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia.\n\nOs planos da Unimed Os Bandeirantes estão disponíveis nas modalidades de contratação Coletivo por adesão e Coletivo empresarial, não oferecendo planos individuais/familiares. A operadora possui abrangência tanto para grupo de municípios quanto nacional, permitindo que os beneficiários tenham acesso a atendimento em diferentes regiões do país, conforme a opção de plano contratada."
   },
   {
     "slug": "uniodonto-regional-cooperativa-odontologica",
@@ -38032,7 +38156,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto Regional Cooperativa Odontológica é uma operadora de planos de saúde que atua sob a modalidade de cooperativa odontológica, oferecendo exclusivamente cobertura odontológica aos seus beneficiários. A operadora possui atualmente 37 planos ativos em seu portfólio, disponibilizando opções para diferentes perfis de contratação.\n\nOs planos da Uniodonto Regional podem ser contratados nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade de escolha conforme a necessidade de cada cliente. A operadora apresenta abrangência geográfica que contempla desde grupo de municípios até alcance nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes localidades do país."
   },
   {
     "slug": "amesc-associacao-medica-espirita-crista",
@@ -38336,7 +38461,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Amesc - Associação Médica Espírita Cristã\n\nA Amesc - Associação Médica Espírita Cristã é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo. Atualmente, a empresa mantém 37 planos ativos em seu portfólio, oferecendo diferentes opções de cobertura aos beneficiários.\n\nA operadora disponibiliza planos com cobertura hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia. As contratações são realizadas nas modalidades coletivo por adesão e coletivo empresarial, não oferecendo planos individuais. A abrangência geográfica dos planos inclui grupo de municípios e estadual, proporcionando atendimento em regiões específicas conforme o tipo de plano contratado."
   },
   {
     "slug": "oeste-saude-assistencia-a-saude-suplementar-s-a",
@@ -38639,7 +38765,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Oeste Saúde Assistência A Saúde Suplementar S.A é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, disponibilizando atualmente 37 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia, proporcionando opções variadas aos beneficiários.\n\nQuanto às formas de contratação, a Oeste Saúde trabalha com planos coletivos por adesão e coletivos empresariais. Sua área de atuação possui abrangência municipal e de grupos de municípios, caracterizando-se como uma operadora de atuação regional. Esta configuração permite à empresa focar seu atendimento em regiões específicas, buscando atender as demandas locais de saúde suplementar."
   },
   {
     "slug": "uniodonto-metropolitana-cooperativa-odontologica",
@@ -38941,7 +39068,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto Metropolitana Cooperativa Odontológica é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos de cobertura odontológica. A operadora possui 37 planos ativos em seu portfólio, disponibilizando opções para diferentes perfis de contratação: individual ou familiar, coletivo empresarial e coletivo por adesão.\n\nA abrangência dos planos da Uniodonto Metropolitana contempla tanto grupos de municípios quanto cobertura nacional, proporcionando flexibilidade geográfica aos beneficiários. Como cooperativa odontológica, a operadora segue o modelo cooperativista de gestão, focado especificamente em serviços de saúde bucal, atendendo desde pessoas físicas até empresas que buscam oferecer benefícios odontológicos aos seus colaboradores."
   },
   {
     "slug": "unimed-de-capivari-cooperativa-de-trabalho-medico",
@@ -39243,7 +39371,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Capivari - Cooperativa De Trabalho Médico\n\nA Unimed de Capivari é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 36 planos ativos no mercado. Sua área de atuação abrange um grupo de municípios da região, proporcionando acesso à rede de serviços de saúde para beneficiários localizados nessas localidades.\n\nA operadora disponibiliza diferentes tipos de cobertura, incluindo planos de referência, ambulatorial e ambulatorial com hospitalar com obstetrícia. Os interessados podem contratar os serviços através das modalidades coletiva por adesão, individual ou familiar, e coletiva empresarial, atendendo assim tanto pessoas físicas quanto empresas que buscam assistência médica para seus colaboradores e dependentes."
   },
   {
     "slug": "uniodonto-de-fortaleza-cooperativa-de-trabalho-odontologico-ltda",
@@ -39544,7 +39673,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto de Fortaleza Cooperativa de Trabalho Odontológico Ltda é uma operadora que atua na modalidade de cooperativa odontológica, disponibilizando atualmente 36 planos ativos no mercado. A operadora oferece exclusivamente cobertura odontológica aos seus beneficiários.\n\nOs planos da Uniodonto de Fortaleza podem ser contratados nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de contratantes. A abrangência geográfica da operadora concentra-se no âmbito municipal e de grupo de municípios, atendendo regiões específicas dentro de sua área de atuação no estado do Ceará."
   },
   {
     "slug": "unimed-santa-maria-rs-cooperativa-de-assistencia-a-saude-ltda",
@@ -39849,7 +39979,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Santa Maria/RS - Cooperativa de Assistência à Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Com 36 planos ativos em seu portfólio, a operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nA operadora disponibiliza opções de contratação em três modalidades: coletivo empresarial, coletivo por adesão e individual ou familiar, permitindo atender tanto pessoas físicas quanto empresas. Quanto à abrangência geográfica, a Unimed Santa Maria/RS oferece cobertura em grupo de municípios e também possui planos com abrangência nacional, proporcionando flexibilidade de atendimento aos seus beneficiários."
   },
   {
     "slug": "unimed-pocos-de-caldas-soc-coop-de-trab-e-servicos-medicos",
@@ -40154,7 +40285,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Poços de Caldas - Sociedade Cooperativa de Trabalho e Serviços Médicos é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 36 planos ativos no mercado, oferecendo diferentes tipos de cobertura assistencial, incluindo referência, ambulatorial e hospitalar com obstetrícia.\n\nA operadora trabalha com três modalidades de contratação para atender diversos perfis de beneficiários: coletivo empresarial, coletivo por adesão e individual ou familiar. Quanto à abrangência geográfica, seus planos contemplam desde grupo de municípios até cobertura nacional, proporcionando flexibilidade de acordo com as necessidades de deslocamento dos beneficiários."
   },
   {
     "slug": "unimed-sao-jose-dos-campos-cooperativa-de-trabalho-medico",
@@ -40456,7 +40588,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Unimed São José dos Campos - Cooperativa de Trabalho Médico** é uma operadora na modalidade de cooperativa médica que atua no mercado de saúde suplementar com 36 planos ativos. A operadora oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais dos beneficiários.\n\nOs planos estão disponíveis para contratação nas modalidades Coletivo por Adesão e Coletivo Empresarial, não oferecendo planos individuais/familiares. A operadora possui abrangência geográfica que varia entre Grupo de Municípios e Nacional, proporcionando opções de cobertura tanto regional quanto em todo território brasileiro, conforme o plano contratado."
   },
   {
     "slug": "unimed-de-santos-coop-de-trab-medico",
@@ -40759,7 +40892,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Santos Coop De Trab Medico\n\nA Unimed De Santos Coop De Trab Medico é uma operadora de planos de saúde organizada como cooperativa médica, mantendo atualmente 36 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, permitindo aos beneficiários escolher a opção mais adequada às suas necessidades.\n\nA operadora disponibiliza três modalidades de contratação: coletivo por adesão, individual ou familiar e coletivo empresarial, atendendo tanto pessoas físicas quanto empresas de diversos portes. Sua atuação apresenta abrangência nacional e por grupo de municípios, proporcionando flexibilidade na cobertura geográfica dos serviços de saúde oferecidos aos beneficiários."
   },
   {
     "slug": "dental-plus-convenio-odontologico-ltda",
@@ -41059,7 +41193,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Dental Plus Convênio Odontológico Ltda.\n\nA Dental Plus Convênio Odontológico Ltda. é uma operadora de planos de saúde que atua na modalidade de Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa possui atualmente 36 planos ativos em seu portfólio, proporcionando diferentes opções para seus beneficiários.\n\nA operadora disponibiliza três tipos de contratação para atender diversos públicos: planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação abrange um grupo de municípios, permitindo que os beneficiários tenham acesso aos serviços odontológicos credenciados dentro dessa região de cobertura. A variedade de modalidades de contratação oferece flexibilidade tanto para empresas quanto para pessoas físicas que buscam assistência odontológica."
   },
   {
     "slug": "unimed-itauna-cooperativa-de-trabalho-medico-ltda",
@@ -41366,7 +41501,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Itaúna Cooperativa de Trabalho Médico Ltda. é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 35 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura aos beneficiários, incluindo hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, atendendo diversos perfis de clientes. Quanto à abrangência geográfica, a Unimed Itaúna oferece cobertura em grupo de municípios e também em âmbito nacional, proporcionando flexibilidade no atendimento aos seus beneficiários em diferentes localidades do país."
   },
   {
     "slug": "unimed-campina-grande-cooperativa-de-trabalho-medico-ltda",
@@ -41670,7 +41806,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Campina Grande - Cooperativa de Trabalho Médico Ltda é uma operadora de planos de saúde que atua na modalidade de Cooperativa Médica, oferecendo atualmente 35 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades dos beneficiários.\n\nOs planos da Unimed Campina Grande podem ser contratados nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade de escolha conforme o perfil do contratante. A operadora oferece opções de abrangência municipal e nacional, permitindo que os beneficiários tenham acesso à rede credenciada tanto na região local quanto em todo território brasileiro."
   },
   {
     "slug": "unimed-natal-soc-coop-de-trab-medico",
@@ -41973,7 +42110,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Natal Soc. Coop. De Trab. Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 35 planos ativos no mercado. A operadora disponibiliza coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais dos beneficiários.\n\nA contratação dos planos pode ser realizada nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade para diversos perfis de clientes. Quanto à área de atuação, a operadora possui abrangência geográfica que inclui grupo de municípios e grupo de estados, permitindo acesso aos serviços de saúde em diferentes localidades dentro de sua rede credenciada."
   },
   {
     "slug": "unimed-de-manaus-coop-do-trabalho-medico-ltda",
@@ -42277,7 +42415,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed De Manaus Coop. Do Trabalho Médico Ltda é uma operadora de planos de saúde que atua no modelo de cooperativa médica, disponibilizando atualmente 34 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, atendendo assim a diversas necessidades dos beneficiários.\n\nA comercialização dos planos é realizada nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade na contratação. Quanto à área de atuação, a operadora disponibiliza planos com abrangência municipal e nacional, permitindo que os beneficiários escolham a cobertura geográfica mais adequada ao seu perfil de utilização dos serviços de saúde."
   },
   {
     "slug": "servdonto-plano-de-assistencia-odontologica-ltda",
@@ -42580,7 +42719,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Servdonto - Plano De Assistência Odontológica Ltda** é uma operadora de planos de saúde que atua na modalidade de Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa possui atualmente 34 planos ativos em seu portfólio, disponibilizando opções para diferentes perfis de contratação.\n\nA operadora trabalha com três tipos de contratação: Coletivo Empresarial, Coletivo por Adesão e Individual ou Familiar, proporcionando flexibilidade para empresas, entidades de classe e pessoas físicas. Sua atuação apresenta abrangência geográfica em grupo de municípios e grupo de estados, permitindo atendimento em diferentes regiões do Brasil. A Servdonto se posiciona no mercado de saúde suplementar focada especificamente em serviços odontológicos."
   },
   {
     "slug": "uniodonto-porto-alegre-cooperativa-odontologica-ltda",
@@ -42883,7 +43023,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Uniodonto Porto Alegre Cooperativa Odontológica Ltda** é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos de cobertura odontológica. A operadora disponibiliza atualmente 34 planos ativos no mercado de saúde suplementar brasileiro.\n\nA Uniodonto Porto Alegre apresenta diversas opções de contratação para atender diferentes perfis de beneficiários, incluindo planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação possui abrangência tanto em grupo de municípios quanto nacional, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes localidades do país, conforme as características de cada plano contratado."
   },
   {
     "slug": "unimed-tres-rios-cooperativa-de-trabalho-medico",
@@ -43187,7 +43328,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Três Rios Cooperativa De Trabalho Médico\n\nA Unimed Três Rios é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, disponibilizando atualmente 34 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades de seus beneficiários.\n\nOs planos da Unimed Três Rios podem ser contratados nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial. Quanto à abrangência geográfica, a operadora oferece opções que cobrem grupos de municípios, além de planos com cobertura nacional, proporcionando flexibilidade aos beneficiários conforme suas necessidades de deslocamento e atendimento."
   },
   {
     "slug": "unimed-varginha-cooperativa-de-trabalho-medico",
@@ -43493,7 +43635,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Varginha Cooperativa De Trabalho Médico\n\nA Unimed Varginha Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 34 planos ativos no mercado, oferecendo diferentes tipos de cobertura: Referência, Ambulatorial + Hospitalar com obstetrícia e Hospitalar com obstetrícia.\n\nOs planos da Unimed Varginha podem ser contratados nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade para diferentes perfis de beneficiários. A operadora possui abrangência geográfica que varia entre grupo de municípios e nacional, permitindo atendimento tanto em sua região de atuação quanto em outras localidades do país."
   },
   {
     "slug": "unimed-joao-pessoa-cooperativa-de-trabalho-medico",
@@ -43798,7 +43941,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed João Pessoa - Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. A operadora disponibiliza atualmente 34 planos ativos no mercado, oferecendo coberturas dos tipos Referência e Ambulatorial + Hospitalar com obstetrícia.\n\nOs beneficiários podem contratar os planos da Unimed João Pessoa através de três modalidades: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. A operadora apresenta abrangência tanto Municipal quanto Nacional, permitindo que seus usuários tenham acesso a atendimentos em diferentes localidades conforme o plano contratado. Esta estrutura visa atender diferentes perfis de clientes, desde pessoas físicas até empresas de diversos portes."
   },
   {
     "slug": "biovida-saude-ltda",
@@ -44103,7 +44247,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Biovida Saúde Ltda.\n\nA Biovida Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 33 planos ativos em seu portfólio. A operadora disponibiliza diferentes tipos de cobertura, incluindo hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos odontológicos, atendendo às diversas necessidades de seus beneficiários.\n\nA empresa trabalha com múltiplas formas de contratação, contemplando planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Sua área de atuação possui abrangência municipal e de grupos de municípios, caracterizando uma operação de âmbito regional. Esta estrutura permite à Biovida Saúde atender tanto pessoas físicas quanto empresas que buscam soluções em saúde suplementar."
   },
   {
     "slug": "plamesc-planos-de-saude-ltda",
@@ -44405,7 +44550,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Plamesc Planos de Saúde Ltda é uma operadora de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 33 planos ativos no mercado. A empresa disponibiliza opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de assistência à saúde de seus beneficiários.\n\nA operadora trabalha com diversas modalidades de contratação, incluindo planos coletivos por adesão, individuais ou familiares e coletivos empresariais, proporcionando flexibilidade na escolha dos clientes. Sua área de atuação possui abrangência municipal e por grupo de municípios, caracterizando uma operação de caráter regional no segmento de saúde suplementar brasileiro."
   },
   {
     "slug": "unimed-regional-de-tres-lagoas-cooperativa-de-trabalho-medico",
@@ -44708,7 +44854,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Regional de Três Lagoas Cooperativa de Trabalho Médico é uma operadora que atua na modalidade de cooperativa médica, oferecendo atualmente 32 planos de saúde ativos no mercado. A operadora disponibiliza coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nOs planos são comercializados nas modalidades de contratação coletiva por adesão e coletiva empresarial, não oferecendo opções individuais ou familiares. Quanto à abrangência geográfica, a operadora possui planos que cobrem tanto grupos de municípios quanto território nacional, proporcionando flexibilidade de atendimento conforme a necessidade de deslocamento dos usuários dentro da rede credenciada."
   },
   {
     "slug": "unimed-sao-carlos-cooperativa-de-trabalho-medico",
@@ -45013,7 +45160,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed São Carlos - Cooperativa De Trabalho Médico\n\nA Unimed São Carlos é uma operadora de planos de saúde constituída sob a modalidade de Cooperativa Médica, mantendo atualmente 32 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura aos beneficiários, incluindo planos de Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia, proporcionando opções variadas conforme as necessidades de cada usuário.\n\nA operadora disponibiliza três modalidades de contratação: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, atendendo tanto pessoas físicas quanto empresas e entidades de classe. Sua atuação possui abrangência que se estende por grupo de municípios e grupo de estados, permitindo aos beneficiários acesso à rede credenciada em diferentes localidades além de São Carlos."
   },
   {
     "slug": "viver-saude-ltda",
@@ -45317,7 +45465,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Viver Saúde Ltda\n\nA Viver Saúde Ltda é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 32 planos ativos no mercado. A empresa disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia e referência, permitindo que os clientes escolham a opção mais adequada às suas necessidades.\n\nA operadora trabalha com múltiplas formas de contratação, abrangendo planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Sua área de atuação é regional, com abrangência em grupo de municípios, caracterizando uma presença territorial delimitada geograficamente para prestação de seus serviços de assistência à saúde suplementar."
   },
   {
     "slug": "intermedici-piracicaba-assistencia-medica-ltda",
@@ -45620,7 +45769,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Intermedici Piracicaba Assistência Médica Ltda\n\nA Intermedici Piracicaba Assistência Médica Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo, com atuação em grupo de municípios. Atualmente, a operadora mantém 32 planos de saúde ativos em seu portfólio, oferecendo diferentes opções de cobertura para seus beneficiários.\n\nA operadora disponibiliza coberturas dos tipos Referência, Ambulatorial e Ambulatorial + Hospitalar com Obstetrícia, atendendo diversas necessidades assistenciais. Quanto às formas de contratação, a Intermedici Piracicaba oferece planos nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade para diferentes perfis de contratantes na região onde atua."
   },
   {
     "slug": "unimed-de-volta-redonda-cooperativa-de-trabalho-medico",
@@ -45926,7 +46076,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed de Volta Redonda Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora mantém 32 planos ativos no mercado, oferecendo diferentes opções de cobertura aos beneficiários, incluindo hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia e referência.\n\nA operadora disponibiliza planos para diferentes perfis de contratação, abrangendo coletivo por adesão, individual ou familiar e coletivo empresarial. Sua área de atuação contempla abrangência municipal e grupo de municípios, permitindo que beneficiários tenham acesso à rede credenciada dentro dessa região de cobertura. A estrutura de cooperativa médica caracteriza o modelo de gestão compartilhada entre os profissionais cooperados."
   },
   {
     "slug": "unimed-alto-vale-cooperativa-de-trabalho-medico",
@@ -46229,7 +46380,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Alto Vale - Cooperativa De Trabalho Médico\n\nA Unimed Alto Vale é uma operadora de planos de saúde organizada como cooperativa médica, com 32 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia, atendendo diversas necessidades dos beneficiários.\n\nOs planos estão disponíveis nas modalidades de contratação coletivo empresarial e coletivo por adesão, não oferecendo opções individuais/familiares. A abrangência geográfica da operadora inclui tanto a cobertura em grupo de municípios quanto nacional, possibilitando atendimento em diferentes localidades conforme o plano contratado. Esta estrutura permite atender empresas e entidades de classe da região e seus colaboradores/associados."
   },
   {
     "slug": "odont-operadora-odontologica-ltda",
@@ -46532,7 +46684,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Odont-Operadora Odontologica Ltda\n\nA Odont-Operadora Odontologica Ltda é uma operadora de planos de saúde que atua na modalidade de Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa mantém um portfólio de 31 planos ativos no mercado, disponibilizando opções para diferentes perfis de contratação.\n\nA operadora trabalha com três modalidades de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade na escolha do plano mais adequado. Sua área de atuação possui abrangência territorial que contempla grupo de municípios e grupo de estados, permitindo atendimento em diversas regiões. A empresa se dedica exclusivamente ao segmento odontológico, focando seus serviços em saúde bucal."
   },
   {
     "slug": "uniodonto-de-manaus-cooperativa-odontologica-ltda",
@@ -46834,7 +46987,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Uniodonto De Manaus - Cooperativa Odontológica Ltda.\n\nA Uniodonto De Manaus é uma cooperativa odontológica que atua no segmento de planos de saúde exclusivamente odontológicos. A operadora disponibiliza atualmente 31 planos ativos no mercado, oferecendo diferentes opções para seus beneficiários.\n\nA cooperativa trabalha com três modalidades de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar, atendendo tanto pessoas físicas quanto jurídicas. Sua área de atuação possui abrangência nacional e também em grupo de municípios, permitindo que os beneficiários tenham acesso à rede credenciada em diferentes localidades. Como cooperativa odontológica, segue o modelo de gestão cooperativista característico do sistema Uniodonto no Brasil."
   },
   {
     "slug": "unimed-de-macae-cooperativa-de-assistencia-a-saude",
@@ -47137,7 +47291,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed De Macaé Cooperativa De Assistência À Saúde é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 31 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial + hospitalar sem obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nOs planos da Unimed De Macaé são comercializados nas modalidades coletivo por adesão e coletivo empresarial, não oferecendo opções individuais ou familiares. Quanto à abrangência geográfica, a operadora possui planos que cobrem grupo de municípios e também com alcance nacional, permitindo aos beneficiários diferentes opções de acordo com suas necessidades de deslocamento e atendimento."
   },
   {
     "slug": "mh-vida-operadora-de-planos-de-saude-ltda",
@@ -47438,7 +47593,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Mh Vida - Operadora De Planos De Saúde Ltda é uma operadora de medicina de grupo que atua no Brasil com 31 planos de saúde ativos em seu portfólio. A empresa oferece coberturas dos tipos Referência e Ambulatorial, atendendo diferentes necessidades de assistência à saúde de seus beneficiários.\n\nA operadora disponibiliza opções de contratação nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade para pessoas físicas e empresas. Sua atuação possui abrangência municipal, o que significa que a rede credenciada e a área de cobertura dos planos estão concentradas em um município específico."
   },
   {
     "slug": "unimed-vale-do-aco-cooperativa-de-trabalho-medico",
@@ -47744,7 +47900,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Vale do Aço Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 31 planos ativos no mercado, oferecendo diferentes opções de cobertura aos beneficiários da região.\n\nOs planos da Unimed Vale do Aço contemplam coberturas do tipo Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia. A operadora trabalha com três tipos de contratação: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Sua área de abrangência é geograficamente limitada, atuando em nível municipal e em grupos de municípios da região do Vale do Aço."
   },
   {
     "slug": "unimed-itajuba-cooperativa-de-trabalho-medico",
@@ -48049,7 +48206,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Itajubá Cooperativa de Trabalho Médico\n\nA Unimed Itajubá Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 31 planos ativos no mercado, oferecendo diferentes opções de cobertura aos beneficiários.\n\nA operadora trabalha com três tipos de cobertura: Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia. Quanto às formas de contratação, disponibiliza planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Sua atuação possui abrangência tanto em grupo de municípios quanto nacional, permitindo atendimento em diferentes localidades conforme o plano contratado."
   },
   {
     "slug": "innova-plano-de-saude-ltda",
@@ -48350,7 +48508,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Innova Plano de Saúde Ltda** é uma operadora de medicina de grupo que atua no mercado de saúde suplementar brasileiro com 30 planos ativos em sua carteira. A empresa oferece opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais dos beneficiários.\n\nA contratação dos planos está disponível nas modalidades coletivo empresarial e coletivo por adesão, não oferecendo planos individuais. Quanto à abrangência geográfica, a Innova opera em escala municipal e em grupos de municípios, caracterizando-se como uma operadora de atuação regional. Esta configuração permite à empresa focar seu atendimento em áreas geográficas específicas, adequando sua rede credenciada às localidades onde mantém cobertura."
   },
   {
     "slug": "vita-assistencia-a-saude-ltda",
@@ -48654,7 +48813,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Vita Assistência A Saúde Ltda.\n\nA Vita Assistência A Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de medicina de grupo, mantendo atualmente 30 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nOs planos da Vita estão disponíveis nas modalidades de contratação coletiva empresarial e coletiva por adesão, não oferecendo opções individuais ou familiares. Quanto à área de atuação, a operadora possui abrangência geográfica limitada, atendendo em âmbito municipal e em grupos de municípios, caracterizando-se como uma operadora de atuação regional."
   },
   {
     "slug": "2care-operadora-de-saude-ltda",
@@ -48954,7 +49114,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# 2care Operadora De Saúde Ltda.\n\nA 2care Operadora De Saúde Ltda. é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com 30 planos ativos em seu portfólio. A empresa oferece opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de seus beneficiários.\n\nA operadora disponibiliza seus planos exclusivamente para contratações do tipo Coletivo por adesão e Coletivo empresarial, não atuando no segmento individual. Sua área de atuação possui abrangência geográfica de grupo de municípios, caracterizando uma operação de alcance regional. Esta configuração permite que a 2care atenda empresas e entidades de classe em regiões específicas do país."
   },
   {
     "slug": "univida-usa-operadora-em-saude-s-a",
@@ -49258,7 +49419,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "A **Univida Usa Operadora Em Saúde S/A** é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com 30 planos ativos. A empresa oferece diferentes tipos de cobertura assistencial, incluindo planos de Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia, proporcionando opções variadas conforme as necessidades dos beneficiários.\n\nA operadora disponibiliza três tipos de contratação: Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, atendendo tanto pessoas físicas quanto jurídicas. Sua área de atuação possui abrangência Nacional e por Grupo de Estados, permitindo atendimento em diferentes regiões do país e oferecendo flexibilidade geográfica aos seus beneficiários."
   },
   {
     "slug": "unimed-vicosa-cooperativa-de-trabalho-medico",
@@ -49564,7 +49726,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Viçosa - Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, disponibilizando 30 planos ativos para seus beneficiários. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades de seus usuários.\n\nQuanto às opções de contratação, a Unimed Viçosa trabalha com três modalidades: coletivo por adesão, individual ou familiar e coletivo empresarial. A operadora possui planos com abrangência municipal e nacional, permitindo que os beneficiários escolham a extensão de cobertura geográfica mais adequada ao seu perfil e necessidades de atendimento médico-hospitalar."
   },
   {
     "slug": "sociedade-portuguesa-de-beneficencia",
@@ -49868,7 +50031,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Sociedade Portuguesa De Beneficência\n\nA Sociedade Portuguesa De Beneficência é uma operadora de planos de saúde que atua na modalidade de filantropia, mantendo atualmente 30 planos ativos no mercado. A operadora oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo opções de hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nOs planos da Sociedade Portuguesa De Beneficência podem ser contratados nas modalidades coletivo empresarial, coletivo por adesão e individual ou familiar, proporcionando flexibilidade para diferentes perfis de contratantes. É importante destacar que a abrangência geográfica da operadora é municipal, o que significa que a rede credenciada e a área de atuação dos planos estão concentradas no município de operação."
   },
   {
     "slug": "unimed-sorocaba-cooperativa-de-trabalho-medico",
@@ -50170,7 +50334,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Parcial com internação"
       }
-    ]
+    ],
+    "descricao": "# Unimed Sorocaba Cooperativa De Trabalho Médico\n\nA Unimed Sorocaba é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 30 planos ativos no mercado. A operadora disponibiliza opções de cobertura que incluem Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de seus beneficiários.\n\nOs planos da Unimed Sorocaba podem ser contratados nas modalidades Coletivo por Adesão, Individual ou Familiar e Coletivo Empresarial, proporcionando flexibilidade para diversos perfis de clientes. A operadora possui abrangência em Grupo de Municípios e Nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "associacao-santa-casa-saude-de-sao-jose-dos-campos",
@@ -50472,7 +50637,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Associação Santa Casa Saúde De São José Dos Campos é uma operadora de planos de saúde na modalidade Medicina de Grupo, que atualmente mantém 30 planos ativos em seu portfólio. A operadora oferece coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de seus beneficiários.\n\nOs planos estão disponíveis para contratação nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade de acordo com o perfil do contratante. A área de atuação da operadora possui abrangência Municipal e Grupo de municípios, concentrando seus serviços em uma região delimitada para melhor atender sua rede credenciada e beneficiários."
   },
   {
     "slug": "plano-de-saude-ases-ltda",
@@ -50775,7 +50941,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Plano De Saúde Ases Ltda. é uma operadora de medicina de grupo que atua no mercado de saúde suplementar brasileiro com 30 planos ativos em seu portfólio. A empresa oferece diferentes tipos de cobertura, incluindo planos de referência, ambulatorial + hospitalar com obstetrícia e odontológico, atendendo às diversas necessidades dos beneficiários.\n\nA operadora disponibiliza opções de contratação coletiva empresarial, coletiva por adesão e individual ou familiar, proporcionando flexibilidade na escolha do plano. Sua área de atuação concentra-se em abrangência municipal e grupos de municípios, caracterizando-se como uma operadora de alcance regional que busca atender o público em sua área de cobertura estabelecida."
   },
   {
     "slug": "ampara-assistencia-medica-paraiso-ltda",
@@ -51081,7 +51248,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Ampara Assistência Médica Paraíso Ltda\n\nA Ampara Assistência Médica Paraíso Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo que mantém 30 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura para atender às necessidades de seus beneficiários, incluindo hospitalar com obstetrícia, ambulatorial + hospitalar com obstetrícia, e também opções que agregam cobertura odontológica.\n\nQuanto às formas de contratação, a Ampara disponibiliza três modalidades: planos coletivos por adesão, individuais ou familiares, e coletivos empresariais. Sua área de atuação possui abrangência municipal e por grupo de municípios, caracterizando-se como uma operadora de alcance regional que atende comunidades específicas dentro de sua zona de cobertura."
   },
   {
     "slug": "preserve-saude-assistencia-medica-ltda",
@@ -51386,7 +51554,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A **Preserve Saúde Assistência Médica Ltda** é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com 29 planos ativos em seu portfólio. A empresa oferece diferentes tipos de cobertura aos beneficiários, incluindo hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia e planos de referência.\n\nA operadora disponibiliza opções diversificadas de contratação para atender diferentes públicos: coletivo por adesão, individual ou familiar e coletivo empresarial. Quanto à abrangência geográfica, a Preserve Saúde atua em nível municipal e em grupos de municípios, concentrando sua área de atuação em regiões específicas. Essa estrutura permite à operadora oferecer soluções em saúde suplementar adaptadas às necessidades de pessoas físicas e empresas."
   },
   {
     "slug": "unimed-de-piracicaba-sociedade-cooperativa-de-servicos-medicos",
@@ -51688,7 +51857,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed De Piracicaba Sociedade Cooperativa De Serviços Médicos é uma operadora de saúde que atua sob a modalidade de cooperativa médica, disponibilizando 29 planos ativos em seu portfólio. A operadora oferece opções de cobertura do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de assistência à saúde.\n\nOs planos estão disponíveis nas modalidades de contratação Coletivo por Adesão e Coletivo Empresarial, voltados para grupos de beneficiários vinculados a empresas ou entidades de classe. Quanto à abrangência geográfica, a operadora oferece planos com cobertura em Grupo de Municípios e também opções com abrangência Nacional, proporcionando flexibilidade de atendimento conforme o perfil e as necessidades de deslocamento dos beneficiários."
   },
   {
     "slug": "caixa-de-previdencia-e-assistencia-dos-servidores-da-fundacao-nacional-de-saude-capesesp",
@@ -51992,7 +52162,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Caixa De Previdência e Assistência Dos Servidores Da Fundação Nacional De Saúde - Capesesp\n\nA Capesesp é uma operadora de planos de saúde na modalidade de autogestão, destinada aos servidores da Fundação Nacional de Saúde. Atualmente, a operadora mantém 29 planos ativos, oferecendo diferentes tipos de cobertura que incluem ambulatorial + hospitalar com obstetrícia, odontológica e referência.\n\nOs planos são comercializados exclusivamente na modalidade de contratação coletiva empresarial. A operadora possui abrangência diversificada, atuando tanto em grupos de municípios específicos quanto em âmbito nacional, proporcionando aos beneficiários acesso a serviços de saúde suplementar em diferentes regiões do país, conforme as características de cada plano contratado."
   },
   {
     "slug": "unimed-norte-do-mato-grosso-cooperativa-de-trabalho-medico",
@@ -52295,7 +52466,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Norte Do Mato Grosso Cooperativa De Trabalho Médico\n\nA Unimed Norte Do Mato Grosso é uma operadora de planos de saúde que atua sob a modalidade de cooperativa médica, oferecendo atualmente 29 planos ativos no mercado. A operadora disponibiliza coberturas do tipo Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades de seus beneficiários.\n\nOs planos da Unimed Norte Do Mato Grosso podem ser contratados nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade para diversos perfis de clientes. A operadora possui abrangência geográfica que inclui grupo de municípios e cobertura nacional, permitindo que seus beneficiários tenham acesso aos serviços de saúde em diferentes localidades do país."
   },
   {
     "slug": "unimed-regional-maringa-coop-de-trabalho-medico",
@@ -52600,7 +52772,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Regional Maringá Cooperativa de Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, mantendo atualmente 29 planos ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial com cobertura hospitalar sem obstetrícia.\n\nOs planos da Unimed Regional Maringá estão disponíveis nas modalidades de contratação coletiva empresarial e coletiva por adesão, não oferecendo planos individuais. Quanto à abrangência geográfica, a operadora disponibiliza opções que cobrem grupos de municípios da região, além de planos com cobertura nacional, proporcionando flexibilidade de atendimento conforme a necessidade dos beneficiários."
   },
   {
     "slug": "sermed-saude-ltda",
@@ -52902,7 +53075,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Sermed-Saúde Ltda.\n\nA Sermed-Saúde Ltda. é uma operadora de planos de saúde que atua na modalidade de medicina de grupo, oferecendo atualmente 29 planos ativos no mercado. A operadora disponibiliza coberturas dos tipos referência e ambulatorial + hospitalar com obstetrícia, atendendo às diferentes necessidades de seus beneficiários.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade para diversos perfis de clientes. A área de atuação da Sermed-Saúde possui abrangência municipal e em grupo de municípios, caracterizando uma operação regionalizada focada em atender comunidades específicas dentro de sua zona de cobertura."
   },
   {
     "slug": "santa-casa-de-misericordia-e-beneficencia-portuguesa",
@@ -53205,7 +53379,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Santa Casa de Misericórdia e Beneficência Portuguesa é uma operadora de planos de saúde que atua na modalidade Filantropia, oferecendo atualmente 29 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura, incluindo planos de Referência, Ambulatorial + Hospitalar com obstetrícia, e também opções que integram cobertura Odontológica junto aos serviços médico-hospitalares.\n\nOs planos podem ser contratados nas modalidades Coletivo por adesão, Individual ou Familiar, e Coletivo empresarial, atendendo assim diferentes perfis de beneficiários. A atuação da operadora possui abrangência Municipal e para Grupo de municípios, concentrando seus serviços em regiões específicas e proporcionando acesso à rede credenciada dentro dessas áreas de cobertura."
   },
   {
     "slug": "federacao-das-coop-odontologicas-do-estado-de-santa-catarina",
@@ -53507,7 +53682,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Federação das Cooperativas Odontológicas do Estado de Santa Catarina é uma operadora de planos de saúde que atua na modalidade de cooperativa odontológica. Com 29 planos ativos em seu portfólio, a operadora oferece exclusivamente cobertura odontológica aos seus beneficiários.\n\nA federação disponibiliza diferentes opções de contratação para atender diversos perfis de clientes, incluindo planos coletivos por adesão, coletivos empresariais e individuais ou familiares. Sua atuação apresenta abrangência nacional, além de oferecer cobertura para grupos de municípios, possibilitando acesso a serviços odontológicos em diferentes regiões do país por meio do modelo cooperativista característico do sistema Unicred/Uniodonto."
   },
   {
     "slug": "associacao-de-saude-portuguesa-de-beneficencia",
@@ -53810,7 +53986,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Associação De Saúde Portuguesa De Beneficência\n\nA Associação De Saúde Portuguesa De Beneficência é uma operadora de planos de saúde que atua na modalidade de Medicina De Grupo, oferecendo atualmente 29 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia, permitindo que os usuários escolham a opção mais adequada às suas necessidades.\n\nQuanto às formas de contratação, a operadora trabalha com três modalidades: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. Sua área de atuação possui abrangência Municipal e por Grupo de municípios, concentrando seus serviços em regiões específicas para melhor atender sua rede de beneficiários."
   },
   {
     "slug": "unimed-de-campos-cooperativa-de-trabalho-medico",
@@ -54113,7 +54290,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Campos Cooperativa De Trabalho Médico\n\nA Unimed De Campos Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, disponibilizando 29 planos ativos para seus beneficiários. A operadora oferece coberturas dos tipos Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais de seus clientes.\n\nOs planos estão disponíveis nas modalidades de contratação Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade para diferentes perfis de contratantes. Quanto à abrangência geográfica, a operadora atua em Grupo de municípios e também oferece cobertura Nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes regiões do país."
   },
   {
     "slug": "matao-clinicas-amhma-saude-ltda",
@@ -54416,7 +54594,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Matão Clínicas & Amhma Saúde Ltda\n\nA Matão Clínicas & Amhma Saúde Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado brasileiro com 29 planos ativos. A operadora oferece diferentes tipos de cobertura, incluindo planos de referência, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades dos beneficiários.\n\nA empresa disponibiliza opções de contratação para diferentes perfis de clientes, incluindo planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Sua área de atuação concentra-se em abrangência municipal e em grupos de municípios, caracterizando-se como uma operadora de atuação regional."
   },
   {
     "slug": "unimed-guaxupe-cooperativa-de-trabalho-medico",
@@ -54721,7 +54900,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Guaxupé Cooperativa De Trabalho Medico\n\nA Unimed Guaxupé Cooperativa De Trabalho Medico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 29 planos ativos no mercado, oferecendo diferentes opções de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nA operadora trabalha com três tipos de contratação: coletivo por adesão, individual ou familiar e coletivo empresarial, proporcionando flexibilidade para diferentes perfis de clientes. Sua área de atuação possui abrangência geográfica que varia entre grupo de municípios e grupo de estados, permitindo atendimento em múltiplas localidades conforme o plano contratado."
   },
   {
     "slug": "unimed-montes-claros-cooperativa-de-trabalho-medico-ltda",
@@ -55026,7 +55206,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Montes Claros Cooperativa De Trabalho Médico Ltda. é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 29 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura aos beneficiários, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia.\n\nOs planos da Unimed Montes Claros podem ser contratados nas modalidades coletivo por adesão, individual ou familiar, e coletivo empresarial, atendendo assim diferentes perfis de clientes. Quanto à abrangência geográfica, a operadora oferece opções que cobrem desde um grupo de municípios até alcance nacional, proporcionando flexibilidade na escolha conforme a necessidade de deslocamento dos beneficiários."
   },
   {
     "slug": "nacional-odonto-operadora-de-planos-odontologicos-ltda",
@@ -55328,7 +55509,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Nacional Odonto Operadora De Planos Odontológicos Ltda. é uma operadora de planos de saúde que atua na modalidade Odontologia de Grupo. A empresa mantém atualmente 29 planos ativos, oferecendo exclusivamente cobertura odontológica para seus beneficiários.\n\nA operadora disponibiliza diferentes modalidades de contratação para atender diversos perfis de clientes, incluindo planos coletivos empresariais, coletivos por adesão e individuais ou familiares. Sua área de atuação abrange grupo de municípios e grupo de estados, permitindo atendimento em múltiplas localidades. Esta configuração possibilita que tanto pessoas físicas quanto empresas e entidades de classe tenham acesso aos serviços odontológicos oferecidos pela Nacional Odonto."
   },
   {
     "slug": "unimed-maranhao-do-sul-cooperativa-de-trabalho-medico",
@@ -55632,7 +55814,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Maranhão do Sul é uma cooperativa de trabalho médico que atua no sistema de saúde suplementar brasileiro, oferecendo atualmente 29 planos de saúde ativos. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo planos de referência, ambulatorial e ambulatorial com hospitalar e obstetrícia, atendendo diversas necessidades assistenciais.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo empresarial, coletivo por adesão ou individual/familiar, proporcionando flexibilidade para diferentes perfis de clientes. Sua área de atuação possui abrangência municipal e em grupos de municípios na região sul do Maranhão, caracterizando-se como uma operadora de atuação regional dentro do estado."
   },
   {
     "slug": "personal-care-operadora-de-saude-sa",
@@ -55937,7 +56120,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Personal Care Operadora De Saúde SA é uma operadora de saúde suplementar que atua na modalidade de Medicina de Grupo, disponibilizando atualmente 29 planos de saúde ativos em seu portfólio. A operadora oferece diferentes tipos de cobertura assistencial, incluindo planos de referência, ambulatorial e ambulatorial + hospitalar com obstetrícia, permitindo aos beneficiários opções variadas conforme suas necessidades.\n\nA contratação dos planos pode ser realizada nas modalidades coletivo por adesão, individual ou familiar e coletivo empresarial, oferecendo flexibilidade para diferentes perfis de clientes. Quanto à abrangência geográfica, a operadora possui atuação em grupo de municípios e estadual, garantindo acesso à rede credenciada em regiões específicas do território brasileiro."
   },
   {
     "slug": "associacao-santa-saude",
@@ -56243,7 +56427,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Associação Santa Saúde é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, disponibilizando 29 planos ativos para seus beneficiários. A operadora oferece diferentes tipos de cobertura, incluindo hospitalar sem obstetrícia, ambulatorial + hospitalar com obstetrícia, além de planos odontológicos, proporcionando opções diversificadas conforme as necessidades dos contratantes.\n\nA operadora trabalha com três modalidades de contratação: coletivo por adesão, individual ou familiar e coletivo empresarial, permitindo flexibilidade na escolha do plano mais adequado. Sua área de atuação possui abrangência municipal e para grupos de municípios, caracterizando uma cobertura regional que atende localidades específicas dentro de seu território de operação."
   },
   {
     "slug": "leader-assistencia-medica-e-hospitalar-ltda",
@@ -56549,7 +56734,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Leader Assistência Médica E Hospitalar Ltda.\n\nA Leader Assistência Médica E Hospitalar Ltda. é uma operadora de planos de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 28 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura, incluindo Ambulatorial + Hospitalar com obstetrícia, Ambulatorial + Hospitalar com obstetrícia + Odontológico, além de planos exclusivamente Odontológicos.\n\nOs planos da Leader podem ser contratados nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade para diferentes perfis de beneficiários. A abrangência geográfica da operadora contempla grupo de municípios e estadual, permitindo atendimento aos seus clientes em regiões específicas dentro do território brasileiro."
   },
   {
     "slug": "unimed-de-ribeirao-preto-cooperativa-de-trabalho-medico",
@@ -56851,7 +57037,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Ribeirão Preto - Cooperativa De Trabalho Médico\n\nA Unimed de Ribeirão Preto é uma operadora de planos de saúde na modalidade de cooperativa médica que atua no mercado brasileiro com 28 planos ativos. A operadora oferece diferentes tipos de cobertura, incluindo planos de referência e opções de ambulatorial + hospitalar com obstetrícia, atendendo às diversas necessidades dos beneficiários.\n\nOs planos estão disponíveis em três tipos de contratação: coletivo por adesão, individual ou familiar e coletivo empresarial. A operadora possui abrangência que varia entre grupo de municípios e nacional, permitindo aos beneficiários acesso à rede credenciada em diferentes localidades conforme o plano contratado."
   },
   {
     "slug": "unimed-de-mococa-cooperativa-de-trab-medico",
@@ -57155,7 +57342,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed de Mococa Cooperativa de Trabalho Médico é uma operadora que atua na modalidade de cooperativa médica, oferecendo atualmente 28 planos de saúde ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura aos beneficiários, incluindo ambulatorial, referência e hospitalar com obstetrícia, permitindo diversas opções de acordo com as necessidades de cada usuário.\n\nEm relação às formas de contratação, a Unimed de Mococa trabalha com três modalidades: coletivo por adesão, individual ou familiar e coletivo empresarial. A operadora possui abrangência municipal e nacional, possibilitando atendimento tanto na região de Mococa quanto em outras localidades do país, conforme a rede credenciada disponível em cada plano contratado."
   },
   {
     "slug": "fundacao-assistencial-dos-servidores-do-ministerio-da-fazenda",
@@ -57456,7 +57644,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Fundação Assistencial Dos Servidores Do Ministério Da Fazenda é uma operadora de planos de saúde que atua na modalidade de autogestão, oferecendo assistência aos beneficiários vinculados à instituição. Atualmente, a operadora mantém 28 planos ativos em seu portfólio, todos comercializados exclusivamente na forma de contratação coletiva empresarial.\n\nOs planos disponibilizados oferecem coberturas de tipo ambulatorial + hospitalar com obstetrícia, além de opções que incluem também cobertura odontológica. A operadora apresenta flexibilidade geográfica em seus planos, com opções de abrangência municipal e nacional, permitindo aos beneficiários escolher a extensão territorial de cobertura mais adequada às suas necessidades."
   },
   {
     "slug": "uniodonto-athenas-paulista-cooperativa-odontologica",
@@ -57757,7 +57946,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Uniodonto Athenas Paulista - Cooperativa Odontológica é uma operadora que atua na modalidade de cooperativa odontológica, oferecendo exclusivamente planos com cobertura odontológica. Atualmente, a operadora disponibiliza 28 planos ativos no mercado, proporcionando diferentes opções para seus beneficiários.\n\nA operadora trabalha com três tipos de contratação: coletivo empresarial, coletivo por adesão e individual ou familiar, atendendo tanto pessoas físicas quanto empresas de diversos portes. Sua área de atuação possui abrangência municipal e para grupos de municípios, concentrando seus serviços odontológicos em regiões específicas. Essa configuração permite à cooperativa focar seu atendimento de forma regionalizada."
   },
   {
     "slug": "unimed-lavras-cooperativa-de-trabalho-medico",
@@ -58062,7 +58252,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed Lavras Cooperativa De Trabalho Médico\n\nA Unimed Lavras Cooperativa De Trabalho Médico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. A operadora disponibiliza atualmente 28 planos ativos no mercado, oferecendo diferentes tipos de cobertura aos beneficiários: Referência, Ambulatorial e Ambulatorial + Hospitalar com obstetrícia.\n\nOs planos da Unimed Lavras podem ser contratados nas modalidades Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, atendendo assim diferentes perfis de clientes. A operadora possui abrangência que varia entre grupo de municípios e nacional, proporcionando opções de cobertura tanto regional quanto em âmbito nacional para seus beneficiários."
   },
   {
     "slug": "unimed-porto-velho-sociedade-cooperativa-medica-ltda",
@@ -58367,7 +58558,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Parcial sem internação"
       }
-    ]
+    ],
+    "descricao": "A Unimed Porto Velho - Sociedade Cooperativa Médica Ltda é uma operadora de planos de saúde que atua na modalidade de cooperativa médica. Atualmente, a operadora disponibiliza 28 planos ativos no mercado, oferecendo coberturas dos tipos Referência e Ambulatorial + Hospitalar com obstetrícia.\n\nOs beneficiários podem contratar os planos da Unimed Porto Velho através de três modalidades: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial. A operadora oferece opções de abrangência Municipal e Nacional, permitindo que os usuários escolham entre atendimento restrito à região ou com cobertura em todo o território brasileiro, conforme suas necessidades de deslocamento e utilização dos serviços de saúde."
   },
   {
     "slug": "evo-saude-assistencia-medica-ltda",
@@ -58669,7 +58861,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Evo Saúde Assistência Médica Ltda é uma operadora de planos de saúde na modalidade Medicina de Grupo que atua no mercado de saúde suplementar brasileiro. Atualmente, a operadora mantém 28 planos de saúde ativos em seu portfólio, oferecendo diferentes opções de cobertura para seus beneficiários.\n\nA empresa disponibiliza planos com coberturas do tipo Referência, Hospitalar com obstetrícia e Ambulatorial + Hospitalar com obstetrícia. As contratações são realizadas nas modalidades Coletivo por adesão e Coletivo empresarial, não oferecendo planos individuais. A abrangência geográfica dos planos é limitada, atuando em níveis Municipal e Grupo de municípios, o que caracteriza uma operação regional focada em mercados específicos."
   },
   {
     "slug": "unimed-vale-do-piquiri-cooperativa-de-trabalho-medico-vale-do-piquiri",
@@ -58971,7 +59164,8 @@
         "acomodacao": "Individual",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Vale do Piquiri é uma cooperativa de trabalho médico que opera no segmento de saúde suplementar, disponibilizando atualmente 28 planos de saúde ativos em seu portfólio. Como cooperativa médica, a operadora segue o modelo tradicional do Sistema Unimed, oferecendo diferentes opções de cobertura assistencial aos seus beneficiários.\n\nA operadora disponibiliza planos com coberturas do tipo Referência, Ambulatorial + Hospitalar sem obstetrícia e Ambulatorial + Hospitalar com obstetrícia. As opções de contratação incluem as modalidades Coletivo por adesão e Coletivo empresarial, não atuando com planos individuais. Quanto à abrangência geográfica, a Unimed Vale do Piquiri oferece planos com alcance Estadual e Nacional, permitindo aos beneficiários acesso à rede credenciada em diferentes regiões."
   },
   {
     "slug": "unimed-de-cascavel-cooperativa-de-trabalho-medico",
@@ -59275,7 +59469,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "# Unimed De Cascavel Cooperativa De Trabalho Médico\n\nA Unimed de Cascavel é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 28 planos ativos no mercado. A operadora disponibiliza opções de cobertura que incluem Referência e Ambulatorial + Hospitalar com obstetrícia, atendendo diferentes necessidades assistenciais dos beneficiários.\n\nQuanto às formas de contratação, a Unimed de Cascavel trabalha com três modalidades: Coletivo por adesão, Individual ou Familiar e Coletivo empresarial, proporcionando flexibilidade para diferentes perfis de clientes. A abrangência geográfica de seus planos varia entre grupo de municípios e nacional, permitindo aos beneficiários acesso a serviços de saúde em diferentes localidades conforme o plano contratado."
   },
   {
     "slug": "unimed-de-presidente-prudente-cooperativa-de-trab-medico",
@@ -59578,7 +59773,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed de Presidente Prudente Cooperativa de Trabalho Médico é uma operadora de planos de saúde na modalidade de cooperativa médica que atua no mercado de saúde suplementar brasileiro. Atualmente, a operadora disponibiliza 28 planos ativos, oferecendo diferentes tipos de cobertura que incluem referência, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nA operadora trabalha com diversas modalidades de contratação para atender diferentes perfis de beneficiários, incluindo planos coletivos por adesão, individuais ou familiares e coletivos empresariais. Quanto à abrangência geográfica, seus planos cobrem tanto grupo de municípios quanto território nacional, proporcionando opções de atendimento conforme a necessidade de cada cliente."
   },
   {
     "slug": "odontobase-planos-de-saude-ltda",
@@ -59878,7 +60074,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "**Odontobase Planos de Saúde Ltda.**\n\nA Odontobase Planos de Saúde Ltda. é uma operadora odontológica que atua na modalidade de Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. Com 27 planos ativos em seu portfólio, a empresa disponibiliza opções para diferentes perfis de contratação, incluindo planos coletivos empresariais, coletivos por adesão e individuais ou familiares.\n\nA operadora possui abrangência geográfica definida como grupo de municípios, atendendo regiões específicas do país. Sua atuação focada no segmento odontológico permite oferecer soluções direcionadas para saúde bucal, contemplando diversas modalidades de contratação para atender tanto pessoas físicas quanto empresas que buscam benefícios odontológicos para seus colaboradores."
   },
   {
     "slug": "prevident-assistencia-odontologica-s-a",
@@ -60179,7 +60376,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Prevident Assistência Odontológica S.A é uma operadora de planos de saúde na modalidade Odontologia de Grupo, oferecendo exclusivamente cobertura odontológica. A empresa mantém atualmente 27 planos ativos em seu portfólio, disponibilizando opções para diferentes perfis de contratação.\n\nA operadora trabalha com três tipos de contratação: Coletivo empresarial, Coletivo por adesão e Individual ou Familiar, permitindo acesso tanto para empresas quanto para pessoas físicas. Sua atuação possui abrangência Nacional e também em Grupo de municípios, proporcionando cobertura odontológica em diferentes regiões do país. A Prevident está registrada como operadora de planos odontológicos, seguindo as regulamentações da Agência Nacional de Saúde Suplementar (ANS)."
   },
   {
     "slug": "unimed-grande-florianopolis-cooperativa-de-trabalho-medico",
@@ -60485,7 +60683,8 @@
         "acomodacao": "Coletiva",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Unimed Grande Florianópolis-Cooperativa De Trabalho Medico é uma operadora de planos de saúde que atua na modalidade de cooperativa médica, oferecendo atualmente 27 planos ativos no mercado. A operadora disponibiliza diferentes tipos de cobertura para seus beneficiários, incluindo opções de hospitalar sem obstetrícia, hospitalar com obstetrícia e ambulatorial + hospitalar com obstetrícia.\n\nOs planos são comercializados nas modalidades coletivo por adesão e coletivo empresarial, não oferecendo contratação individual ou familiar. Quanto à área de atuação, a operadora possui abrangência tanto em grupo de municípios quanto nacional, permitindo que seus beneficiários tenham acesso à rede credenciada em diferentes localidades do país, conforme o tipo de plano contratado."
   },
   {
     "slug": "doctor-clin-operadora-de-planos-de-saude-ltda",
@@ -60791,7 +60990,8 @@
         "acomodacao": "Não se Aplica",
         "livre_escolha": "Ausente"
       }
-    ]
+    ],
+    "descricao": "A Doctor Clin Operadora De Planos De Saúde Ltda. é uma operadora de saúde que atua na modalidade de Medicina de Grupo, oferecendo atualmente 27 planos ativos no mercado. A empresa disponibiliza opções diversificadas de cobertura, incluindo planos ambulatoriais combinados com odontológico, planos ambulatoriais e hospitalares com obstetrícia, além de planos exclusivamente odontológicos.\n\nA operadora trabalha com diferentes tipos de contratação para atender diversos perfis de beneficiários: coletivo empresarial, coletivo por adesão e individual ou familiar. Sua área de atuação possui abrangência estadual e por grupo de municípios, permitindo o atendimento em regiões específicas. Esta estrutura possibilita que a Doctor Clin atenda tanto pessoas físicas quanto empresas que buscam soluções em saúde suplementar."
   },
   {
     "slug": "unimed-de-dourados-cooperativa-de-trabalho-medico-ltda",
