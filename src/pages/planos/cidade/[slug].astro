@@ -1,0 +1,56 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import cidades from '../../../data/cidades_top500.json';
+
+export async function getStaticPaths() {
+  return cidades.slice(0, 500).map((cidade) => ({
+    params: { slug: cidade.slug },
+    props: { cidade },
+  }));
+}
+
+const { cidade } = Astro.props;
+---
+<Layout
+  title={`Planos de Saúde em ${cidade.nome} (${cidade.uf}) | Painel Saúde`}
+  description={`Compare ${cidade.total_operadoras} operadoras em ${cidade.nome}. Dados ANS.`}
+  canonical={`https://painelsaude.com.br/planos/cidade/${cidade.slug}`}
+>
+  <nav style="font-size:0.875rem;margin-bottom:1.5rem;color:#666">
+    <a href="/">Início</a> › <a href="/planos">Planos</a> › {cidade.nome}
+  </nav>
+
+  <article>
+    <header style="margin-bottom:2rem">
+      <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">{cidade.uf}</span>
+      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">Planos de Saúde em {cidade.nome}</h1>
+      <p style="color:#555;margin-top:0.5rem">{cidade.total_operadoras} operadoras registradas na ANS atendem {cidade.nome}.</p>
+    </header>
+
+    <section style="background:#f8f9fa;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
+      <p style="color:#555;font-size:0.95rem">
+        A cidade de {cidade.nome} ({cidade.uf}) conta com {cidade.total_operadoras} operadoras de planos de saúde com cobertura ativa, segundo dados da ANS.
+      </p>
+    </section>
+
+    <section style="margin-bottom:2rem">
+      <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Operadoras com cobertura em {cidade.nome}</h2>
+      <div style="display:grid;gap:0.75rem">
+        {cidade.operadoras.map((op) => (
+          <a href={`/planos/operadora/${op.slug}`} style="border:1px solid #e0e0e0;border-radius:8px;padding:1rem;text-decoration:none;color:#333;display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <p style="font-weight:600;margin-bottom:0.25rem">{op.nome}</p>
+              <p style="font-size:0.8rem;color:#666">{op.modalidade}</p>
+            </div>
+            <span style="font-size:0.8rem;color:#1565c0">{op.total_planos} planos</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">
+      <p style="font-weight:600;color:#e65100;margin-bottom:0.25rem">⚠️ Informação importante</p>
+      <p style="font-size:0.9rem;color:#444">Dados fornecidos pela ANS. Consulte a operadora para confirmar disponibilidade e preços em {cidade.nome}.</p>
+    </section>
+  </article>
+</Layout>
