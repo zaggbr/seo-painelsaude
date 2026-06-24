@@ -1,0 +1,112 @@
+---
+// src/components/CookieBanner.astro
+// Mesma lógica/mecânica do banner da Educta: aparece 1x, grava escolha
+// por 365 dias, dois botões. Cores na paleta do Painel Saúde (azul) em
+// vez do amarelo da Educta.
+//
+// Hoje o /planos/ não tem nenhum script de analytics (só AdSense, que
+// fica sempre ativo por decisão já tomada antes pra Educta — mesma regra
+// aqui). Por isso gaIds vem vazio por padrão: o banner funciona e grava
+// consentimento normalmente, só não tem nada real pra carregar depois do
+// "OK" até que GA4 (ou outro analytics) seja adicionado aqui.
+export interface Props {
+  gaIds?: string[];
+}
+const { gaIds = [] } = Astro.props;
+---
+<div id="ps-cookie-banner" class="ps-cookie-banner">
+  <span>Cookies de desempenho. Não compartilhamos seus dados.</span>
+  <span class="ps-cookie-banner__actions">
+    <button id="ps-cookie-ok" type="button">OK</button>
+    <button id="ps-cookie-no" type="button">Não</button>
+  </span>
+</div>
+
+<style>
+  .ps-cookie-banner {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 14px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 14px;
+    font-family: system-ui, sans-serif;
+  }
+  .ps-cookie-banner.is-visible {
+    display: flex;
+  }
+  .ps-cookie-banner__actions button {
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  #ps-cookie-ok {
+    background: #1565c0;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  #ps-cookie-no {
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #555;
+  }
+</style>
+
+<script define:vars={{ gaIds }}>
+  (function () {
+    var KEY = "ps_consent";
+
+    function getCookie(name) {
+      var m = document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)");
+      return m ? m.pop() : null;
+    }
+    function setCookie(name, value, days) {
+      var d = new Date();
+      d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+      document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/;SameSite=Lax";
+    }
+    function loadAnalytics() {
+      if (!gaIds || !gaIds.length || window.__psAnalyticsLoaded) return;
+      window.__psAnalyticsLoaded = true;
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + gaIds[0];
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gaIds.forEach(function (id) { gtag("config", id); });
+    }
+
+    var banner = document.getElementById("ps-cookie-banner");
+    var consent = getCookie(KEY);
+
+    if (consent === null) {
+      banner.classList.add("is-visible");
+    } else if (consent === "1") {
+      loadAnalytics();
+    }
+
+    document.getElementById("ps-cookie-ok").addEventListener("click", function () {
+      setCookie(KEY, "1", 365);
+      banner.classList.remove("is-visible");
+      loadAnalytics();
+    });
+    document.getElementById("ps-cookie-no").addEventListener("click", function () {
+      setCookie(KEY, "0", 365);
+      banner.classList.remove("is-visible");
+    });
+  })();
+</script>
