@@ -1,6 +1,8 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import operadoras from '../../../data/operadoras.json';
+import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
+import GuiasPlanosSaude from '../../../components/GuiasPlanosSaude.astro';
 
 export async function getStaticPaths() {
   return operadoras.slice(0, 200).map((op) => ({
@@ -10,24 +12,26 @@ export async function getStaticPaths() {
 }
 
 const { op } = Astro.props;
+const nomeFormatado = normalizarOperadora(op.nome);
+const anoReferencia = new Date().getFullYear();
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": op.nome,
-  "description": `${op.nome} é uma operadora de planos de saúde registrada na ANS com ${op.total_planos} planos disponíveis.`,
+  "name": nomeFormatado,
+  "description": `${nomeFormatado} é uma operadora de planos de saúde registrada na ANS com ${op.total_planos} planos disponíveis.`,
   "url": `https://painelsaude.com.br/planos/operadora/${op.slug}`
 };
 ---
 <Layout
-  title={`${op.nome} — Planos de Saúde | Painel Saúde`}
-  description={`Conheça os planos de saúde da ${op.nome}. ${op.total_planos} planos disponíveis. Informações sobre cobertura, segmentação e contratação.`}
+  title={`${nomeFormatado} — Planos de Saúde | Painel Saúde`}
+  description={`Conheça os planos de saúde da ${nomeFormatado}. ${op.total_planos} planos disponíveis. Informações sobre cobertura, segmentação e contratação.`}
   canonical={`https://painelsaude.com.br/planos/operadora/${op.slug}`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <nav style="font-size:0.875rem;margin-bottom:1.5rem;color:#666">
-    <a href="/">Início</a> › <a href="/planos">Planos de Saúde</a> › {op.nome}
+    <a href="/">Início</a> › <a href="/planos">Planos de Saúde</a> › {nomeFormatado}
   </nav>
 
   <article>
@@ -35,7 +39,7 @@ const jsonLd = {
       <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">
         {op.modalidade}
       </span>
-      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{op.nome}</h1>
+      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{nomeFormatado}</h1>
       <p style="color:#666;margin-top:0.5rem">Registro ANS: {op.registro_ans}</p>
     </header>
 
@@ -59,6 +63,33 @@ const jsonLd = {
       </dl>
     </section>
 
+    <section style="background:#f0f7ff;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
+      <h2 style="font-size:1rem;margin-bottom:1rem;color:#1565c0">💰 Valores de Referência ({anoReferencia})</h2>
+      <p style="font-size:0.8rem;color:#888;margin-bottom:1rem">Faixas estimadas. Consulte seu corretor para valores exatos.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;font-size:0.875rem">
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Individual</p>
+          <p style="color:#1565c0;font-weight:700">R$ 200 – R$ 900/mês</p>
+          <p style="color:#666;font-size:0.8rem">Cobertura ambulatorial e hospitalar</p>
+        </div>
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Familiar</p>
+          <p style="color:#1565c0;font-weight:700">R$ 600 – R$ 2.500/mês</p>
+          <p style="color:#666;font-size:0.8rem">Para 2 a 4 dependentes</p>
+        </div>
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Coletivo</p>
+          <p style="color:#1565c0;font-weight:700">R$ 150 – R$ 600/mês</p>
+          <p style="color:#666;font-size:0.8rem">Por beneficiário — empresas e associações</p>
+        </div>
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Odontológico</p>
+          <p style="color:#1565c0;font-weight:700">R$ 20 – R$ 100/mês</p>
+          <p style="color:#666;font-size:0.8rem">Por pessoa</p>
+        </div>
+      </div>
+    </section>
+
     <section style="margin-bottom:2rem">
       <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Tipos de cobertura disponíveis</h2>
       <ul style="display:flex;flex-wrap:wrap;gap:0.5rem;list-style:none">
@@ -67,6 +98,32 @@ const jsonLd = {
         ))}
       </ul>
     </section>
+
+    <!-- novo-painelsaude-planos: desktop fixo 728x90 / mobile responsivo -->
+    <div id="ps-ad-plano-detalhe" style="text-align:center;margin:2rem 0"></div>
+    <script>
+      (function () {
+        var isMobile = window.innerWidth < 768;
+        var container = document.getElementById("ps-ad-plano-detalhe");
+        var ins = document.createElement("ins");
+        ins.className = "adsbygoogle";
+        if (isMobile) {
+          ins.style.display = "block";
+          ins.setAttribute("data-ad-client", "ca-pub-6307491010120109");
+          ins.setAttribute("data-ad-slot", "4580267626");
+          ins.setAttribute("data-ad-format", "auto");
+          ins.setAttribute("data-full-width-responsive", "true");
+        } else {
+          ins.style.display = "inline-block";
+          ins.style.width = "728px";
+          ins.style.height = "90px";
+          ins.setAttribute("data-ad-client", "ca-pub-6307491010120109");
+          ins.setAttribute("data-ad-slot", "2370861087");
+        }
+        container.appendChild(ins);
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      })();
+    </script>
 
     <section style="margin-bottom:2rem">
       <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Planos disponíveis</h2>
@@ -94,33 +151,6 @@ const jsonLd = {
       </p>
     </section>
 
-    <section style="background:#f0f7ff;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
-      <h2 style="font-size:1rem;margin-bottom:1rem;color:#1565c0">💰 Valores de Referência (2025)</h2>
-      <p style="font-size:0.8rem;color:#888;margin-bottom:1rem">Faixas estimadas. Consulte seu corretor para valores exatos.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;font-size:0.875rem">
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Individual</p>
-          <p style="color:#1565c0;font-weight:700">R$ 200 – R$ 900/mês</p>
-          <p style="color:#666;font-size:0.8rem">Cobertura ambulatorial e hospitalar</p>
-        </div>
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Familiar</p>
-          <p style="color:#1565c0;font-weight:700">R$ 600 – R$ 2.500/mês</p>
-          <p style="color:#666;font-size:0.8rem">Para 2 a 4 dependentes</p>
-        </div>
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Coletivo</p>
-          <p style="color:#1565c0;font-weight:700">R$ 150 – R$ 600/mês</p>
-          <p style="color:#666;font-size:0.8rem">Por beneficiário — empresas e associações</p>
-        </div>
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Odontológico</p>
-          <p style="color:#1565c0;font-weight:700">R$ 20 – R$ 100/mês</p>
-          <p style="color:#666;font-size:0.8rem">Por pessoa</p>
-        </div>
-      </div>
-    </section>
-
     <section style="background:#fafafa;border:1px solid #e8e8e8;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
       <h2 style="font-size:1rem;margin-bottom:1rem;color:#333">📖 Glossário — Termos dos Planos de Saúde</h2>
       <dl style="font-size:0.875rem;display:grid;gap:0.75rem">
@@ -135,11 +165,7 @@ const jsonLd = {
         <div><dt style="font-weight:600;color:#1565c0">Abrangência</dt><dd style="color:#555;margin-top:0.2rem">Área geográfica onde o plano oferece cobertura: municipal, estadual, regional ou nacional.</dd></div>
         <div><dt style="font-weight:600;color:#1565c0">Fator moderador</dt><dd style="color:#555;margin-top:0.2rem">Mecanismo de regulação do uso: franquia, coparticipação ou desconto na mensalidade.</dd></div>
       </dl>
-      <p style="margin-top:1rem;font-size:0.8rem;color:#888">
-        Saiba mais: <a href="https://painelsaude.com.br/como-escolher-um-plano-de-saude-guia-completo" style="color:#1565c0">Como escolher um plano de saúde</a> · 
-        <a href="https://painelsaude.com.br/plano-de-saude-familiar-guia-completo-para-famlia" style="color:#1565c0">Plano familiar</a> · 
-        <a href="https://painelsaude.com.br/plano-de-saude-empresarial-vantagens-regras-ans" style="color:#1565c0">Plano empresarial</a>
-      </p>
+      <GuiasPlanosSaude />
     </section>
 
     <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">

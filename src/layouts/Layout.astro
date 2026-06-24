@@ -18,21 +18,38 @@ const canonicalURL = canonical || `https://painelsaude.com.br${Astro.url.pathnam
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6423824976813529" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1565c0" />
+
+    <!--
+      Removido: script AdSense da Educta (ca-pub-6423824976813529) que
+      estava carregado aqui por engano — não tem nada a ver com este site.
+    -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6307491010120109" crossorigin="anonymous"></script>
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body { font-family: system-ui, sans-serif; color: #1a1a1a; line-height: 1.6; }
       main { max-width: 860px; margin: 0 auto; padding: 2rem 1rem; }
       a { color: #0066cc; }
-      header.site-header { background: #1565c0; color: white; padding: 1rem; text-align: center; }
-      header.site-header a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: 700; }
+      header.site-header {
+        background: #ffffff;
+        padding: 0.85rem 1rem;
+        text-align: center;
+        border-bottom: 1px solid #e2e8f0;
+      }
+      header.site-header a { display: inline-block; }
+      header.site-header img { height: 34px; display: block; }
       footer { background: #f5f5f5; text-align: center; padding: 2rem; margin-top: 3rem; font-size: 0.875rem; color: #666; }
     </style>
   </head>
   <body>
     <header class="site-header">
-      <a href="/">Painel Saúde</a>
+      <a href="/"><img src="/painelsaude-logo-horizontal.png" alt="Painel Saúde" /></a>
     </header>
     <div style="text-align:center;margin:1rem 0">
       <ins class="adsbygoogle"

@@ -1,0 +1,73 @@
+---
+// src/components/GuiasPlanosSaude.astro
+// Bloco de cross-link para os guias editoriais do WordPress, usado em
+// todas as páginas /planos/operadora/[slug]. Lista centralizada aqui —
+// pra adicionar um guia novo no futuro, só adiciona um item no array,
+// não precisa editar o componente.
+
+const guias = [
+  { titulo: "Como escolher um plano de saúde — Guia Completo", url: "https://painelsaude.com.br/como-escolher-um-plano-de-saude-guia-completo" },
+  { titulo: "Plano de Saúde Familiar — Guia Completo para a Família", url: "https://painelsaude.com.br/plano-de-saude-familiar-guia-completo-para-famlia" },
+  { titulo: "Plano de Saúde para Autônomos e MEI — Melhores Escolhas", url: "https://painelsaude.com.br/plano-de-saude-para-autonomos-mei-melhores-escolhas" },
+  { titulo: "Plano de Saúde Sênior — Coberturas Essenciais", url: "https://painelsaude.com.br/plano-de-saude-senior-coberturas-essenciais" },
+  { titulo: "Plano com Coparticipação vs Sem Coparticipação", url: "https://painelsaude.com.br/plano-de-saude-com-coparticipacao-vs-sem-coparticipacao" },
+  { titulo: "Plano Regional vs Nacional — Custo-Benefício", url: "https://painelsaude.com.br/plano-de-saude-regional-vs-nacional-custo-beneficio" },
+  { titulo: "Plano Empresarial — Vantagens e Regras da ANS", url: "https://painelsaude.com.br/plano-de-saude-empresarial-vantagens-regras-ans" },
+  { titulo: "Plano Coletivo por Adesão — Como Funciona", url: "https://painelsaude.com.br/plano-de-saude-coletivo-por-adesao-como-funciona" },
+];
+---
+<section class="ps-guias">
+  <h3 class="ps-guias__heading">📚 Guias de Planos de Saúde</h3>
+  <div class="ps-guias__grid">
+    {guias.map((g) => (
+      <a href={g.url} class="ps-guias__card">
+        <span>{g.titulo}</span>
+        <span class="ps-guias__arrow">→</span>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .ps-guias {
+    margin: 2rem 0;
+  }
+  .ps-guias__heading {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #64748b;
+    font-weight: 700;
+    margin: 0 0 0.9rem;
+  }
+  .ps-guias__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.6rem;
+  }
+  .ps-guias__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 0.85rem 1.1rem;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .ps-guias__card:hover {
+    border-color: #1565c0;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.1);
+  }
+  .ps-guias__arrow {
+    color: #1565c0;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+</style>
