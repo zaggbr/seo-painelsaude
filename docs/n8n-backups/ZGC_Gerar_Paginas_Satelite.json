@@ -1,0 +1,401 @@
+{
+  "updatedAt": "2026-06-25T14:48:07.524Z",
+  "createdAt": "2026-06-12T22:21:17.472Z",
+  "id": "oVlkY1qlVlPPYUfn",
+  "name": "ZGC_Gerar_Paginas_Satelite",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * 1,4"
+            }
+          ]
+        }
+      },
+      "id": "7d1a730f-7158-4c7b-9dfb-67276ed33695",
+      "name": "Cron Seg+Qui 08h",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lê blueprints aprovados do Google Sheets e deduplica por urlSatelite\nconst items = $input.all();\n\nlet rows = [];\ntry {\n  rows = items.map(i => i.json);\n} catch(e) {\n  rows = [];\n}\n\n// Blueprints fixos — páginas criadas manualmente que não devem sumir\nconst fixos = [\n  {\n    keyword: 'consultar fila sus',\n    slug: 'fila-sus',\n    url: '/sus/fila-sus/',\n    silo: 'sus',\n    tipo: 'guia',\n    volume: 12100\n  }\n];\n\n// Deduplica por urlSatelite, filtra aprovados e não publicados\nconst seen = new Set();\nconst blueprints = [];\n\n// Adiciona fixos primeiro\nfor (const f of fixos) {\n  seen.add(f.url);\n  blueprints.push(f);\n}\n\n// Adiciona do Sheets\nfor (const row of rows) {\n  const url = row.urlSatelite || row.url;\n  const status = (row.status || '').toLowerCase();\n  const publicado = (row.publicado || '').toString().toUpperCase();\n  \n  if (!url || status !== 'aprovado' || publicado === 'TRUE') continue;\n  if (seen.has(url)) continue;\n  seen.add(url);\n\n  blueprints.push({\n    keyword: row.keyword || '',\n    slug: url.replace(/^\\/sus\\//, '').replace(/\\/$/, ''),\n    url: url.endsWith('/') ? url : url + '/',\n    silo: row.nicho || 'sus',\n    tipo: row.tipo_ativo || 'guia',\n    volume: Number(row.volume) || 0,\n    titulo: row.titulo || '',\n    resumo: row.resumoBruto || ''\n  });\n}\n\nreturn [{ json: { blueprints, total: blueprints.length } }];"
+      },
+      "id": "3e1a6303-a340-44cf-b40e-e06674c667b5",
+      "name": "Carregar blueprints",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        432,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "get",
+        "owner": "zaggbr",
+        "repository": "zgc-painelsaude",
+        "filePath": "src/data/paginas_sus.json",
+        "additionalParameters": {}
+      },
+      "id": "9f828b25-2fe1-4238-b44a-c15a7440f3cb",
+      "name": "Salvar blueprints no VPS via GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [
+        640,
+        -432
+      ],
+      "webhookId": "5619cd4f-c6f2-4428-b8c2-b080631b22c4",
+      "credentials": {
+        "githubApi": {
+          "id": "cFkY4evMWkGfiZW8",
+          "name": "GitHub ZGC"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://172.19.0.1:5050/gerar?tipo=satelites&force=true",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "blueprints",
+              "value": "={{ $('Carregar blueprints').first().json.blueprints }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 360000
+        }
+      },
+      "id": "035a4a0e-6e00-42c3-875c-411361832099",
+      "name": "Chamar ZGC Generator",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        816,
+        -64
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $input.first().json;\nconst paginasNovas = input.dados?.paginas || [];\n\n// GitHub Get já executou antes — acessa pelo nome\nconst githubFile = $('GitHub Get').first().json;\nconst conteudoBase64 = (githubFile.content || '').replace(/\\n/g, '');\nlet paginasAtuais = [];\nif (conteudoBase64) {\n  const conteudoAtual = JSON.parse(Buffer.from(conteudoBase64, 'base64').toString('utf8'));\n  paginasAtuais = conteudoAtual.paginas || [];\n}\n\nconst slugsExistentes = new Set(paginasAtuais.map(p => p.slug));\nconst paginasMerge = [...paginasAtuais];\n\nfor (const p of paginasNovas) {\n  if (!slugsExistentes.has(p.slug)) {\n    paginasMerge.push(p);\n  }\n}\n\nconst resultado = {\n  _meta: {\n    geradoEm: new Date().toISOString(),\n    totalPaginas: paginasMerge.length,\n    silo: 'sus'\n  },\n  paginas: paginasMerge\n};\n\nreturn [{ json: {\n  conteudo: JSON.stringify(resultado, null, 2),\n  totalPaginas: paginasMerge.length\n}}];"
+      },
+      "id": "9a637fbf-c651-44ca-a473-a3d5f9314fde",
+      "name": "Validar resposta",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        -48
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "edit",
+        "owner": "zaggbr",
+        "repository": "zgc-painelsaude",
+        "filePath": "src/data/paginas_sus.json",
+        "fileContent": "={{ $json.conteudo }}",
+        "commitMessage": "=feat(satelites): adiciona {{ $json.totalPaginas }} páginas satélite SUS"
+      },
+      "id": "7d308da6-e063-44c2-ba73-72ff1d2dd217",
+      "name": "Commit paginas_sus.json",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [
+        1472,
+        -48
+      ],
+      "webhookId": "74f45db1-9b30-421c-89d5-71986a21177a",
+      "credentials": {
+        "githubApi": {
+          "id": "cFkY4evMWkGfiZW8",
+          "name": "GitHub ZGC"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const urls = $('Validar resposta').first().json.urls || [];\n// Adiciona a hub page /sus/\nurls.unshift('https://meu.painelsaude.com.br/sus/');\nreturn urls.map(url => ({ json: { url } }));"
+      },
+      "id": "387e8873-8a30-4bb7-8a92-7e74021bbd2a",
+      "name": "Preparar URLs indexação",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1664,
+        -16
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://indexing.googleapis.com/v3/urlNotifications:publish",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleOAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"url\": \"{{ $json.url }}\",\n  \"type\": \"URL_UPDATED\"\n}",
+        "options": {}
+      },
+      "id": "2ae2f2bf-6a24-4732-ace8-d3953be92c55",
+      "name": "Google Indexing API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1888,
+        0
+      ],
+      "credentials": {
+        "googleOAuth2Api": {
+          "id": "bplzcR1lUXftLGzq",
+          "name": "Google Indexing API ZGC"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1SnW6WSaHaWxPrlo_fUM7FRugJCaMSoV4_PhPvzbNIjY",
+          "mode": "list",
+          "cachedResultName": "Planilha ZGC-Editorial",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1SnW6WSaHaWxPrlo_fUM7FRugJCaMSoV4_PhPvzbNIjY/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "saude_publica",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1SnW6WSaHaWxPrlo_fUM7FRugJCaMSoV4_PhPvzbNIjY/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        208,
+        0
+      ],
+      "id": "63d2a876-9de8-4151-830d-9db4470421cd",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yyC1h8PbqDVTNPQ5",
+          "name": "Google Sheets ZGC Editorial"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// CORREÇÃO 1: Puxa o arquivo do nó específico do GitHub, não do nó anterior\nlet githubFile = {};\ntry {\n  githubFile = $('GitHub Get').first().json;\n} catch (e) {}\n\nconst conteudoBase64 = (githubFile.content || '').replace(/\\n/g, '');\n\nlet paginasAtuais = [];\nif (conteudoBase64) {\n  try {\n    const conteudoAtual = JSON.parse(Buffer.from(conteudoBase64, 'base64').toString('utf8'));\n    paginasAtuais = conteudoAtual.paginas || [];\n  } catch (e) {\n    console.error('Falha ao fazer parse do conteúdo atual do GitHub:', e);\n  }\n}\n\nconst validar = $('Validar resposta').first().json;\nconst novoConteudo = JSON.parse(validar.conteudo);\nconst paginasNovas = novoConteudo.paginas || [];\n\nconsole.log(`Páginas atuais: ${paginasAtuais.length} | Novas: ${paginasNovas.length}`);\n\n// CORREÇÃO 2: Faz um \"Upsert\" (se existir, atualiza; se não, insere)\nconst paginasMerge = [...paginasAtuais];\n\nfor (const p of paginasNovas) {\n  const index = paginasMerge.findIndex(old => old.slug === p.slug);\n  if (index !== -1) {\n    paginasMerge[index] = p; // Atualiza conteúdo antigo\n  } else {\n    paginasMerge.push(p); // Adiciona a nova página\n  }\n}\n\nconst resultado = {\n  _meta: {\n    geradoEm: new Date().toISOString(),\n    totalPaginas: paginasMerge.length,\n    silo: 'sus'\n  },\n  paginas: paginasMerge\n};\n\nreturn [{ json: {\n  conteudo: JSON.stringify(resultado, null, 2),\n  totalPaginas: paginasMerge.length\n}}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1248,
+        -64
+      ],
+      "id": "961f4cd8-7838-447e-9aa2-c533d21cfd4d",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/zaggbr/zgc-painelsaude/contents/src/data/paginas_sus.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer <REDACTED_GITHUB_PAT>"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        624,
+        -48
+      ],
+      "id": "393e8a1e-b361-4cbf-a108-5139cab15bc5",
+      "name": "GitHub Get",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "tgcGhH7z8tus7Nps",
+          "name": "Header Auth account"
+        },
+        "githubApi": {
+          "id": "cFkY4evMWkGfiZW8",
+          "name": "GitHub ZGC"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Cron Seg+Qui 08h": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Carregar blueprints": {
+      "main": [
+        [
+          {
+            "node": "GitHub Get",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Salvar blueprints no VPS via GitHub": {
+      "main": [
+        []
+      ]
+    },
+    "Chamar ZGC Generator": {
+      "main": [
+        [
+          {
+            "node": "Validar resposta",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar resposta": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commit paginas_sus.json": {
+      "main": [
+        [
+          {
+            "node": "Preparar URLs indexação",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar URLs indexação": {
+      "main": [
+        [
+          {
+            "node": "Google Indexing API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Carregar blueprints",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Commit paginas_sus.json",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GitHub Get": {
+      "main": [
+        [
+          {
+            "node": "Chamar ZGC Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": {
+    "node:Cron Seg+Qui 08h": {
+      "recurrenceRules": []
+    }
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "2375c8ec-6e32-4292-9c37-ba22a5e4b815",
+  "activeVersionId": "871abbe8-c94c-4c7e-93f5-eeb3eca01907",
+  "versionCounter": 152,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-06-12T22:21:17.472Z",
+      "createdAt": "2026-06-12T22:21:17.472Z",
+      "role": "workflow:owner",
+      "workflowId": "oVlkY1qlVlPPYUfn",
+      "projectId": "0ATZPY7vyc8bNEce",
+      "project": {
+        "updatedAt": "2026-05-26T14:36:59.357Z",
+        "createdAt": "2026-05-26T14:02:56.822Z",
+        "id": "0ATZPY7vyc8bNEce",
+        "name": "Jose Aluizio Guimaraes <zagg@continentemedia.com.br>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "b93edc3a-5970-47f1-a212-be261a42c875"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": null,
+    "description": null
+  }
+}

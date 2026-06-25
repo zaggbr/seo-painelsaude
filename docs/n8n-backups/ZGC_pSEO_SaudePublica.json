@@ -1,0 +1,1016 @@
+{
+  "updatedAt": "2026-06-16T17:48:05.253Z",
+  "createdAt": "2026-06-10T13:46:56.515Z",
+  "id": "cSzPv8O1yrISgDR1",
+  "name": "ZGC_pSEO_SaudePublica",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "mode": "everyWeek",
+              "hour": 7,
+              "weekday": 1
+            },
+            {
+              "mode": "everyWeek",
+              "hour": 7,
+              "weekday": 4
+            }
+          ]
+        }
+      },
+      "id": "affb35de-0690-4438-be11-53da1d85fee3",
+      "name": "Cron Seg+Qui 07h",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        -1536,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "var-001",
+              "name": "nicho",
+              "value": "saude_publica",
+              "type": "string"
+            },
+            {
+              "id": "var-002",
+              "name": "nicho_label",
+              "value": "Sa\u00fade P\u00fablica Brasil",
+              "type": "string"
+            },
+            {
+              "id": "var-003",
+              "name": "languageId",
+              "value": "languageConstants/1014",
+              "type": "string"
+            },
+            {
+              "id": "var-004",
+              "name": "geoTargetId",
+              "value": "geoTargetConstants/2076",
+              "type": "string"
+            },
+            {
+              "id": "var-005",
+              "name": "customerId",
+              "value": "8299916392",
+              "type": "string"
+            },
+            {
+              "id": "var-006",
+              "name": "volume_min",
+              "value": 500,
+              "type": "number"
+            },
+            {
+              "id": "var-007",
+              "name": "volume_max",
+              "value": 50000,
+              "type": "number"
+            },
+            {
+              "id": "var-008",
+              "name": "queda_max",
+              "value": 0.2,
+              "type": "number"
+            },
+            {
+              "id": "var-009",
+              "name": "sazonalidade_max",
+              "value": 0.6,
+              "type": "number"
+            },
+            {
+              "id": "var-010",
+              "name": "site_url",
+              "value": "https://meu.painelsaude.com.br",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "98835ef1-aa4b-45dc-9019-94fd4ef93497",
+      "name": "Definir Vari\u00e1veis",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1328,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"gpt-4o-mini\",\n  \"temperature\": 0.85,\n  \"response_format\": { \"type\": \"json_object\" },\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"Voc\u00ea \u00e9 um especialista em SEO brasileiro. Gere 20 palavras-chave para o nicho informado. Retorne SOMENTE JSON: {\\\"keywords\\\": [\\\"keyword 1\\\", \\\"keyword 2\\\"]}. REGRAS: cada keyword deve ter 2-4 palavras (n\u00e3o mais). Seja EXTREMAMENTE criativo, focado em termos de cauda longa, explorando dores e buscas menos \u00f3bvias do nicho. EVITE focar sempre nos mesmos temas repetitivos (como apenas 'fila' ou 'marca\u00e7\u00e3o'). Busque novos \u00e2ngulos, direitos do paciente, gratuidades e d\u00favidas raras. Evite frases completas.\"keywords\\\": [\\\"keyword 1\\\", \\\"keyword 2\\\"]}. REGRAS: cada keyword deve ter 2-4 palavras (n\u00e3o mais). Misture termos curtos de alto volume com alguns de cauda m\u00e9dia. Exemplos de bom formato: 'fila SUS', 'agendamento SUS online', 'bula dipirona', 'calcular FGTS', 'consulta SUS', 'rem\u00e9dio gratuito SUS', 'plano de sa\u00fade barato', 'exame SUS gratuito'. Evite frases completas como 'como fazer X' \u2014 use termos que as pessoas realmente digitam no Google.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Nicho: {{ $json.nicho_label }}. Gere 20 keywords de 2-4 palavras com volume de busca real no Brasil.\"\n    }\n  ]\n}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "eecc9d91-e32b-4ba4-877c-856608663b2a",
+      "name": "IA: Gerar Keywords",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1104,
+        80
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "tgcGhH7z8tus7Nps",
+          "name": "Header Auth account"
+        },
+        "openAiApi": {
+          "id": "m0WfB8yAOJysSe4b",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.first().json;\nconst content = raw.choices?.[0]?.message?.content;\nif (!content) throw new Error('OpenAI n\u00e3o retornou content');\n\nlet parsed;\ntry { parsed = JSON.parse(content); } catch(e) { throw new Error('JSON inv\u00e1lido: ' + e.message); }\n\nconst keywords = parsed.keywords || [];\nif (keywords.length === 0) throw new Error('Nenhuma keyword gerada');\n\nconst vars = $('Definir Vari\u00e1veis').first().json;\n\nreturn keywords.map((kw, index) => ({\n  json: {\n    keyword: kw,\n    nicho: vars.nicho,\n    nicho_label: vars.nicho_label,\n    languageId: vars.languageId,\n    geoTargetId: vars.geoTargetId,\n    customerId: vars.customerId,\n    volume_min: vars.volume_min,\n    volume_max: vars.volume_max,\n    queda_max: vars.queda_max,\n    sazonalidade_max: vars.sazonalidade_max,\n    site_url: vars.site_url,\n    // Delay escalonado: 6s entre cada keyword\n    delay_ms: index * 6000\n  }\n}));"
+      },
+      "id": "311e64fa-aee4-450a-bead-b4f4c1755520",
+      "name": "Split Keywords",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -928,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://googleads.googleapis.com/v22/customers/{{ $json.customerId }}:generateKeywordIdeas",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleAdsOAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "developer-token",
+              "value": "HNpTYmkziklnpzUlUZIRig"
+            },
+            {
+              "name": "login-customer-id",
+              "value": "8299916392"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"language\": \"languageConstants/1014\",\n  \"geoTargetConstants\": [\"geoTargetConstants/2076\"],\n  \"includeAdultKeywords\": false,\n  \"keywordSeed\": {\n    \"keywords\": [\"{{ $json.keyword }}\"]\n  },\n  \"historicalMetricsOptions\": {\n    \"includeAverageCpc\": true\n  }\n}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "68df33b9-1aed-4c4f-a47e-61ac122fdd76",
+      "name": "Google Ads API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -480,
+        208
+      ],
+      "executeOnce": true,
+      "credentials": {
+        "googleAdsOAuth2Api": {
+          "id": "oKLyLoV6Olq93FKK",
+          "name": "Keyword Google OAuth"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.first().json;\nconst vars = $('Wait').first().json;\n\nconst results = raw.results || [];\nif (results.length === 0) {\n  return [];\n}\n\nconst result = results[0];\nconst metrics = result.keywordIdeaMetrics || {};\n\nconst avgVolume = metrics.avgMonthlySearches ? parseInt(metrics.avgMonthlySearches) : 0;\nconst cpcMicros = metrics.averageCpcMicros ? parseInt(metrics.averageCpcMicros) : 0;\nconst cpcBRL = (cpcMicros / 1000000) * 5.0;\nconst competition = metrics.competition || 'UNKNOWN';\n\nconst monthlyVolumes = (metrics.monthlySearchVolumes || []).map(function(m) {\n  return parseInt(m.monthlySearches || 0);\n});\n\nlet sazonalidade = 0;\nlet quedaPct = 0;\n\nif (monthlyVolumes.length >= 4) {\n  const total = monthlyVolumes.reduce(function(a, b) { return a + b; }, 0);\n  const media = total / monthlyVolumes.length;\n  let maxV = monthlyVolumes[0];\n  let minV = monthlyVolumes[0];\n  for (let i = 1; i < monthlyVolumes.length; i++) {\n    if (monthlyVolumes[i] > maxV) { maxV = monthlyVolumes[i]; }\n    if (monthlyVolumes[i] < minV) { minV = monthlyVolumes[i]; }\n  }\n  sazonalidade = media > 0 ? (maxV - minV) / media : 0;\n\n  const recent = monthlyVolumes.slice(-3);\n  const previous = monthlyVolumes.slice(-6, -3);\n  if (previous.length === 3) {\n    const avgRecent = (recent[0] + recent[1] + recent[2]) / 3;\n    const avgPrevious = (previous[0] + previous[1] + previous[2]) / 3;\n    quedaPct = avgPrevious > 0 ? (avgPrevious - avgRecent) / avgPrevious : 0;\n  }\n}\n\nconst keywordText = result.text || vars.keyword;\n\nreturn [{\n  json: {\n    keyword: keywordText,\n    keyword_seed: vars.keyword,\n    nicho: vars.nicho,\n    nicho_label: vars.nicho_label,\n    site_url: vars.site_url,\n    volume: Number(avgVolume),\n    cpc_brl: Number(parseFloat(cpcBRL.toFixed(2))),\n    competition: String(competition),\n    sazonalidade: Number(parseFloat(sazonalidade.toFixed(3))),\n    queda_pct: Number(parseFloat(quedaPct.toFixed(3))),\n    monthly_volumes: monthlyVolumes,\n    volume_min: Number(vars.volume_min),\n    volume_max: Number(vars.volume_max),\n    queda_max: Number(vars.queda_max),\n    sazonalidade_max: Number(vars.sazonalidade_max)\n  }\n}];"
+      },
+      "id": "a64dd318-6a0d-4ed1-bc35-899b10bfce98",
+      "name": "Processar M\u00e9tricas",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -336,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "filter-vol-min",
+              "leftValue": "={{ $json.volume }}",
+              "rightValue": "={{ $json.volume_min }}",
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            },
+            {
+              "id": "filter-vol-max",
+              "leftValue": "={{ $json.volume }}",
+              "rightValue": "={{ $json.volume_max }}",
+              "operator": {
+                "type": "number",
+                "operation": "lte"
+              }
+            },
+            {
+              "id": "filter-queda",
+              "leftValue": "={{ $json.queda_pct }}",
+              "rightValue": "={{ $json.queda_max }}",
+              "operator": {
+                "type": "number",
+                "operation": "lte"
+              }
+            },
+            {
+              "id": "filter-sazonal",
+              "leftValue": "={{ $json.sazonalidade }}",
+              "rightValue": "={{ $json.sazonalidade_max }}",
+              "operator": {
+                "type": "number",
+                "operation": "lte"
+              }
+            },
+            {
+              "id": "filter-competition",
+              "leftValue": "={{ $json.competition }}",
+              "rightValue": "HIGH",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "7bf880fe-5915-49fb-9435-d4f764060237",
+      "name": "Filtro SEO",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -192,
+        336
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://google.serper.dev/search",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-API-KEY",
+              "value": "98912e7dec019867237b5519f20b05d2c3e4cde6"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"q\": \"{{ $json.keyword }}\",\n  \"hl\": \"pt\",\n  \"gl\": \"br\",\n  \"num\": 10\n}",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "7e14b415-ffd5-4601-a008-e080f39617cf",
+      "name": "Serper: Busca SERP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -16,
+        48
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const serperData = $input.first().json;\nconst kwData = $('Filtro SEO').first().json;\n\nconst organic = serperData.organic || [];\nconst paa = serperData.peopleAlsoAsk || [];\n\nconst serpSummary = organic.slice(0, 10).map(function(r, i) {\n  return (i+1) + '. ' + r.title + ' - ' + (r.snippet || '').replace(/\\n/g, ' ').substring(0, 100);\n}).join(' | ');\n\nconst paaSummary = paa.slice(0, 5).map(function(q) { return q.question; }).join('; ');\n\nconst payload = {\n  model: 'gpt-4o-mini',\n  temperature: 0.2,\n  response_format: { type: 'json_object' },\n  messages: [\n    {\n      role: 'system',\n      content: 'Analise resultados do Google e retorne JSON com: oportunidade (bool), score (0-10), tipo_ativo (calculadora/guia/simulador/comparador), razao (1 frase), url_satelite (/sus/slug/), titulo_sugerido (PT-BR), resumo_bruto (2 frases), concorrentes_fracos (array urls). Score 6+ se Top10 tem PDFs ou portais gov sem interatividade.'\n    },\n    {\n      role: 'user',\n      content: 'Keyword: ' + kwData.keyword + '\\nVolume: ' + kwData.volume + '/mes\\nTop10: ' + serpSummary + '\\nPAA: ' + paaSummary\n    }\n  ]\n};\n\nreturn [{\n  json: {\n    keyword: kwData.keyword,\n    volume: kwData.volume,\n    cpc_brl: kwData.cpc_brl,\n    competition: kwData.competition,\n    sazonalidade: kwData.sazonalidade,\n    queda_pct: kwData.queda_pct,\n    nicho: kwData.nicho,\n    nicho_label: kwData.nicho_label,\n    site_url: kwData.site_url,\n    volume_min: kwData.volume_min,\n    volume_max: kwData.volume_max,\n    queda_max: kwData.queda_max,\n    sazonalidade_max: kwData.sazonalidade_max,\n    serp_summary: serpSummary,\n    paa_questions: paaSummary,\n    openai_payload: JSON.stringify(payload)\n  }\n}];"
+      },
+      "id": "9cc6b494-f28c-46b6-854d-c3468eee041f",
+      "name": "Preparar Contexto SERP",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={{ $json.openai_payload }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "7093e757-7cfd-494d-9848-db605691d806",
+      "name": "IA: An\u00e1lise SERP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        448,
+        0
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "tgcGhH7z8tus7Nps",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Monta o blueprint final a partir da an\u00e1lise da IA\n// Filtra apenas oportunidades com score >= 6\n\nconst raw = $input.first().json;\nconst kwData = $('Preparar Contexto SERP').first().json;\n\n// Extrai resposta da IA\nconst content = raw.choices?.[0]?.message?.content;\nif (!content) return [];\n\nlet analise;\ntry {\n  analise = JSON.parse(content);\n} catch(e) {\n  console.warn('JSON inv\u00e1lido da an\u00e1lise SERP:', e.message);\n  return [];\n}\n\n// Descarta se n\u00e3o for oportunidade ou score baixo\nif (!analise.oportunidade || (analise.score || 0) < 6) {\n  console.log(`Keyword descartada: ${kwData.keyword} (score: ${analise.score})`);\n  return [];\n}\n\nconst hoje = new Date().toISOString().split('T')[0];\n\n// Blueprint completo \u2014 contrato de dados para o workflow do feed\nconst blueprint = {\n  // Identifica\u00e7\u00e3o\n  data: hoje,\n  nicho: kwData.nicho,\n  nicho_label: kwData.nicho_label,\n  site_url: kwData.site_url,\n  \n  // Keyword validada\n  keyword: kwData.keyword,\n  keyword_seed: kwData.keyword_seed,\n  \n  // M\u00e9tricas Google Ads\n  volume: kwData.volume,\n  cpc_brl: kwData.cpc_brl,\n  competition: kwData.competition,\n  sazonalidade: kwData.sazonalidade,\n  queda_pct: kwData.queda_pct,\n  \n  // An\u00e1lise SERP\n  score_oportunidade: analise.score,\n  tipo_ativo: analise.tipo_ativo || 'guia',\n  razao_oportunidade: analise.razao,\n  concorrentes_fracos: analise.concorrentes_fracos || [],\n  \n  // Campos para o workflow de conte\u00fado\n  titulo: analise.titulo_sugerido,\n  urlSatelite: analise.url_satelite,\n  resumoBruto: analise.resumo_bruto,\n  \n  // Status\n  status: 'aprovado',\n  publicado: false\n};\n\nreturn [{ json: blueprint }];"
+      },
+      "id": "0fd48eab-3071-439b-9986-b1b7ea407263",
+      "name": "Montar Blueprint",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        672,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "mode": "url",
+          "value": "https://docs.google.com/spreadsheets/d/1SnW6WSaHaWxPrlo_fUM7FRugJCaMSoV4_PhPvzbNIjY"
+        },
+        "sheetName": {
+          "mode": "name",
+          "value": "saude_publica"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "data",
+              "displayName": "data",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "nicho",
+              "displayName": "nicho",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "nicho_label",
+              "displayName": "nicho_label",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "site_url",
+              "displayName": "site_url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "keyword",
+              "displayName": "keyword",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "volume",
+              "displayName": "volume",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "cpc_brl",
+              "displayName": "cpc_brl",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "competition",
+              "displayName": "competition",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "sazonalidade",
+              "displayName": "sazonalidade",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "queda_pct",
+              "displayName": "queda_pct",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "score_oportunidade",
+              "displayName": "score_oportunidade",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "tipo_ativo",
+              "displayName": "tipo_ativo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "razao_oportunidade",
+              "displayName": "razao_oportunidade",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "concorrentes_fracos",
+              "displayName": "concorrentes_fracos",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "titulo",
+              "displayName": "titulo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "urlSatelite",
+              "displayName": "urlSatelite",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "resumoBruto",
+              "displayName": "resumoBruto",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "publicado",
+              "displayName": "publicado",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "58c03996-43d5-4cfa-b324-ce6fac7b7275",
+      "name": "Salvar no Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        880,
+        0
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yyC1h8PbqDVTNPQ5",
+          "name": "Google Sheets ZGC Editorial"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Formata os blueprints aprovados para passar ao workflow do feed\n// Este n\u00f3 \u00e9 o ponto de sa\u00edda que conecta ao ZGC_Feed_Editorial_Output\n\nconst blueprint = $input.first().json;\n\n// Formato exato que o workflow do feed espera\nreturn [{\n  json: {\n    keyword: blueprint.keyword,\n    titulo: blueprint.titulo,\n    urlSatelite: blueprint.urlSatelite,\n    nicho: blueprint.nicho,\n    resumoBruto: blueprint.resumoBruto,\n    tipoAtivo: blueprint.tipo_ativo,\n    volume: blueprint.volume,\n    score: blueprint.score_oportunidade\n  }\n}];"
+      },
+      "id": "a5e683e2-5292-44eb-979a-008f0b245603",
+      "name": "Formatar para Feed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1104,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": "QITYlsQYywsEOHY6",
+        "options": {}
+      },
+      "id": "fa1cc3f9-1685-4ea6-a062-cf46dc71a1b7",
+      "name": "Disparar Feed Editorial",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1,
+      "position": [
+        1328,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "amount": "=6"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -608,
+        96
+      ],
+      "id": "2f576d56-fe01-4d06-b70f-09504eba37aa",
+      "name": "Wait",
+      "webhookId": "5752593d-d404-4c75-855c-8693b586ac33"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -752,
+        -32
+      ],
+      "id": "58b62680-8ef0-44d1-a39e-1b3de98cdbc9",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first().json;\n\nconst data = await $http.request({\n  method: 'POST',\n  url: 'https://api.openai.com/v1/chat/completions',\n  headers: {\n    'Content-Type': 'application/json',\n    'Authorization': 'Bearer <REDACTED_OPENAI_KEY>'\n  },\n  body: {\n    model: 'gpt-4o-mini',\n    temperature: 0.2,\n    response_format: { type: 'json_object' },\n    messages: [\n      {\n        role: 'system',\n        content: 'Analise os resultados do Google e retorne JSON: {\"oportunidade\": true, \"score\": 7, \"tipo_ativo\": \"guia\", \"razao\": \"explicacao\", \"url_satelite\": \"/sus/slug/\", \"titulo_sugerido\": \"Titulo PT-BR\", \"resumo_bruto\": \"2-3 frases\", \"concorrentes_fracos\": [\"url1\"]}. Score 6-10 se Top 10 tem PDFs ou portais gov lentos sem interatividade.'\n      },\n      {\n        role: 'user',\n        content: 'Keyword: ' + item.keyword + '\\nVolume: ' + item.volume + '/mes\\n\\nTop 10:\\n' + item.serp_summary + '\\n\\nPAA:\\n' + item.paa_questions\n      }\n    ]\n  },\n  json: true\n});\n\nconst content = data.choices?.[0]?.message?.content;\nif (!content) throw new Error('OpenAI sem resposta');\n\nreturn [{ json: { ...item, openai_raw: content } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -368,
+        -112
+      ],
+      "id": "29954999-7c6a-45d9-b911-a0205c24b763",
+      "name": "Code in JavaScript",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1SnW6WSaHaWxPrlo_fUM7FRugJCaMSoV4_PhPvzbNIjY",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        672,
+        200
+      ],
+      "id": "ler-keywords-existentes",
+      "name": "Ler Keywords Existentes",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "yyC1h8PbqDVTNPQ5",
+          "name": "Google Sheets ZGC Editorial"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const existentes = $('Ler Keywords Existentes').all().map(item =>\n  (item.json.keyword || '').toString().toLowerCase().trim()\n);\n\nconst blueprint = $('Montar Blueprint').first().json;\nconst keywordNova = (blueprint.keyword || '').toString().toLowerCase().trim();\nconst jaExiste = existentes.includes(keywordNova);\n\nreturn [{\n  json: {\n    ...blueprint,\n    duplicado: jaExiste\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        200
+      ],
+      "id": "verificar-keyword-duplicada",
+      "name": "Verificar Keyword Duplicada"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "cond-duplicado",
+              "leftValue": "={{ $json.duplicado }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1100,
+        200
+      ],
+      "id": "filtro-duplicidade",
+      "name": "Filtro Duplicidade"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1320,
+        100
+      ],
+      "id": "descartar-duplicada",
+      "name": "Descartar Duplicada"
+    }
+  ],
+  "connections": {
+    "Cron Seg+Qui 07h": {
+      "main": [
+        [
+          {
+            "node": "Definir Vari\u00e1veis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Definir Vari\u00e1veis": {
+      "main": [
+        [
+          {
+            "node": "IA: Gerar Keywords",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IA: Gerar Keywords": {
+      "main": [
+        [
+          {
+            "node": "Split Keywords",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Keywords": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Ads API": {
+      "main": [
+        [
+          {
+            "node": "Processar M\u00e9tricas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Processar M\u00e9tricas": {
+      "main": [
+        [
+          {
+            "node": "Filtro SEO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro SEO": {
+      "main": [
+        [
+          {
+            "node": "Serper: Busca SERP",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Serper: Busca SERP": {
+      "main": [
+        [
+          {
+            "node": "Preparar Contexto SERP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar Contexto SERP": {
+      "main": [
+        [
+          {
+            "node": "IA: An\u00e1lise SERP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IA: An\u00e1lise SERP": {
+      "main": [
+        [
+          {
+            "node": "Montar Blueprint",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Montar Blueprint": {
+      "main": [
+        [
+          {
+            "node": "Ler Keywords Existentes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Salvar no Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Formatar para Feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formatar para Feed": {
+      "main": [
+        [
+          {
+            "node": "Disparar Feed Editorial",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Google Ads API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ler Keywords Existentes": {
+      "main": [
+        [
+          {
+            "node": "Verificar Keyword Duplicada",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verificar Keyword Duplicada": {
+      "main": [
+        [
+          {
+            "node": "Filtro Duplicidade",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtro Duplicidade": {
+      "main": [
+        [
+          {
+            "node": "Descartar Duplicada",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Salvar no Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Descartar Duplicada": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "51f74924-2ff5-4abb-a839-60537df9ceeb",
+  "activeVersionId": null,
+  "versionCounter": 163,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-06-10T13:46:56.515Z",
+      "createdAt": "2026-06-10T13:46:56.515Z",
+      "role": "workflow:owner",
+      "workflowId": "cSzPv8O1yrISgDR1",
+      "projectId": "0ATZPY7vyc8bNEce",
+      "project": {
+        "updatedAt": "2026-05-26T14:36:59.357Z",
+        "createdAt": "2026-05-26T14:02:56.822Z",
+        "id": "0ATZPY7vyc8bNEce",
+        "name": "Jose Aluizio Guimaraes <zagg@continentemedia.com.br>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "b93edc3a-5970-47f1-a212-be261a42c875"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": "Version 396614b4",
+    "description": ""
+  }
+}
