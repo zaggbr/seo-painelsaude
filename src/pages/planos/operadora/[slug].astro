@@ -2,7 +2,6 @@
 import Layout from '../../../layouts/Layout.astro';
 import operadoras from '../../../data/operadoras.json';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
-import GuiasPlanosSaude from '../../../components/GuiasPlanosSaude.astro';
 
 export async function getStaticPaths() {
   return operadoras.slice(0, 200).map((op) => ({
@@ -165,7 +164,8 @@ const jsonLd = {
         <div><dt style="font-weight:600;color:#1565c0">Abrangência</dt><dd style="color:#555;margin-top:0.2rem">Área geográfica onde o plano oferece cobertura: municipal, estadual, regional ou nacional.</dd></div>
         <div><dt style="font-weight:600;color:#1565c0">Fator moderador</dt><dd style="color:#555;margin-top:0.2rem">Mecanismo de regulação do uso: franquia, coparticipação ou desconto na mensalidade.</dd></div>
       </dl>
-      <GuiasPlanosSaude />
+      <div id="zgc-relacionados" data-pools="guia-planos-saude" data-qtd="8" data-modo="aleatorio"></div>
+      <script src="https://zgc-widgets.pages.dev/widgets/conteudo-relacionado.js" defer></script>
     </section>
 
     <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">

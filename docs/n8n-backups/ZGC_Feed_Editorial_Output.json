@@ -1,0 +1,273 @@
+{
+  "updatedAt": "2026-06-10T15:30:31.123Z",
+  "createdAt": "2026-06-09T21:33:00.042Z",
+  "id": "QITYlsQYywsEOHY6",
+  "name": "ZGC_Feed_Editorial_Output",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "// Debug: mostra o que chegou\nconst allItems = $input.all();\nconst first = allItems[0]?.json || {};\n\n// O Execute Workflow pode passar dados em diferentes estruturas\n// Tenta v\u00e1rias possibilidades\nlet blueprints = [];\n\n// Possibilidade 1: array direto\nif (Array.isArray(first)) {\n  blueprints = first;\n}\n// Possibilidade 2: campo body\nelse if (first.body && Array.isArray(first.body)) {\n  blueprints = first.body;\n}\n// Possibilidade 3: item direto com keyword\nelse if (first.keyword) {\n  blueprints = allItems.map(function(i) { return i.json; });\n}\n// Possibilidade 4: campo data\nelse if (first.data && Array.isArray(first.data)) {\n  blueprints = first.data;\n}\n\nblueprints = blueprints.filter(function(b) { return b && b.keyword; });\n\nif (blueprints.length === 0) {\n  // \u00daltimo recurso: usa dados de fallback para n\u00e3o quebrar o pipeline\n  blueprints = [{\n    keyword: 'fila sus',\n    titulo: 'Como Consultar a Fila do SUS',\n    urlSatelite: '/sus/fila-sus/',\n    nicho: 'saude_publica',\n    resumoBruto: 'Guia completo sobre como consultar sua posi\u00e7\u00e3o na fila do SUS.',\n    tipoAtivo: 'guia',\n    volume: 12100,\n    score: 7\n  }];\n}\n\nreturn blueprints.map(function(b) {\n  return { json: {\n    keyword: b.keyword,\n    titulo: b.titulo,\n    urlSatelite: b.urlSatelite || b.urlSateliteReal,\n    nicho: b.nicho,\n    resumoBruto: b.resumoBruto,\n    tipoAtivo: b.tipoAtivo || 'guia',\n    volume: b.volume,\n    score: b.score\n  }};\n});"
+      },
+      "id": "03103cc6-dc97-4f88-a7a1-2918a6ca006f",
+      "name": "Filtrar blueprints do dia",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const blueprints = $input.all().map(function(i) { return i.json; });\n\nconst data = new Date().toISOString().split('T')[0];\n\nconst payload = JSON.stringify({\n  model: 'gpt-4o-mini',\n  temperature: 0.25,\n  response_format: { type: 'json_object' },\n  messages: [\n    {\n      role: 'system',\n      content: 'Voc\u00ea \u00e9 o editor s\u00eanior do Painel Sa\u00fade. Receba os blueprints do pSEO e retorne SOMENTE um objeto JSON v\u00e1lido. Estrutura: {\"_meta\": {\"dataAtualizacao\": \"YYYY-MM-DD\", \"site\": \"meu.painelsaude.com.br\", \"totalBlocos\": 0}, \"blocos\": [{\"id\": \"slug-YYYY-MM-DD\", \"categoria\": \"saude-publica\", \"categoriaLabel\": \"Sa\u00fade P\u00fablica\", \"titulo\": \"string\", \"resumo\": \"string max 160 chars\", \"resumoParagrafos\": [\"p1\",\"p2\",\"p3\"], \"urlSateliteReal\": \"/slug/\", \"termoChave\": \"string\", \"imagemUrl\": null, \"quiz\": {\"pergunta\": \"string\", \"opcoes\": [\"A\",\"B\",\"C\",\"D\"], \"respostaFiltro\": {\"A\": \"iniciante\", \"B\": \"basico\", \"C\": \"intermediario\", \"D\": \"avancado\"}}, \"tags\": [\"tag1\"]}]}'\n    },\n    {\n      role: 'user',\n      content: 'Gere o feed.json para hoje (' + data + ') com base nos blueprints: ' + JSON.stringify(blueprints)\n    }\n  ]\n});\n\nreturn [{\n  json: {\n    blueprints: blueprints,\n    quantidade: blueprints.length,\n    data: data,\n    site: 'meu.painelsaude.com.br',\n    openai_payload: payload\n  }\n}];"
+      },
+      "id": "ce3f17ab-9511-40e6-af2c-d9ece380f039",
+      "name": "Agregar em payload \u00fanico",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        448,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={{ $json.openai_payload }}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "446aafc5-467a-4d42-8422-42656d32f6fe",
+      "name": "IA: Gerar feed.json",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        672,
+        0
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "tgcGhH7z8tus7Nps",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const raw = $input.first().json;\n\n// HTTP Request retorna a resposta da OpenAI \u2014 extrair o content\nlet feedData;\ntry {\n  const content = raw.choices?.[0]?.message?.content;\n  if (!content) throw new Error('Resposta da OpenAI sem content');\n  feedData = typeof content === 'string' ? JSON.parse(content) : content;\n} catch (e) {\n  throw new Error(`JSON inv\u00e1lido retornado pela IA: ${e.message}`);\n}\n\nif (!feedData.blocos || !Array.isArray(feedData.blocos)) {\n  throw new Error('feed.json gerado n\u00e3o cont\u00e9m array de blocos');\n}\n\nfeedData.blocos = feedData.blocos.filter(b => {\n  if (!b.urlSateliteReal) {\n    console.warn(`Bloco '${b.id}' sem urlSateliteReal \u2014 descartado`);\n    return false;\n  }\n  \n  if (b.quiz && b.quiz.opcoes && b.quiz.opcoes.some(o => o.trim().length <= 1)) {\n    delete b.quiz;\n  }\n  \n  return true;\n});\n\nfeedData._meta = {\n  ...feedData._meta,\n  dataAtualizacao: new Date().toISOString().split('T')[0],\n  geradoEm: new Date().toISOString(),\n  totalBlocos: feedData.blocos.length,\n};\n\nif (feedData.blocos.length === 0) {\n  throw new Error('Todos os blocos foram descartados na valida\u00e7\u00e3o');\n}\n\nreturn [{ json: { feedData, feedJson: JSON.stringify(feedData, null, 2) } }];"
+      },
+      "id": "1bff250d-9a9b-4a8e-b3da-9b586dff3512",
+      "name": "Validar e sanitizar JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "edit",
+        "owner": "zaggbr",
+        "repository": "zgc-painelsaude",
+        "filePath": "src/data/feed.json",
+        "fileContent": "={{ $json.feedJson }}",
+        "commitMessage": "=chore(feed): atualiza feed.json {{ $json.feedData._meta.dataAtualizacao }}"
+      },
+      "id": "f8f4bc8c-e7a6-41d3-ae8d-4061607bbe50",
+      "name": "Commit feed.json no GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [
+        1104,
+        0
+      ],
+      "webhookId": "1eb00236-008f-4677-b01c-eaf514dc6514",
+      "credentials": {
+        "githubApi": {
+          "id": "cFkY4evMWkGfiZW8",
+          "name": "GitHub ZGC"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Busca o feedData do n\u00f3 \"Validar e sanitizar JSON\" (2 n\u00f3s atr\u00e1s)\nconst feedData = $('Validar e sanitizar JSON').first().json.feedData;\n\nconst urls = feedData.blocos\n  .map(b => `https://meu.painelsaude.com.br${b.urlSateliteReal}`)\n  .filter(Boolean);\n\nurls.unshift('https://meu.painelsaude.com.br/feed/');\n\nreturn urls.map(url => ({ json: { url } }));"
+      },
+      "id": "08bb81d1-234c-44fc-89a5-3baf05893478",
+      "name": "Preparar URLs para indexa\u00e7\u00e3o",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1328,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://indexing.googleapis.com/v3/urlNotifications:publish",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "googleOAuth2Api",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"url\": \"{{ $json.url }}\",\n  \"type\": \"URL_UPDATED\"\n}",
+        "options": {}
+      },
+      "id": "9c534040-cd7d-4669-8499-8d5d64087629",
+      "name": "Google Indexing API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1536,
+        -16
+      ],
+      "credentials": {
+        "googleOAuth2Api": {
+          "id": "bplzcR1lUXftLGzq",
+          "name": "Google Indexing API ZGC"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "b886eee1-ef0d-4b3a-b384-69739c4e06c5",
+      "name": "When Executed by Another Workflow"
+    }
+  ],
+  "connections": {
+    "Filtrar blueprints do dia": {
+      "main": [
+        [
+          {
+            "node": "Agregar em payload \u00fanico",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agregar em payload \u00fanico": {
+      "main": [
+        [
+          {
+            "node": "IA: Gerar feed.json",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IA: Gerar feed.json": {
+      "main": [
+        [
+          {
+            "node": "Validar e sanitizar JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar e sanitizar JSON": {
+      "main": [
+        [
+          {
+            "node": "Commit feed.json no GitHub",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commit feed.json no GitHub": {
+      "main": [
+        [
+          {
+            "node": "Preparar URLs para indexa\u00e7\u00e3o",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar URLs para indexa\u00e7\u00e3o": {
+      "main": [
+        [
+          {
+            "node": "Google Indexing API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Filtrar blueprints do dia",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "8f8a5e44-96b0-4a52-a343-6e701d07ea56",
+  "activeVersionId": "8f8a5e44-96b0-4a52-a343-6e701d07ea56",
+  "versionCounter": 48,
+  "triggerCount": 0,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-06-09T21:33:00.042Z",
+      "createdAt": "2026-06-09T21:33:00.042Z",
+      "role": "workflow:owner",
+      "workflowId": "QITYlsQYywsEOHY6",
+      "projectId": "0ATZPY7vyc8bNEce",
+      "project": {
+        "updatedAt": "2026-05-26T14:36:59.357Z",
+        "createdAt": "2026-05-26T14:02:56.822Z",
+        "id": "0ATZPY7vyc8bNEce",
+        "name": "Jose Aluizio Guimaraes <zagg@continentemedia.com.br>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "b93edc3a-5970-47f1-a212-be261a42c875"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": "Version 8f8a5e44",
+    "description": ""
+  }
+}

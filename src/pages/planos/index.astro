@@ -16,20 +16,26 @@ const modalidades = [...new Set(top.map(op => op.modalidade))];
   </header>
 
   {modalidades.map(mod => (
-    <section style="margin-bottom:2.5rem">
-      <h2 style="font-size:1.1rem;font-weight:600;color:#1565c0;border-bottom:2px solid #e3f2fd;padding-bottom:0.5rem;margin-bottom:1rem">
-        {mod}
-      </h2>
-      <ul style="list-style:none;display:grid;gap:0.5rem">
-        {top.filter(op => op.modalidade === mod).map(op => (
-          <li style="border:1px solid #e8e8e8;border-radius:8px;overflow:hidden">
-            <a href={`/planos/operadora/${op.slug}`} style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;text-decoration:none;color:#333">
-              <span style="font-weight:500">{op.nome}</span>
-              <span style="font-size:0.8rem;color:#666">{op.total_planos} planos</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <>
+      {mod === 'Cooperativa Médica' && (
+        <div id="zgc-relacionados" data-pools="guia-planos-saude" data-qtd="8" data-modo="aleatorio"></div>
+        <script src="https://zgc-widgets.pages.dev/widgets/conteudo-relacionado.js" defer></script>
+      )}
+      <section style="margin-bottom:2.5rem">
+        <h2 style="font-size:1.1rem;font-weight:600;color:#1565c0;border-bottom:2px solid #e3f2fd;padding-bottom:0.5rem;margin-bottom:1rem">
+          {mod}
+        </h2>
+        <ul style="list-style:none;display:grid;gap:0.5rem">
+          {top.filter(op => op.modalidade === mod).map(op => (
+            <li style="border:1px solid #e8e8e8;border-radius:8px;overflow:hidden">
+              <a href={`/planos/operadora/${op.slug}`} style="display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;text-decoration:none;color:#333">
+                <span style="font-weight:500">{op.nome}</span>
+                <span style="font-size:0.8rem;color:#666">{op.total_planos} planos</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
   ))}
 </Layout>
