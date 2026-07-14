@@ -1,265 +1,322 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prazo de Aprovação do INSS: Simulador por Tipo de Benefício 2026</title>
-  <meta name="description" content="Calcule o prazo legal de análise do seu benefício no INSS e a data provável do primeiro pagamento. Aposentadoria, auxílio-doença, BPC/LOAS, pensão por morte e salário-maternidade."/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://painelsaude.com.br/simuladores/prazo-aprovacao-inss"/>
-  <meta property="og:title" content="Prazo de Aprovação INSS: Simulador 2026"/>
-  <meta property="og:site_name" content="PainelSaúde"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Simulador de Prazo de Aprovação INSS 2026","url":"https://painelsaude.com.br/simuladores/prazo-aprovacao-inss","description":"Calcula o prazo legal de análise pelo INSS por tipo de benefício e estima a data do primeiro pagamento. Inclui alerta quando o prazo legal é ultrapassado.","applicationCategory":"FinanceApplication","operatingSystem":"Web","isAccessibleForFree":true,"inLanguage":"pt-BR","publisher":{"@type":"Organization","name":"PainelSaúde","url":"https://painelsaude.com.br"}}</script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Prazo de Aprovação do INSS: Simulador por Tipo de Benefício 2026"
+  description="Calcule o prazo legal de análise do seu benefício no INSS e a data provável do primeiro pagamento. Aposentadoria, auxílio-doença, BPC/LOAS, pensão por morte e salário-maternidade."
+  canonical="https://painelsaude.com.br/simuladores/prazo-aprovacao-inss"
+>
   <style>
-    body{font-family:'Inter',sans-serif;background:#F2F2F2;}
-    h1,h2,h3{color:#005082;}
-    .zgc-btn{background:#0077C0;color:white;padding:12px 20px;border-radius:8px;border:none;width:100%;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s;}
-    .zgc-btn:hover{background:#005082;}
-    select,input[type=date]{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-family:'Inter',sans-serif;font-size:15px;background:white;outline:none;}
-    select:focus,input:focus{border-color:#0077C0;}
-    .toggle{position:relative;width:40px;height:22px;flex-shrink:0;}
-    .toggle input{opacity:0;width:0;height:0;position:absolute;}
-    .slider{position:absolute;inset:0;background:#9ca3af;border-radius:22px;cursor:pointer;transition:background .2s;}
-    .slider:before{content:'';position:absolute;width:16px;height:16px;left:3px;top:3px;background:white;border-radius:50%;transition:transform .2s;}
-    .toggle input:checked+.slider{background:#0077C0;}
-    .toggle input:checked+.slider:before{transform:translateX(18px);}
-    .etapa-dot{width:10px;height:10px;border-radius:50%;background:#00A1E4;flex-shrink:0;margin-top:5px;}
-    .rss-card{background:white;border-radius:8px;padding:12px 16px;border-left:3px solid #00A1E4;margin-bottom:8px;}
-    .rss-card a{color:#005082;text-decoration:none;font-weight:500;font-size:14px;}
+    /* Estilos Premium Painel Saúde */
+    .ps-badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #1565c0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+    .ps-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .ps-subtitle {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .ps-section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      margin-top: 2rem;
+    }
+    .ps-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      margin-bottom: 1.5rem;
+    }
+    .ps-form-group {
+      margin-bottom: 1rem;
+    }
+    .ps-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #4a5568;
+      margin-bottom: 0.5rem;
+    }
+    .ps-input, .ps-select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: #1a1a1a;
+      background-color: #fff;
+      transition: border-color 0.2s;
+    }
+    .ps-input:focus, .ps-select:focus {
+      outline: none;
+      border-color: #1565c0;
+    }
+    .ps-btn {
+      width: 100%;
+      background: #1565c0;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+    .ps-btn:hover {
+      background: #0d47a1;
+    }
+    .ps-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+    .ps-checkbox {
+      width: 18px;
+      height: 18px;
+      accent-color: #1565c0;
+    }
+    
+    /* Resultados */
+    .ps-result-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #1565c0;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .ps-result-title {
+      font-size: 0.9rem;
+      color: #64748b;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .ps-result-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1565c0;
+    }
+    .ps-alert {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-left: 4px solid #ef4444;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #991b1b;
+    }
+    
+    /* Simule Também */
+    .ps-link-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s;
+    }
+    .ps-link-card:hover {
+      border-color: #1565c0;
+    }
+    .ps-link-icon {
+      background: #e0f2fe;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .ps-link-title {
+      color: #1565c0;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .ps-link-desc {
+      color: #64748b;
+      font-size: 0.8rem;
+    }
   </style>
-</head>
-<body>
-<header style="background:#1565c0;" class="text-white py-3 px-4">
-  <div class="max-w-4xl mx-auto">
-    <nav class="text-sm text-blue-200">
-      <a href="https://painelsaude.com.br" class="hover:text-white">PainelSaúde</a>
-      <span class="mx-2">›</span><a href="https://painelsaude.com.br/simuladores" class="hover:text-white">Simuladores</a>
-      <span class="mx-2">›</span><span class="text-white">Prazo de Aprovação INSS</span>
-    </nav>
-  </div>
-</header>
 
-<main class="max-w-4xl mx-auto px-4 py-8">
-  <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-    <div class="lg:col-span-2">
+  <div class="ps-badge">📅 PainelSaúde · Previdência Social</div>
+  <h1 class="ps-title">Quando começa minha aposentadoria?</h1>
+  <p class="ps-subtitle">Calcule o prazo legal de análise e a data provável do primeiro pagamento pelo INSS.</p>
 
-      <div class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 rounded-full mb-4" style="background:#e0f2fe;color:#0077C0;">
-        🏥 PainelSaúde · Previdência Social
-      </div>
-      <h1 class="text-3xl font-black mb-2">Quando começa minha aposentadoria?</h1>
-      <p class="text-gray-600 mb-6">Calcule o prazo legal e a data do primeiro pagamento.</p>
-
-      <!-- DESCRIÇÃO -->
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <h2 class="text-lg font-bold mb-3">Para que serve este simulador?</h2>
-        <p class="text-gray-700 text-sm leading-relaxed mb-3">
-          Este simulador mostra <strong>em quantos dias o INSS deve analisar e conceder seu benefício</strong> e estima a data provável do primeiro pagamento — com alerta automático se o prazo legal já venceu e você tem direito a <strong>juros de mora de 1% ao mês</strong>.
-        </p>
-        <p class="text-gray-700 text-sm leading-relaxed">
-          Informe o tipo de benefício solicitado e a data do protocolo. O simulador cobre aposentadoria, auxílio-doença, BPC/LOAS, pensão por morte e salário-maternidade — cada um com seu prazo legal específico.
-        </p>
-        <div class="grid grid-cols-3 gap-3 mt-4">
-          <div class="text-center p-3 rounded-lg" style="background:#e0f2fe;">
-            <div class="text-xl font-black" style="color:#0077C0;">90</div>
-            <div class="text-xs text-gray-600 mt-1">dias para aposentadoria</div>
-          </div>
-          <div class="text-center p-3 rounded-lg" style="background:#e0f2fe;">
-            <div class="text-xl font-black" style="color:#0077C0;">45</div>
-            <div class="text-xs text-gray-600 mt-1">dias para auxílio-doença</div>
-          </div>
-          <div class="text-center p-3 rounded-lg" style="background:#e0f2fe;">
-            <div class="text-xl font-black" style="color:#0077C0;">1%</div>
-            <div class="text-xs text-gray-600 mt-1">juros/mês após prazo</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CALCULADORA -->
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <h2 class="text-lg font-bold mb-4">Calcule prazo e datas</h2>
-        <div class="mb-3">
-          <label class="block text-xs font-bold text-gray-600 mb-1">Tipo de benefício solicitado</label>
-          <select id="tipo" onchange="onTipo()">
+  <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+    <!-- COLUNA PRINCIPAL -->
+    <div>
+      <h2 class="ps-section-title">Para que serve este simulador?</h2>
+      <p style="font-size: 0.95rem; color: #444; margin-bottom: 1rem;">
+        Este simulador mostra <strong>em quantos dias o INSS deve analisar e conceder seu benefício</strong> e estima a data provável do primeiro pagamento — com alerta automático se o prazo legal já venceu e você tem direito a <strong>juros de mora</strong>.
+      </p>
+      
+      <div class="ps-card">
+        <h2 class="ps-section-title" style="margin-top:0">Calcule prazo e datas</h2>
+        
+        <div class="ps-form-group">
+          <label class="ps-label">Tipo de benefício solicitado</label>
+          <select id="tipoBeneficio" class="ps-select">
             <option value="aposentadoria">Aposentadoria (por idade, tempo ou especial)</option>
-            <option value="auxilio">Auxílio por incapacidade temporária (auxílio-doença)</option>
-            <option value="bpc">BPC/LOAS (benefício assistencial)</option>
-            <option value="pensao">Pensão por morte</option>
-            <option value="salario">Salário-maternidade</option>
+            <option value="auxilio_doenca">Auxílio-doença (Benefício por incapacidade)</option>
+            <option value="bpc">BPC/LOAS (Idoso ou Deficiente)</option>
+            <option value="pensao">Pensão por Morte</option>
+            <option value="salario_maternidade">Salário-maternidade</option>
           </select>
         </div>
-        <div class="mb-3">
-          <label class="block text-xs font-bold text-gray-600 mb-1">Data do protocolo do pedido</label>
-          <input type="date" id="data"/>
+        
+        <div class="ps-form-group">
+          <label class="ps-label">Data do protocolo do pedido</label>
+          <input type="date" id="dataProtocolo" class="ps-input">
         </div>
-        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg mb-3">
+        
+        <div class="ps-form-group">
+          <label class="ps-checkbox-wrapper">
+            <input type="checkbox" id="docsCompletos" class="ps-checkbox" checked>
+            <span class="ps-label" style="margin:0">Documentação estava completa no protocolo?</span>
+          </label>
+          <p style="font-size:0.75rem; color:#888; margin-top:4px; margin-left:26px;">
+            Se o INSS pediu "exigência", o prazo é pausado.
+          </p>
+        </div>
+        
+        <button class="ps-btn" onclick="calcularPrazo()">Calcular Prazos e Datas</button>
+      </div>
+
+      <div id="resultado" style="display: none;">
+        <h2 class="ps-section-title">Resultado Oficial INSS</h2>
+        
+        <div class="ps-result-card">
+          <div class="ps-result-title">Prazo Legal Máximo para Análise</div>
+          <div class="ps-result-value" id="prazoDias">90 dias</div>
+          <p style="font-size:0.85rem; color:#555; margin-top:4px;">De acordo com o acordo STF/INSS de 2021.</p>
+        </div>
+        
+        <div class="ps-result-card">
+          <div class="ps-result-title">Data Limite de Resposta (Fim do Prazo)</div>
+          <div class="ps-result-value" id="dataFimPrazo">--/--/----</div>
+        </div>
+
+        <div class="ps-result-card">
+          <div class="ps-result-title">Data Estimada do 1º Pagamento</div>
+          <div class="ps-result-value" id="dataPagamento">--/--/----</div>
+          <p style="font-size:0.85rem; color:#555; margin-top:4px;">A concessão garante o pagamento retroativo desde a data do protocolo (DER).</p>
+        </div>
+        
+        <div id="alertaAtraso" class="ps-alert" style="display:none;"></div>
+      </div>
+
+      <h2 class="ps-section-title">Simule também</h2>
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        <a href="/simuladores/posso-me-aposentar" class="ps-link-card">
+          <div class="ps-link-icon">✅</div>
           <div>
-            <div class="text-sm font-medium text-gray-800">Documentação completa no protocolo?</div>
-            <div class="text-xs text-gray-500">Documentos incompletos adicionam 30 dias ao prazo</div>
+            <div class="ps-link-title">Posso me aposentar?</div>
+            <div class="ps-link-desc">Verifique elegibilidade nas 4 modalidades de aposentadoria</div>
           </div>
-          <label class="toggle"><input type="checkbox" id="doc" checked><span class="slider"></span></label>
-        </div>
-        <div id="row-recurso" class="flex items-center justify-between p-3 bg-gray-50 rounded-lg mb-3" style="display:none">
+        </a>
+        <a href="/simuladores/quanto-vou-receber-inss" class="ps-link-card">
+          <div class="ps-link-icon">💰</div>
           <div>
-            <div class="text-sm font-medium text-gray-800">Pedido negado e está em recurso?</div>
-            <div class="text-xs text-gray-500">Recurso ao CRPS adiciona até 180 dias</div>
+            <div class="ps-link-title">Valor da Aposentadoria</div>
+            <div class="ps-link-desc">Calcule o valor estimado com regras de 2026</div>
           </div>
-          <label class="toggle"><input type="checkbox" id="recurso"><span class="slider"></span></label>
-        </div>
-        <button class="zgc-btn" onclick="calcular()">Calcular prazo e datas</button>
-
-        <div id="resultado" style="display:none" class="mt-5">
-          <div class="bg-white border border-gray-200 rounded-lg p-5 mb-4 flex items-center gap-4">
-            <div class="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 text-2xl" style="background:#e0f2fe;">📅</div>
-            <div>
-              <div class="text-2xl font-black" style="color:#0077C0;" id="prazo-num">—</div>
-              <div class="text-xs text-gray-500 mt-1" id="prazo-label">prazo legal de análise</div>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 gap-3 mb-4">
-            <div class="bg-gray-50 rounded-lg p-4"><div class="text-sm font-bold text-gray-800" id="data-limite">—</div><div class="text-xs text-gray-500 mt-1">prazo limite legal</div></div>
-            <div class="bg-gray-50 rounded-lg p-4"><div class="text-sm font-bold text-gray-800" id="data-pag">—</div><div class="text-xs text-gray-500 mt-1">estimativa 1º pagamento</div></div>
-            <div class="bg-gray-50 rounded-lg p-4"><div class="text-sm font-bold text-gray-800" id="data-dip">—</div><div class="text-xs text-gray-500 mt-1">competência (retroativo)</div></div>
-            <div class="bg-gray-50 rounded-lg p-4"><div class="text-sm font-bold text-gray-800" id="juros">—</div><div class="text-xs text-gray-500 mt-1">direito a juros de mora</div></div>
-          </div>
-          <div class="bg-gray-50 rounded-lg p-4 mb-4">
-            <div class="text-xs font-bold text-gray-500 mb-3">ETAPAS DO PROCESSO</div>
-            <div id="etapas"></div>
-          </div>
-          <div id="aviso" style="display:none" class="rounded-lg p-4 text-sm"></div>
-        </div>
-      </div>
-
-      <!-- SIMULE TAMBÉM -->
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <h2 class="text-lg font-bold mb-4">Simule também</h2>
-        <div class="grid grid-cols-1 gap-3">
-          <a href="https://painelsaude.com.br/simuladores/posso-me-aposentar" class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
-            <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background:#e0f2fe;"><span style="font-size:18px;">✅</span></div>
-            <div><div class="text-sm font-bold" style="color:#005082;">Posso me aposentar?</div><div class="text-xs text-gray-500">Verifique elegibilidade nas 4 modalidades do INSS</div></div>
-          </a>
-          <a href="https://painelsaude.com.br/simuladores/quanto-vou-receber-inss" class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
-            <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background:#e0f2fe;"><span style="font-size:18px;">💰</span></div>
-            <div><div class="text-sm font-bold" style="color:#005082;">Quanto vou receber?</div><div class="text-xs text-gray-500">Calcule o valor estimado com fórmula INSS 2026</div></div>
-          </a>
-        </div>
-      </div>
-
-      <!-- FAQ -->
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <h2 class="text-lg font-bold mb-4">Perguntas frequentes</h2>
-        <div class="space-y-4">
-          <div class="border-b border-gray-100 pb-4"><div class="text-sm font-bold text-gray-800 mb-1">Quanto tempo o INSS tem para analisar uma aposentadoria?</div><div class="text-sm text-gray-600">90 dias corridos a partir do protocolo com documentação completa. Para auxílio-doença, 45 dias. Após o prazo, o segurado tem direito a juros de mora de 1% ao mês.</div></div>
-          <div class="border-b border-gray-100 pb-4"><div class="text-sm font-bold text-gray-800 mb-1">Quando começa a contar o prazo do INSS?</div><div class="text-sm text-gray-600">Na data do protocolo, desde que a documentação esteja completa. Pendências documentais suspendem o prazo até a regularização.</div></div>
-          <div><div class="text-sm font-bold text-gray-800 mb-1">O que fazer se o INSS não analisar no prazo?</div><div class="text-sm text-gray-600">Ligue 135 ou acesse o Meu INSS para verificar o status. Também é possível registrar reclamação na Ouvidoria (0800 780 0191) ou consultar um advogado previdenciário sobre mandado de segurança.</div></div>
-        </div>
-        <p class="text-xs text-gray-400 mt-4">Fontes: <a href="https://www.gov.br/inss" class="hover:underline" target="_blank" rel="noopener">gov.br/inss</a> · Lei nº 9.784/1999 · IN PRES/INSS nº 128/2022</p>
-      </div>
-
-      <!-- RSS -->
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <h2 class="text-lg font-bold mb-4">Mais sobre Previdência e Saúde Pública</h2>
-        <div id="rss-posts"><div class="text-sm text-gray-400 animate-pulse">Carregando artigos recentes…</div></div>
-        <a href="https://painelsaude.com.br" class="inline-block mt-4 text-sm font-bold" style="color:#0077C0;">Ver todos os artigos →</a>
-      </div>
-    </div>
-
-    <!-- SIDEBAR -->
-    <div class="lg:col-span-1 mt-8 lg:mt-0">
-      <div class="bg-white rounded-lg shadow-sm p-5 mb-5 sticky top-4">
-        <div class="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">Descobrir mais</div>
-        <ul class="space-y-2 text-sm" style="color:#005082;">
-          <li><a href="https://painelsaude.com.br/simuladores/posso-me-aposentar" class="hover:text-blue-600">Simulador de Elegibilidade</a></li>
-          <li><a href="https://painelsaude.com.br/simuladores/quanto-vou-receber-inss" class="hover:text-blue-600">Valor da Aposentadoria</a></li>
-          <li><a href="https://meu.painelsaude.com.br/sus/fila-sus" class="hover:text-blue-600">Fila do SUS</a></li>
-          <li><a href="https://painelsaude.com.br/planos" class="hover:text-blue-600">Planos de Saúde</a></li>
-        </ul>
-      </div>
-      <div class="rounded-lg p-5 text-sm" style="background:#005082;color:white;">
-        <div class="font-bold mb-2">📞 Ouvidoria INSS</div>
-        <div class="text-blue-200 text-xs leading-relaxed">Prazo vencido? Ligue <span class="font-black text-white">0800 780 0191</span> — gratuito, para reclamações e acompanhamento.</div>
+        </a>
       </div>
     </div>
   </div>
-</main>
 
-<footer class="bg-gray-800 text-gray-300 text-xs py-6 px-4 mt-8">
-  <div class="max-w-4xl mx-auto">
-    <p class="mb-2">Prazos conforme IN PRES/INSS nº 128/2022 e Lei nº 9.784/1999. Informações de caráter exclusivamente informativo.</p>
-    <p>© 2026 PainelSaúde — Informações de saúde pública para todos os brasileiros</p>
-  </div>
-</footer>
+  <script>
+    const regrasSTF = {
+      aposentadoria: { nome: "Aposentadorias", dias: 90 },
+      auxilio_doenca: { nome: "Auxílio-doença", dias: 45 },
+      bpc: { nome: "BPC/LOAS", dias: 90 },
+      pensao: { nome: "Pensão por morte", dias: 60 },
+      salario_maternidade: { nome: "Salário-maternidade", dias: 30 }
+    };
 
-<script>
-const CONF={
-  aposentadoria:{dias:90,nome:'Aposentadoria',pagDias:30,etapas:[
-    {n:'Protocolo e triagem',d:'INSS registra o pedido e verifica documentação básica'},
-    {n:'Análise administrativa',d:'Verificação de requisitos: idade, contribuição, carência'},
-    {n:'Cálculo do benefício',d:'Aplicação da fórmula pós-Reforma'},
-    {n:'Concessão e carta',d:'Emissão da carta de concessão'},
-    {n:'Primeiro pagamento',d:'Crédito em conta conforme calendário INSS'}
-  ]},
-  auxilio:{dias:45,nome:'Auxílio-doença',pagDias:15,etapas:[
-    {n:'Protocolo e agendamento de perícia',d:'Agendamento varia por região e demanda'},
-    {n:'Perícia médica',d:'Avaliação pelo médico perito do INSS'},
-    {n:'Análise e concessão',d:'Validação de documentos e cálculo'},
-    {n:'Primeiro pagamento',d:'Crédito em até 15 dias após concessão'}
-  ]},
-  bpc:{dias:90,nome:'BPC/LOAS',pagDias:30,etapas:[
-    {n:'Protocolo no CRAS',d:'Entrega da documentação'},
-    {n:'Avaliação social',d:'Verificação de renda familiar e CadÚnico'},
-    {n:'Avaliação médica',d:'Perícia do INSS (se aplicável)'},
-    {n:'Concessão',d:'Pagamento pelo Banco do Brasil no dia 1 do mês'}
-  ]},
-  pensao:{dias:30,nome:'Pensão por morte',pagDias:15,etapas:[
-    {n:'Protocolo com certidão de óbito',d:'Documentos do falecido e dependentes'},
-    {n:'Análise de dependência',d:'Verificação dos dependentes habilitados'},
-    {n:'Concessão retroativa',d:'Data retroativa à data do óbito'}
-  ]},
-  salario:{dias:30,nome:'Salário-maternidade',pagDias:10,etapas:[
-    {n:'Protocolo com documentação',d:'Certidão de nascimento ou atestado médico'},
-    {n:'Análise de carência',d:'Verificação da qualidade de segurada'},
-    {n:'Pagamento',d:'Mensal por 120 dias (ou 180 em casos especiais)'}
-  ]}
-};
-function onTipo(){
-  const t=document.getElementById('tipo').value;
-  document.getElementById('row-recurso').style.display=['aposentadoria','bpc','auxilio'].includes(t)?'flex':'none';
-}
-function addDias(d,n){const r=new Date(d);r.setDate(r.getDate()+n);return r;}
-function fmtD(d){return d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric'});}
-function calcular(){
-  const tipo=document.getElementById('tipo').value;
-  const dataStr=document.getElementById('data').value;
-  const doc=document.getElementById('doc').checked;
-  const recurso=document.getElementById('recurso').checked;
-  if(!dataStr){alert('Informe a data do protocolo.');return;}
-  const c=CONF[tipo];
-  let dias=c.dias;
-  if(!doc)dias+=30;
-  if(recurso)dias+=180;
-  const proto=new Date(dataStr+'T12:00:00');
-  const limite=addDias(proto,dias);
-  const pag=addDias(limite,c.pagDias);
-  const hoje=new Date();
-  const restam=Math.ceil((limite-hoje)/86400000);
-  document.getElementById('resultado').style.display='block';
-  document.getElementById('prazo-num').textContent=dias+' dias corridos';
-  document.getElementById('prazo-label').textContent='prazo legal para '+c.nome;
-  document.getElementById('data-limite').textContent=fmtD(limite);
-  document.getElementById('data-pag').textContent=fmtD(pag);
-  document.getElementById('data-dip').textContent=fmtD(proto);
-  document.getElementById('juros').textContent=restam<0?'Sim — prazo vencido':'A partir de '+fmtD(limite);
-  document.getElementById('etapas').innerHTML=c.etapas.map(e=>`<div class="flex gap-3 mb-3"><div class="etapa-dot mt-1"></div><div><div class="text-sm font-bold text-gray-800">${e.n}</div><div class="text-xs text-gray-500 mt-0.5">${e.d}</div></div></div>`).join('');
-  const aviso=document.getElementById('aviso');
-  if(restam<0){aviso.style.display='block';aviso.style.background='#fef2f2';aviso.style.border='1px solid #fca5a5';aviso.style.color='#dc2626';aviso.innerHTML=`<strong>⚠ Prazo legal vencido há ${Math.abs(restam)} dias.</strong> Você tem direito a juros de mora de 1% ao mês. Acesse o Meu INSS, registre reclamação na Ouvidoria (0800 780 0191) ou consulte um advogado previdenciário.`;}
-  else if(restam<=15){aviso.style.display='block';aviso.style.background='#fffbeb';aviso.style.border='1px solid #fcd34d';aviso.style.color='#d97706';aviso.innerHTML=`<strong>⚠ Faltam apenas ${restam} dias.</strong> Acompanhe pelo Meu INSS ou ligue 135.`;}
-  else{aviso.style.display='block';aviso.style.background='#e0f2fe';aviso.style.border='1px solid #bae6fd';aviso.style.color='#0077C0';aviso.innerHTML=`ℹ Faltam <strong>${restam} dias</strong> para o prazo legal. Acompanhe em meu.inss.gov.br ou pelo app INSS Digital.`;}
-}
-onTipo();
-const hoje=new Date();document.getElementById('data').value=hoje.toISOString().split('T')[0];
-async function loadRSS(){const c=document.getElementById('rss-posts');try{const r=await fetch('https://painelsaude.com.br/wp-json/wp/v2/posts?per_page=5&_fields=title,link,date',{signal:AbortSignal.timeout(4000)});if(!r.ok)throw new Error();const p=await r.json();c.innerHTML=p.map(x=>`<div class="rss-card"><a href="${x.link}" target="_blank" rel="noopener">${x.title.rendered}</a><div class="text-xs text-gray-400 mt-1">${new Date(x.date).toLocaleDateString('pt-BR')}</div></div>`).join('');}catch{c.innerHTML='<div class="rss-card"><a href="https://painelsaude.com.br" target="_blank" rel="noopener">Ver todos os artigos do PainelSaúde →</a></div>';}}
-loadRSS();
-</script>
-</body>
-</html>
+    function addDays(date, days) {
+      var result = new Date(date);
+      result.setDate(result.getDate() + days);
+      return result;
+    }
+
+    function formatDate(date) {
+      return date.toLocaleDateString('pt-BR');
+    }
+
+    function calcularPrazo() {
+      const tipo = document.getElementById('tipoBeneficio').value;
+      const dateString = document.getElementById('dataProtocolo').value;
+      const docsOk = document.getElementById('docsCompletos').checked;
+      
+      if(!dateString) {
+        alert("Por favor, selecione a data do protocolo.");
+        return;
+      }
+
+      const dataProtocolo = new Date(dateString + 'T12:00:00');
+      let diasPrazo = regrasSTF[tipo].dias;
+      
+      if (!docsOk) {
+        // Simulação básica: se falta documento, adicionamos pelo menos 30 dias de exigência
+        diasPrazo += 30;
+      }
+
+      const dataFim = addDays(dataProtocolo, diasPrazo);
+      
+      // O INSS tem até 45 dias APÓS a concessão para implantar o primeiro pagamento
+      const dataPagamento = addDays(dataFim, 45);
+      
+      const hoje = new Date();
+      
+      document.getElementById('prazoDias').innerText = diasPrazo + " dias";
+      document.getElementById('dataFimPrazo').innerText = formatDate(dataFim);
+      document.getElementById('dataPagamento').innerText = formatDate(dataPagamento);
+      
+      const alerta = document.getElementById('alertaAtraso');
+      if(hoje > dataFim) {
+        const diffTime = Math.abs(hoje - dataFim);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        alerta.style.display = "block";
+        alerta.innerHTML = `⚠️ <strong>ATENÇÃO:</strong> Seu pedido está atrasado em ${diffDays} dias além do prazo legal. Você poderá ter direito ao recebimento de juros de mora e correção monetária nos pagamentos retroativos. Considere fazer uma reclamação na Ouvidoria do INSS ou buscar assistência jurídica.`;
+      } else {
+        alerta.style.display = "none";
+      }
+      
+      document.getElementById('resultado').style.display = 'block';
+    }
+  </script>
+</Layout>

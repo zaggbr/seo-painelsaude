@@ -1,153 +1,295 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quanto vou receber do INSS? Simulador de Valor de Aposentadoria 2026</title>
-  <meta name="description" content="Calcule o valor estimado da sua aposentadoria do INSS com a nova regra. Simulador atualizado com o teto de 2026."/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://painelsaude.com.br/simuladores/quanto-vou-receber-inss"/>
-  <meta property="og:title" content="Simulador de Valor da Aposentadoria INSS 2026"/>
-  <meta property="og:site_name" content="PainelSaúde"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Quanto vou receber do INSS? Simulador de Valor de Aposentadoria 2026"
+  description="Calcule o valor estimado da sua aposentadoria do INSS com a nova regra. Simulador atualizado com o teto de 2026."
+  canonical="https://painelsaude.com.br/simuladores/quanto-vou-receber-inss"
+>
   <style>
-    body{font-family:'Inter',sans-serif;background:#F2F2F2;}
-    h1,h2,h3{color:#005082;}
-    .zgc-btn{background:#0077C0;color:white;padding:12px 20px;border-radius:8px;border:none;width:100%;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s;}
-    .zgc-btn:hover{background:#005082;}
-    select,input[type=number],input[type=date]{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-family:'Inter',sans-serif;font-size:15px;background:white;outline:none;}
-    select:focus,input:focus{border-color:#0077C0;}
-    .card-resultado{background:white;border:2px solid #00A1E4;border-radius:8px;padding:20px;text-align:center;margin-bottom:12px;}
-    .rss-card{background:white;border-radius:8px;padding:12px 16px;border-left:3px solid #00A1E4;margin-bottom:8px;}
-    .rss-card a{color:#005082;text-decoration:none;font-weight:500;font-size:14px;}
+    /* Estilos Premium Painel Saúde */
+    .ps-badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #1565c0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+    .ps-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .ps-subtitle {
+      color: #555;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .ps-section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      margin-top: 2rem;
+    }
+    .ps-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      margin-bottom: 1.5rem;
+    }
+    .ps-form-group {
+      margin-bottom: 1.25rem;
+    }
+    .ps-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #4a5568;
+      margin-bottom: 0.5rem;
+    }
+    .ps-input, .ps-select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: #1a1a1a;
+      background-color: #fff;
+      transition: border-color 0.2s;
+    }
+    .ps-input:focus, .ps-select:focus {
+      outline: none;
+      border-color: #1565c0;
+    }
+    .ps-btn {
+      width: 100%;
+      background: #1565c0;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+    .ps-btn:hover {
+      background: #0d47a1;
+    }
+    
+    /* Input com prefixo R$ */
+    .ps-input-group {
+      position: relative;
+    }
+    .ps-input-group-text {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #64748b;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .ps-input-currency {
+      padding-left: 40px;
+    }
+    
+    /* Grid Helpers */
+    .ps-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 600px) {
+      .ps-grid-2 { grid-template-columns: 1fr; }
+    }
+    
+    /* Resultados */
+    .card-resultado {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-top: 4px solid #1565c0;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .resultado-titulo {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .resultado-valor {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #1565c0;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .resultado-desc {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    /* Simule Também */
+    .ps-link-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s;
+    }
+    .ps-link-card:hover {
+      border-color: #1565c0;
+    }
+    .ps-link-icon {
+      background: #e0f2fe;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .ps-link-title {
+      color: #1565c0;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .ps-link-desc {
+      color: #64748b;
+      font-size: 0.8rem;
+    }
   </style>
-</head>
-<body>
-<header style="background:#1565c0;" class="text-white py-3 px-4">
-  <div class="max-w-4xl mx-auto">
-    <nav class="text-sm text-blue-200">
-      <a href="https://painelsaude.com.br" class="hover:text-white">PainelSaúde</a>
-      <span class="mx-2">›</span><a href="https://painelsaude.com.br/simuladores" class="hover:text-white">Simuladores</a>
-      <span class="mx-2">›</span><span class="text-white">Valor da Aposentadoria</span>
-    </nav>
-  </div>
-</header>
 
-<main class="max-w-4xl mx-auto px-4 py-8">
-  <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-    <div class="lg:col-span-2">
-      <div class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 rounded-full mb-4" style="background:#e0f2fe;color:#0077C0;">
-        💰 PainelSaúde · Simulador INSS 2026
-      </div>
-      <h1 class="text-3xl font-black mb-2">Quanto vou receber de Aposentadoria?</h1>
-      <p class="text-gray-600 mb-6">Calcule o valor estimado da sua aposentadoria pelas regras de 2026 (Teto atualizado: R$ 8.475,55).</p>
+  <div class="ps-badge">💰 PainelSaúde · Simulador INSS 2026</div>
+  <h1 class="ps-title">Quanto vou receber de Aposentadoria?</h1>
+  <p class="ps-subtitle">Calcule o valor estimado da sua aposentadoria pelas regras de 2026 (Teto atualizado: R$ 8.475,55).</p>
 
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <h2 class="text-lg font-bold mb-4">Insira seus dados</h2>
-        <div class="grid grid-cols-2 gap-4 mb-4">
-          <div>
-            <label class="block text-xs font-bold text-gray-600 mb-1">Sexo</label>
-            <select id="sexo">
+  <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+    <!-- COLUNA PRINCIPAL -->
+    <div>
+      <div class="ps-card">
+        <h2 class="ps-section-title" style="margin-top:0">Insira seus dados</h2>
+        
+        <div class="ps-grid-2">
+          <div class="ps-form-group">
+            <label class="ps-label">Sexo</label>
+            <select id="sexo" class="ps-select">
               <option value="M">Masculino</option>
               <option value="F">Feminino</option>
             </select>
           </div>
-          <div>
-            <label class="block text-xs font-bold text-gray-600 mb-1">Tempo de Contribuição (Anos)</label>
-            <input type="number" id="anos" placeholder="Ex: 35" min="15" max="60">
+          <div class="ps-form-group">
+            <label class="ps-label">Tempo de Contribuição (Anos)</label>
+            <input type="number" id="anos" class="ps-input" placeholder="Ex: 35" min="15" max="60">
           </div>
         </div>
-        <div class="mb-5">
-          <label class="block text-xs font-bold text-gray-600 mb-1">Sua Média Salarial (desde Julho/1994)</label>
-          <div class="relative">
-            <span class="absolute left-3 top-3 text-gray-500 font-bold">R$</span>
-            <input type="number" id="media" class="pl-10" placeholder="3500" min="1412" step="100">
+
+        <div class="ps-form-group">
+          <label class="ps-label">Sua Média Salarial (desde Julho/1994)</label>
+          <div class="ps-input-group">
+            <span class="ps-input-group-text">R$</span>
+            <input type="number" id="media" class="ps-input ps-input-currency" placeholder="3500" min="1412" step="100">
           </div>
-          <p class="text-xs text-gray-400 mt-1">Dica: O valor da média pode ser encontrado no relatório do Meu INSS.</p>
+          <p style="font-size:0.75rem; color:#888; margin-top:4px;">
+            Dica: O valor da média pode ser encontrado no relatório do Meu INSS.
+          </p>
         </div>
         
-        <button class="zgc-btn" onclick="calcularValor()">Calcular Valor da Aposentadoria</button>
+        <button class="ps-btn" onclick="calcularValor()">Calcular Valor da Aposentadoria</button>
       </div>
 
-      <div id="resultado" style="display:none" class="mb-6">
+      <div id="resultado" style="display:none">
+        <h2 class="ps-section-title">Resultado Estimado</h2>
         <div class="card-resultado">
-          <p class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-1">Valor Estimado do Benefício</p>
-          <h2 class="text-4xl font-black" style="color:#0077C0;" id="valor-final">R$ 0,00</h2>
-          <p class="text-sm text-gray-600 mt-3" id="explicacao">Você receberá X% da sua média salarial.</p>
+          <div class="resultado-titulo">Valor Estimado do Benefício</div>
+          <div class="resultado-valor" id="valor-final">R$ 0,00</div>
+          <div class="resultado-desc" id="explicacao">Você receberá X% da sua média salarial.</div>
         </div>
       </div>
 
-      <!-- SIMULE TAMBÉM -->
-      <div class="bg-white rounded-lg shadow-sm p-6 mb-6 mt-6">
-        <h2 class="text-lg font-bold mb-4">Simule também</h2>
-        <div class="grid grid-cols-1 gap-3">
-          <a href="https://painelsaude.com.br/simuladores/posso-me-aposentar" class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
-            <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background:#e0f2fe;"><span style="font-size:18px;">✅</span></div>
-            <div><div class="text-sm font-bold" style="color:#005082;">Posso me aposentar?</div><div class="text-xs text-gray-500">Verifique elegibilidade nas 4 modalidades do INSS</div></div>
-          </a>
-          <a href="https://painelsaude.com.br/simuladores/prazo-aprovacao-inss" class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
-            <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background:#e0f2fe;"><span style="font-size:18px;">📅</span></div>
-            <div><div class="text-sm font-bold" style="color:#005082;">Prazo de Aprovação</div><div class="text-xs text-gray-500">Veja quanto tempo o INSS tem para pagar</div></div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SIDEBAR -->
-    <div class="lg:col-span-1 mt-8 lg:mt-0">
-      <div class="bg-white rounded-lg shadow-sm p-5 mb-5 sticky top-4">
-        <div class="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">Descobrir mais</div>
-        <ul class="space-y-2 text-sm" style="color:#005082;">
-          <li><a href="https://painelsaude.com.br/simuladores/posso-me-aposentar" class="hover:text-blue-600">Simulador de Elegibilidade</a></li>
-          <li><a href="https://painelsaude.com.br/simuladores/prazo-aprovacao-inss" class="hover:text-blue-600">Prazos de Pagamento INSS</a></li>
-          <li><a href="https://meu.painelsaude.com.br/sus/fila-sus" class="hover:text-blue-600">Fila do SUS</a></li>
-        </ul>
+      <h2 class="ps-section-title">Simule também</h2>
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        <a href="/simuladores/posso-me-aposentar" class="ps-link-card">
+          <div class="ps-link-icon">✅</div>
+          <div>
+            <div class="ps-link-title">Posso me aposentar?</div>
+            <div class="ps-link-desc">Verifique elegibilidade nas 4 modalidades do INSS</div>
+          </div>
+        </a>
+        <a href="/simuladores/prazo-aprovacao-inss" class="ps-link-card">
+          <div class="ps-link-icon">📅</div>
+          <div>
+            <div class="ps-link-title">Prazo de Aprovação</div>
+            <div class="ps-link-desc">Veja quanto tempo o INSS tem para pagar</div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
-</main>
 
-<script>
-function calcularValor() {
-  const sexo = document.getElementById('sexo').value;
-  const anos = parseInt(document.getElementById('anos').value) || 0;
-  let media = parseFloat(document.getElementById('media').value) || 0;
-  
-  if (anos === 0 || media === 0) {
-    alert('Por favor, preencha o tempo de contribuição e a média salarial.');
-    return;
-  }
-  
-  const TETO_INSS = 8475.55;
-  const SALARIO_MINIMO = 1412.00;
-  
-  // A média não pode ultrapassar o teto
-  if (media > TETO_INSS) {
-    media = TETO_INSS;
-  }
+  <script>
+    function calcularValor() {
+      const sexo = document.getElementById('sexo').value;
+      const anos = parseInt(document.getElementById('anos').value) || 0;
+      let media = parseFloat(document.getElementById('media').value) || 0;
+      
+      if (anos === 0 || media === 0) {
+        alert('Por favor, preencha o tempo de contribuição e a média salarial.');
+        return;
+      }
+      
+      const TETO_INSS = 8475.55;
+      const SALARIO_MINIMO = 1412.00;
+      
+      if (media > TETO_INSS) {
+        media = TETO_INSS;
+      }
 
-  // Regra base pós-reforma: 60% + 2% para cada ano que exceder 20 anos (Homem) ou 15 anos (Mulher)
-  let percentual = 60;
-  const limiteTempo = (sexo === 'M') ? 20 : 15;
-  
-  if (anos > limiteTempo) {
-    percentual += (anos - limiteTempo) * 2;
-  }
-  
-  if (percentual > 100) percentual = 100;
-  
-  let valorFinal = media * (percentual / 100);
-  
-  // Limites constitucionais
-  if (valorFinal > TETO_INSS) valorFinal = TETO_INSS;
-  if (valorFinal < SALARIO_MINIMO) valorFinal = SALARIO_MINIMO;
-  
-  // Renderizar
-  document.getElementById('valor-final').textContent = valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-  document.getElementById('explicacao').textContent = `Com ${anos} anos de contribuição, seu coeficiente é de ${percentual}% sobre sua média salarial. (Cálculo com base nas regras pós-Reforma da Previdência).`;
-  
-  document.getElementById('resultado').style.display = 'block';
-}
-</script>
-</body>
-</html>
+      let percentual = 60;
+      const limiteTempo = (sexo === 'M') ? 20 : 15;
+      
+      if (anos > limiteTempo) {
+        percentual += (anos - limiteTempo) * 2;
+      }
+      
+      if (percentual > 100) percentual = 100;
+      
+      let valorFinal = media * (percentual / 100);
+      
+      if (valorFinal > TETO_INSS) valorFinal = TETO_INSS;
+      if (valorFinal < SALARIO_MINIMO) valorFinal = SALARIO_MINIMO;
+      
+      document.getElementById('valor-final').textContent = valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+      document.getElementById('explicacao').textContent = `Com ${anos} anos de contribuição, seu coeficiente é de ${percentual}% sobre sua média salarial. (Cálculo com base nas regras pós-Reforma da Previdência).`;
+      
+      document.getElementById('resultado').style.display = 'block';
+    }
+  </script>
+</Layout>
