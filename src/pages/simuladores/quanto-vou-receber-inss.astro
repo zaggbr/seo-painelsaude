@@ -254,7 +254,7 @@ import Layout from '../../layouts/Layout.astro';
     </div>
   </div>
 
-  <script>
+  <script is:inline>
     function calcularValor() {
       const sexo = document.getElementById('sexo').value;
       const anos = parseInt(document.getElementById('anos').value) || 0;
