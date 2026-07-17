@@ -7,10 +7,10 @@ export interface Props {
   canonical?: string;
 }
 const { title, description, canonical } = Astro.props;
-const canonicalURL = canonical || `https://painelsaude.com.br${Astro.url.pathname}`;
+const canonicalURL = canonical || new URL(Astro.url.pathname, 'https://painelsaude.com.br').toString();
 ---
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +19,7 @@ const canonicalURL = canonical || `https://painelsaude.com.br${Astro.url.pathnam
     <link rel="canonical" href={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:type" content="website" />
 
     <link rel="icon" type="image/x-icon" href="https://seo-painelsaude.pages.dev/favicon.ico" />
