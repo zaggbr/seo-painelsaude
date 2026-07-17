@@ -4,12 +4,20 @@ import operadoras from '../../data/operadoras.json';
 
 const top = operadoras.slice(0, 200);
 const modalidades = [...new Set(top.map(op => op.modalidade))];
+
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Planos de Saúde', url: '/planos' }
+];
 ---
 <Layout
   title="Planos de Saúde no Brasil | Painel Saúde"
   description="Compare planos de saúde de 200 operadoras registradas na ANS. Informações sobre cobertura, contratação e abrangência."
   canonical="https://painelsaude.com.br/planos"
+  breadcrumbs={breadcrumbs}
 >
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
   <header style="margin-bottom:2rem">
     <h1 style="font-size:1.75rem;line-height:1.3;margin-bottom:0.75rem">Planos de Saúde no Brasil</h1>
     <p style="color:#555;font-size:1.05rem">{top.length} operadoras registradas na ANS — dados oficiais atualizados.</p>

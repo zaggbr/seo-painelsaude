@@ -1,11 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Simuladores', url: '/simuladores' },
+  { name: 'Posso me Aposentar?', url: '/simuladores/posso-me-aposentar' }
+];
 ---
 <Layout
   title="Posso me Aposentar? Simulador de Elegibilidade INSS 2026"
   description="Descubra se você já pode se aposentar pelo INSS. Simulador gratuito com as regras de 2026: Idade, Pontos, Idade Progressiva e Pedágio 100%."
   canonical="https://painelsaude.com.br/simuladores/posso-me-aposentar"
+  breadcrumbs={breadcrumbs}
 >
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
   <style>
     /* Estilos Premium Painel Saúde */
     .ps-badge {

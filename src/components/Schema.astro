@@ -1,0 +1,50 @@
+---
+export interface Props {
+  breadcrumbs?: { name: string; item: string }[];
+}
+
+const { breadcrumbs } = Astro.props;
+const baseUrl = "https://painelsaude.com.br";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Painel Saúde",
+  "url": baseUrl,
+  "logo": `${baseUrl}/wp-content/uploads/2025/05/painel-saude-logo-1.png`,
+  "sameAs": [
+    "https://www.linkedin.com/company/painelsaude",
+    "https://instagram.com/painelsaude"
+  ],
+  "description": "Informações e análises sobre saúde no Brasil"
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Painel Saúde",
+  "url": baseUrl,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${baseUrl}/?s={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  }
+};
+
+let breadcrumbSchema = null;
+if (breadcrumbs && breadcrumbs.length > 0) {
+  breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs.map((bc, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": bc.name,
+      "item": bc.item
+    }))
+  };
+}
+---
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}

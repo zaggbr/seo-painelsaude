@@ -1,11 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Simuladores', url: '/simuladores' },
+  { name: 'Valor Aposentadoria', url: '/simuladores/quanto-vou-receber-inss' }
+];
 ---
 <Layout
   title="Quanto vou receber do INSS? Simulador de Valor de Aposentadoria 2026"
   description="Calcule o valor estimado da sua aposentadoria do INSS com a nova regra. Simulador atualizado com o teto de 2026."
   canonical="https://painelsaude.com.br/simuladores/quanto-vou-receber-inss"
+  breadcrumbs={breadcrumbs}
 >
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
   <style>
     /* Estilos Premium Painel Saúde */
     .ps-badge {

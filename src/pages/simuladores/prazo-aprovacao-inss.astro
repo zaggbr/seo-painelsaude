@@ -1,11 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Simuladores', url: '/simuladores' },
+  { name: 'Prazo INSS', url: '/simuladores/prazo-aprovacao-inss' }
+];
 ---
 <Layout
-  title="Prazo de Aprovação do INSS: Simulador por Tipo de Benefício 2026"
-  description="Calcule o prazo legal de análise do seu benefício no INSS e a data provável do primeiro pagamento. Aposentadoria, auxílio-doença, BPC/LOAS, pensão por morte e salário-maternidade."
+  title="Prazo INSS: Simulador de Tempo de Aprovação 2026"
+  description="Calcule gratuitamente quanto tempo vai demorar para o INSS analisar e aprovar sua aposentadoria ou benefício, baseado nas filas atuais."
   canonical="https://painelsaude.com.br/simuladores/prazo-aprovacao-inss"
+  breadcrumbs={breadcrumbs}
 >
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
   <style>
     /* Estilos Premium Painel Saúde */
     .ps-badge {

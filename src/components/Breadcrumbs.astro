@@ -1,0 +1,56 @@
+---
+export interface Props {
+  breadcrumbs: { name: string; url?: string }[];
+}
+
+const { breadcrumbs } = Astro.props;
+---
+<nav aria-label="breadcrumb" class="ps-breadcrumbs">
+  <ol>
+    {breadcrumbs.map((bc, index) => {
+      const isLast = index === breadcrumbs.length - 1;
+      return (
+        <li aria-current={isLast ? "page" : undefined}>
+          {isLast || !bc.url ? (
+            <span>{bc.name}</span>
+          ) : (
+            <a href={bc.url}>{bc.name}</a>
+          )}
+          {!isLast && <span class="separator">›</span>}
+        </li>
+      );
+    })}
+  </ol>
+</nav>
+
+<style>
+  .ps-breadcrumbs {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  .ps-breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .ps-breadcrumbs li {
+    display: inline-flex;
+    align-items: center;
+  }
+  .ps-breadcrumbs a {
+    color: #1565c0;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+  }
+  .ps-breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  .ps-breadcrumbs .separator {
+    margin: 0 0.5rem;
+    color: #999;
+  }
+</style>

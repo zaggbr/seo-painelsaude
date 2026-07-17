@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import operadoras from '../../../data/operadoras.json';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
 
@@ -14,6 +15,12 @@ const { op } = Astro.props;
 const nomeFormatado = normalizarOperadora(op.nome);
 const anoReferencia = new Date().getFullYear();
 
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Planos de Saúde', url: '/planos' },
+  { name: nomeFormatado, url: `/planos/operadora/${op.slug}` }
+];
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -26,12 +33,11 @@ const jsonLd = {
   title={`${nomeFormatado} — Planos de Saúde | Painel Saúde`}
   description={`Conheça os planos de saúde da ${nomeFormatado}. ${op.total_planos} planos disponíveis. Informações sobre cobertura, segmentação e contratação.`}
   canonical={`https://painelsaude.com.br/planos/operadora/${op.slug}`}
+  breadcrumbs={breadcrumbs}
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <nav style="font-size:0.875rem;margin-bottom:1.5rem;color:#666">
-    <a href="/">Início</a> › <a href="/planos">Planos de Saúde</a> › {nomeFormatado}
-  </nav>
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
 
   <article>
     <header style="margin-bottom:2rem">
