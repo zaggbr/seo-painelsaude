@@ -10,6 +10,11 @@ export default defineConfig({
     defaultStrategy: 'viewport'
   },
   
+  // Configuração de Imagens Externas
+  image: {
+    domains: ['seo-painelsaude.pages.dev', 'painelsaude.com.br'],
+  },
+  
   // Integrações
   integrations: [
     sitemap({
