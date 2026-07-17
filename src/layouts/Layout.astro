@@ -1,26 +1,59 @@
 ---
 import CookieBanner from "../components/CookieBanner.astro";
+import { extractFromContent } from "../utils/seo.js";
 
 export interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   canonical?: string;
+  image?: string;
+  ogImage?: string;
+  type?: string;
+  excerpt?: string;
+  content?: string;
 }
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, image, ogImage: propOgImage, type, excerpt, content } = Astro.props;
+
+const baseTitle = title || "Painel Saúde";
+const siteName = "Painel Saúde";
+const pageTitle = baseTitle.length > 50 
+  ? baseTitle 
+  : `${baseTitle} | ${siteName}`;
+
+const metaDescription = description || excerpt || extractFromContent(content || '', 160) || "";
 const canonicalURL = canonical || new URL(Astro.url.pathname, 'https://painelsaude.com.br').toString();
+
+const ogImage = image || propOgImage || "https://painelsaude.com.br/og-default.jpg";
+const ogType = type === 'article' ? 'article' : 'website';
 ---
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    
+    <title>{pageTitle}</title>
+    {metaDescription && <meta name="description" content={metaDescription} />}
     <link rel="canonical" href={canonicalURL} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={baseTitle} />
+    {metaDescription && <meta property="og:description" content={metaDescription} />}
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={baseTitle} />
+    {metaDescription && <meta name="twitter:description" content={metaDescription} />}
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:site" content="@painelsaude" />
+    <meta name="twitter:creator" content="@painelsaude" />
 
     <link rel="icon" type="image/x-icon" href="https://seo-painelsaude.pages.dev/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://seo-painelsaude.pages.dev/favicon-32x32.png" />
