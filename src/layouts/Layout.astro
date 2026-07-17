@@ -23,7 +23,7 @@ const pageTitle = baseTitle.length > 50
 const metaDescription = description || excerpt || extractFromContent(content || '', 160) || "";
 const canonicalURL = canonical || new URL(Astro.url.pathname, 'https://painelsaude.com.br').toString();
 
-const ogImage = image || propOgImage || "https://painelsaude.com.br/og-default.jpg";
+const ogImage = image || propOgImage || "https://painelsaude.com.br/wp-content/uploads/2025/05/painel-saude-logo-1.png";
 const ogType = type === 'article' ? 'article' : 'website';
 ---
 <!DOCTYPE html>
