@@ -1,11 +1,7 @@
-name = "painelsaude-proxy"
+name = "seo-painelsaude-proxy"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
 [[routes]]
-pattern = "painelsaude.com.br/planos*"
-zone_name = "painelsaude.com.br"
-
-[[routes]]
-pattern = "painelsaude.com.br/sitemap-planos.xml"
+pattern = "painelsaude.com.br/*"
 zone_name = "painelsaude.com.br"
