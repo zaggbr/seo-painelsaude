@@ -163,7 +163,12 @@ const ogType = type === 'article' ? 'article' : 'website';
     <main>
       <slot />
     </main>
-    
+    ---
+import EductaLink from '../components/EductaLink.astro';
+---
+
+<!-- Antes do </footer> ou antes do SiteFooter -->
+<EductaLink />
     <footer>
       <div class="footer-inner">
         <div class="footer-col">
@@ -198,6 +203,7 @@ const ogType = type === 'article' ? 'article' : 'website';
         <p class="ps-disclaimer">As informações deste site foram compiladas a partir de dados públicos compartilhados por órgãos governamentais brasileiros (Ministério da Saúde, ANVISA, INSS, entre outros) e têm caráter exclusivamente informativo, não substituindo orientação médica, farmacêutica ou jurídica profissional.</p>
         <p>© 2026 Painel Saúde — Informações de saúde pública para todos os brasileiros</p>
       </div>
+
     </footer>
     <CookieBanner />
   </body>
