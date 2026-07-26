@@ -1,5 +1,6 @@
 ---
 import CookieBanner from "../components/CookieBanner.astro";
+import EductaLink from "../components/EductaLink.astro";
 import { extractFromContent } from "../utils/seo.js";
 import { Image } from "astro:assets";
 import Schema from "../components/Schema.astro";
@@ -75,10 +76,7 @@ const ogType = type === 'article' ? 'article' : 'website';
     <link rel="manifest" href="https://seo-painelsaude.pages.dev/site.webmanifest" />
     <meta name="theme-color" content="#1565c0" />
 
-    <!--
-      Removido: script AdSense da Educta (ca-pub-6423824976813529) que
-      estava carregado aqui por engano — não tem nada a ver com este site.
-    -->
+    <!-- AdSense: script de carregamento único (não duplicar por unidade) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6307491010120109" crossorigin="anonymous"></script>
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -113,6 +111,7 @@ const ogType = type === 'article' ? 'article' : 'website';
         font-size: 0.95rem;
       }
       .main-nav a:hover { color: #1565c0; }
+      .ad-slot { text-align: center; margin: 1rem 0; }
       footer { background: #f5f5f5; padding: 3rem 1rem; margin-top: 3rem; font-size: 0.875rem; color: #666; }
       .footer-inner {
         max-width: 1000px;
@@ -159,16 +158,34 @@ const ogType = type === 'article' ? 'article' : 'website';
         </nav>
       </div>
     </header>
-    
+
+    <!-- painelsaude-header -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6307491010120109"
+           data-ad-slot="1863988809"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
     <main>
       <slot />
     </main>
-    ---
-import EductaLink from '../components/EductaLink.astro';
----
 
-<!-- Antes do </footer> ou antes do SiteFooter -->
-<EductaLink />
+    <!-- painelsaude-footer -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6307491010120109"
+           data-ad-slot="8242649181"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <EductaLink />
     <footer>
       <div class="footer-inner">
         <div class="footer-col">
@@ -203,7 +220,6 @@ import EductaLink from '../components/EductaLink.astro';
         <p class="ps-disclaimer">As informações deste site foram compiladas a partir de dados públicos compartilhados por órgãos governamentais brasileiros (Ministério da Saúde, ANVISA, INSS, entre outros) e têm caráter exclusivamente informativo, não substituindo orientação médica, farmacêutica ou jurídica profissional.</p>
         <p>© 2026 Painel Saúde — Informações de saúde pública para todos os brasileiros</p>
       </div>
-
     </footer>
     <CookieBanner />
   </body>
