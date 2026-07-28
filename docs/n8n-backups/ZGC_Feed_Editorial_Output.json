@@ -172,7 +172,7 @@
         "url": "https://api.indexnow.org/indexnow",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"host\": \"meu.painelsaude.com.br\",\n  \"key\": \"b2b3cb8ea3fddf3f05df21ca8cb758b2\",\n  \"keyLocation\": \"https://meu.painelsaude.com.br/b2b3cb8ea3fddf3f05df21ca8cb758b2.txt\",\n  \"urlList\": {{ $json.urls }}\n}",
+        "jsonBody": "={\n  \"host\": \"meu.painelsaude.com.br\",\n  \"key\": \"b2b3cb8ea3fddf3f05df21ca8cb758b2\",\n  \"keyLocation\": \"https://meu.painelsaude.com.br/b2b3cb8ea3fddf3f05df21ca8cb758b2.txt\",\n  \"urlList\": {{ JSON.stringify($json.urls) }}\n}",
         "options": {}
       },
       "id": "f575a1ab-13ed-423f-acd7-6f744d6a673d",
