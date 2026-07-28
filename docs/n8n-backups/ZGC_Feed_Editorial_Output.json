@@ -152,6 +152,37 @@
       ],
       "id": "b886eee1-ef0d-4b3a-b384-69739c4e06c5",
       "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst urls = items.map(item => item.json.url);\nreturn [{ json: { urls } }];"
+      },
+      "id": "e8a93cb8-ea3f-423f-acd7-6f744d6a673c",
+      "name": "Preparar payload IndexNow",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1536,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.indexnow.org/indexnow",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"host\": \"meu.painelsaude.com.br\",\n  \"key\": \"b2b3cb8ea3fddf3f05df21ca8cb758b2\",\n  \"keyLocation\": \"https://meu.painelsaude.com.br/b2b3cb8ea3fddf3f05df21ca8cb758b2.txt\",\n  \"urlList\": {{ $json.urls }}\n}",
+        "options": {}
+      },
+      "id": "f575a1ab-13ed-423f-acd7-6f744d6a673d",
+      "name": "IndexNow meu.painelsaude",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1750,
+        120
+      ]
     }
   ],
   "connections": {
@@ -215,6 +246,22 @@
         [
           {
             "node": "Google Indexing API",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Preparar payload IndexNow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar payload IndexNow": {
+      "main": [
+        [
+          {
+            "node": "IndexNow meu.painelsaude",
             "type": "main",
             "index": 0
           }
