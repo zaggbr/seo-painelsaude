@@ -25,3 +25,4 @@ pnpm-debug.log*
 .env
 src/data/*.csv
 src/data/cidades.json
+status.log
