@@ -1,53 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const WP_API = 'https://painelsaude.com.br/wp-json/wp/v2';
-
-async function fetchPosts(categorySlug: string, perPage = 5) {
-  try {
-    const catRes = await fetch(`${WP_API}/categories?slug=${categorySlug}&_fields=id,name`);
-    const cats = await catRes.json();
-    if (!cats.length) return { name: categorySlug, slug: categorySlug, posts: [] };
-    const catId = cats[0].id;
-    const catName = cats[0].name;
-    const postsRes = await fetch(
-      `${WP_API}/posts?categories=${catId}&per_page=${perPage}&_fields=title,link,date,excerpt,_links&_embed=wp:featuredmedia`
-    );
-    const posts = await postsRes.json();
-    return {
-      name: catName,
-      slug: categorySlug,
-      posts: posts.map((p: any) => {
-        const embedded = p._embedded?.['wp:featuredmedia'];
-        const imgFull = embedded?.[0]?.source_url || '';
-        const imgMedium = embedded?.[0]?.media_details?.sizes?.medium_large?.source_url
-                       || embedded?.[0]?.media_details?.sizes?.medium?.source_url
-                       || imgFull;
-        return {
-          title: p.title?.rendered || '',
-          link: p.link || '',
-          date: new Date(p.date).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' }),
-          excerpt: (p.excerpt?.rendered || '').replace(/<[^>]*>/g, '').substring(0, 140).trim(),
-          image: imgMedium,
-        };
-      }),
-    };
-  } catch (e) {
-    return { name: categorySlug, slug: categorySlug, posts: [] };
-  }
-}
-
-const categorias = await Promise.all([
-  fetchPosts('noticias', 5),
-  fetchPosts('ciencia', 5),
-  fetchPosts('painel', 4),
-  fetchPosts('saude', 4),
-]);
-
-const featured = categorias
-  .flatMap(c => c.posts.filter((p: any) => p.image))
-  .slice(0, 4);
-
 const silos = [
   {
     title: 'Planos de Saúde',
@@ -111,195 +64,120 @@ const silos = [
     --ps-radius: 12px;
   }
   .mag-wrap { max-width: 1140px; margin: 0 auto; padding: 0 1rem; }
-
-  /* ═══ TOPBAR ═══ */
-  .topbar {
-    background: var(--ps-dark);
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 0.6rem 0;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+  
+  /* Topbar */
+  .topbar { background: var(--ps-dark); overflow-x: auto; white-space: nowrap; padding: 0.6rem 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .topbar::-webkit-scrollbar { display: none; }
-  .topbar-inner {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .topbar-label {
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    margin-right: 0.5rem;
-    flex-shrink: 0;
-  }
-  .topbar a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    background: #2a2a2a;
-    color: #ddd;
-    font-size: 0.78rem;
-    font-weight: 500;
-    padding: 0.35rem 0.8rem;
-    border-radius: 20px;
-    text-decoration: none;
-    flex-shrink: 0;
-    transition: background 0.2s, color 0.2s;
-  }
+  .topbar-inner { max-width: 1140px; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .topbar-label { color: #fff; font-size: 0.75rem; font-weight: 700; margin-right: 0.5rem; flex-shrink: 0; }
+  .topbar a { display: inline-flex; align-items: center; gap: 0.3rem; background: #2a2a2a; color: #ddd; font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.8rem; border-radius: 20px; text-decoration: none; flex-shrink: 0; transition: background 0.2s, color 0.2s; }
   .topbar a:hover { background: var(--ps-accent); color: #fff; }
   .topbar-icon { font-size: 0.9rem; }
 
-  /* ═══ FEATURED STRIP ═══ */
-  .featured-strip {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin: 1.5rem auto;
-    max-width: 1140px;
-    padding: 0 1rem;
-  }
-  .feat-card {
-    position: relative;
-    border-radius: var(--ps-radius);
-    overflow: hidden;
-    aspect-ratio: 4/3;
-    display: block;
-    text-decoration: none;
-    background: #222;
-  }
-  .feat-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
-  .feat-card:hover img { transform: scale(1.05); }
-  .feat-overlay {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.85));
-    padding: 1rem 0.8rem 0.7rem;
-  }
-  .feat-date { font-size: 0.7rem; color: rgba(255,255,255,0.7); margin-bottom: 0.2rem; }
-  .feat-title {
-    color: #fff; font-size: 0.85rem; font-weight: 600; line-height: 1.3;
-    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
-  }
-
-  /* ═══ SILOS SHOWCASE ═══ */
-  .silos-section {
-    background: rgba(0, 137, 123, 0.08);
-    border-radius: var(--ps-radius);
-    padding: 2rem 1.5rem;
-    margin: 0 auto 2rem;
-    max-width: 1140px;
-    border: 1px solid rgba(0, 137, 123, 0.12);
-  }
+  /* Silos Section */
+  .silos-section { background: rgba(0, 137, 123, 0.08); border-radius: var(--ps-radius); padding: 2rem 1.5rem; margin: 1.5rem auto 2rem; max-width: 1140px; border: 1px solid rgba(0, 137, 123, 0.12); }
   .silos-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; }
   .silos-header h2 { color: var(--ps-text); font-size: 1.3rem; font-weight: 800; margin: 0; }
   .silos-header p { color: var(--ps-muted); font-size: 0.82rem; margin: 0; }
-  .silos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.9rem; }
-  .silo-card {
-    background: #fff;
-    border: 1px solid var(--ps-border);
-    border-radius: 10px;
-    padding: 1.1rem;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-    position: relative;
-  }
-  .silo-card:hover { border-color: var(--ps-accent); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+  .silos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+  .silo-card { background: #fff; border: 1px solid var(--ps-border); border-radius: 10px; padding: 1.1rem; text-decoration: none; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
+  .silo-card:hover { border-color: var(--ps-accent); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
   .silo-card-top { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
   .silo-icon { font-size: 1.5rem; line-height: 1; }
   .silo-card h3 { font-size: 0.92rem; font-weight: 700; color: var(--ps-text); margin: 0; line-height: 1.2; }
-  .silo-card p { font-size: 0.78rem; color: #666; margin: 0; line-height: 1.45; flex: 1; }
-  .silo-tag {
-    display: inline-block;
-    background: var(--ps-accent2);
-    color: #fff;
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
-    margin-top: 0.6rem;
-    align-self: flex-start;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .silo-arrow {
-    position: absolute; top: 1rem; right: 0.8rem; color: #ccc; font-size: 1rem;
-    transition: color 0.2s, transform 0.2s;
-  }
+  .silo-card p { font-size: 0.78rem; color: #475569; margin: 0; line-height: 1.45; flex: 1; }
+  .silo-tag { display: inline-block; background: var(--ps-accent2); color: #fff; font-size: 0.65rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 4px; margin-top: 0.6rem; align-self: flex-start; text-transform: uppercase; }
+  .silo-arrow { position: absolute; top: 1rem; right: 0.8rem; color: #cbd5e1; font-size: 1rem; transition: color 0.2s, transform 0.2s; }
   .silo-card:hover .silo-arrow { color: var(--ps-accent); transform: translateX(3px); }
 
-  /* ═══ SECTION HEADER ═══ */
-  .sec-header {
-    display: flex; justify-content: space-between; align-items: center;
-    margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--ps-dark);
-  }
+  /* Sec Header */
+  .sec-header { display: flex; justify-content: space-between; align-items: center; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--ps-dark); }
   .sec-header h2 { font-size: 1.5rem; font-weight: 800; color: var(--ps-text); margin: 0; }
   .sec-header a { font-size: 0.82rem; color: var(--ps-muted); text-decoration: none; font-weight: 500; }
   .sec-header a:hover { color: var(--ps-accent); }
 
-  /* ═══ CATEGORY GRID ═══ */
-  .cat-grid {
-    display: grid; grid-template-columns: 1fr 1.4fr 1fr; grid-template-rows: auto auto;
-    gap: 1rem; margin-bottom: 2rem;
-  }
-  .cat-grid .cg-main { grid-column: 2; grid-row: 1 / 3; }
-  .cg-card {
-    background: var(--ps-card); border-radius: var(--ps-radius); overflow: hidden;
-    text-decoration: none; display: flex; flex-direction: column; transition: box-shadow 0.2s;
-  }
-  .cg-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-  .cg-card-img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #e0e0e0; }
-  .cg-main .cg-card-img { aspect-ratio: 4/3; }
-  .cg-card-body { padding: 0.8rem; flex: 1; display: flex; flex-direction: column; }
-  .cg-card-date { font-size: 0.7rem; color: var(--ps-muted); margin-bottom: 0.3rem; }
-  .cg-card-title {
-    font-size: 0.88rem; font-weight: 600; color: var(--ps-text); line-height: 1.35;
-    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 1;
-  }
-  .cg-main .cg-card-title { font-size: 1.15rem; font-weight: 700; -webkit-line-clamp: 4; }
-  .cat-list { grid-column: 3; grid-row: 1 / 3; display: flex; flex-direction: column; gap: 0.6rem; }
-  .cl-item {
-    display: flex; gap: 0.6rem; text-decoration: none; align-items: flex-start;
-    padding: 0.5rem; background: var(--ps-card); border-radius: 10px; transition: box-shadow 0.2s;
-  }
-  .cl-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-  .cl-thumb { width: 72px; height: 52px; border-radius: 8px; object-fit: cover; flex-shrink: 0; background: #e0e0e0; }
-  .cl-text { flex: 1; min-width: 0; }
-  .cl-date { font-size: 0.65rem; color: var(--ps-muted); }
-  .cl-title {
-    font-size: 0.8rem; font-weight: 600; color: var(--ps-text); line-height: 1.3;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-  }
-  .cat-simple { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+  /* Grid Layouts para Posts */
+  .hero-destaques { margin: 1.75rem 0 2rem 0; }
+  .hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.25rem; align-items: stretch; }
+  .hero-principal { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 16px; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .hero-principal:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.08); border-color: var(--ps-accent); }
+  .hero-principal img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
+  .hero-principal-texto { padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
+  .hero-principal h2 { font-size: 1.25rem; font-weight: 800; color: var(--ps-text); line-height: 1.35; margin: 0 0 0.6rem 0; }
+  .hero-excerpt { font-size: 0.88rem; color: #475569; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.75rem; }
+  .hero-data { font-size: 0.75rem; color: var(--ps-muted); }
 
-  /* ═══ RESPONSIVE ═══ */
+  .hero-secundarios { display: flex; flex-direction: column; gap: 0.85rem; justify-content: space-between; }
+  .hero-secundario { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 12px; padding: 0.65rem; text-decoration: none; display: flex; gap: 0.85rem; align-items: center; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .hero-secundario:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.06); border-color: var(--ps-accent); }
+  .hero-secundario img { width: 100px; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px; flex-shrink: 0; background: #eee; }
+  .hero-secundario-texto { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+  .hero-secundario h3 { font-size: 0.92rem; font-weight: 700; color: var(--ps-text); line-height: 1.3; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .hero-secundario .hero-data { font-size: 0.72rem; }
+
+  /* Categorias */
+  .categoria-destaques { margin: 2.5rem 0; }
+  .categoria-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--ps-border); }
+  .categoria-header h2 { font-size: 1.4rem; font-weight: 800; color: var(--ps-text); margin: 0; }
+  .categoria-header a { font-size: 0.9rem; font-weight: 600; color: var(--ps-accent); text-decoration: none; }
+  .categoria-header a:hover { text-decoration: underline; }
+  .categoria-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  .categoria-card { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 12px; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .categoria-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.07); border-color: var(--ps-accent); }
+  .categoria-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #eee; }
+  .categoria-card-texto { padding: 1rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1; }
+  .categoria-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--ps-text); line-height: 1.35; margin: 0 0 0.5rem 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .categoria-card-excerpt { font-size: 0.82rem; color: #475569; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0.6rem; }
+
+  /* Ultimas Publicações (Grid 3 colunas) */
+  #rss-feed-home { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 3rem; }
+  .rss-card { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: var(--ps-radius); padding: 1.25rem; text-decoration: none; color: var(--ps-text); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+  .rss-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.06); border-color: var(--ps-accent); }
+  .rss-date { font-size: 0.75rem; color: var(--ps-muted); margin-bottom: 0.5rem; display: block; }
+  .rss-title { font-size: 1.05rem; font-weight: 700; line-height: 1.35; margin-bottom: 0.6rem; color: var(--ps-text); }
+  .rss-excerpt { font-size: 0.85rem; color: #475569; line-height: 1.45; margin-bottom: 0.8rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+  /* Skeletons */
+  .hero-skeleton { display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.25rem; }
+  .skeleton-main { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; animation: rss-pulse 1.5s infinite ease-in-out; }
+  .skeleton-main .skeleton-img { width: 100%; aspect-ratio: 16/9; background: #ebebeb; }
+  .skeleton-main .skeleton-body { padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
+  .skeleton-side { display: flex; flex-direction: column; gap: 0.85rem; justify-content: space-between; }
+  .skeleton-small { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 12px; padding: 0.65rem; display: flex; gap: 0.85rem; align-items: center; animation: rss-pulse 1.5s infinite ease-in-out; }
+  .skeleton-small .skeleton-thumb { width: 100px; aspect-ratio: 4/3; background: #ebebeb; border-radius: 8px; flex-shrink: 0; }
+  .skeleton-small .skeleton-body { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+  .skeleton-card { background: #f9f9f9; border: 1px solid var(--ps-border); border-radius: var(--ps-radius); padding: 1.25rem; height: 160px; display: flex; flex-direction: column; gap: 0.75rem; animation: rss-pulse 1.5s infinite ease-in-out; }
+  .skeleton-title { height: 18px; background: #e0e0e0; border-radius: 4px; width: 85%; }
+  .skeleton-title-short { height: 18px; background: #e0e0e0; border-radius: 4px; width: 60%; }
+  .skeleton-date { height: 12px; background: #e8e8e8; border-radius: 4px; width: 35%; margin-top: auto; }
+  .categoria-skeleton-card { background: var(--ps-card); border: 1px solid var(--ps-border); border-radius: 12px; overflow: hidden; animation: rss-pulse 1.5s infinite ease-in-out; }
+  .categoria-skeleton-card .sk-img { width: 100%; aspect-ratio: 16/9; background: #ebebeb; }
+  .categoria-skeleton-card .sk-body { padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  
+  @keyframes rss-pulse { 0%, 100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+  /* Error Boundaries */
+  .hero-erro, .hero-vazio, .rss-error { text-align: center; padding: 3rem 1rem; background: #fdfdfd; border: 1px dashed var(--ps-border); border-radius: 16px; color: #666; font-size: 0.95rem; }
+  .hero-erro a, .rss-error a { color: var(--ps-accent); font-weight: 600; text-decoration: underline; }
+
   @media (max-width: 900px) {
-    .featured-strip { grid-template-columns: repeat(2, 1fr); }
     .silos-grid { grid-template-columns: repeat(2, 1fr); }
-    .cat-grid { grid-template-columns: 1fr; }
-    .cat-grid .cg-main { grid-column: 1; grid-row: auto; }
-    .cat-list { grid-column: 1; grid-row: auto; flex-direction: row; overflow-x: auto; }
-    .cl-item { min-width: 220px; flex-shrink: 0; }
-    .cat-simple { grid-template-columns: 1fr 1fr; }
+    #rss-feed-home { grid-template-columns: repeat(2, 1fr); }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-skeleton { grid-template-columns: 1fr; }
+    .categoria-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 540px) {
-    .featured-strip { grid-template-columns: 1fr 1fr; }
     .silos-grid { grid-template-columns: 1fr; }
     .silos-section { padding: 1.5rem 1rem; }
-    .cat-simple { grid-template-columns: 1fr; }
+    #rss-feed-home { grid-template-columns: 1fr; }
+    .hero-secundario img, .skeleton-small .skeleton-thumb { width: 84px; }
   }
 </style>
 
-<!-- ═══ TOPBAR ═══ -->
 <nav class="topbar">
   <div class="topbar-inner">
-    <span class="topbar-label">Explorar:</span>
+    <span class="topbar-label">Explore:</span>
     {silos.map(s => (
       <a href={s.href}>
         <span class="topbar-icon">{s.icon}</span> {s.title}
@@ -310,22 +188,28 @@ const silos = [
 
 <div class="mag-wrap">
 
-  <!-- ═══ FEATURED ═══ -->
-  {featured.length > 0 && (
-    <div class="featured-strip">
-      {featured.map((post: any) => (
-        <a href={post.link} class="feat-card">
-          {post.image && <img src={post.image} alt={post.title} loading="eager" decoding="async" />}
-          <div class="feat-overlay">
-            <div class="feat-date">{post.date}</div>
-            <div class="feat-title">{post.title}</div>
+  <!-- Hero Section Destaques Dinâmicos -->
+  <section class="hero-destaques">
+    <div id="hero-content">
+      <div class="hero-skeleton">
+        <div class="skeleton-main">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-body">
+            <div class="skeleton-title"></div>
+            <div class="skeleton-title-short"></div>
+            <div class="skeleton-date"></div>
           </div>
-        </a>
-      ))}
+        </div>
+        <div class="skeleton-side">
+          <div class="skeleton-small"><div class="skeleton-thumb"></div><div class="skeleton-body"><div class="skeleton-title"></div><div class="skeleton-date"></div></div></div>
+          <div class="skeleton-small"><div class="skeleton-thumb"></div><div class="skeleton-body"><div class="skeleton-title"></div><div class="skeleton-date"></div></div></div>
+          <div class="skeleton-small"><div class="skeleton-thumb"></div><div class="skeleton-body"><div class="skeleton-title"></div><div class="skeleton-date"></div></div></div>
+        </div>
+      </div>
     </div>
-  )}
+  </section>
 
-  <!-- ═══ SILOS ═══ -->
+  <!-- Atalho silos de navegação -->
   <div class="silos-section">
     <div class="silos-header">
       <div>
@@ -336,7 +220,7 @@ const silos = [
     <div class="silos-grid">
       {silos.map(silo => (
         <a href={silo.href} class="silo-card">
-          <span class="silo-arrow">→</span>
+          <span class="silo-arrow">&rarr;</span>
           <div class="silo-card-top">
             <span class="silo-icon">{silo.icon}</span>
             <h3>{silo.title}</h3>
@@ -348,63 +232,244 @@ const silos = [
     </div>
   </div>
 
-  <!-- ═══ CATEGORIAS ═══ -->
-  {categorias.map((cat) => (
-    cat.posts.length > 0 && (
-      <>
-        <div class="sec-header">
-          <h2>{cat.name}</h2>
-          <a href={`https://painelsaude.com.br/${cat.slug}/`}>Ver tudo</a>
-        </div>
+  <!-- Categoria 1 (Notícias) -->
+  <section class="categoria-destaques">
+    <div class="categoria-header">
+      <h2>Notícias de Saúde</h2>
+      <a href="https://painelsaude.com.br/noticias/">Ver tudo &rarr;</a>
+    </div>
+    <div id="cat-noticias" class="categoria-grid">
+      <div class="categoria-skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="skeleton-title"></div><div class="skeleton-title-short"></div></div></div>
+      <div class="categoria-skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="skeleton-title"></div><div class="skeleton-title-short"></div></div></div>
+    </div>
+  </section>
 
-        {cat.posts.length >= 4 ? (
-          <div class="cat-grid">
-            {cat.posts.slice(1, 3).map((post: any) => (
-              <a href={post.link} class="cg-card">
-                {post.image && <img src={post.image} alt={post.title} class="cg-card-img" loading="lazy" decoding="async" />}
-                <div class="cg-card-body">
-                  <span class="cg-card-date">{post.date}</span>
-                  <span class="cg-card-title">{post.title}</span>
-                </div>
-              </a>
-            ))}
-            <a href={cat.posts[0].link} class="cg-card cg-main">
-              {cat.posts[0].image && <img src={cat.posts[0].image} alt={cat.posts[0].title} class="cg-card-img" loading="lazy" decoding="async" />}
-              <div class="cg-card-body">
-                <span class="cg-card-date">{cat.posts[0].date}</span>
-                <span class="cg-card-title">{cat.posts[0].title}</span>
-              </div>
-            </a>
-            <div class="cat-list">
-              {cat.posts.slice(3).map((post: any) => (
-                <a href={post.link} class="cl-item">
-                  {post.image && <img src={post.image} alt={post.title} class="cl-thumb" loading="lazy" decoding="async" />}
-                  <div class="cl-text">
-                    <div class="cl-date">{post.date}</div>
-                    <div class="cl-title">{post.title}</div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div class="cat-simple">
-            {cat.posts.map((post: any) => (
-              <a href={post.link} class="cg-card">
-                {post.image && <img src={post.image} alt={post.title} class="cg-card-img" loading="lazy" decoding="async" />}
-                <div class="cg-card-body">
-                  <span class="cg-card-date">{post.date}</span>
-                  <span class="cg-card-title">{post.title}</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        )}
-      </>
-    )
-  ))}
+  <!-- Categoria 2 (Saúde) -->
+  <section class="categoria-destaques">
+    <div class="categoria-header">
+      <h2>Saúde Pública</h2>
+      <a href="https://painelsaude.com.br/saude/">Ver tudo &rarr;</a>
+    </div>
+    <div id="cat-saude" class="categoria-grid">
+      <div class="categoria-skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="skeleton-title"></div><div class="skeleton-title-short"></div></div></div>
+      <div class="categoria-skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="skeleton-title"></div><div class="skeleton-title-short"></div></div></div>
+    </div>
+  </section>
+
+  <!-- Categoria 3 (Ciência) -->
+  <section class="categoria-destaques">
+    <div class="categoria-header">
+      <h2>Ciência e Estudos</h2>
+      <a href="https://painelsaude.com.br/ciencia/">Ver tudo &rarr;</a>
+    </div>
+    <div id="cat-ciencia" class="categoria-grid">
+      <div class="categoria-skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="skeleton-title"></div><div class="skeleton-title-short"></div></div></div>
+      <div class="categoria-skeleton-card"><div class="sk-img"></div><div class="sk-body"><div class="skeleton-title"></div><div class="skeleton-title-short"></div></div></div>
+    </div>
+  </section>
+
+  <!-- Últimas Publicações Geral (Grid inferior) -->
+  <div class="sec-header">
+    <h2>Últimas Publicações</h2>
+    <a href="https://painelsaude.com.br/blog/">Ver tudo no blog &rarr;</a>
+  </div>
+
+  <div id="rss-feed-home">
+    <div class="rss-skeleton">
+      <div class="skeleton-card"><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-date"></div></div>
+      <div class="skeleton-card"><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-date"></div></div>
+      <div class="skeleton-card"><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-date"></div></div>
+    </div>
+  </div>
 
 </div>
+
+<!-- Script Dinâmico de Alimentação via WordPress REST API -->
+<script is:inline>
+(function() {
+  const WP_URL = 'https://painelsaude.com.br';
+  const PLACEHOLDER_IMG = 'https://painelsaude.com.br/wp-content/uploads/2025/05/painel-saude-logo-1.png';
+
+  window.__zgcUsedPostIds = window.__zgcUsedPostIds || new Set();
+
+  function formatDate(dateStr) {
+    if (!dateStr) return '';
+    try {
+      const d = new Date(dateStr);
+      return d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function stripHtml(html, maxLen) {
+    if (!html) return '';
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    const txt = (tmp.textContent || tmp.innerText || '').trim();
+    if (txt.length <= maxLen) return txt;
+    return txt.substring(0, maxLen).trim() + '...';
+  }
+
+  function getImg(p) {
+    if (p && p._embedded && p._embedded['wp:featuredmedia'] && p._embedded['wp:featuredmedia'][0]) {
+      const fm = p._embedded['wp:featuredmedia'][0];
+      const sizes = fm.media_details && fm.media_details.sizes;
+      return (sizes && sizes.medium_large && sizes.medium_large.source_url) || fm.source_url || PLACEHOLDER_IMG;
+    }
+    return PLACEHOLDER_IMG;
+  }
+
+  async function resolveIdBySlug(slug) {
+    try {
+      const res = await fetch(`${WP_URL}/wp-json/wp/v2/categories?slug=${slug}&_fields=id`);
+      if (!res.ok) return null;
+      const data = await res.json();
+      return data.length ? data[0].id : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // 1. Carrega a Seção Hero Principal e Secundários (Destaques de Notícias)
+  async function carregarHero(catSlug) {
+    const content = document.getElementById('hero-content');
+    if (!content) return;
+
+    try {
+      const catId = await resolveIdBySlug(catSlug);
+      const url = catId 
+        ? `${WP_URL}/wp-json/wp/v2/posts?categories=${catId}&per_page=4&_embed&_fields=id,title,link,date,excerpt,_links,_embedded`
+        : `${WP_URL}/wp-json/wp/v2/posts?per_page=4&_embed&_fields=id,title,link,date,excerpt,_links,_embedded`;
+
+      const r = await fetch(url);
+      const posts = r.ok ? await r.json() : [];
+
+      if (!posts || posts.length === 0) {
+        content.innerHTML = '<p class="hero-vazio">Sem destaques no momento.</p>';
+        return;
+      }
+      posts.forEach(p => window.__zgcUsedPostIds.add(p.id));
+      const principal = posts[0];
+      const menores = posts.slice(1, 4);
+
+      const principalHtml = `
+        <a class="hero-principal" href="${principal.link || '#'}">
+          <img src="${getImg(principal)}" alt="" loading="eager" decoding="async">
+          <div class="hero-principal-texto">
+            <div>
+              <h2>${principal.title?.rendered || 'Sem título'}</h2>
+              <div class="hero-excerpt">${stripHtml(principal.excerpt?.rendered, 160)}</div>
+            </div>
+            <span class="hero-data">${formatDate(principal.date)}</span>
+          </div>
+        </a>
+      `;
+
+      const secundarioHtml = menores.map(p => `
+        <a class="hero-secundario" href="${p.link || '#'}">
+          <img src="${getImg(p)}" alt="" loading="lazy" decoding="async">
+          <div class="hero-secundario-texto">
+            <h3>${p.title?.rendered || 'Sem título'}</h3>
+            <span class="hero-data">${formatDate(p.date)}</span>
+          </div>
+        </a>
+      `).join('');
+
+      content.innerHTML = `
+        <div class="hero-grid">
+          ${principalHtml}
+          <div class="hero-secundarios">${secundarioHtml}</div>
+        </div>
+      `;
+    } catch (err) {
+      console.warn('[Hero Fetch Error]:', err);
+      content.innerHTML = '<p class="hero-erro">Não foi possível carregar os destaques agora.</p>';
+    }
+  }
+
+  // 2. Carrega as Seções de Categorias de Grid no Meio
+  async function carregarCategoriaBySlug(slug, containerId, routeSlug) {
+    const content = document.getElementById(containerId);
+    if (!content) return;
+
+    try {
+      const catId = await resolveIdBySlug(slug);
+      if (!catId) {
+        content.innerHTML = `<p class="hero-erro">Não foi possível carregar as publicações agora. <a href="${WP_URL}/${routeSlug}/">Ver categoria &rarr;</a></p>`;
+        return;
+      }
+
+      const postsRes = await fetch(`${WP_URL}/wp-json/wp/v2/posts?categories=${catId}&per_page=2&_embed&_fields=id,title,link,date,excerpt,_links,_embedded`);
+      if (!postsRes.ok) throw new Error('Fetch failed');
+      const posts = await postsRes.json();
+
+      if (!posts || posts.length === 0) {
+        content.innerHTML = '<p class="hero-vazio">Sem publicações recentes.</p>';
+        return;
+      }
+      posts.forEach(p => window.__zgcUsedPostIds.add(p.id));
+      const cardsHtml = posts.map(p => `
+        <a class="categoria-card" href="${p.link || '#'}">
+          <img src="${getImg(p)}" alt="" loading="lazy" decoding="async">
+          <div class="categoria-card-texto">
+            <div>
+              <h3>${p.title?.rendered || 'Sem título'}</h3>
+              <div class="categoria-card-excerpt">${stripHtml(p.excerpt?.rendered, 110)}</div>
+            </div>
+            <span class="hero-data">${formatDate(p.date)}</span>
+          </div>
+        </a>
+      `).join('');
+      content.innerHTML = cardsHtml;
+    } catch (err) {
+      console.warn(`[Categoria ${slug} Fetch Error]:`, err);
+      content.innerHTML = `<p class="hero-erro">Não foi possível carregar as publicações agora. <a href="${WP_URL}/${routeSlug}/">Ver categoria &rarr;</a></p>`;
+    }
+  }
+
+  // 3. Carrega as últimas publicações no grid inferior, filtrando as já exibidas acima
+  function carregarUltimasPublicacoes() {
+    const container = document.getElementById('rss-feed-home');
+    if (!container) return;
+
+    fetch(`${WP_URL}/wp-json/wp/v2/posts?per_page=12&_fields=id,title,link,date,excerpt`)
+      .then(r => r.ok ? r.json() : [])
+      .then(posts => {
+        if (!posts || !posts.length) {
+          container.innerHTML = '<p class="rss-error">Sem publicações recentes no momento.</p>';
+          return;
+        }
+        const usados = window.__zgcUsedPostIds;
+        const filtrados = posts.filter(p => !usados.has(p.id));
+        const finais = filtrados.length >= 3 ? filtrados.slice(0, 3) : posts.slice(0, 3);
+
+        const html = finais.map(item => `
+          <a href="${item.link}" class="rss-card">
+            <div>
+              <span class="rss-date">${formatDate(item.date)}</span>
+              <h3 class="rss-title">${item.title?.rendered || ''}</h3>
+              <p class="rss-excerpt">${stripHtml(item.excerpt?.rendered, 130)}</p>
+            </div>
+          </a>
+        `).join('');
+        container.innerHTML = html;
+      })
+      .catch(() => {
+        container.innerHTML = `<p class="rss-error">Não foi possível carregar as publicações recentes. <a href="${WP_URL}/blog/">Acesse o blog &rarr;</a></p>`;
+      });
+  }
+
+  Promise.all([
+    carregarHero('noticias'),
+    carregarCategoriaBySlug('noticias', 'cat-noticias', 'noticias'),
+    carregarCategoriaBySlug('saude', 'cat-saude', 'saude'),
+    carregarCategoriaBySlug('ciencia', 'cat-ciencia', 'ciencia')
+  ]).finally(function() {
+    carregarUltimasPublicacoes();
+  });
+})();
+</script>
 
 <script type="application/ld+json" is:inline>
 {
@@ -420,7 +485,7 @@ const silos = [
     "url": "https://painelsaude.com.br",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://painelsaude.com.br/wp-content/uploads/2025/05/painel-saude-logo-e1746821489576.png"
+      "url": "https://painelsaude.com.br/wp-content/uploads/2025/05/painel-logo-e1746821489576.png"
     }
   },
   "potentialAction": {

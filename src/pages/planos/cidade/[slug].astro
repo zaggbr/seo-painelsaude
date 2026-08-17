@@ -1,9 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import cidades from '../../../data/cidades_top500.json';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
+import fs from 'node:fs';
 
 export async function getStaticPaths() {
+  const cidades = JSON.parse(fs.readFileSync('./src/data/cidades_top500.json', 'utf-8'));
   return cidades.slice(0, 500).map((cidade) => ({
     params: { slug: cidade.slug },
     props: { cidade },

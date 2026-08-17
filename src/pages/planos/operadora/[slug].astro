@@ -1,10 +1,11 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import operadoras from '../../../data/operadoras.json';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
+import fs from 'node:fs';
 
 export async function getStaticPaths() {
+  const operadoras = JSON.parse(fs.readFileSync('./src/data/operadoras.json', 'utf-8'));
   return operadoras.slice(0, 200).map((op) => ({
     params: { slug: op.slug },
     props: { op },
@@ -14,6 +15,69 @@ export async function getStaticPaths() {
 const { op } = Astro.props;
 const nomeFormatado = normalizarOperadora(op.nome);
 const anoReferencia = new Date().getFullYear();
+
+// Funções para otimização de CTR na SERP (limites: title <= 55 chars, 70 <= description <= 155 chars)
+function getNomeCurto(nome) {
+  return nome
+    .replace(/\s+-\s+Em Liquidação.*$/i, '')
+    .replace(/\s+-\s+EPP.*$/i, '')
+    .replace(/\s+-\s+ME.*$/i, '')
+    .replace(/\s+S\.A\..*$/i, '')
+    .replace(/\s+S\/A.*$/i, '')
+    .replace(/\s+S\.A.*$/i, '')
+    .replace(/\s+Ltda\..*$/i, '')
+    .replace(/\s+Ltda.*$/i, '')
+    .replace(/\s+S\.S\..*$/i, '')
+    .replace(/\s+S\.S.*$/i, '')
+    .trim() || nome;
+}
+
+function formatMetaTitle(nome, ano) {
+  const nomeCurto = getNomeCurto(nome);
+  const suffixes = [
+    ` | Planos, Preços e Cobertura ${ano}`,
+    ` | Planos, Preços e Cobertura`,
+    ` | Planos e Preços ${ano}`,
+    ` | Planos e Preços`,
+    ` | Planos ${ano}`,
+    ` | Planos`
+  ];
+  for (const s of suffixes) {
+    if (nomeCurto.length + s.length <= 59) {
+      return `${nomeCurto}${s}`;
+    }
+  }
+  const shortest = ` | Planos`;
+  return `${nomeCurto.slice(0, 59 - shortest.length - 1).trim()}…${shortest}`;
+}
+
+function formatMetaDescription(nome, beneficiarios, uf, ano) {
+  const benef = beneficiarios
+    ? (typeof beneficiarios === 'number' ? beneficiarios.toLocaleString('pt-BR') : beneficiarios)
+    : 'milhares de';
+  const regiao = uf || 'todo o Brasil';
+
+  let desc = `${nome} atende ${benef} beneficiários em ${regiao}. Veja planos disponíveis, coberturas e valores de referência ${ano}.`;
+
+  if (desc.length > 155) {
+    desc = `${nome} atende ${benef} beneficiários em ${regiao}. Veja planos, coberturas e valores ${ano}.`;
+  }
+  if (desc.length > 155) {
+    desc = `${nome}: planos de saúde em ${regiao}. Veja coberturas, benefícios e valores de referência ${ano}.`;
+  }
+  if (desc.length > 155) {
+    desc = desc.slice(0, 154).trim() + "…";
+  }
+
+  if (desc.length < 70) {
+    desc += ` Confira a rede credenciada e tabela completa de preços atualizada.`;
+  }
+
+  return desc;
+}
+
+const metaTitle = formatMetaTitle(nomeFormatado, anoReferencia);
+const metaDescription = formatMetaDescription(nomeFormatado, op.beneficiarios, op.uf, anoReferencia);
 
 const breadcrumbs = [
   { name: 'Início', url: '/' },
@@ -25,13 +89,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": nomeFormatado,
-  "description": `${nomeFormatado} é uma operadora de planos de saúde registrada na ANS com ${op.total_planos} planos disponíveis.`,
+  "description": metaDescription,
   "url": `https://painelsaude.com.br/planos/operadora/${op.slug}`
 };
 ---
 <Layout
-  title={`${nomeFormatado} — Planos de Saúde | Painel Saúde`}
-  description={`Conheça os planos de saúde da ${nomeFormatado}. ${op.total_planos} planos disponíveis. Informações sobre cobertura, segmentação e contratação.`}
+  title={metaTitle}
+  description={metaDescription}
   canonical={`https://painelsaude.com.br/planos/operadora/${op.slug}`}
   breadcrumbs={breadcrumbs}
 >
