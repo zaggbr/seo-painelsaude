@@ -76,8 +76,8 @@ const ogType = type === 'article' ? 'article' : 'website';
     <link rel="manifest" href="https://seo-painelsaude.pages.dev/site.webmanifest" />
     <meta name="theme-color" content="#1565c0" />
 
-    <!-- AdSense: script de carregamento único (não duplicar por unidade) -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6307491010120109" crossorigin="anonymous"></script>
+    <!-- AdSense: script manual — sem ?client= no src para não ativar Auto Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
     <style>
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body { font-family: system-ui, sans-serif; color: #1a1a1a; line-height: 1.6; font-display: swap; }
@@ -135,16 +135,15 @@ const ogType = type === 'article' ? 'article' : 'website';
     <header class="site-header">
       <div class="header-inner">
         <a href="/">
-          <Image 
-            src="https://seo-painelsaude.pages.dev/painelsaude-logo-horizontal.png" 
-            alt="Painel Saúde" 
-            width={200} 
-            height={46} 
-            format="webp" 
-            quality={80} 
-            loading="eager" 
+          <Image
+            src="https://seo-painelsaude.pages.dev/painelsaude-logo-horizontal.png"
+            alt="Painel Saúde"
+            width={200}
+            height={46}
+            format="webp"
+            quality={80}
+            loading="eager"
             fetchpriority="high"
-            inferSize={true}
           />
         </a>
         <nav class="main-nav">
