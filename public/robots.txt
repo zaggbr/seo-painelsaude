@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://painelsaude.com.br/sitemap-planos.xml
+Sitemap: https://painelsaude.com.br/simuladores/sitemap.xml

@@ -2,7 +2,6 @@
 import CookieBanner from "../components/CookieBanner.astro";
 import EductaLink from "../components/EductaLink.astro";
 import { extractFromContent } from "../utils/seo.js";
-import { Image } from "astro:assets";
 import Schema from "../components/Schema.astro";
 
 export interface Props {
@@ -27,7 +26,7 @@ const pageTitle = baseTitle.length > 50
 const metaDescription = description || excerpt || extractFromContent(content || '', 160) || "";
 const canonicalURL = canonical || new URL(Astro.url.pathname, 'https://painelsaude.com.br').toString();
 
-const ogImage = image || propOgImage || "https://painelsaude.com.br/wp-content/uploads/2025/05/painel-saude-logo-1.png";
+const ogImage = image || propOgImage || "https://seo-painelsaude.pages.dev/og-default.jpg";
 const ogType = type === 'article' ? 'article' : 'website';
 ---
 <!DOCTYPE html>
@@ -47,8 +46,8 @@ const ogType = type === 'article' ? 'article' : 'website';
     {metaDescription && <meta property="og:description" content={metaDescription} />}
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="1376" />
+    <meta property="og:image:height" content="768" />
     <meta property="og:type" content={ogType} />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content={siteName} />
@@ -135,13 +134,11 @@ const ogType = type === 'article' ? 'article' : 'website';
     <header class="site-header">
       <div class="header-inner">
         <a href="/">
-          <Image
-            src="https://seo-painelsaude.pages.dev/painelsaude-logo-horizontal.png"
+          <img
+            src="/painelsaude-logo-horizontal.png"
             alt="Painel Saúde"
-            width={200}
-            height={46}
-            format="webp"
-            quality={80}
+            width="200"
+            height="46"
             loading="eager"
             fetchpriority="high"
           />
