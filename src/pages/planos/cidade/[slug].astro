@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
 import fs from 'node:fs';
 
@@ -12,47 +13,174 @@ export async function getStaticPaths() {
 }
 
 const { cidade } = Astro.props;
+const anoReferencia = new Date().getFullYear();
+
+function formatMetaTitle(nome, uf, totalOp, ano) {
+  const base = `Planos de Saúde em ${nome} (${uf})`;
+  const suffixes = [
+    ` | ${totalOp} Operadoras, Preços e Cobertura ${ano}`,
+    ` | ${totalOp} Operadoras e Cobertura ${ano}`,
+    ` | Preços e Cobertura ${ano}`,
+    ` | Operadoras e Preços ${ano}`,
+    ` | Cobertura ${ano}`,
+  ];
+  for (const s of suffixes) {
+    if (base.length + s.length <= 62) return base + s;
+  }
+  return `${base} | Planos ${ano}`;
+}
+
+function formatMetaDescription(nome, uf, totalOp, ano) {
+  let desc = `Compare ${totalOp} operadoras de planos de saúde em ${nome} (${uf}). Veja coberturas, tipos de contratação e valores de referência ${ano} com dados oficiais da ANS.`;
+  if (desc.length > 155) {
+    desc = `${totalOp} operadoras atendem ${nome} (${uf}). Compare planos, coberturas e preços de referência ${ano} — dados ANS.`;
+  }
+  if (desc.length > 155) desc = desc.slice(0, 154).trim() + "…";
+  return desc;
+}
+
+const metaTitle = formatMetaTitle(cidade.nome, cidade.uf, cidade.total_operadoras, anoReferencia);
+const metaDescription = formatMetaDescription(cidade.nome, cidade.uf, cidade.total_operadoras, anoReferencia);
+
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Planos de Saúde', url: '/planos' },
+  { name: `${cidade.nome} (${cidade.uf})`, url: `/planos/cidade/${cidade.slug}` },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `Planos de Saúde em ${cidade.nome}`,
+    "description": metaDescription,
+    "numberOfItems": cidade.total_operadoras,
+    "itemListElement": cidade.operadoras.slice(0, 10).map((op, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": normalizarOperadora(op.nome),
+      "url": `https://painelsaude.com.br/planos/operadora/${op.slug}`,
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs.map((b, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": b.name,
+      "item": `https://painelsaude.com.br${b.url}`,
+    })),
+  },
+];
 ---
 <Layout
-  title={`Planos de Saúde em ${cidade.nome} (${cidade.uf}) | Painel Saúde`}
-  description={`Compare ${cidade.total_operadoras} operadoras em ${cidade.nome}. Dados ANS.`}
+  title={metaTitle}
+  description={metaDescription}
   canonical={`https://painelsaude.com.br/planos/cidade/${cidade.slug}`}
 >
-  <nav style="font-size:0.875rem;margin-bottom:1.5rem;color:#666">
-    <a href="/">Início</a> › <a href="/planos">Planos</a> › {cidade.nome}
-  </nav>
+  {jsonLd.map((ld) => (
+    <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+  ))}
+
+  <Breadcrumbs breadcrumbs={breadcrumbs} />
 
   <article>
     <header style="margin-bottom:2rem">
-      <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">{cidade.uf}</span>
-      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">Planos de Saúde em {cidade.nome}</h1>
-      <p style="color:#555;margin-top:0.5rem">{cidade.total_operadoras} operadoras registradas na ANS atendem {cidade.nome}.</p>
+      <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">
+        {cidade.uf}
+      </span>
+      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">
+        Planos de Saúde em {cidade.nome}
+      </h1>
+      <p style="color:#555;margin-top:0.5rem">
+        {cidade.total_operadoras} operadoras registradas na ANS atendem {cidade.nome} ({cidade.uf}) — dados atualizados para {anoReferencia}.
+      </p>
     </header>
 
     <section style="background:#f8f9fa;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
-      <p style="color:#555;font-size:0.95rem">
-        A cidade de {cidade.nome} ({cidade.uf}) conta com {cidade.total_operadoras} operadoras de planos de saúde com cobertura ativa, segundo dados da ANS.
-      </p>
+      <h2 style="font-size:1rem;margin-bottom:0.75rem;color:#333">Resumo do mercado em {cidade.nome}</h2>
+      <dl style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;font-size:0.9rem">
+        <dt style="color:#666">Operadoras ativas</dt>
+        <dd style="font-weight:600">{cidade.total_operadoras}</dd>
+        <dt style="color:#666">Estado</dt>
+        <dd style="font-weight:600">{cidade.uf}</dd>
+        <dt style="color:#666">Fonte dos dados</dt>
+        <dd style="font-weight:600">ANS {anoReferencia}</dd>
+      </dl>
+    </section>
+
+    <section style="background:#f0f7ff;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
+      <h2 style="font-size:1rem;margin-bottom:1rem;color:#1565c0">💰 Valores de Referência em {cidade.nome} ({anoReferencia})</h2>
+      <p style="font-size:0.8rem;color:#888;margin-bottom:1rem">Faixas estimadas com base em dados ANS. Consulte a operadora para cotação exata.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;font-size:0.875rem">
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Individual</p>
+          <p style="color:#1565c0;font-weight:700">R$ 200 – R$ 900/mês</p>
+          <p style="color:#666;font-size:0.8rem">Cobertura ambulatorial e hospitalar</p>
+        </div>
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Familiar</p>
+          <p style="color:#1565c0;font-weight:700">R$ 600 – R$ 2.500/mês</p>
+          <p style="color:#666;font-size:0.8rem">Para 2 a 4 dependentes</p>
+        </div>
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Coletivo</p>
+          <p style="color:#1565c0;font-weight:700">R$ 150 – R$ 600/mês</p>
+          <p style="color:#666;font-size:0.8rem">Por beneficiário — empresas e associações</p>
+        </div>
+        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
+          <p style="font-weight:600;color:#333">Plano Odontológico</p>
+          <p style="color:#1565c0;font-weight:700">R$ 20 – R$ 100/mês</p>
+          <p style="color:#666;font-size:0.8rem">Por pessoa</p>
+        </div>
+      </div>
     </section>
 
     <section style="margin-bottom:2rem">
-      <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Operadoras com cobertura em {cidade.nome}</h2>
+      <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">
+        Operadoras com cobertura em {cidade.nome}
+      </h2>
       <div style="display:grid;gap:0.75rem">
         {cidade.operadoras.map((op) => (
-          <a href={`/planos/operadora/${op.slug}`} style="border:1px solid #e0e0e0;border-radius:8px;padding:1rem;text-decoration:none;color:#333;display:flex;justify-content:space-between;align-items:center">
+          <a
+            href={`/planos/operadora/${op.slug}`}
+            style="border:1px solid #e0e0e0;border-radius:8px;padding:1rem;text-decoration:none;color:#333;display:flex;justify-content:space-between;align-items:center;transition:border-color .15s"
+          >
             <div>
               <p style="font-weight:600;margin-bottom:0.25rem">{normalizarOperadora(op.nome)}</p>
               <p style="font-size:0.8rem;color:#666">{op.modalidade}</p>
             </div>
-            <span style="font-size:0.8rem;color:#1565c0">{op.total_planos} planos</span>
+            <span style="font-size:0.8rem;color:#1565c0;white-space:nowrap">{op.total_planos} planos</span>
           </a>
         ))}
       </div>
     </section>
 
+    <section style="margin:2rem 0;text-align:center">
+      <a href="/planos" style="display:inline-block;background:#1565c0;color:white;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
+        Ver Lista Completa de Planos de Saúde
+      </a>
+      <p style="margin-top:0.75rem;font-size:0.8rem;color:#888">
+        Fonte oficial: <a href="https://www.ans.gov.br/planos-de-saude-e-operadoras" target="_blank" rel="noopener" style="color:#1565c0">ANS — Agência Nacional de Saúde Suplementar</a>
+      </p>
+    </section>
+
+    <section style="background:#fafafa;border:1px solid #e8e8e8;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
+      <h2 style="font-size:1rem;margin-bottom:1rem;color:#333">📖 Glossário — Termos dos Planos de Saúde</h2>
+      <dl style="font-size:0.875rem;display:grid;gap:0.75rem">
+        <div><dt style="font-weight:600;color:#1565c0">Coparticipação</dt><dd style="color:#555;margin-top:0.2rem">Valor pago pelo beneficiário a cada uso do plano, além da mensalidade.</dd></div>
+        <div><dt style="font-weight:600;color:#1565c0">Carência</dt><dd style="color:#555;margin-top:0.2rem">Período inicial após a contratação em que determinadas coberturas ainda não estão disponíveis.</dd></div>
+        <div><dt style="font-weight:600;color:#1565c0">Segmentação assistencial</dt><dd style="color:#555;margin-top:0.2rem">Tipo de cobertura: ambulatorial, hospitalar, odontológico ou combinações.</dd></div>
+        <div><dt style="font-weight:600;color:#1565c0">Portabilidade</dt><dd style="color:#555;margin-top:0.2rem">Direito de trocar de operadora sem cumprir novas carências.</dd></div>
+        <div><dt style="font-weight:600;color:#1565c0">ROL ANS</dt><dd style="color:#555;margin-top:0.2rem">Lista de procedimentos e exames de cobertura obrigatória por todos os planos.</dd></div>
+        <div><dt style="font-weight:600;color:#1565c0">Abrangência</dt><dd style="color:#555;margin-top:0.2rem">Área geográfica onde o plano oferece cobertura: municipal, estadual, regional ou nacional.</dd></div>
+      </dl>
+    </section>
+
     <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">
       <p style="font-weight:600;color:#e65100;margin-bottom:0.25rem">⚠️ Informação importante</p>
-      <p style="font-size:0.9rem;color:#444">Dados fornecidos pela ANS. Consulte a operadora para confirmar disponibilidade e preços em {cidade.nome}.</p>
+      <p style="font-size:0.9rem;color:#444">Dados fornecidos pela ANS e podem não refletir preços atuais. Consulte a operadora para cotação atualizada em {cidade.nome}.</p>
     </section>
   </article>
 </Layout>
