@@ -1,0 +1,479 @@
+[
+  {
+    "slug": "o-que-e-carencia-plano-de-saude",
+    "title": "O Que é Carência no Plano de Saúde? Prazos ANS 2026",
+    "headline": "O Que é Carência no Plano de Saúde?",
+    "description": "Carência é o período após a contratação em que o plano ainda não cobre determinados procedimentos. Entenda os prazos máximos definidos pela ANS para 2026 e como usar a portabilidade para evitá-los.",
+    "keyword": "carência plano de saúde",
+    "badge": "Glossário ANS",
+    "intro": "Carência é o tempo que precisa passar depois que você assina o contrato do plano de saúde antes de poder usar determinados procedimentos ou atendimentos. Durante o período de carência, você paga a mensalidade normalmente, mas a operadora pode recusar o atendimento para os procedimentos ainda em carência.",
+    "sections": [
+      {
+        "heading": "Prazos máximos de carência definidos pela ANS",
+        "type": "table",
+        "table": {
+          "headers": ["Tipo de atendimento", "Carência máxima permitida pela ANS"],
+          "rows": [
+            ["Urgências e emergências", "24 horas"],
+            ["Consultas e exames simples (ambulatorial)", "30 dias"],
+            ["Internações e cirurgias (hospitalar)", "180 dias"],
+            ["Casos de alta complexidade (quimioterapia, diálise, transplantes)", "180 dias"],
+            ["Doenças e lesões preexistentes (DLP)", "Até 24 meses"],
+            ["Parto a termo (gravidez)", "300 dias (10 meses)"]
+          ]
+        },
+        "text": "Esses são os prazos **máximos** que a operadora pode exigir. Muitas operadoras praticam prazos menores — especialmente em planos coletivos. Os prazos valem para contratações novas; ao fazer portabilidade, os prazos já cumpridos são aproveitados."
+      },
+      {
+        "heading": "Carência em planos individuais vs coletivos",
+        "type": "text",
+        "text": "Em **planos individuais**, a ANS limita os prazos conforme a tabela acima e a operadora não pode ampliar esses limites. Em **planos coletivos** (empresariais ou por adesão), o contrato pode prever prazos menores ou isenção total de carência — especialmente para admissões em grupo. Funcionários novos que entram em empresa com plano coletivo geralmente têm carência reduzida ou zerada."
+      },
+      {
+        "heading": "Como evitar a carência: portabilidade",
+        "type": "text",
+        "text": "Se você já tem um plano de saúde há mais de 2 anos e quer trocar de operadora, pode usar a **portabilidade de carências** — o direito de migrar sem precisar cumprir os prazos de carência novamente para coberturas equivalentes. Condições para usar a portabilidade:\n\n- Estar com o contrato ativo e em dia há pelo menos 2 anos (1 ano para carências simples)\n- Solicitar para um plano de segmentação igual ou inferior\n- Não ter débitos com a operadora atual\n- Fazer a solicitação durante o período de portabilidade aberto pela ANS"
+      },
+      {
+        "heading": "DLP — Doenças e Lesões Preexistentes",
+        "type": "text",
+        "text": "DLP é qualquer condição de saúde que você já tinha antes de contratar o plano — diabetes, hipertensão, problemas cardíacos, etc. A operadora pode exigir carência de até **24 meses** para procedimentos relacionados à DLP. Após 24 meses, a cobertura é obrigatória para qualquer condição, sem exceção. A operadora não pode recusar a contratação por DLP — apenas pode cobrar carência."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Se eu usar o plano durante a carência, o que acontece?",
+        "a": "A operadora pode recusar o atendimento eletivo durante a carência. Em emergências e urgências, o atendimento é obrigatório após 24 horas de contrato — mesmo que outros procedimentos ainda estejam em carência. Se você usar o plano em situação não emergencial durante a carência, a operadora pode cobrar o valor integral do atendimento."
+      },
+      {
+        "q": "A carência do plano vale para todos os membros da família no plano familiar?",
+        "a": "Sim. Cada beneficiário tem sua própria carência, contada a partir da data de inclusão no plano. Se você entrou no plano em janeiro e incluiu um familiar em março, a carência do familiar começa em março — não em janeiro."
+      },
+      {
+        "q": "Plano coletivo empresarial tem carência?",
+        "a": "Pode ter ou não — depende do contrato negociado entre a empresa e a operadora. Muitos contratos coletivos empresariais preveem isenção de carência para admissões em grupo (quando toda a empresa adere de uma vez). Para novas adesões individuais após o início do contrato, a carência depende do que foi acordado."
+      },
+      {
+        "q": "Gravidez tem carência? E se eu já estava grávida ao contratar?",
+        "a": "A ANS permite carência de até 300 dias (10 meses) para parto a termo em planos novos. Para urgências obstétricas, o prazo máximo é 24 horas. Se você já estava grávida ao contratar o plano, o parto pode ser considerado DLP — a operadora pode aplicar carência de até 24 meses. Por isso é importante verificar o contrato antes de contratar com gestação em curso."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/portabilidade-plano-de-saude-como-funciona/", "label": "Portabilidade de plano de saúde: como funciona" },
+      { "href": "/responde/o-que-e-coparticipacao-plano-de-saude/", "label": "O que é coparticipação?" },
+      { "href": "/planos/", "label": "Compare operadoras disponíveis na sua cidade" }
+    ]
+  },
+  {
+    "slug": "cobertura-obrigatoria-ans-lista-2026",
+    "title": "Cobertura Obrigatória ANS 2026: Lista Completa do Rol de Procedimentos",
+    "headline": "Cobertura Obrigatória ANS 2026: O Que Todo Plano Deve Cobrir",
+    "description": "A ANS define o Rol de Procedimentos obrigatórios para todos os planos de saúde. Veja a lista atualizada 2026: consultas, exames, cirurgias, tratamentos e o que mudou na última revisão.",
+    "keyword": "cobertura obrigatória ANS 2026",
+    "badge": "Regulação ANS 2026",
+    "intro": "O Rol de Procedimentos e Eventos em Saúde da ANS é a lista mínima obrigatória de coberturas que todo plano de saúde registrado no Brasil deve oferecer. Se um procedimento está no Rol e o plano se recusa a cobrir, a negativa é ilegal e pode ser contestada diretamente na ANS.",
+    "sections": [
+      {
+        "heading": "O que é o Rol de Procedimentos da ANS",
+        "type": "text",
+        "text": "O Rol é atualizado periodicamente pela ANS com base em evidências científicas e demandas do setor. A versão vigente em 2026 foi publicada pela Resolução Normativa RN 465/2021 com atualizações subsequentes. O Rol não é um teto — o plano pode oferecer coberturas extras além do Rol, mas não pode oferecer menos."
+      },
+      {
+        "heading": "Principais categorias cobertas obrigatoriamente",
+        "type": "table",
+        "table": {
+          "headers": ["Categoria", "O que cobre", "Observação"],
+          "rows": [
+            ["Consultas médicas", "Todas as especialidades reconhecidas pelo CFM", "Sem limite de consultas em planos com segmentação ambulatorial"],
+            ["Exames laboratoriais", "Hemograma, glicemia, colesterol, urina, e centenas de outros", "Lista completa no Anexo II da RN 465"],
+            ["Diagnóstico por imagem", "Raio-X, ultrassom, tomografia, ressonância magnética", "Com indicação médica"],
+            ["Internação hospitalar", "Quarto, UTI, honorários médicos, materiais e medicamentos de uso hospitalar", "Em planos com segmentação hospitalar"],
+            ["Cirurgias", "Todas as cirurgias eletivas e de urgência incluídas no Rol", "Incluindo cirurgia bariátrica após critérios"],
+            ["Saúde mental", "Consultas psiquiátricas, psicoterapia, internação em clínica psiquiátrica", "Ampliado pela Lei 14.454/2022"],
+            ["Oncologia", "Quimioterapia, radioterapia, imunoterapia", "Medicamentos oncológicos orais incluídos desde 2022"],
+            ["Parto", "Normal e cesárea (em planos com obstetrícia)", "Inclui acompanhante durante o parto"],
+            ["Saúde preventiva", "Vacinas do calendário, mamografia, papanicolau, PSA", "Conforme faixa etária e protocolo clínico"]
+          ]
+        }
+      },
+      {
+        "heading": "O que mudou no Rol em 2022 e 2023",
+        "type": "text",
+        "text": "A Lei 14.454/2022 (que alterou a Lei dos Planos de Saúde) definiu que o Rol é **exemplificativo** — não exaustivo. Isso significa que procedimentos fora do Rol podem ser exigidos pela operadora desde que haja evidência científica consolidada ou consenso médico. Na prática, a mudança ampliou a cobertura obrigatória para tratamentos modernos (como imunoterapias e terapias gênicas) que ainda não estavam formalmente listados."
+      },
+      {
+        "heading": "O que o plano pode recusar legitimamente",
+        "type": "text",
+        "text": "Mesmo com o Rol, a operadora pode recusar cobertura em situações específicas:\n\n- Procedimentos experimentais sem evidência científica consolidada\n- Tratamentos estéticos sem indicação clínica\n- Procedimentos fora da segmentação contratada (ex: internação em plano apenas ambulatorial)\n- Atendimentos em rede não credenciada, exceto emergências\n- Procedimentos durante o período de carência para DLP"
+      },
+      {
+        "heading": "Como contestar uma negativa de cobertura",
+        "type": "text",
+        "text": "Se a operadora recusar cobertura de um procedimento que está no Rol ANS:\n\n1. Solicite a negativa por escrito com CID e código do procedimento\n2. Registre reclamação no SAC da operadora (prazo de resposta: 5 dias úteis)\n3. Abra reclamação na ANS: **0800 701 9656** (gratuito) ou pelo site da ANS\n4. Em casos urgentes, solicite liminar judicial — tribunais têm deferido com rapidez para procedimentos do Rol"
+      }
+    ],
+    "faq": [
+      {
+        "q": "O Rol ANS 2026 inclui tratamento psicológico?",
+        "a": "Sim. O Rol inclui sessões de psicoterapia com psicólogo (planos ambulatoriais) e internação em clínica psiquiátrica (planos hospitalares). A Lei 14.454/2022 reforçou a obrigatoriedade da cobertura de saúde mental sem limite de sessões para quadros graves — embora limites para consultas de manutenção ainda sejam negociados contratualmente."
+      },
+      {
+        "q": "Cirurgia bariátrica é obrigatória pelo Rol ANS?",
+        "a": "Sim, mas com critérios. A cirurgia bariátrica está no Rol para pacientes com IMC acima de 40, ou IMC acima de 35 com comorbidades como diabetes tipo 2, hipertensão grave ou apneia do sono. A cobertura exige laudo de equipe multidisciplinar e histórico de tentativas de emagrecimento sem sucesso."
+      },
+      {
+        "q": "Medicamentos são cobertos pelo plano de saúde?",
+        "a": "Medicamentos de uso hospitalar (durante internação) são cobertos. Medicamentos oncológicos orais são cobertos desde 2022. Medicamentos de uso domiciliar (fora de internação) em geral não são cobertos pelo plano médico — ficam fora do Rol, exceto em programas específicos de algumas operadoras."
+      },
+      {
+        "q": "Plano odontológico cobre os mesmos procedimentos que o médico?",
+        "a": "Não. Plano odontológico e plano médico são regulados separadamente pela ANS e têm Róis distintos. O plano odontológico cobre consultas, limpezas, restaurações, extrações e outros procedimentos odontológicos — mas não cobre internações, cirurgias médicas ou exames clínicos."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/diferenca-ambulatorial-hospitalar-plano-de-saude/", "label": "Diferença entre plano ambulatorial e hospitalar" },
+      { "href": "/responde/como-reclamar-da-operadora-ans/", "label": "Como reclamar da operadora na ANS" },
+      { "href": "/planos/", "label": "Veja operadoras disponíveis na sua cidade" }
+    ]
+  },
+  {
+    "slug": "diferenca-ambulatorial-hospitalar-plano-de-saude",
+    "title": "Diferença Entre Plano Ambulatorial e Hospitalar: Qual Contratar?",
+    "headline": "Plano Ambulatorial vs Hospitalar: Qual é a Diferença?",
+    "description": "Entenda a diferença entre plano ambulatorial e hospitalar: o que cada um cobre, quando escolher cada modalidade e como a combinação dos dois funciona na prática.",
+    "keyword": "diferença ambulatorial e hospitalar plano de saúde",
+    "badge": "Guia de Contratação",
+    "intro": "A segmentação do plano de saúde define o que ele cobre. Ambulatorial, hospitalar e a combinação dos dois são as três modalidades principais reguladas pela ANS — e escolher a errada pode resultar em cobertura insuficiente ou mensalidade maior do que o necessário.",
+    "sections": [
+      {
+        "heading": "As quatro segmentações definidas pela ANS",
+        "type": "table",
+        "table": {
+          "headers": ["Segmentação", "O que cobre", "O que NÃO cobre", "Para quem é indicado"],
+          "rows": [
+            ["Ambulatorial", "Consultas, exames, pequenas cirurgias ambulatoriais, pronto-socorro (até 12h)", "Internação, cirurgias com internação, UTI", "Quem já tem acesso ao SUS para emergências e quer cobertura preventiva e de rotina"],
+            ["Hospitalar sem obstetrícia", "Internações, cirurgias, UTI, materiais e medicamentos hospitalares", "Consultas de rotina, exames ambulatoriais, parto", "Quem quer proteção para casos graves mas não planeja ter filhos"],
+            ["Hospitalar com obstetrícia", "Tudo do hospitalar + parto normal e cesárea", "Consultas de rotina, exames ambulatoriais", "Mulheres em idade fértil ou casais que planejam filhos"],
+            ["Referência", "Cobertura mínima obrigatória ANS: urgência/emergência + parto + doenças infecciosas graves", "Maioria das consultas eletivas, exames de rotina, internações eletivas", "Apenas para quem busca o custo mais baixo possível"]
+          ]
+        }
+      },
+      {
+        "heading": "Ambulatorial + Hospitalar: a combinação mais comum",
+        "type": "text",
+        "text": "A maioria dos planos vendidos no mercado é a combinação **ambulatorial + hospitalar com obstetrícia** — que cobre tanto as consultas e exames do dia a dia quanto as internações e cirurgias. Essa é a segmentação recomendada para a maioria das famílias, pois oferece cobertura completa sem lacunas.\n\nAlgumas operadoras vendem os dois separados (você contrata o ambulatorial e o hospitalar independentemente), o que permite customizar a cobertura e o custo."
+      },
+      {
+        "heading": "Quanto custa cada segmentação (referência 2026)",
+        "type": "table",
+        "table": {
+          "headers": ["Segmentação", "Faixa de preço mensal (adulto 30-39 anos)", "Observação"],
+          "rows": [
+            ["Ambulatorial puro", "R$ 120 – R$ 350", "Mais barato, mas sem cobertura para internações"],
+            ["Hospitalar sem obstetrícia", "R$ 180 – R$ 500", "Sem consultas de rotina"],
+            ["Hospitalar com obstetrícia", "R$ 220 – R$ 600", "Recomendado para mulheres em idade fértil"],
+            ["Ambulatorial + Hospitalar com obstetrícia", "R$ 300 – R$ 900", "Cobertura completa — a combinação mais comum"],
+            ["Referência", "R$ 100 – R$ 200", "Cobertura mínima — risco alto de lacunas"]
+          ]
+        },
+        "text": "Valores estimados com base em dados ANS 2026. Preços variam conforme operadora, cidade, faixa etária e modalidade (individual, coletivo)."
+      },
+      {
+        "heading": "Pronto-socorro: ambulatorial ou hospitalar?",
+        "type": "text",
+        "text": "Um ponto de confusão frequente: o plano **ambulatorial** cobre atendimento de urgência e emergência em pronto-socorro por até 12 horas. Se o atendimento se estender além de 12 horas e exigir internação, o plano ambulatorial puro não cobre — você precisaria do hospitalar. O plano **hospitalar** cobre internações, mas em muitos contratos não cobre as consultas que geraram a internação se forem anteriores à entrada no hospital."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Posso ter só o plano ambulatorial e usar o SUS para internações?",
+        "a": "Tecnicamente sim — o SUS cobre internações gratuitamente. Na prática, a qualidade do atendimento e o tempo de espera variam muito por região e especialidade. Para quem vive em cidade com boa estrutura de SUS e tem risco de saúde baixo, o ambulatorial puro pode ser suficiente. Para quem tem condições crônicas ou faz procedimentos eletivos com frequência, o hospitalar é recomendado."
+      },
+      {
+        "q": "O plano hospitalar cobre consultas antes da internação?",
+        "a": "Em geral, não. O plano hospitalar cobre o que acontece durante a internação — cirurgia, anestesia, materiais, UTI, medicamentos hospitalares. As consultas e exames que levaram ao diagnóstico e à indicação da cirurgia ficam fora do plano hospitalar puro. Para cobrir o processo completo, é necessário o plano com segmentação ambulatorial + hospitalar."
+      },
+      {
+        "q": "Plano ambulatorial cobre psicólogo?",
+        "a": "Sim. Consultas com psicólogo e psiquiatra são cobertas pelo plano ambulatorial, conforme o Rol ANS. A cobertura inclui sessões de psicoterapia para quadros com indicação clínica."
+      },
+      {
+        "q": "Qual é a diferença entre plano de saúde e seguro saúde?",
+        "a": "Na prática, a diferença é pequena — ambos são regulados pela ANS e oferecem coberturas equivalentes. Tecnicamente, o plano de saúde é oferecido por operadoras de medicina de grupo ou cooperativas (como Unimed), enquanto o seguro saúde é oferecido por seguradoras (como Bradesco Saúde e SulAmérica). O modelo de funcionamento da rede credenciada pode variar."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/o-que-e-coparticipacao-plano-de-saude/", "label": "O que é coparticipação?" },
+      { "href": "/responde/cobertura-obrigatoria-ans-lista-2026/", "label": "Cobertura obrigatória ANS 2026" },
+      { "href": "/planos/", "label": "Compare operadoras na sua cidade" }
+    ]
+  },
+  {
+    "slug": "o-que-e-coparticipacao-plano-de-saude",
+    "title": "O Que é Coparticipação no Plano de Saúde? Como Funciona e Quando Vale a Pena",
+    "headline": "O Que é Coparticipação no Plano de Saúde?",
+    "description": "Coparticipação é o valor pago a cada uso do plano, além da mensalidade. Entenda como funciona, os limites da ANS, quando vale a pena e como comparar planos com e sem coparticipação.",
+    "keyword": "coparticipação plano de saúde",
+    "badge": "Glossário ANS",
+    "intro": "Coparticipação é o valor que o beneficiário paga diretamente à operadora ou ao prestador a cada vez que usa o plano — consulta, exame, internação ou cirurgia. É cobrada além da mensalidade mensal e varia conforme o tipo de procedimento e o contrato.",
+    "sections": [
+      {
+        "heading": "Como a coparticipação funciona na prática",
+        "type": "text",
+        "text": "Quando você vai ao médico com um plano que tem coparticipação, paga uma fração do valor do atendimento no momento do uso — como se fosse um 'ticket moderador'. A mensalidade continua sendo cobrada normalmente. O objetivo é reduzir o uso desnecessário do plano e, em troca, manter a mensalidade mais baixa."
+      },
+      {
+        "heading": "Limites de coparticipação estabelecidos pela ANS",
+        "type": "table",
+        "table": {
+          "headers": ["Tipo de atendimento", "Limite máximo de coparticipação (ANS)"],
+          "rows": [
+            ["Consultas médicas eletivas", "Sem limite percentual definido pela ANS (definido em contrato)"],
+            ["Exames ambulatoriais", "Sem limite percentual definido pela ANS"],
+            ["Internações", "Máximo de 30% do valor do procedimento"],
+            ["Urgências e emergências", "Proibida coparticipação nas primeiras 12 horas"],
+            ["Doenças crônicas (tratamento continuado)", "Proibida coparticipação após 30 dias de internação contínua"],
+            ["Saúde mental (internação)", "Proibida coparticipação após 30 dias de internação contínua"]
+          ]
+        }
+      },
+      {
+        "heading": "Plano com coparticipação vs sem coparticipação",
+        "type": "table",
+        "table": {
+          "headers": ["Critério", "Com coparticipação", "Sem coparticipação"],
+          "rows": [
+            ["Mensalidade", "Menor (10–30% mais barato)", "Maior"],
+            ["Custo por uso", "Paga a cada atendimento", "Sem custo adicional por uso"],
+            ["Melhor para", "Quem usa o plano raramente", "Quem usa o plano com frequência"],
+            ["Previsibilidade de custo", "Menor — varia conforme o uso", "Alta — mensalidade fixa"],
+            ["Risco em caso de doença grave", "Pode ser caro se usar muito", "Custo controlado mesmo com uso intenso"]
+          ]
+        }
+      },
+      {
+        "heading": "Franquia vs coparticipação — qual é a diferença?",
+        "type": "text",
+        "text": "**Franquia** é um valor fixo que você paga por evento (ex: R$ 300 por internação, independentemente do custo total). **Coparticipação** é um percentual do valor do procedimento (ex: 20% de cada consulta). A franquia é mais previsível; a coparticipação varia conforme o custo do atendimento. Ambas aparecem em planos coletivos com mais frequência que em individuais."
+      }
+    ],
+    "faq": [
+      {
+        "q": "A operadora pode cobrar coparticipação em emergências?",
+        "a": "Não nas primeiras 12 horas de atendimento de urgência ou emergência. Após 12 horas, se a situação exigir internação, a coparticipação pode ser aplicada conforme o contrato, respeitando o limite de 30% para internações estabelecido pela ANS."
+      },
+      {
+        "q": "Posso negociar a coparticipação no plano da empresa?",
+        "a": "Em planos coletivos empresariais, as condições de coparticipação são negociadas entre a empresa e a operadora no momento da contratação — não pelo funcionário individualmente. Se você tem acesso a um plano corporativo com coparticipação e prefere um sem, a alternativa é avaliar planos individuais ou coletivos por adesão."
+      },
+      {
+        "q": "Coparticipação é cobrada mesmo em planos familiares?",
+        "a": "Sim. Cada beneficiário paga coparticipação individualmente a cada uso. Em famílias com crianças (que tendem a usar o plano com mais frequência), planos sem coparticipação geralmente são mais econômicos no total mesmo que a mensalidade seja maior."
+      },
+      {
+        "q": "Existe teto para a coparticipação mensal?",
+        "a": "A legislação não define um teto mensal obrigatório para coparticipação em consultas e exames ambulatoriais. Alguns contratos preveem um limite mensal máximo (cap), mas não é exigido por lei. Verifique se o contrato do plano que está avaliando tem esse teto — é uma vantagem importante para quem usa o plano com frequência."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/o-que-e-carencia-plano-de-saude/", "label": "O que é carência no plano de saúde?" },
+      { "href": "/responde/diferenca-ambulatorial-hospitalar-plano-de-saude/", "label": "Diferença entre plano ambulatorial e hospitalar" },
+      { "href": "/planos/", "label": "Compare planos disponíveis na sua cidade" }
+    ]
+  },
+  {
+    "slug": "como-cancelar-plano-de-saude",
+    "title": "Como Cancelar Plano de Saúde: Passo a Passo e Seus Direitos",
+    "headline": "Como Cancelar Plano de Saúde: O Que Você Precisa Saber",
+    "description": "Veja como cancelar plano de saúde individual, empresarial ou por adesão: prazos, direitos do consumidor, como evitar multa e o que fazer se a operadora dificultar o cancelamento.",
+    "keyword": "como cancelar plano de saúde",
+    "badge": "Direitos do Consumidor",
+    "intro": "Cancelar um plano de saúde parece simples, mas as regras variam muito conforme o tipo de contrato — individual, coletivo empresarial ou coletivo por adesão. Conhecer seus direitos evita cobranças indevidas e facilita a transição para outro plano.",
+    "sections": [
+      {
+        "heading": "Regras de cancelamento por tipo de plano",
+        "type": "table",
+        "table": {
+          "headers": ["Tipo de plano", "Quem pode cancelar", "Prazo de aviso", "Multa por cancelamento antecipado"],
+          "rows": [
+            ["Individual ou familiar", "Apenas o beneficiário — operadora não pode cancelar unilateralmente", "Sem prazo mínimo obrigatório", "Proibida pela ANS após o período de fidelidade"],
+            ["Coletivo empresarial (funcionário)", "Funcionário pode sair a qualquer momento", "Sem prazo mínimo", "Sem multa para o funcionário"],
+            ["Coletivo empresarial (empresa cancela o contrato)", "Empresa com aviso de 60 dias à operadora", "60 dias de aviso prévio", "Pode haver multa contratual para a empresa"],
+            ["Coletivo por adesão", "Beneficiário pode sair; entidade administradora com aviso de 60 dias", "Sem prazo para o beneficiário individual", "Verifique o contrato — pode haver fidelidade"]
+          ]
+        }
+      },
+      {
+        "heading": "Passo a passo para cancelar um plano individual",
+        "type": "text",
+        "text": "1. **Solicite o cancelamento pelo canal oficial** — SAC da operadora (0800) ou aplicativo. Anote o número de protocolo.\n2. **Faça a solicitação por escrito** — e-mail ou carta registrada, além do contato telefônico.\n3. **Guarde comprovante** — o cancelamento deve ser confirmado por escrito pela operadora em até 5 dias úteis.\n4. **Verifique o último mês de cobrança** — em planos individuais, a operadora deve cobrar proporcionalmente ao período de uso ou não cobrar o mês após a confirmação do cancelamento.\n5. **Cancele débito automático** — após a confirmação do cancelamento, cancele o débito automático junto ao banco para evitar cobranças indevidas."
+      },
+      {
+        "heading": "O que fazer se a operadora dificultar o cancelamento",
+        "type": "text",
+        "text": "Se a operadora não confirmar o cancelamento, criar barreiras ou continuar cobrando após a confirmação:\n\n1. Registre reclamação na **ANS: 0800 701 9656** (gratuito)\n2. Abra reclamação no **Consumidor.gov.br**\n3. Registre no **Procon** do seu estado\n4. Cancele o cartão de crédito ou débito automático junto ao banco, informando sobre a reclamação em andamento\n\nA ANS pode multar operadoras que dificultam o cancelamento de planos individuais."
+      },
+      {
+        "heading": "Antes de cancelar: considere a portabilidade",
+        "type": "text",
+        "text": "Se você quer cancelar para trocar de operadora, a **portabilidade de carências** pode ser mais vantajosa que cancelar e contratar um novo plano. Na portabilidade, você não perde os prazos de carência já cumpridos. A condição é que você tenha pelo menos 1–2 anos de contrato ativo e solicite durante o período de portabilidade aberto pela ANS."
+      }
+    ],
+    "faq": [
+      {
+        "q": "A operadora pode me impedir de cancelar o plano individual?",
+        "a": "Não. Em planos individuais, a ANS proíbe que a operadora cancele ou dificulte o cancelamento unilateralmente. O beneficiário pode cancelar a qualquer momento. Se a operadora criar barreiras, a reclamação na ANS (0800 701 9656) é o caminho mais rápido."
+      },
+      {
+        "q": "Saí da empresa — o que acontece com meu plano empresarial?",
+        "a": "Você perde o direito ao plano coletivo empresarial ao sair da empresa. Tem direito a manter o plano pelo período de 1/3 do tempo em que contribuiu, limitado a 12 meses (para quem tinha coparticipação) ou não tem esse direito (se a empresa pagava integralmente sem desconto em folha). Após esse período, pode solicitar conversão para plano individual na mesma operadora, se disponível."
+      },
+      {
+        "q": "Existe fidelidade em planos de saúde?",
+        "a": "Sim, em alguns contratos coletivos por adesão e em planos com desconto de contratação (que embutem o desconto em um período mínimo de permanência). Planos individuais regulamentados pela ANS podem ter fidelidade máxima de 12 meses — e a multa de cancelamento antecipado deve estar prevista claramente no contrato."
+      },
+      {
+        "q": "Posso cancelar o plano durante a carência?",
+        "a": "Sim. Não há obrigação de cumprir o período de carência para cancelar. Se você cancelar durante a carência, perde o direito à cobertura imediatamente — e se contratar outro plano depois, começa uma nova carência do zero (exceto se usar a portabilidade)."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/portabilidade-plano-de-saude-como-funciona/", "label": "Portabilidade de plano de saúde: como funciona" },
+      { "href": "/responde/como-reclamar-da-operadora-ans/", "label": "Como reclamar da operadora na ANS" },
+      { "href": "/planos/", "label": "Compare novas operadoras disponíveis na sua cidade" }
+    ]
+  },
+  {
+    "slug": "portabilidade-plano-de-saude-como-funciona",
+    "title": "Portabilidade de Plano de Saúde: Como Funciona e Como Solicitar 2026",
+    "headline": "Portabilidade de Plano de Saúde: Como Funciona na Prática",
+    "description": "Portabilidade de carências permite trocar de operadora sem cumprir novamente os prazos de carência. Veja as condições, os prazos da ANS, como solicitar e os erros a evitar.",
+    "keyword": "portabilidade plano de saúde",
+    "badge": "Direitos do Consumidor",
+    "intro": "A portabilidade de carências é o direito de trocar de plano de saúde sem precisar cumprir os prazos de carência novamente para coberturas equivalentes. Foi criada pela RN 186/2009 da ANS para estimular a concorrência e proteger o consumidor que quer trocar de operadora sem perder as carências já cumpridas.",
+    "sections": [
+      {
+        "heading": "Condições para usar a portabilidade",
+        "type": "table",
+        "table": {
+          "headers": ["Condição", "Detalhe"],
+          "rows": [
+            ["Tempo mínimo no plano atual", "2 anos para portabilidade completa; 1 ano para carências simples (ambulatorial)"],
+            ["Situação contratual", "Contrato ativo e sem débitos com a operadora atual"],
+            ["Tipo de plano de destino", "Mesma segmentação ou inferior (ex: ambulatorial + hospitalar → pode ir para ambulatorial + hospitalar, mas não para plano de referência)"],
+            ["Período de portabilidade", "ANS abre janelas de portabilidade — verifique no site da ANS os períodos vigentes"],
+            ["Cobertura equivalente", "O novo plano deve cobrir os mesmos procedimentos ou menos — não pode ser downgrade disfarçado"]
+          ]
+        }
+      },
+      {
+        "heading": "Passo a passo para fazer a portabilidade",
+        "type": "text",
+        "text": "1. **Verifique se você cumpre os requisitos** — tempo mínimo de 1–2 anos, sem débitos, plano ativo.\n2. **Escolha a nova operadora** e confirme que o plano de destino tem segmentação equivalente ou inferior.\n3. **Solicite a carta de portabilidade** à operadora atual — prazo de entrega: 10 dias úteis.\n4. **Apresente a carta à nova operadora** junto com a proposta de adesão ao novo plano.\n5. **A nova operadora tem até 10 dias úteis** para aceitar ou recusar a portabilidade (a recusa deve ser justificada).\n6. **Aguarde a confirmação de início de vigência** do novo plano — a portabilidade é efetivada quando o novo contrato entra em vigor.\n7. **Cancele o plano anterior** após a confirmação do novo — nunca cancele antes de ter o novo plano confirmado."
+      },
+      {
+        "heading": "O que a portabilidade garante — e o que não garante",
+        "type": "text",
+        "text": "**Garantido pela portabilidade:**\n- Isenção das carências já cumpridas para coberturas equivalentes\n- Cobertura imediata para urgências e emergências no novo plano\n- Não cumprimento de novas carências para doenças preexistentes (DLP) já cobertas\n\n**Não garantido pela portabilidade:**\n- Manutenção do mesmo preço — o novo plano pode ser mais caro\n- Manutenção da rede credenciada — o novo plano pode ter uma rede diferente\n- Coberturas adicionais além do equivalente — se o plano de destino tiver coberturas extras, você começa do zero nelas"
+      },
+      {
+        "heading": "Portabilidade extraordinária — o que é",
+        "type": "text",
+        "text": "A ANS pode abrir **portabilidade extraordinária** em situações específicas, como intervenção ou liquidação de uma operadora, ou quando o plano é cancelado pela operadora. Nesses casos, as condições de tempo mínimo e janela podem ser flexibilizadas. Fique atento às publicações da ANS quando uma operadora está em dificuldades financeiras."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Posso fazer portabilidade de plano coletivo para individual?",
+        "a": "Sim, desde que cumpra os requisitos de tempo mínimo e que o plano individual tenha segmentação equivalente ou inferior. Na prática, planos individuais costumam ser mais caros que coletivos — compare bem antes de migrar."
+      },
+      {
+        "q": "A nova operadora pode recusar minha portabilidade?",
+        "a": "Sim, mas apenas por motivos justificados — por exemplo, se o plano de destino não tem equivalência com o atual. A recusa arbitrária pode ser contestada na ANS. A operadora de destino tem 10 dias úteis para aceitar ou recusar."
+      },
+      {
+        "q": "Se eu tiver DLP, a portabilidade cobre?",
+        "a": "Sim. Uma das principais vantagens da portabilidade é justamente o aproveitamento das carências de DLP já cumpridas. Se você cumpriu os 24 meses de carência para uma condição preexistente no plano atual, não precisa cumprir novamente no plano de destino — desde que a cobertura seja equivalente."
+      },
+      {
+        "q": "Posso fazer portabilidade de plano empresarial para individual?",
+        "a": "Sim, mas existem especificidades: o tempo mínimo no plano empresarial é contado normalmente, e o plano individual de destino deve ter segmentação equivalente. Verifique se a operadora de destino oferece plano individual na sua cidade — eles são menos comuns que os coletivos."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/o-que-e-carencia-plano-de-saude/", "label": "O que é carência no plano de saúde?" },
+      { "href": "/responde/como-cancelar-plano-de-saude/", "label": "Como cancelar plano de saúde" },
+      { "href": "/planos/", "label": "Compare operadoras disponíveis na sua cidade" }
+    ]
+  },
+  {
+    "slug": "como-reclamar-da-operadora-ans",
+    "title": "Como Reclamar da Operadora de Plano de Saúde na ANS: Passo a Passo",
+    "headline": "Como Reclamar da Operadora de Plano de Saúde na ANS",
+    "description": "Veja como registrar reclamação contra sua operadora na ANS, no Consumidor.gov.br e no Procon. Prazos, canais, e o que fazer quando o plano nega cobertura ilegalmente.",
+    "keyword": "como reclamar da operadora ANS",
+    "badge": "Direitos do Consumidor",
+    "intro": "Se sua operadora negou cobertura indevidamente, não cumpriu prazos ou dificultou o atendimento, você tem canais regulatórios e judiciais para contestar. A ANS — Agência Nacional de Saúde Suplementar — é o órgão regulador responsável por fiscalizar e punir operadoras que desrespeitam os direitos dos beneficiários.",
+    "sections": [
+      {
+        "heading": "Canais de reclamação e quando usar cada um",
+        "type": "table",
+        "table": {
+          "headers": ["Canal", "Quando usar", "Prazo de resposta", "Contato"],
+          "rows": [
+            ["SAC da operadora", "Primeiro passo obrigatório para qualquer reclamação", "5 dias úteis", "0800 da operadora (gratuito)"],
+            ["ANS — Disque ANS", "Negativa de cobertura, cobrança indevida, cancelamento irregular", "Até 10 dias úteis após protocolo", "0800 701 9656 (gratuito)"],
+            ["ANS — NIP (Notificação de Investigação Preliminar)", "Quando o SAC não resolver — a ANS notifica a operadora formalmente", "Operadora tem 5 dias úteis para resolver", "Site da ANS: ans.gov.br"],
+            ["Consumidor.gov.br", "Reclamações de consumo em geral — boa visibilidade pública", "Empresa tem 10 dias para responder", "consumidor.gov.br"],
+            ["Procon", "Relações de consumo — multa administrativa à operadora", "Varia por estado", "Procon do seu estado"],
+            ["Defensoria Pública", "Casos de baixa renda com negativa de cobertura urgente", "Imediato para urgências", "Defensoria do seu estado"],
+            ["Poder Judiciário (liminar)", "Situações urgentes — plano nega tratamento necessário", "Pode ser concedida em horas", "Advogado ou Defensoria Pública"]
+          ]
+        }
+      },
+      {
+        "heading": "Passo a passo: negativa de cobertura",
+        "type": "text",
+        "text": "1. **Solicite a negativa por escrito** — peça à operadora um documento com o CID (Código Internacional de Doenças) e o código do procedimento negado e o fundamento contratual da negativa.\n2. **Verifique se o procedimento está no Rol ANS** — acesse o site da ANS e confirme se a cobertura é obrigatória.\n3. **Registre no SAC** — protocole a reclamação e guarde o número. Prazo: 5 dias úteis para resposta.\n4. **Se o SAC não resolver: protocole NIP na ANS** — a Notificação de Investigação Preliminar obriga a operadora a responder em 5 dias úteis.\n5. **Se for urgente: busque liminar judicial** — com laudo médico e a negativa por escrito, um advogado (ou a Defensoria Pública) pode obter liminar em 24–48 horas obrigando a operadora a cobrir o atendimento."
+      },
+      {
+        "heading": "Negativas mais comuns e como contestar",
+        "type": "table",
+        "table": {
+          "headers": ["Negativa da operadora", "Como contestar"],
+          "rows": [
+            ["'Procedimento não está no Rol ANS'", "Verifique no site da ANS. Se estiver, protocole NIP imediatamente."],
+            ["'Carência não cumprida'", "Verifique os prazos legais. Em emergências, a carência máxima é 24h."],
+            ["'Médico/hospital fora da rede'", "Em urgências, a operadora é obrigada a cobrir mesmo fora da rede. Para eletivos, verifique a rede credenciada antes."],
+            ["'Medicamento não coberto'", "Medicamentos oncológicos orais são obrigatórios desde 2022. Medicamentos de uso hospitalar também. Verifique o Rol."],
+            ["'Doença preexistente — DLP'", "A carência máxima de DLP é 24 meses. Após isso, a cobertura é obrigatória sem exceção."],
+            ["'Procedimento experimental'", "Exija a fundamentação científica da negativa. Se houver consenso médico ou protocolo clínico, conteste na ANS."]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "A operadora é obrigada a dar a negativa por escrito?",
+        "a": "Sim. A ANS exige que qualquer negativa de cobertura seja comunicada por escrito ao beneficiário, com a justificativa clara e o fundamento contratual. Se a operadora se recusar a dar a negativa por escrito, registre isso no SAC e use como evidência na reclamação."
+      },
+      {
+        "q": "Quanto tempo tenho para reclamar de uma cobrança indevida?",
+        "a": "O Código de Defesa do Consumidor prevê prazo de 5 anos para cobranças indevidas em relações de consumo. Guarde todos os comprovantes de pagamento e extratos bancários. Para restituição de valores cobrados indevidamente pelo plano, esse prazo se aplica a partir da data de cada cobrança."
+      },
+      {
+        "q": "A ANS pode obrigar a operadora a cobrir meu tratamento?",
+        "a": "A ANS tem poder regulatório e pode multar e punir operadoras — mas não tem poder de conceder liminares com efeito imediato. Para cobertura imediata de tratamento urgente, o caminho mais rápido é o Poder Judiciário (liminar). A ANS é mais eficaz para punições, multas e casos que não envolvem urgência imediata."
+      },
+      {
+        "q": "Se eu ganhar na Justiça, a operadora pode cancelar meu plano como retaliação?",
+        "a": "Não. Em planos individuais, a operadora não pode cancelar o contrato unilateralmente enquanto você estiver em dia com os pagamentos — e isso inclui casos em que houve litígio judicial. A tentativa de cancelamento após processo judicial pode ser contestada como retaliação e gera nova reclamação na ANS."
+      }
+    ],
+    "internal_links": [
+      { "href": "/responde/cobertura-obrigatoria-ans-lista-2026/", "label": "Cobertura obrigatória ANS 2026" },
+      { "href": "/responde/como-cancelar-plano-de-saude/", "label": "Como cancelar plano de saúde" },
+      { "href": "/planos/", "label": "Compare operadoras disponíveis na sua cidade" }
+    ]
+  }
+]

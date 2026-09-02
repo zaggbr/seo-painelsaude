@@ -22,3 +22,4 @@ Disallow: /*?utm_source=web-stories-generator
 
 Sitemap: https://painelsaude.com.br/sitemap-planos.xml
 Sitemap: https://painelsaude.com.br/simuladores/sitemap.xml
+Sitemap: https://painelsaude.com.br/sitemap-responde.xml
