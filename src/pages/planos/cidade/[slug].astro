@@ -15,7 +15,15 @@ export async function getStaticPaths() {
 const { cidade } = Astro.props;
 const anoReferencia = new Date().getFullYear();
 
-function formatMetaTitle(nome, uf, totalOp, ano) {
+const TOP20 = new Set(['sao-paulo-sp','belo-horizonte-mg','guarulhos-sp','campinas-sp','santo-andre-sp','osasco-sp','sao-bernardo-do-campo-sp','sao-caetano-do-sul-sp','juiz-de-fora-mg','ribeirao-preto-sp','contagem-mg','diadema-sp','maua-sp','santos-sp','betim-mg','nova-lima-mg','sete-lagoas-mg','uberaba-mg','uberlandia-mg','praia-grande-sp']);
+const isTop20 = TOP20.has(cidade.slug);
+
+function formatMetaTitle(nome, uf, totalOp, ano, top20) {
+  if (top20) {
+    const t = `Melhores Planos de Saúde em ${nome} (${uf}) ${ano}`;
+    if (t.length <= 62) return t;
+    return `Melhores Planos de Saúde em ${nome} ${ano}`;
+  }
   const base = `Planos de Saúde em ${nome} (${uf})`;
   const suffixes = [
     ` | ${totalOp} Operadoras, Preços e Cobertura ${ano}`,
@@ -39,7 +47,7 @@ function formatMetaDescription(nome, uf, totalOp, ano) {
   return desc;
 }
 
-const metaTitle = formatMetaTitle(cidade.nome, cidade.uf, cidade.total_operadoras, anoReferencia);
+const metaTitle = formatMetaTitle(cidade.nome, cidade.uf, cidade.total_operadoras, anoReferencia, isTop20);
 const metaDescription = formatMetaDescription(cidade.nome, cidade.uf, cidade.total_operadoras, anoReferencia);
 
 const breadcrumbs = [
@@ -157,8 +165,34 @@ const jsonLd = [
       </div>
     </section>
 
+    {isTop20 && (
+      <section style="background:#f0f7ff;border:1px solid #bfdbfe;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:2rem">
+        <h2 style="font-size:1rem;color:#1565c0;margin-bottom:0.75rem">
+          🏆 Melhores operadoras em {cidade.nome} por número de planos ativos
+        </h2>
+        <p style="font-size:0.82rem;color:#555;margin-bottom:1rem">
+          Ranking ANS {anoReferencia} — mais planos ativos = maior rede e mais opções de cobertura.
+        </p>
+        <ol style="padding-left:1.25rem;display:grid;gap:0.5rem;font-size:0.9rem">
+          {cidade.operadoras.slice(0, 5).map((op) => (
+            <li>
+              <a href={`/planos/operadora/${op.slug}/`} style="color:#1565c0;font-weight:600;text-decoration:none">
+                {normalizarOperadora(op.nome)}
+              </a>
+              <span style="color:#888;font-size:0.8rem"> — {op.total_planos.toLocaleString('pt-BR')} planos · {op.modalidade}</span>
+            </li>
+          ))}
+        </ol>
+        <p style="margin-top:1rem;font-size:0.82rem">
+          → <a href={`/planos/estado/${cidade.uf.toLowerCase()}/`} style="color:#1565c0">
+            Ver todas as operadoras em {cidade.uf === 'SP' ? 'São Paulo' : cidade.uf === 'MG' ? 'Minas Gerais' : cidade.uf === 'RJ' ? 'Rio de Janeiro' : 'Bahia'}
+          </a>
+        </p>
+      </section>
+    )}
+
     <section style="margin:2rem 0;text-align:center">
-      <a href="/planos" style="display:inline-block;background:#1565c0;color:white;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
+      <a href="/planos/" style="display:inline-block;background:#1565c0;color:white;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
         Ver Lista Completa de Planos de Saúde
       </a>
       <p style="margin-top:0.75rem;font-size:0.8rem;color:#888">

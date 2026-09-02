@@ -1,0 +1,3418 @@
+[
+  {
+    "uf": "SP",
+    "nome": "São Paulo",
+    "gentilico": "paulista",
+    "capital": "São Paulo",
+    "capital_slug": "sao-paulo-sp",
+    "total_cidades": 139,
+    "top_operadoras": [
+      {
+        "slug": "hapvida-assistencia-medica-s-a",
+        "nome": "Hapvida Assistencia Medica S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 3071
+      },
+      {
+        "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+        "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1730
+      },
+      {
+        "slug": "notre-dame-intermedica-saude-s-a",
+        "nome": "Notre Dame Intermédica Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1219
+      },
+      {
+        "slug": "sul-america-companhia-de-seguro-saude",
+        "nome": "Sul America Companhia De Seguro Saúde",
+        "modalidade": "Seguradora",
+        "total_planos": 914
+      },
+      {
+        "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+        "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 695
+      },
+      {
+        "slug": "odontoprev-s-a",
+        "nome": "Odontoprev S/A",
+        "modalidade": "Odontologia De Grupo",
+        "total_planos": 694
+      },
+      {
+        "slug": "select-operadora-de-plano-de-saude-ltda",
+        "nome": "Select Operadora De Plano De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 571
+      },
+      {
+        "slug": "amil-assistencia-medica-internacional-s-a",
+        "nome": "Amil Assistência Médica Internacional S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 527
+      },
+      {
+        "slug": "unimed-nacional-cooperativa-central",
+        "nome": "Unimed Nacional - Cooperativa Central",
+        "modalidade": "Cooperativa Médica",
+        "total_planos": 436
+      },
+      {
+        "slug": "bradesco-saude-s-a",
+        "nome": "Bradesco Saúde S.A.",
+        "modalidade": "Seguradora",
+        "total_planos": 369
+      }
+    ],
+    "top_cidades": [
+      {
+        "slug": "sao-paulo-sp",
+        "nome": "São Paulo",
+        "uf": "SP",
+        "total_operadoras": 407,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "guarulhos-sp",
+        "nome": "Guarulhos",
+        "uf": "SP",
+        "total_operadoras": 396,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "campinas-sp",
+        "nome": "Campinas",
+        "uf": "SP",
+        "total_operadoras": 392,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "santo-andre-sp",
+        "nome": "Santo André",
+        "uf": "SP",
+        "total_operadoras": 392,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "osasco-sp",
+        "nome": "Osasco",
+        "uf": "SP",
+        "total_operadoras": 391,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "sao-bernardo-do-campo-sp",
+        "nome": "São Bernardo do Campo",
+        "uf": "SP",
+        "total_operadoras": 390,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "sao-caetano-do-sul-sp",
+        "nome": "São Caetano do Sul",
+        "uf": "SP",
+        "total_operadoras": 389,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "ribeirao-preto-sp",
+        "nome": "Ribeirão Preto",
+        "uf": "SP",
+        "total_operadoras": 388,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "diadema-sp",
+        "nome": "Diadema",
+        "uf": "SP",
+        "total_operadoras": 386,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "maua-sp",
+        "nome": "Mauá",
+        "uf": "SP",
+        "total_operadoras": 384,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "santos-sp",
+        "nome": "Santos",
+        "uf": "SP",
+        "total_operadoras": 384,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "praia-grande-sp",
+        "nome": "Praia Grande",
+        "uf": "SP",
+        "total_operadoras": 381,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "sao-jose-dos-campos-sp",
+        "nome": "São José dos Campos",
+        "uf": "SP",
+        "total_operadoras": 381,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "guaruja-sp",
+        "nome": "Guarujá",
+        "uf": "SP",
+        "total_operadoras": 380,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "suzano-sp",
+        "nome": "Suzano",
+        "uf": "SP",
+        "total_operadoras": 380,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "cubatao-sp",
+        "nome": "Cubatão",
+        "uf": "SP",
+        "total_operadoras": 379,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "ribeirao-pires-sp",
+        "nome": "Ribeirão Pires",
+        "uf": "SP",
+        "total_operadoras": 379,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "americana-sp",
+        "nome": "Americana",
+        "uf": "SP",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "barueri-sp",
+        "nome": "Barueri",
+        "uf": "SP",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "jundiai-sp",
+        "nome": "Jundiaí",
+        "uf": "SP",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uf": "MG",
+    "nome": "Minas Gerais",
+    "gentilico": "mineiro",
+    "capital": "Belo Horizonte",
+    "capital_slug": "belo-horizonte-mg",
+    "total_cidades": 355,
+    "top_operadoras": [
+      {
+        "slug": "hapvida-assistencia-medica-s-a",
+        "nome": "Hapvida Assistencia Medica S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 3071
+      },
+      {
+        "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+        "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1730
+      },
+      {
+        "slug": "notre-dame-intermedica-saude-s-a",
+        "nome": "Notre Dame Intermédica Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1219
+      },
+      {
+        "slug": "sul-america-companhia-de-seguro-saude",
+        "nome": "Sul America Companhia De Seguro Saúde",
+        "modalidade": "Seguradora",
+        "total_planos": 914
+      },
+      {
+        "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+        "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 695
+      },
+      {
+        "slug": "odontoprev-s-a",
+        "nome": "Odontoprev S/A",
+        "modalidade": "Odontologia De Grupo",
+        "total_planos": 694
+      },
+      {
+        "slug": "select-operadora-de-plano-de-saude-ltda",
+        "nome": "Select Operadora De Plano De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 571
+      },
+      {
+        "slug": "amil-assistencia-medica-internacional-s-a",
+        "nome": "Amil Assistência Médica Internacional S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 527
+      },
+      {
+        "slug": "unimed-nacional-cooperativa-central",
+        "nome": "Unimed Nacional - Cooperativa Central",
+        "modalidade": "Cooperativa Médica",
+        "total_planos": 436
+      },
+      {
+        "slug": "bradesco-saude-s-a",
+        "nome": "Bradesco Saúde S.A.",
+        "modalidade": "Seguradora",
+        "total_planos": 369
+      }
+    ],
+    "top_cidades": [
+      {
+        "slug": "belo-horizonte-mg",
+        "nome": "Belo Horizonte",
+        "uf": "MG",
+        "total_operadoras": 401,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "juiz-de-fora-mg",
+        "nome": "Juiz de Fora",
+        "uf": "MG",
+        "total_operadoras": 388,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "contagem-mg",
+        "nome": "Contagem",
+        "uf": "MG",
+        "total_operadoras": 386,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "betim-mg",
+        "nome": "Betim",
+        "uf": "MG",
+        "total_operadoras": 383,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "nova-lima-mg",
+        "nome": "Nova Lima",
+        "uf": "MG",
+        "total_operadoras": 383,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "sete-lagoas-mg",
+        "nome": "Sete Lagoas",
+        "uf": "MG",
+        "total_operadoras": 381,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "uberaba-mg",
+        "nome": "Uberaba",
+        "uf": "MG",
+        "total_operadoras": 381,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "uberlandia-mg",
+        "nome": "Uberlândia",
+        "uf": "MG",
+        "total_operadoras": 381,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "pocos-de-caldas-mg",
+        "nome": "Poços de Caldas",
+        "uf": "MG",
+        "total_operadoras": 380,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "pouso-alegre-mg",
+        "nome": "Pouso Alegre",
+        "uf": "MG",
+        "total_operadoras": 379,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "barbacena-mg",
+        "nome": "Barbacena",
+        "uf": "MG",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "passos-mg",
+        "nome": "Passos",
+        "uf": "MG",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "sabara-mg",
+        "nome": "Sabará",
+        "uf": "MG",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "uba-mg",
+        "nome": "Ubá",
+        "uf": "MG",
+        "total_operadoras": 378,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "muriae-mg",
+        "nome": "Muriaé",
+        "uf": "MG",
+        "total_operadoras": 377,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "governador-valadares-mg",
+        "nome": "Governador Valadares",
+        "uf": "MG",
+        "total_operadoras": 376,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "divinopolis-mg",
+        "nome": "Divinópolis",
+        "uf": "MG",
+        "total_operadoras": 376,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "itajuba-mg",
+        "nome": "Itajubá",
+        "uf": "MG",
+        "total_operadoras": 376,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "ribeirao-das-neves-mg",
+        "nome": "Ribeirão das Neves",
+        "uf": "MG",
+        "total_operadoras": 376,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "vicosa-mg",
+        "nome": "Viçosa",
+        "uf": "MG",
+        "total_operadoras": 376,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uf": "RJ",
+    "nome": "Rio de Janeiro",
+    "gentilico": "carioca",
+    "capital": "Rio de Janeiro",
+    "capital_slug": "rio-de-janeiro-rj",
+    "total_cidades": 4,
+    "top_operadoras": [
+      {
+        "slug": "hapvida-assistencia-medica-s-a",
+        "nome": "Hapvida Assistencia Medica S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 3071
+      },
+      {
+        "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+        "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1730
+      },
+      {
+        "slug": "notre-dame-intermedica-saude-s-a",
+        "nome": "Notre Dame Intermédica Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1219
+      },
+      {
+        "slug": "sul-america-companhia-de-seguro-saude",
+        "nome": "Sul America Companhia De Seguro Saúde",
+        "modalidade": "Seguradora",
+        "total_planos": 914
+      },
+      {
+        "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+        "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 695
+      },
+      {
+        "slug": "odontoprev-s-a",
+        "nome": "Odontoprev S/A",
+        "modalidade": "Odontologia De Grupo",
+        "total_planos": 694
+      },
+      {
+        "slug": "select-operadora-de-plano-de-saude-ltda",
+        "nome": "Select Operadora De Plano De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 571
+      },
+      {
+        "slug": "amil-assistencia-medica-internacional-s-a",
+        "nome": "Amil Assistência Médica Internacional S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 527
+      },
+      {
+        "slug": "unimed-nacional-cooperativa-central",
+        "nome": "Unimed Nacional - Cooperativa Central",
+        "modalidade": "Cooperativa Médica",
+        "total_planos": 436
+      },
+      {
+        "slug": "bradesco-saude-s-a",
+        "nome": "Bradesco Saúde S.A.",
+        "modalidade": "Seguradora",
+        "total_planos": 369
+      }
+    ],
+    "top_cidades": [
+      {
+        "slug": "rio-de-janeiro-rj",
+        "nome": "Rio de Janeiro",
+        "uf": "RJ",
+        "total_operadoras": 377,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "niteroi-rj",
+        "nome": "Niterói",
+        "uf": "RJ",
+        "total_operadoras": 371,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "duque-de-caxias-rj",
+        "nome": "Duque de Caxias",
+        "uf": "RJ",
+        "total_operadoras": 367,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "nova-iguacu-rj",
+        "nome": "Nova Iguaçu",
+        "uf": "RJ",
+        "total_operadoras": 366,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uf": "BA",
+    "nome": "Bahia",
+    "gentilico": "baiano",
+    "capital": "Salvador",
+    "capital_slug": "salvador-ba",
+    "total_cidades": 2,
+    "top_operadoras": [
+      {
+        "slug": "hapvida-assistencia-medica-s-a",
+        "nome": "Hapvida Assistencia Medica S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 3071
+      },
+      {
+        "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+        "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1730
+      },
+      {
+        "slug": "notre-dame-intermedica-saude-s-a",
+        "nome": "Notre Dame Intermédica Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 1219
+      },
+      {
+        "slug": "sul-america-companhia-de-seguro-saude",
+        "nome": "Sul America Companhia De Seguro Saúde",
+        "modalidade": "Seguradora",
+        "total_planos": 914
+      },
+      {
+        "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+        "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 695
+      },
+      {
+        "slug": "odontoprev-s-a",
+        "nome": "Odontoprev S/A",
+        "modalidade": "Odontologia De Grupo",
+        "total_planos": 694
+      },
+      {
+        "slug": "select-operadora-de-plano-de-saude-ltda",
+        "nome": "Select Operadora De Plano De Saude Ltda",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 571
+      },
+      {
+        "slug": "amil-assistencia-medica-internacional-s-a",
+        "nome": "Amil Assistência Médica Internacional S.A.",
+        "modalidade": "Medicina De Grupo",
+        "total_planos": 527
+      },
+      {
+        "slug": "unimed-nacional-cooperativa-central",
+        "nome": "Unimed Nacional - Cooperativa Central",
+        "modalidade": "Cooperativa Médica",
+        "total_planos": 436
+      },
+      {
+        "slug": "bradesco-saude-s-a",
+        "nome": "Bradesco Saúde S.A.",
+        "modalidade": "Seguradora",
+        "total_planos": 369
+      }
+    ],
+    "top_cidades": [
+      {
+        "slug": "salvador-ba",
+        "nome": "Salvador",
+        "uf": "BA",
+        "total_operadoras": 376,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      },
+      {
+        "slug": "feira-de-santana-ba",
+        "nome": "Feira de Santana",
+        "uf": "BA",
+        "total_operadoras": 367,
+        "operadoras": [
+          {
+            "slug": "hapvida-assistencia-medica-s-a",
+            "nome": "Hapvida Assistencia Medica S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 3071
+          },
+          {
+            "slug": "portomed-porto-seguro-servicos-de-saude-ltda",
+            "nome": "Portomed - Porto Seguro Serviços De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1730
+          },
+          {
+            "slug": "notre-dame-intermedica-saude-s-a",
+            "nome": "Notre Dame Intermédica Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 1219
+          },
+          {
+            "slug": "sul-america-companhia-de-seguro-saude",
+            "nome": "Sul America Companhia De Seguro Saúde",
+            "modalidade": "Seguradora",
+            "total_planos": 914
+          },
+          {
+            "slug": "sul-america-parana-clinicas-servicos-de-saude-s-a",
+            "nome": "Sul América Paraná Clínicas Serviços De Saúde S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 695
+          },
+          {
+            "slug": "odontoprev-s-a",
+            "nome": "Odontoprev S/A",
+            "modalidade": "Odontologia De Grupo",
+            "total_planos": 694
+          },
+          {
+            "slug": "select-operadora-de-plano-de-saude-ltda",
+            "nome": "Select Operadora De Plano De Saude Ltda",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 571
+          },
+          {
+            "slug": "amil-assistencia-medica-internacional-s-a",
+            "nome": "Amil Assistência Médica Internacional S.A.",
+            "modalidade": "Medicina De Grupo",
+            "total_planos": 527
+          },
+          {
+            "slug": "unimed-nacional-cooperativa-central",
+            "nome": "Unimed Nacional - Cooperativa Central",
+            "modalidade": "Cooperativa Médica",
+            "total_planos": 436
+          },
+          {
+            "slug": "bradesco-saude-s-a",
+            "nome": "Bradesco Saúde S.A.",
+            "modalidade": "Seguradora",
+            "total_planos": 369
+          }
+        ]
+      }
+    ]
+  }
+]
