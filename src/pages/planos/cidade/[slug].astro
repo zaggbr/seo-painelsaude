@@ -77,7 +77,7 @@ const jsonLd = [
 <Layout
   title={metaTitle}
   description={metaDescription}
-  canonical={`https://painelsaude.com.br/planos/cidade/${cidade.slug}`}
+  canonical={`https://painelsaude.com.br/planos/cidade/${cidade.slug}/`}
 >
   {jsonLd.map((ld) => (
     <script type="application/ld+json" set:html={JSON.stringify(ld)} />
