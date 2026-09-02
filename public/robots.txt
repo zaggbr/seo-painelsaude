@@ -1,5 +1,24 @@
 User-agent: *
 Allow: /
 
+# Bloquear feeds RSS do WordPress (aparecem como "rastreada não indexada" no GSC)
+Disallow: /feed/
+Disallow: /*/feed/
+Disallow: /*/feed
+
+# Bloquear API REST do WordPress
+Disallow: /wp-json/
+
+# Bloquear paginação do WordPress (blog)
+Disallow: /painel/page/
+Disallow: /noticias/page/
+Disallow: /global/page/
+
+# Bloquear Web Stories (rastreadas mas não indexadas)
+Disallow: /web-stories/
+
+# Bloquear parâmetros UTM gerados pelo Web Stories Generator
+Disallow: /*?utm_source=web-stories-generator
+
 Sitemap: https://painelsaude.com.br/sitemap-planos.xml
 Sitemap: https://painelsaude.com.br/simuladores/sitemap.xml
