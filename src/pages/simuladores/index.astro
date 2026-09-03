@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const simuladores = [
+  {
+    slug: 'posso-me-aposentar',
+    title: 'Posso Me Aposentar?',
+    desc: 'Descubra se você já cumpre os requisitos para se aposentar pelo INSS com as regras de 2026: Idade, Pontos, Idade Progressiva e Pedágio 100%.',
+    badge: 'Elegibilidade',
+    icon: '✅',
+  },
+  {
+    slug: 'quanto-vou-receber-inss',
+    title: 'Quanto Vou Receber no INSS?',
+    desc: 'Estime o valor do seu benefício aposentadoria com base nos salários de contribuição, regra de transição e teto do INSS 2026.',
+    badge: 'Benefício',
+    icon: '💰',
+  },
+  {
+    slug: 'prazo-aprovacao-inss',
+    title: 'Prazo de Aprovação INSS',
+    desc: 'Saiba em quanto tempo o INSS tende a aprovar seu pedido de aposentadoria, auxílio-doença ou BPC/LOAS conforme o tipo de benefício.',
+    badge: 'Tempo de espera',
+    icon: '⏱️',
+  },
+];
+
+const breadcrumbs = [
+  { name: 'Início', url: '/' },
+  { name: 'Simuladores INSS', url: '/simuladores/' },
+];
+
+const BASE = 'https://painelsaude.com.br';
+const canonical = `${BASE}/simuladores/`;
+---
+<Layout
+  title="Simuladores INSS 2026: Aposentadoria, Benefício e Prazo | PainelSaúde"
+  description="Simuladores gratuitos do INSS: descubra se pode se aposentar, estime o valor do benefício e saiba o prazo de aprovação. Dados atualizados para 2026."
+  canonical={canonical}
+>
+  <script type="application/ld+json" is:inline>{JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Simuladores INSS 2026",
+    "description": "Simuladores gratuitos do INSS atualizados para 2026",
+    "itemListElement": simuladores.map((s, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": s.title,
+      "url": `${BASE}/simuladores/${s.slug}/`
+    }))
+  })}</script>
+
+  <style>
+    .sim-wrap { max-width: 760px; margin: 0 auto; padding: 0 1rem 3rem; font-family: system-ui, -apple-system, sans-serif; }
+    nav.bc { font-size: 0.8rem; color: #888; margin-bottom: 1.5rem; }
+    nav.bc a { color: #1565c0; text-decoration: none; }
+    h1 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 800; color: #0d1b2a; margin: 0 0 0.5rem; }
+    .sub { color: #555; font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; }
+    .grid { display: grid; gap: 1.25rem; }
+    .card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; text-decoration: none; color: #1a1a1a; display: flex; gap: 1.25rem; align-items: flex-start; transition: border-color 0.15s, box-shadow 0.15s; }
+    .card:hover { border-color: #1565c0; box-shadow: 0 4px 16px rgba(21,101,192,0.1); }
+    .card-icon { font-size: 2rem; flex-shrink: 0; line-height: 1; }
+    .card-body { flex: 1; }
+    .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 8px; border-radius: 9999px; background: #e3f2fd; color: #1565c0; margin-bottom: 0.4rem; }
+    .card-title { font-size: 1.1rem; font-weight: 700; color: #0d1b2a; margin: 0 0 0.4rem; }
+    .card-desc { font-size: 0.875rem; color: #555; line-height: 1.6; margin: 0; }
+    .cta { font-size: 0.82rem; font-weight: 600; color: #1565c0; margin-top: 0.6rem; display: block; }
+  </style>
+
+  <div class="sim-wrap">
+    <Breadcrumbs breadcrumbs={breadcrumbs} />
+    <h1>Simuladores INSS 2026</h1>
+    <p class="sub">Ferramentas gratuitas para planejar sua aposentadoria e entender seus direitos no INSS. Atualizadas com as regras de 2026.</p>
+
+    <div class="grid">
+      {simuladores.map(s => (
+        <a href={`/simuladores/${s.slug}/`} class="card">
+          <span class="card-icon">{s.icon}</span>
+          <div class="card-body">
+            <span class="badge">{s.badge}</span>
+            <p class="card-title">{s.title}</p>
+            <p class="card-desc">{s.desc}</p>
+            <span class="cta">Usar simulador →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <p style="margin-top:2rem;font-size:0.8rem;color:#999;text-align:center;">
+      Dados com base na legislação INSS vigente em 2026. Resultado é uma estimativa — consulte um advogado previdenciário para decisões importantes.
+    </p>
+  </div>
+</Layout>

@@ -17,8 +17,8 @@ const silos = [
     tag: '3 simuladores',
   },
   {
-    title: 'Bulas de Medicamentos',
-    desc: 'Consulte bulas com preço na Farmácia Popular, genérico vs. similar e efeitos colaterais resumidos.',
+    title: 'Preço de Remédios',
+    desc: 'Consulte preços na Farmácia Popular, compare genérico vs. similar e veja disponibilidade gratuita no SUS.',
     href: 'https://meu.painelsaude.com.br/bula/',
     icon: '💊',
     tag: '36+ medicamentos',
@@ -474,7 +474,7 @@ const silos = [
   Promise.all([
     carregarHero('noticias'),
     carregarCategoriaBySlug('noticias', 'cat-noticias', 'noticias'),
-    carregarCategoriaBySlug('saude', 'cat-saude', 'saude'),
+    carregarCategoriaBySlug('sua-saude', 'cat-saude', 'saude'),
     carregarCategoriaBySlug('ciencia', 'cat-ciencia', 'ciencia')
   ]).finally(function() {
     carregarUltimasPublicacoes();
