@@ -12,6 +12,13 @@ export async function getStaticPaths() {
   }));
 }
 
+const TRATAMENTO_SLUGS = new Set(
+  JSON.parse(fs.readFileSync('./src/data/operadora-tratamento.json', 'utf-8'))
+);
+const NOME_OVERRIDES = JSON.parse(
+  fs.readFileSync('./src/data/operadora-overrides.json', 'utf-8')
+);
+
 const { op } = Astro.props;
 const nomeFormatado = normalizarOperadora(op.nome);
 const anoReferencia = new Date().getFullYear();
@@ -76,7 +83,32 @@ function formatMetaDescription(nome, beneficiarios, uf, ano) {
   return desc;
 }
 
-const metaTitle = formatMetaTitle(nomeFormatado, anoReferencia);
+// Título experimental para o grupo de tratamento (modificador comercial dinâmico).
+// Sufixo variável para manter o title final ≤59 chars após o Layout appender " | Painel Saúde"
+// quando titleBase ≤ 50. Layout não é tocado para não afetar o grupo de controle.
+//
+// Regra: Layout appenda 15 chars se base ≤ 50. Safe zones:
+//   base ≤ 44  → final = base+15 ≤ 59  → sufixo A (36 chars) exige nome ≤ 8
+//   base 45-50 → final = 60-65           → usar sufixo B (27 chars) → base 36-41, final 51-56
+//   base 51-59 → final = base ≤ 59       → sufixo A (36 chars) exige nome 15-23
+//   base 60-66 → final = 60-66           → usar sufixo B (27 chars) → nome 24-29
+function formatTratamentoTitle(slug, nomeBase, ano) {
+  const nome = NOME_OVERRIDES[slug] ?? getNomeCurto(nomeBase);
+  const sufA = ` | Planos Empresariais e Preços ${ano}`; // 36 chars
+  const sufB = ` | Planos Empresariais ${ano}`;           // 27 chars
+  for (const suf of [sufA, sufB]) {
+    const base = nome.length + suf.length;
+    const final = base <= 50 ? base + 15 : base;
+    if (final <= 59) return `${nome}${suf}`;
+  }
+  // Nenhum sufixo coube: encurtar o nome ao máximo que sufB permite (≤ 8 chars)
+  const maxNome = 8;
+  return `${nome.slice(0, maxNome).trim()}${sufB}`;
+}
+
+const metaTitle = TRATAMENTO_SLUGS.has(op.slug)
+  ? formatTratamentoTitle(op.slug, nomeFormatado, anoReferencia)
+  : formatMetaTitle(nomeFormatado, anoReferencia);
 const metaDescription = formatMetaDescription(nomeFormatado, op.beneficiarios, op.uf, anoReferencia);
 
 const breadcrumbs = [
