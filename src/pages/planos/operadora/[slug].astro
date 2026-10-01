@@ -69,13 +69,6 @@ const breadcrumbs = [
   { name: nomeFormatado, url: `/planos/operadora/${op.slug}` },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": nomeFormatado,
-  "description": metaDescription,
-  "url": `https://painelsaude.com.br/planos/operadora/${op.slug}`
-};
 ---
 <Layout
   title={metaTitle}
@@ -83,8 +76,6 @@ const jsonLd = {
   canonical={`https://painelsaude.com.br/planos/operadora/${op.slug}/`}
   breadcrumbs={breadcrumbs}
 >
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-
   <Breadcrumbs breadcrumbs={breadcrumbs} />
 
   <article>
