@@ -66,7 +66,7 @@ const metaDescription = formatMetaDescription(nomeFormatado, op.beneficiarios, o
 const breadcrumbs = [
   { name: 'Início', url: '/', item: 'https://painelsaude.com.br/' },
   { name: 'Planos de Saúde', url: '/planos', item: 'https://painelsaude.com.br/planos' },
-  { name: nomeFormatado, url: `/planos/operadora/${op.slug}` },
+  { name: nomeCurto, url: `/planos/operadora/${op.slug}` },
 ];
 
 ---
@@ -83,7 +83,7 @@ const breadcrumbs = [
       <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">
         {op.modalidade}
       </span>
-      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{nomeFormatado}</h1>
+      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{nomeCurto}</h1>
       <p style="color:#666;margin-top:0.5rem">Registro ANS: {op.registro_ans}</p>
     </header>
 
