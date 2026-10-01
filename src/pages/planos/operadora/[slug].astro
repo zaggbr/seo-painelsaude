@@ -12,8 +12,10 @@ export async function getStaticPaths() {
 
   function escRe(s: string) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
-  // Guard: fail the build if two slugs produce the same nomeCurto
+  // Guard: fail the build if two slugs produce the same nomeCurto.
+  // Also builds nomeCurtoMap used to annotate slice200 for OperadorasRelacionadas.
   const seen = new Map<string, string>();
+  const nomeCurtoMap = new Map<string, string>();
   for (const op of slice) {
     let n: string = overrides[op.slug] ?? op.nome;
     if (!overrides[op.slug]) {
@@ -57,6 +59,7 @@ export async function getStaticPaths() {
       if ((ws.length < 2 && n.length < 6) || !n) n = overrides[op.slug] ?? op.nome.trim();
     }
     const nomeCurto = n;
+    nomeCurtoMap.set(op.slug, nomeCurto);
     const key = nomeCurto.toLowerCase();
     if (seen.has(key)) {
       throw new Error(
@@ -68,9 +71,13 @@ export async function getStaticPaths() {
     seen.set(key, op.slug);
   }
 
-  return slice.map((op) => ({
+  // Annotate each entry with its computed nomeCurto so OperadorasRelacionadas
+  // can use the same name as <title> / <h1> in anchor text.
+  const slice200 = slice.map((op: any) => ({ ...op, nomeCurto: nomeCurtoMap.get(op.slug) }));
+
+  return slice200.map((op: any) => ({
     params: { slug: op.slug },
-    props: { op, slice200: slice },
+    props: { op, slice200 },
   }));
 }
 

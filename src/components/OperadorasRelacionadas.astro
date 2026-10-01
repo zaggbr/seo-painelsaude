@@ -1,9 +1,8 @@
 ---
-import { normalizarOperadora } from '../utils/normalizarOperadora.js';
-
 interface Operadora {
   slug: string;
   nome: string;
+  nomeCurto: string;
   modalidade: string;
   total_planos: number;
 }
@@ -51,7 +50,7 @@ const relacionadas = [...windowList, ...others].slice(0, 8);
       {relacionadas.map((op) => (
         <li>
           <a href={`/planos/operadora/${op.slug}`}>
-            {normalizarOperadora(op.nome)}
+            {op.nomeCurto}
           </a>
           <span>{op.total_planos} planos ativos</span>
         </li>
