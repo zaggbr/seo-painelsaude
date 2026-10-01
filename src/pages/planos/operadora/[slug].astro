@@ -21,7 +21,14 @@ const nomeFormatado = normalizarOperadora(op.nome);
 
 function getNomeCurto(nome) {
   return nome
-    .replace(/\s+-\s+Em Liquidação.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação.*$/i, '')
+    .replace(/\s+[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+    .replace(/\s+[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+    .replace(/\s+[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+    .replace(/\s+[Ee]m [Ll]iquidação.*$/i, '')
     .replace(/\s+-\s+EPP.*$/i, '')
     .replace(/\s+-\s+ME.*$/i, '')
     .replace(/\s+S\.A\..*$/i, '')
