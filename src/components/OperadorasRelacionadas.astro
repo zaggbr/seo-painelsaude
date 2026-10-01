@@ -16,15 +16,32 @@ interface Props {
 
 const { currentSlug, modalidade, slice200 } = Astro.props;
 
-const same = slice200
-  .filter((op) => op.modalidade === modalidade && op.slug !== currentSlug)
+const sameModal = slice200
+  .filter((op) => op.modalidade === modalidade)
   .sort((a, b) => b.total_planos - a.total_planos || a.slug.localeCompare(b.slug));
 
+const i = sameModal.findIndex((op) => op.slug === currentSlug);
+const len = sameModal.length;
+
+// Sliding window: 4 before + 4 after, circular
+const windowSlugs = new Set<string>();
+if (i !== -1 && len > 1) {
+  for (let d = -4; d <= 4; d++) {
+    if (d === 0) continue;
+    const idx = ((i + d) % len + len) % len;
+    if (idx === i) continue;  // wraparound back to self when len < 9
+    windowSlugs.add(sameModal[idx].slug);
+  }
+}
+
+const windowList = sameModal.filter((op) => windowSlugs.has(op.slug));
+
+// Fallback: fill to 8 from other modalidades by total_planos desc
 const others = slice200
   .filter((op) => op.modalidade !== modalidade && op.slug !== currentSlug)
   .sort((a, b) => b.total_planos - a.total_planos || a.slug.localeCompare(b.slug));
 
-const relacionadas = [...same, ...others].slice(0, 8);
+const relacionadas = [...windowList, ...others].slice(0, 8);
 ---
 
 {relacionadas.length > 0 && (
