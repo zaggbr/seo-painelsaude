@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import OperadorasRelacionadas from '../../../components/OperadorasRelacionadas.astro';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
 import fs from 'node:fs';
 
@@ -69,7 +70,7 @@ export async function getStaticPaths() {
 
   return slice.map((op) => ({
     params: { slug: op.slug },
-    props: { op },
+    props: { op, slice200: slice },
   }));
 }
 
@@ -77,7 +78,7 @@ const NOME_OVERRIDES = JSON.parse(
   fs.readFileSync('./src/data/operadora-overrides.json', 'utf-8')
 );
 
-const { op } = Astro.props;
+const { op, slice200 } = Astro.props;
 const nomeFormatado = normalizarOperadora(op.nome);
 
 function getNomeCurto(nome: string, modalidade: string = ''): string {
@@ -251,6 +252,12 @@ const breadcrumbs = [
       </div>
     </section>
 
+    <OperadorasRelacionadas
+      currentSlug={op.slug}
+      modalidade={op.modalidade}
+      slice200={slice200}
+    />
+
     <section style="margin:2rem 0;text-align:center">
       <a href="/planos" style="display:inline-block;background:#1565c0;color:white;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
         Ver Lista Completa de Planos de Saúde
@@ -274,8 +281,6 @@ const breadcrumbs = [
         <div><dt style="font-weight:600;color:#1565c0">Abrangência</dt><dd style="color:#555;margin-top:0.2rem">Área geográfica onde o plano oferece cobertura: municipal, estadual, regional ou nacional.</dd></div>
         <div><dt style="font-weight:600;color:#1565c0">Fator moderador</dt><dd style="color:#555;margin-top:0.2rem">Mecanismo de regulação do uso: franquia, coparticipação ou desconto na mensalidade.</dd></div>
       </dl>
-      <div id="zgc-relacionados" data-pools="guia-planos-saude" data-qtd="8" data-modo="aleatorio"></div>
-      <script src="https://zgc-widgets.pages.dev/widgets/conteudo-relacionado.js" defer></script>
     </section>
 
     <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">

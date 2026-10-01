@@ -1,0 +1,87 @@
+---
+import { normalizarOperadora } from '../utils/normalizarOperadora.js';
+
+interface Operadora {
+  slug: string;
+  nome: string;
+  modalidade: string;
+  total_planos: number;
+}
+
+interface Props {
+  currentSlug: string;
+  modalidade: string;
+  slice200: Operadora[];
+}
+
+const { currentSlug, modalidade, slice200 } = Astro.props;
+
+const same = slice200
+  .filter((op) => op.modalidade === modalidade && op.slug !== currentSlug)
+  .sort((a, b) => b.total_planos - a.total_planos || a.slug.localeCompare(b.slug));
+
+const others = slice200
+  .filter((op) => op.modalidade !== modalidade && op.slug !== currentSlug)
+  .sort((a, b) => b.total_planos - a.total_planos || a.slug.localeCompare(b.slug));
+
+const relacionadas = [...same, ...others].slice(0, 8);
+---
+
+{relacionadas.length > 0 && (
+  <section class="op-relacionadas">
+    <h2>Outras operadoras de {modalidade}</h2>
+    <ul>
+      {relacionadas.map((op) => (
+        <li>
+          <a href={`/planos/operadora/${op.slug}`}>
+            {normalizarOperadora(op.nome)}
+          </a>
+          <span>{op.total_planos} planos ativos</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<style>
+  .op-relacionadas {
+    margin-bottom: 2rem;
+  }
+  .op-relacionadas h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: system-ui, sans-serif;
+  }
+  .op-relacionadas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .op-relacionadas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: system-ui, sans-serif;
+    font-size: 0.9rem;
+  }
+  .op-relacionadas a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .op-relacionadas a:hover {
+    text-decoration: underline;
+  }
+  .op-relacionadas span {
+    color: #888;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+  }
+</style>
