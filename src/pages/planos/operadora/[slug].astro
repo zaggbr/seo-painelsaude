@@ -64,9 +64,9 @@ const metaTitle = `${nomeCurto} | Planos e Cobertura`;
 const metaDescription = formatMetaDescription(nomeFormatado, op.beneficiarios, op.uf);
 
 const breadcrumbs = [
-  { name: 'Início', url: '/' },
-  { name: 'Planos de Saúde', url: '/planos' },
-  { name: nomeFormatado, url: `/planos/operadora/${op.slug}` }
+  { name: 'Início', url: '/', item: 'https://painelsaude.com.br/' },
+  { name: 'Planos de Saúde', url: '/planos', item: 'https://painelsaude.com.br/planos' },
+  { name: nomeFormatado, url: `/planos/operadora/${op.slug}` },
 ];
 
 const jsonLd = {
