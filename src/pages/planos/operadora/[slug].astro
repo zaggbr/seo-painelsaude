@@ -6,7 +6,43 @@ import fs from 'node:fs';
 
 export async function getStaticPaths() {
   const operadoras = JSON.parse(fs.readFileSync('./src/data/operadoras.json', 'utf-8'));
-  return operadoras.slice(0, 200).map((op) => ({
+  const overrides = JSON.parse(fs.readFileSync('./src/data/operadora-overrides.json', 'utf-8'));
+  const slice = operadoras.slice(0, 200);
+
+  // Guard: fail the build if two slugs produce the same nomeCurto
+  const seen = new Map<string, string>();
+  for (const op of slice) {
+    const nomeCurto = overrides[op.slug] ?? op.nome
+      .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+      .replace(/\s*[\(\-]\s*[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+      .replace(/\s*[\(\-]\s*[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+      .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação.*$/i, '')
+      .replace(/\s+[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+      .replace(/\s+[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+      .replace(/\s+[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+      .replace(/\s+[Ee]m [Ll]iquidação.*$/i, '')
+      .replace(/\s+-\s+EPP.*$/i, '')
+      .replace(/\s+-\s+ME.*$/i, '')
+      .replace(/\s+S\.A\..*$/i, '')
+      .replace(/\s+S\/A.*$/i, '')
+      .replace(/\s+S\.A.*$/i, '')
+      .replace(/\s+Ltda\..*$/i, '')
+      .replace(/\s+Ltda.*$/i, '')
+      .replace(/\s+S\.S\..*$/i, '')
+      .replace(/\s+S\.S.*$/i, '')
+      .trim();
+    const key = nomeCurto.toLowerCase();
+    if (seen.has(key)) {
+      throw new Error(
+        `[BUILD ERROR] nomeCurto duplicado: "${nomeCurto}"\n` +
+        `  slug 1: ${seen.get(key)}\n  slug 2: ${op.slug}\n` +
+        `  Adicione um override em src/data/operadora-overrides.json para um dos dois.`
+      );
+    }
+    seen.set(key, op.slug);
+  }
+
+  return slice.map((op) => ({
     params: { slug: op.slug },
     props: { op },
   }));
