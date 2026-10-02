@@ -1,0 +1,802 @@
+{
+  "2care-operadora-de-saude-ltda": {
+    "hash": "da0f967de196b56cb5dc995deef1418acbde92fbe36b1234363ea621fe157b9b",
+    "date": "2026-10-01"
+  },
+  "alice-operadora-ltda": {
+    "hash": "b14d171a4bfbe5f748fc0b886bb7b03c4402571902ef8a30b9573ab940417a43",
+    "date": "2026-10-01"
+  },
+  "amesc-associacao-medica-espirita-crista": {
+    "hash": "b58e7151d04c42b6e84cf2704ce1f840985a6b602db6e6bd3c1ca2b8718cae6d",
+    "date": "2026-10-01"
+  },
+  "amil-assistencia-medica-internacional-s-a": {
+    "hash": "0f1918d41a93957d8a7849cc0a62f728d78392695d7c84170a7d95518ebc7764",
+    "date": "2026-10-01"
+  },
+  "ampara-assistencia-medica-paraiso-ltda": {
+    "hash": "4ffa5ae144cd65a8747dc657133ec32200e5a1ff4bb05efb5cd73b320b705f75",
+    "date": "2026-10-01"
+  },
+  "amplitude-planos-de-saude-ltda": {
+    "hash": "d9ffaa4f0c6e8066ac8617a43e9659b2d3010193411545aac8473c77df8c063e",
+    "date": "2026-10-01"
+  },
+  "assistencia-medica-sao-miguel-ltda": {
+    "hash": "a37306b77e7ee9addc1ab0ece0d05489d6325a18b59af8506401233acbdc4e52",
+    "date": "2026-10-01"
+  },
+  "associacao-de-beneficencia-e-filantropia-sao-cristovao": {
+    "hash": "90294e6f53ff39e55fc2ababf92517fb4493921b615849873a7713cbec282b6d",
+    "date": "2026-10-01"
+  },
+  "associacao-de-saude-portuguesa-de-beneficencia": {
+    "hash": "3f0baaa1d6d08736af21711971a786a19d83a53e82aa30bff2c0a6ac79721c87",
+    "date": "2026-10-01"
+  },
+  "associacao-dr-bartholomeu-tacchini": {
+    "hash": "6011b0ff27d15d44b3f164d353c09c2174d6b799e1bf0a5180b68d1f4cc4c878",
+    "date": "2026-10-01"
+  },
+  "associacao-evangelica-beneficente-de-londrina": {
+    "hash": "a329d010099c799ec1ee767ff55e17e1e4cd7268ee41a35fbff8ddeec50b4a2e",
+    "date": "2026-10-01"
+  },
+  "associacao-santa-casa-saude-de-sao-jose-dos-campos": {
+    "hash": "e29cc44db308c0ca16fd7bffc95d63b82d32e32f61c4ae5d4c9b589d66b925ff",
+    "date": "2026-10-01"
+  },
+  "associacao-santa-saude": {
+    "hash": "10b3401640e5a72eea322b17ec4388083e0254403b04ff361c89feadac5b8747",
+    "date": "2026-10-01"
+  },
+  "aurora-saude-ltda": {
+    "hash": "781b95deef71f1369a0ce0692a06eee4e63214e86e8c2edeeb4ae93c05aa47c7",
+    "date": "2026-10-01"
+  },
+  "beneficencia-camiliana-do-sul": {
+    "hash": "f8abe9af050036a083971bbc5d2d0620c31b3bbe3910b6e3fda4a2c43e4485fe",
+    "date": "2026-10-01"
+  },
+  "best-senior-operadora-de-saude-ltda": {
+    "hash": "e40cd66567b8facaae7ce4eb3bca1f6ae3d677d656f0988e2518ec880759ecaf",
+    "date": "2026-10-01"
+  },
+  "biovida-saude-ltda": {
+    "hash": "6feda1ae93cab642303cbe68001af4850b7cdbbf671c89e94728383a48a4c2d8",
+    "date": "2026-10-01"
+  },
+  "bradesco-saude-operadora-de-planos-s-a": {
+    "hash": "1832a3526302d013e454943ddb83ca7626de359a07a2f4278c7b267bf85e5193",
+    "date": "2026-10-01"
+  },
+  "bradesco-saude-s-a": {
+    "hash": "cefdbb73a4b66e8bd056199bdbf9bd856919a5cb226ef2480d91685b46685c2f",
+    "date": "2026-10-01"
+  },
+  "brasildental-operadora-de-planos-odontologicos-s-a": {
+    "hash": "544f568439438345ea2bf3575912416708f3ed3badc6d3c327bdb8e56f242dfd",
+    "date": "2026-10-01"
+  },
+  "caberj-integral-saude-s-a": {
+    "hash": "5e47a35c73b749fdfedae67fce3004266c6ad0e1d776bd0a003818596ba21bc0",
+    "date": "2026-10-01"
+  },
+  "caixa-de-previdencia-e-assistencia-dos-servidores-da-fundacao-nacional-de-saude-capesesp": {
+    "hash": "420fb52709d196576900a0f33af30f86c0d860064f601f5811da6f05be19fdcf",
+    "date": "2026-10-01"
+  },
+  "care-plus-medicina-assistencial-ltda": {
+    "hash": "b917e3b8450d3b6fcb2e9f2265e561d8269293c26bc7505dadd4eaf683653043",
+    "date": "2026-10-01"
+  },
+  "care-plus-odontologia-assistencial-ltda": {
+    "hash": "3643909ee4ca2f12aa2c4767f3219451045c9470a37b7ce460bb6a6907b9572c",
+    "date": "2026-10-01"
+  },
+  "centro-clinico-gaucho-ltda": {
+    "hash": "3086fcc097ae8201ba70870b29585d68fb86684843a37813655e655e040406da",
+    "date": "2026-10-01"
+  },
+  "centro-trasmontano-de-sao-paulo": {
+    "hash": "ee2b6d6fa27f78ef8d718fbecac6d120f2029503e57af51c2d6be45c02d4ada6",
+    "date": "2026-10-01"
+  },
+  "circulo-operario-caxiense": {
+    "hash": "e2ed5e7a0335b3d63e61bbee739854d862280299875d8f1fe023635f2bee7e84",
+    "date": "2026-10-01"
+  },
+  "clinipam-clinica-paranaense-de-assistencia-medica-ltda": {
+    "hash": "bcae9d687796c51d8164ffb76fcdda8048d6dfa50c451efc2c98e9e96c663c46",
+    "date": "2026-10-01"
+  },
+  "cooperativa-central-unimed-de-cooperativas-de-assistencia-a-saude-do-rio-grande-do-sul-ltda": {
+    "hash": "38b7cbf8e981c277c098b9f2d846c48831922463c0b1405196f1b95da9150adc",
+    "date": "2026-10-01"
+  },
+  "dental-plus-convenio-odontologico-ltda": {
+    "hash": "386f56504d33c13a9d3bc2fbf11f3f04f208d6715888e7ae7005cc41aca35d55",
+    "date": "2026-10-01"
+  },
+  "dental-uni-cooperativa-odontologica": {
+    "hash": "c21d28148a8e7106e7b2b8250bebfc6cf2121b6228a2931e6cf5ba0e11665baa",
+    "date": "2026-10-01"
+  },
+  "doctor-clin-operadora-de-planos-de-saude-ltda": {
+    "hash": "be52123fe64553fa1f7a545119529eb60d9776ef5ff4672f64a8d81b7554899f",
+    "date": "2026-10-01"
+  },
+  "evo-saude-assistencia-medica-ltda": {
+    "hash": "9a14128b860d7b94d69d8fca5ee2e75c3119d15f9bd9399f3021c1ef111a3b1b",
+    "date": "2026-10-01"
+  },
+  "federacao-das-coop-odontologicas-do-estado-de-santa-catarina": {
+    "hash": "f03e2584bdaff2ea0ebb77303265c12fc4c9803c3396e45cc83cd9c4a0e3e2d2",
+    "date": "2026-10-01"
+  },
+  "federacao-das-sociedades-cooperativas-de-trabalho-medico-do-ac-ap-am-pa-ro-e-rr-em-recuperacao-judicial": {
+    "hash": "458b59d0f585fd8d38031436ab4379e9ed9462e047993a46ac45d9d763140aff",
+    "date": "2026-10-01"
+  },
+  "fundacao-assistencial-dos-servidores-do-ministerio-da-fazenda": {
+    "hash": "b420a7f11af7ac07e2340d1ec9d69423740994c90d7f66cfe9c3202590a39d97",
+    "date": "2026-10-01"
+  },
+  "fundacao-cesp": {
+    "hash": "ac03674f8dc00d81d036a86ea09779233dbe2c8eea4cb5b27d92f33178a8e5a9",
+    "date": "2026-10-01"
+  },
+  "fundacao-sao-francisco-xavier": {
+    "hash": "5e83b59a4061b887af286ab67360a0edebf84400c7200099dbc09b3553b7db0f",
+    "date": "2026-10-01"
+  },
+  "fundacao-saude-itau": {
+    "hash": "67bdcf6c377d2b5894df7e3f7a1478f0ec1bcf8c2e885daffef0eef42929c1b4",
+    "date": "2026-10-01"
+  },
+  "geap-autogestao-em-saude": {
+    "hash": "cc5b39c5dd33e0ae3b8d248d7b83c52a8d7c15ce5d329ea20c62acc73a5bffb3",
+    "date": "2026-10-01"
+  },
+  "gocare-planos-de-saude-ltda": {
+    "hash": "d879aea3535fe4c733dbeff66deb5dc4b2c833dfcd5e2dd1712a67b28a04da0a",
+    "date": "2026-10-01"
+  },
+  "grupo-hospitalar-do-rio-de-janeiro-ltda": {
+    "hash": "3d4b02e9ffd018d1aaf73d588af956afcda3ca89603f41844548d49a92966a15",
+    "date": "2026-10-01"
+  },
+  "h-b-saude-s-a": {
+    "hash": "72393336f020531f5bdf5f94de1eaa062544e892a912f6fc754c1bed778884a4",
+    "date": "2026-10-01"
+  },
+  "hapvida-assistencia-medica-s-a": {
+    "hash": "b06ee5eaacbd3477cd3e5cd7e83fc8f2a88f16675fa709603f67492d335b1b1b",
+    "date": "2026-10-01"
+  },
+  "humana-saude-ltda": {
+    "hash": "66c20a19f9219df03c976e4364b39d487cb8ac952584a5c5f5c4f2bea0a62fb3",
+    "date": "2026-10-01"
+  },
+  "humana-saude-nordeste-ltda": {
+    "hash": "3b384b2db726b3e4271f6014127bb3780fc4262350c97ab534ec73a2409fdd99",
+    "date": "2026-10-01"
+  },
+  "ideal-odonto-assistencia-odontologica-ltda": {
+    "hash": "3c5e029eb50c65af06ff93885001e082451684f40bf426dc03458779e4df19e4",
+    "date": "2026-10-01"
+  },
+  "ideal-saude-assistencia-medica-ambulatorial-ltda": {
+    "hash": "32e0a93b16d9b34246529556976a7a80c2d16469cf8be4861182a8d61bc9eaf5",
+    "date": "2026-10-01"
+  },
+  "innova-plano-de-saude-ltda": {
+    "hash": "3744e6cafa72786eabb4bb41db5f79bc4a393e550880e94cd5dc038ac564f336",
+    "date": "2026-10-01"
+  },
+  "integra-assistencia-medica-sa": {
+    "hash": "f921b540d69f205198f5930d2f41565c10bcb43930b053ec3e853bf48f18b220",
+    "date": "2026-10-01"
+  },
+  "intermedici-piracicaba-assistencia-medica-ltda": {
+    "hash": "add2b95efa484cf7cb23013bb1f9127cab042761da372f51f698414a4f1b871a",
+    "date": "2026-10-01"
+  },
+  "klini-planos-de-saude-ltda": {
+    "hash": "02fabb53699a545a604b56a0f85481e0a1516c31755616365ae2a7d089c8ead0",
+    "date": "2026-10-01"
+  },
+  "leader-assistencia-medica-e-hospitalar-ltda": {
+    "hash": "642096f208317171c4e4838c6f72b662a6f88d7582c50cfdfead2235fc0d6126",
+    "date": "2026-10-01"
+  },
+  "leve-saude-operadora-de-planos-de-saude-s-a": {
+    "hash": "8be4a96b0e3be413358b6c990a6503e676e11823a03e6637c23c7ea5a2c3de0c",
+    "date": "2026-10-01"
+  },
+  "liv-linhas-inteligentes-de-atencao-a-vida-s-a": {
+    "hash": "6ce6e3b7aecd728a328fe9c384f036fdf3ffd53e2e0b7543b77663073856749e",
+    "date": "2026-10-01"
+  },
+  "matao-clinicas-amhma-saude-ltda": {
+    "hash": "3338e2f0d7816cb496a11d665713b6a1862b5df2b80812f0d6e84bf84cb3e0f0",
+    "date": "2026-10-01"
+  },
+  "medhealth-planos-de-saude-ltda": {
+    "hash": "53a83ffa6903b2eb1b08ee141348bad1cf7677e5e51adab6d082de82e48f9584",
+    "date": "2026-10-01"
+  },
+  "mediservice-operadora-de-planos-de-saude-s-a": {
+    "hash": "dfa38f8d7bdd8f585c15e6150da9ceb0e67c8e60fc775ea7f4100dddefef0db6",
+    "date": "2026-10-01"
+  },
+  "metlife-planos-odontologicos-ltda": {
+    "hash": "2cf8b70c2a63bde34dc162ffbadf48c14e49a5fb2b819b11851b14b032564587",
+    "date": "2026-10-01"
+  },
+  "mh-vida-operadora-de-planos-de-saude-ltda": {
+    "hash": "a8f8f018f3fcc33b8a50def873df92f0d011cf7876f8c75c7e4c267f3657ee3b",
+    "date": "2026-10-01"
+  },
+  "nacional-odonto-operadora-de-planos-odontologicos-ltda": {
+    "hash": "899b9e9b70b437b7ce19e3198b2ebfd61cdedbce11a5123740a0fada7fc6c18b",
+    "date": "2026-10-01"
+  },
+  "nossa-saude-operadora-planos-privados-de-assistencia-a-saude-ltda": {
+    "hash": "167984d8ad13a5bf38ac695233f506d8f2f446f43416d6565b0e9c7fc35326c5",
+    "date": "2026-10-01"
+  },
+  "notre-dame-intermedica-minas-gerais-saude-s-a": {
+    "hash": "de529e6596c3a449fad8fc8577698f562c1ca62796c261fb596ec6299b012b5e",
+    "date": "2026-10-01"
+  },
+  "notre-dame-intermedica-saude-s-a": {
+    "hash": "98b45ce269e1c3c62f582388f4937432517a866cddec10d029eca25119bc1b60",
+    "date": "2026-10-01"
+  },
+  "nova-saude-operadora-integrada-de-saude-ltda": {
+    "hash": "cfea61a2df0aea5592ac6e7ae2700ad6996bdde14296da547d2de2d403fb7b48",
+    "date": "2026-10-01"
+  },
+  "odont-operadora-odontologica-ltda": {
+    "hash": "8e9f07f4ec4d0bab3c42ad1467bca7d43330a22d24ce547006c4c8f2930d7623",
+    "date": "2026-10-01"
+  },
+  "odonto-empresas-convenios-dentarios-ltda": {
+    "hash": "72e01ff7f61475c7f2d05510cdd66633ac5d140b397c9c24fa53a452726f5ae6",
+    "date": "2026-10-01"
+  },
+  "odontobase-planos-de-saude-ltda": {
+    "hash": "1b70b88ab7d48e4ae58d341db549611b73934d88991ed5a4b839b243d64cff37",
+    "date": "2026-10-01"
+  },
+  "odontogroup-sistema-de-saude-ltda": {
+    "hash": "1d39577de9a8f26c806ff67a140b06168cc567d088fb7d1a1350f1beecaaacc2",
+    "date": "2026-10-01"
+  },
+  "odontoprev-s-a": {
+    "hash": "720b6c131d77fded909bb0acc3a355adce7a8260cd59dfcc3250ea369dccb6ba",
+    "date": "2026-10-01"
+  },
+  "oeste-saude-assistencia-a-saude-suplementar-s-a": {
+    "hash": "99561a1fece93a322733253ac94b40a78564ca2daba5777d8a2d264678efcf35",
+    "date": "2026-10-01"
+  },
+  "omint-servicos-de-saude-s-a": {
+    "hash": "04e157b43c26531d559f2c227c6345970b2a8efa7485c38be05f3506e3f04674",
+    "date": "2026-10-01"
+  },
+  "on-med-assistencia-medica-ltda": {
+    "hash": "f0c8a267788e206cf62d74fd6112b0692111883ce2d80807164f76896d756346",
+    "date": "2026-10-01"
+  },
+  "orale-assistencia-odontologica-ltda": {
+    "hash": "2629aae9ae599b652ab56f7d8ffbc3805409d05351accd2b43f1ae222b8d1a70",
+    "date": "2026-10-01"
+  },
+  "pb-assistencia-medica-eu-ltda": {
+    "hash": "c9f2c0a7f766c7f3af964bfcae9510bdb3c0b5a87b722763c5f8d37144569c2d",
+    "date": "2026-10-01"
+  },
+  "personal-care-operadora-de-saude-sa": {
+    "hash": "7a4a06bf8bbcc1f104b803446b6052ebcb820bd2f9d74219a685381d12918acc",
+    "date": "2026-10-01"
+  },
+  "plamesc-planos-de-saude-ltda": {
+    "hash": "89b027bff4d109ada0ea1731d3cd25e1d957a2aeff45b4ab213f5967636bfb88",
+    "date": "2026-10-01"
+  },
+  "plano-de-saude-ases-ltda": {
+    "hash": "cf030a965b4a1037796d4f5e161eb20b7785454c8fe34bb1c45283161d2a3a77",
+    "date": "2026-10-01"
+  },
+  "plena-saude-s-a": {
+    "hash": "caed021081bec67ce5b902a93433e7406f0de55983e2c216e73d22d6cd672959",
+    "date": "2026-10-01"
+  },
+  "porto-seguro-seguro-saude-s-a": {
+    "hash": "0081efa2cf6f7a1d92035b02852f98f7608443388a254ac8220904bce9065af4",
+    "date": "2026-10-01"
+  },
+  "portomed-porto-seguro-servicos-de-saude-ltda": {
+    "hash": "11926ffb3aab877263e84f641313adea4dbab81ef4d7eadd80795fc13cfbf681",
+    "date": "2026-10-01"
+  },
+  "preserve-saude-assistencia-medica-ltda": {
+    "hash": "f09c4e9383639af89eaa006dcee178be34655f2cf7623c2378b3692b19053743",
+    "date": "2026-10-01"
+  },
+  "prevident-assistencia-odontologica-s-a": {
+    "hash": "a6efb1ab86b2baff7c7cae55179c19b77a1d96bd609cc1d9d8b5142f7193d203",
+    "date": "2026-10-01"
+  },
+  "prima-vida-odontologia-de-grupo-limitada": {
+    "hash": "fadc1e87544a1eb7948afb71580cf8620b0becefafd5cdb51db5a349a5f22b0b",
+    "date": "2026-10-01"
+  },
+  "proasa-saude": {
+    "hash": "b03ed80620328310647a359029f87b27ef9d65058405f37197cbbe0605c2301f",
+    "date": "2026-10-01"
+  },
+  "promedica-protecao-medica-a-empresas-s-a": {
+    "hash": "505e5185a6513562cba9275300888b019aa472df8bb423fa08c860e3ed4f2b20",
+    "date": "2026-10-01"
+  },
+  "quallity-pro-saude-plano-de-assistencia-medica-ltda": {
+    "hash": "194dca0aca6d517a98b57baa8d18c112b42fca1838f843116c8a995672318c33",
+    "date": "2026-10-01"
+  },
+  "samedil-servicos-de-atendimento-medico-s-a": {
+    "hash": "a14e94fbb8a65841cc5e4dae0ff7d882519221e2b38b378ecb004da65879a0aa",
+    "date": "2026-10-01"
+  },
+  "sami-assistencia-medica-ltda": {
+    "hash": "e22bb353be624d3227393a79209bb3edc2237290be475e1abff93b442f886c3a",
+    "date": "2026-10-01"
+  },
+  "samp-espirito-santo-assistencia-medica-sa": {
+    "hash": "6fc831579c548566c2827a1f5664d76cb51aa3888558777524aeaea88e68bf98",
+    "date": "2026-10-01"
+  },
+  "santa-casa-de-misericordia-e-beneficencia-portuguesa": {
+    "hash": "e6243c6d798f93e2a1eb62741d9090b1159b92bc6f864b90000aa258b7eede68",
+    "date": "2026-10-01"
+  },
+  "santo-andre-planos-de-assistencia-medica-ltda": {
+    "hash": "59c47f820db72cb51f516777963c5347959fec39d4db6160d11f0100d4a75764",
+    "date": "2026-10-01"
+  },
+  "select-operadora-de-plano-de-saude-ltda": {
+    "hash": "172b8d45d538a0cac39df9b6995a5b61f0c73a9f473f72a8ada2882f80060d59",
+    "date": "2026-10-01"
+  },
+  "sempre-odonto-planos-odontologicos-ltda": {
+    "hash": "938e5fb9952a523929deb0357b4a98dc9bd4e731d7eb1e1e9dfd7d77d3475e59",
+    "date": "2026-10-01"
+  },
+  "sermed-saude-ltda": {
+    "hash": "848ead0d447e3279e79e16e2269eebcf98a00596e6cb9a2f90f84c562c77a8ee",
+    "date": "2026-10-01"
+  },
+  "servdonto-plano-de-assistencia-odontologica-ltda": {
+    "hash": "0052aa5ad8cc3e753135e48e6888469933d0d1651ca7c09229e002ea003ba753",
+    "date": "2026-10-01"
+  },
+  "sociedade-portuguesa-de-beneficencia": {
+    "hash": "62a97acdf2b693f7381da9bae7fcfd42ea2d2b2281d6348549e39d0cebfe8c8c",
+    "date": "2026-10-01"
+  },
+  "sul-america-companhia-de-seguro-saude": {
+    "hash": "08aa6b1e1d22d60b01084093ecb94efb17cbbf50b1fae7fc68141a863b08fb80",
+    "date": "2026-10-01"
+  },
+  "sul-america-odontologico-s-a": {
+    "hash": "3703fcd49afd7eba54ea66d623988265650cc380a24997c30f1a4130856f60f5",
+    "date": "2026-10-01"
+  },
+  "sul-america-parana-clinicas-servicos-de-saude-s-a": {
+    "hash": "a60b28899e206ff6ec9a47f784d3d961792073d784d6b2224f9aad9be928dbb3",
+    "date": "2026-10-01"
+  },
+  "total-assistencia-medica-hospitalar-ltda": {
+    "hash": "1608bdb13fc74087b1514df18e25bebb28efb7703d9af3e57380beb4d6cc0155",
+    "date": "2026-10-01"
+  },
+  "uniao-medica-planos-de-saude-s-a": {
+    "hash": "3b74cd6686cd005e1a3d30677bcf6e8f14a7d63cafa77f16f8f8cd09c57904aa",
+    "date": "2026-10-01"
+  },
+  "unimed-alto-vale-cooperativa-de-trabalho-medico": {
+    "hash": "ef97ccf6ce1b32e9916e4d1457c1ba6d5ae23d20840d78a1f2b1327ac750add7",
+    "date": "2026-10-01"
+  },
+  "unimed-belem-cooperativa-de-trabalho-medico": {
+    "hash": "f1cbc278cc8239798fafd15ae9524b87d7ede104266e28a47d1cb0faa5bdf5d1",
+    "date": "2026-10-01"
+  },
+  "unimed-belo-horizonte-cooperativa-de-trabalho-medico": {
+    "hash": "d703173aae223915ce0cb7e08e08b5865692ca1ef21209eb6d0e3c174aff1412",
+    "date": "2026-10-01"
+  },
+  "unimed-campina-grande-cooperativa-de-trabalho-medico-ltda": {
+    "hash": "135fc4e4a24653ebb902b4dafe7e6d4fb83fc872310546a3ab5c1a0e276cd0f0",
+    "date": "2026-10-01"
+  },
+  "unimed-campinas-cooperativa-de-trabalho-medico": {
+    "hash": "b3dc8b8a98bdfb522946950de9ef805ef4342aa345546394ea275104f679c5d6",
+    "date": "2026-10-01"
+  },
+  "unimed-campo-grande-ms-cooperativa-de-trabalho-medico": {
+    "hash": "ca7d41989fc95a3f7b76ab0a2ab4855b9f3348508092d0ad8c25b1136a4c653d",
+    "date": "2026-10-01"
+  },
+  "unimed-curitiba-sociedade-cooperativa-de-medicos": {
+    "hash": "47d298a366f8696699c346b5b40bbe7a3fadea657af025f65ea5168982875048",
+    "date": "2026-10-01"
+  },
+  "unimed-de-bauru-cooperativa-de-trabalho-medico": {
+    "hash": "482cd62be0272e8869982642f4db73afbc3248cea514a406bfa76ead9ca09449",
+    "date": "2026-10-01"
+  },
+  "unimed-de-bebedouro-cooperativa-de-trabalho-medico": {
+    "hash": "ee6de9f158b14a035b66f58d2e1d6dfa8dff2fec663db8eb739922cf799fa053",
+    "date": "2026-10-01"
+  },
+  "unimed-de-cacapava-cooperativa-de-trabalho-medico": {
+    "hash": "d480c2ad4b227f65a4437b138275e5bf1eea3e211fffc29f661410bb4438f8fa",
+    "date": "2026-10-01"
+  },
+  "unimed-de-campos-cooperativa-de-trabalho-medico": {
+    "hash": "9645488ed701875b4d52891dfe648f65f9deec81a4eabbdfc68d554de8c21b70",
+    "date": "2026-10-01"
+  },
+  "unimed-de-capivari-cooperativa-de-trabalho-medico": {
+    "hash": "87a1c20eb47df27385b9d7f3b93a10ff4bce7f1ccebe0c5c8a35a49627a90b97",
+    "date": "2026-10-01"
+  },
+  "unimed-de-cascavel-cooperativa-de-trabalho-medico": {
+    "hash": "61132785922420dd5958cf201480b47f9193b64592c0299cf86f9988ec067ef0",
+    "date": "2026-10-01"
+  },
+  "unimed-de-fortaleza-sociedade-cooperativa-medica-ltda": {
+    "hash": "0b09ff95c5eb2fc1266ce956d1f4da0c0ce2bdca99a3c868bbb31a054ea6ee30",
+    "date": "2026-10-01"
+  },
+  "unimed-de-guarulhos-cooperativa-de-trabalho-medico": {
+    "hash": "942eeb52dd84f28495ad672dca4ac8a8b2f694515b3a719626227f9b52838488",
+    "date": "2026-10-01"
+  },
+  "unimed-de-londrina-cooperativa-de-trabalho-medico": {
+    "hash": "432d6841b420639a2d15b3140f92e19b6b34198c21df77a87331c7f894848dcc",
+    "date": "2026-10-01"
+  },
+  "unimed-de-macae-cooperativa-de-assistencia-a-saude": {
+    "hash": "4826c813ddc28580f5ef96e8e0357b37e477a13cedbf624cab20de41efe72bac",
+    "date": "2026-10-01"
+  },
+  "unimed-de-manaus-coop-do-trabalho-medico-ltda": {
+    "hash": "eb976e2421c16243a8d807099d6e45066699b054c35f7df1162a1789cad8cae9",
+    "date": "2026-10-01"
+  },
+  "unimed-de-mococa-cooperativa-de-trab-medico": {
+    "hash": "008e082c9c61ea3ba35b4371596b6fc0140d77788b0b939ae5dba52ec03716b3",
+    "date": "2026-10-01"
+  },
+  "unimed-de-piracicaba-sociedade-cooperativa-de-servicos-medicos": {
+    "hash": "78536ca86497d58dcd9bace8ed06124289622ace97409aa448d8a20da02ad4db",
+    "date": "2026-10-01"
+  },
+  "unimed-de-presidente-prudente-cooperativa-de-trab-medico": {
+    "hash": "170a2c2ae3161b6d0dfa64cff13029d2ab0d2b6848eac4ef4900623ddd721a76",
+    "date": "2026-10-01"
+  },
+  "unimed-de-ribeirao-preto-cooperativa-de-trabalho-medico": {
+    "hash": "988e00758211d4203ea343fd82183060535a587a9a90606c377c7a2008c33f39",
+    "date": "2026-10-01"
+  },
+  "unimed-de-santa-barbara-d-oeste-e-americana-coop-de-trabalho-medico": {
+    "hash": "4600e73d8a964c6e42d1ad6fb8c1e2212bec12786adc22c3dd12dff1958e487a",
+    "date": "2026-10-01"
+  },
+  "unimed-de-santos-coop-de-trab-medico": {
+    "hash": "35f3b7efe45e65cf59177ca370b6b3230cf2da5c9735ff1f07ae2632065121e2",
+    "date": "2026-10-01"
+  },
+  "unimed-de-tubarao-cooperativa-de-trabalho-medico-da-regiao-da-amurel": {
+    "hash": "9cc0cfd992cd47b4fcbef252032b02948efbef5f364d85bd40bebceae2bcf39b",
+    "date": "2026-10-01"
+  },
+  "unimed-de-uba-cooperativa-de-trabalho-medico": {
+    "hash": "5b8ce2ea7957646539b482caa4a3e5817e12c10c01c28fb92c83f3db37a2cf12",
+    "date": "2026-10-01"
+  },
+  "unimed-de-volta-redonda-cooperativa-de-trabalho-medico": {
+    "hash": "9cd9c0b6938e2205a2ac2e41c8127dc998a110e7a89890865c49451d0beeb1f1",
+    "date": "2026-10-01"
+  },
+  "unimed-divinopolis-cooperativa-de-trabalho-medico-ltda": {
+    "hash": "446ee175ce0801d3ce3a1f1b6daec3eb1701c2725681eabb6212d3999eaef0ba",
+    "date": "2026-10-01"
+  },
+  "unimed-do-cariri-sociedade-cooperativa-medica-ltda": {
+    "hash": "dbad88d08ea56b0ac759dc61ad4381a032814a709a1a79fd4adfbc0cd8e8f568",
+    "date": "2026-10-01"
+  },
+  "unimed-do-est-do-rj-federacao-est-das-cooperativas-medicas": {
+    "hash": "381d8de1d8c8a224e1d1873ed91c996091f87bb230cb2db6eaf194408cecff2a",
+    "date": "2026-10-01"
+  },
+  "unimed-do-estado-de-santa-catarina-fed-est-das-coop-med": {
+    "hash": "b70d68d1eec0fd0918ea60dd85541b11d6285494cf190c30c4eea5a23d07a52d",
+    "date": "2026-10-01"
+  },
+  "unimed-do-estado-de-sao-paulo-federacao-estadual-das-coop-medicas": {
+    "hash": "b7d61fcefeb68ca463b28eae305174771b52a6ebecf5c85114aa5ac93aedf1fb",
+    "date": "2026-10-01"
+  },
+  "unimed-do-estado-do-parana-federacao-estadual-das-cooperativas-medicas": {
+    "hash": "6ff6300b0b58fbe30aa4ca3fbef84a4b7ec87ce2b97bd47d31835cb7886a28c8",
+    "date": "2026-10-01"
+  },
+  "unimed-do-sudoeste-cooperativa-de-trabalho-medico-ltda": {
+    "hash": "210ac22b9f42f5ef9064a037fd39ca7add3f607b9ce6c2e1289ec6ca4431b6af",
+    "date": "2026-10-01"
+  },
+  "unimed-encosta-da-serra-rs-sociedade-cooperativa-de-servicos-de-saude-ltda": {
+    "hash": "7d26f16ad4c8a9dc00e811e6e94eed84010174624e227a61abfc3c5dca19ccc8",
+    "date": "2026-10-01"
+  },
+  "unimed-goiania-cooperativa-de-trabalho-medico": {
+    "hash": "eeab103630af46faaf8ebbbd07eb9c666cc279a5d7c1f169c1ebe8c6a4ce5ad4",
+    "date": "2026-10-01"
+  },
+  "unimed-grande-florianopolis-cooperativa-de-trabalho-medico": {
+    "hash": "4d81d295c1fbb71fbc0db2dc77cf0671add668715116476e2d32bfbc10fb0b3d",
+    "date": "2026-10-01"
+  },
+  "unimed-guaxupe-cooperativa-de-trabalho-medico": {
+    "hash": "ea21278a1722f639734977fc57b8230debc356c22f5e3b6b52bdc571d6cfee08",
+    "date": "2026-10-01"
+  },
+  "unimed-itajuba-cooperativa-de-trabalho-medico": {
+    "hash": "bf0b957fa1b09dddcbf02bff510a2d6b55ab37c5905c968122aee7aafabb25f3",
+    "date": "2026-10-01"
+  },
+  "unimed-itauna-cooperativa-de-trabalho-medico-ltda": {
+    "hash": "fdc037e68a7adccd16f1ed3d8c7dbc257e4416c06f1dafc141840bf77d2a12c0",
+    "date": "2026-10-01"
+  },
+  "unimed-joao-pessoa-cooperativa-de-trabalho-medico": {
+    "hash": "f7f33fa5e2b011e668dbca15453db4ccb9c8898a5489ba04acfb814e269eda2d",
+    "date": "2026-10-01"
+  },
+  "unimed-juiz-de-fora-cooperativa-de-trabalho-medico-ltda": {
+    "hash": "b212dec952fa12d9f675ca79e076ba5a61f60cad7a603684a3b5fb63bf50439d",
+    "date": "2026-10-01"
+  },
+  "unimed-jundiai-cooperativa-de-trabalho-medico": {
+    "hash": "235ef7c94f9365ea0eb08715d72505b08ab321caf6d8be4a7b2b6a35d4ba10ce",
+    "date": "2026-10-01"
+  },
+  "unimed-lavras-cooperativa-de-trabalho-medico": {
+    "hash": "39f7ea5c082c898eb31ead84d385f02ef2418eae72752d8618c415097f784344",
+    "date": "2026-10-01"
+  },
+  "unimed-litoral-sul-rs-cooperativa-de-assistencia-a-saude-ltda": {
+    "hash": "fc952859252017cdfa78a2b0e004997e2e7cb434d2e60a318bd417735cfe84ae",
+    "date": "2026-10-01"
+  },
+  "unimed-maranhao-do-sul-cooperativa-de-trabalho-medico": {
+    "hash": "0af4bd4e7f91081cbbc02a81dab1fb6f7756b137936942fb1b2582e16aae00b5",
+    "date": "2026-10-01"
+  },
+  "unimed-metropolitana-do-agreste-cooperativa-de-trabalho-medico": {
+    "hash": "b1575181cd2785476e9e7753b191c5575df4fee7e4aeea35bc2c6aa7bf676b73",
+    "date": "2026-10-01"
+  },
+  "unimed-missoes-rs-cooperativa-de-assistencia-a-saude-ltda": {
+    "hash": "da72a458f9b49b8e9ea59e0d2b6ae52095a4fd0d4c37822ee07e36c9a26e431f",
+    "date": "2026-10-01"
+  },
+  "unimed-montes-claros-cooperativa-de-trabalho-medico-ltda": {
+    "hash": "cc4d6b967ebede0bee92b4b68ef1168a6d76438332b095416994c5349a13f76e",
+    "date": "2026-10-01"
+  },
+  "unimed-nacional-cooperativa-central": {
+    "hash": "be118a372d7c68871a268a6e8693bc381057b106628a3e144f96f72a1d18838b",
+    "date": "2026-10-01"
+  },
+  "unimed-natal-soc-coop-de-trab-medico": {
+    "hash": "68d7c08cf2d87dc37a58ff4033f0bf41dea2191f370e774326134aa8ae15f9fd",
+    "date": "2026-10-01"
+  },
+  "unimed-nordeste-paulista-fed-intrafederativa-das-coop-medicas": {
+    "hash": "4f43522277fc4d7ef85030c630153e55f9499c1288a1c99ae68fca0266618759",
+    "date": "2026-10-01"
+  },
+  "unimed-norte-do-mato-grosso-cooperativa-de-trabalho-medico": {
+    "hash": "24252481310e09fc5d97e8ce8f0ce4336f608f13c66cdd6896f4bb75f6863a05",
+    "date": "2026-10-01"
+  },
+  "unimed-norte-nordeste-federacao-interfederativa-das-sociedades-cooperativas-de-trabalho-medico-em-recuperacao-judicial": {
+    "hash": "58d15b2eaec710a3a807b3173fca3ab1010ed9b4fbf3b59fe3534f995f7852ca",
+    "date": "2026-10-01"
+  },
+  "unimed-nova-friburgo-soc-coop-serv-med-hosp-ltda": {
+    "hash": "de049cd13e2d0eb9599f226b790c54b4a4dbca1f21cb8513a6ca593410538d50",
+    "date": "2026-10-01"
+  },
+  "unimed-nova-iguacu-cooperativa-de-trabalho-medico": {
+    "hash": "a57c1919d042477621428a684274bc5ed8f10a6ed43581addcba9e0a0b3d86e9",
+    "date": "2026-10-01"
+  },
+  "unimed-os-bandeirantes-cooperativa-de-trabalho-medico": {
+    "hash": "e24d47ed28cb43d986d3e5ff4b4a55bdfaac99a06944006f4b0428b66faeaeef",
+    "date": "2026-10-01"
+  },
+  "unimed-pocos-de-caldas-soc-coop-de-trab-e-servicos-medicos": {
+    "hash": "bc361468cc777014878f00e26701ed619a24dab930791efa49771f4f664fbfaa",
+    "date": "2026-10-01"
+  },
+  "unimed-ponta-grossa-cooperativa-de-trabalho-medico": {
+    "hash": "6dd83584d8315b1304150768db7dcd9380bd3ad87c9da3086ff2dd7f3cd2163d",
+    "date": "2026-10-01"
+  },
+  "unimed-porto-alegre-cooperativa-medica-ltda": {
+    "hash": "727c3012edf2c42d057c17a64e5313ebeb99d6a26e7411638368cca4edf78074",
+    "date": "2026-10-01"
+  },
+  "unimed-porto-velho-sociedade-cooperativa-medica-ltda": {
+    "hash": "eecfd51eaaec8df27d185a0ca2b5f718be96a3c56733dc32bd35ebb9f598298a",
+    "date": "2026-10-01"
+  },
+  "unimed-recife-cooperativa-de-trabalho-medico": {
+    "hash": "2266dbcc4e76a4d6be97b6af2e3657b2af6cf226b8f3242bf508a7270d9cb566",
+    "date": "2026-10-01"
+  },
+  "unimed-regional-de-tres-lagoas-cooperativa-de-trabalho-medico": {
+    "hash": "f8c5a253abeff95e23d866e2ee957fa42fe5b3f0a197028f0941d6f2136d3432",
+    "date": "2026-10-01"
+  },
+  "unimed-regional-maringa-coop-de-trabalho-medico": {
+    "hash": "e4a032239d06c4f1e72026ee25b2e4b06bf67868a97752503747b0b369e5ea6d",
+    "date": "2026-10-01"
+  },
+  "unimed-santa-maria-rs-cooperativa-de-assistencia-a-saude-ltda": {
+    "hash": "c9b3247ca9ec90597d5f789cdd204dc2de48f1f5ddfa5bfe315ff1456e2bc371",
+    "date": "2026-10-01"
+  },
+  "unimed-sao-carlos-cooperativa-de-trabalho-medico": {
+    "hash": "b8a480b815bbede684c4df4aea9805b51dc2b50465e1232d147bdd8813f6fc65",
+    "date": "2026-10-01"
+  },
+  "unimed-sao-goncalo-niteroi-soc-coop-serv-med-e-hosp-ltda": {
+    "hash": "d9564abe7666f1ed2dab58ae2408ba9257205495a26ec101b1675928b0f166fc",
+    "date": "2026-10-01"
+  },
+  "unimed-sao-jose-do-rio-preto-coop-de-trabalho-medico": {
+    "hash": "b807f16eaffab71de6fed5f4e4504d6e860cc9c8680869a2d3f90997d41b551a",
+    "date": "2026-10-01"
+  },
+  "unimed-sao-jose-dos-campos-cooperativa-de-trabalho-medico": {
+    "hash": "33290cf95ccdd9a3d389ff732844bce4b83343319eb25ed2a5136b157f2a0f74",
+    "date": "2026-10-01"
+  },
+  "unimed-sao-lourenco-cooperativa-de-trabalho-medico": {
+    "hash": "2a64e12839732dad09c2c8fefb4aa2bb99df62fef678a73f4933604ddb3a8ec5",
+    "date": "2026-10-01"
+  },
+  "unimed-saude-e-odonto-s-a": {
+    "hash": "d48f1264e96d5b1e5dd115a5307a9be88fa86df9c21ade39ca57898944ae3148",
+    "date": "2026-10-01"
+  },
+  "unimed-seguros-saude-s-a": {
+    "hash": "0178afb20706e4e5d2f2567a0153d60538919954f8286c638bfa6bf3147637d1",
+    "date": "2026-10-01"
+  },
+  "unimed-serra-gaucha-rs-cooperativa-de-assistencia-a-saude-ltda": {
+    "hash": "1d47be0806154e4af90129c59f8dab0c40aff0c32209f6af8a390c2bafc7708a",
+    "date": "2026-10-01"
+  },
+  "unimed-sorocaba-cooperativa-de-trabalho-medico": {
+    "hash": "dd7ee5221d32866dd52a0c58f753a028ac0612fc0f197b85da4f4d4e47b23f09",
+    "date": "2026-10-01"
+  },
+  "unimed-sul-capixaba-cooperativa-de-trabalho-medico": {
+    "hash": "c4560fdd2cce4347b8c5e8fbbee7967ff995ce2bbb68e7f3ac1b9dddc519a635",
+    "date": "2026-10-01"
+  },
+  "unimed-tres-rios-cooperativa-de-trabalho-medico": {
+    "hash": "f89430587518abb58a62e21eafc2f4b2c12f473d4df61b5a2f5447dc039acec2",
+    "date": "2026-10-01"
+  },
+  "unimed-uberlandia-cooperativa-regional-trabalho-medico-ltda": {
+    "hash": "902d2591fad68f83c44e551e3eedcda28ac6a7fe01d0b918ba688785b1780792",
+    "date": "2026-10-01"
+  },
+  "unimed-vale-do-aco-cooperativa-de-trabalho-medico": {
+    "hash": "cbad216da7eeeaf84b0da69e3c642546d577243f8a9fcdcdc3778d5503c28593",
+    "date": "2026-10-01"
+  },
+  "unimed-vale-do-piquiri-cooperativa-de-trabalho-medico-vale-do-piquiri": {
+    "hash": "3342c2cea0a63d6d5d328cb0c3106dca64f0f45c185d19b4ad3df0ab2bdc8cfe",
+    "date": "2026-10-01"
+  },
+  "unimed-vale-do-sinos-cooperativa-de-assistencia-a-saude-ltda": {
+    "hash": "2d63f60b5674a35b9b83684c7bbe6246b6d924a7cd2bf5a187ebf0708e59cdc2",
+    "date": "2026-10-01"
+  },
+  "unimed-varginha-cooperativa-de-trabalho-medico": {
+    "hash": "0266ed9e73a40e73df457e2f44e35c5708d65f5cac5324576e1c31ff24af3690",
+    "date": "2026-10-01"
+  },
+  "unimed-vicosa-cooperativa-de-trabalho-medico": {
+    "hash": "ecf4eff7bee32c9b1432434c52ecbb2c444ae28d40211505f8b8d186c9c3f1e2",
+    "date": "2026-10-01"
+  },
+  "unimed-vitoria-cooperativa-de-trabalho-medico": {
+    "hash": "034adafd213b2741fa25c483448a1d4bebe43f497f1097d6182e4935f90676dc",
+    "date": "2026-10-01"
+  },
+  "uniodonto-athenas-paulista-cooperativa-odontologica": {
+    "hash": "4df4826854babe52afaec76618f4d4e220bc550e8cb5a8c7569be355998a61f2",
+    "date": "2026-10-01"
+  },
+  "uniodonto-de-campinas-cooperativa-odontologica": {
+    "hash": "7d8b8d93f3093da8d3a8208819484491d2b4b90d309edb30c9ac0d90f3c3e2b8",
+    "date": "2026-10-01"
+  },
+  "uniodonto-de-fortaleza-cooperativa-de-trabalho-odontologico-ltda": {
+    "hash": "1cde3caceae75ca4c0db4a022f580afa7173163ddf20960bead8c7847474f692",
+    "date": "2026-10-01"
+  },
+  "uniodonto-de-manaus-cooperativa-odontologica-ltda": {
+    "hash": "4f81b72cbfe48757fe079923f2b98ce16ab23185367d0369516966b0673ae182",
+    "date": "2026-10-01"
+  },
+  "uniodonto-do-brasil-central-nacional-das-cooperativas-odontologicas": {
+    "hash": "f1594f1e7ddcb296ad85b9f0dfed4a813d15fa0047addb343bfb3111ba284d15",
+    "date": "2026-10-01"
+  },
+  "uniodonto-metropolitana-cooperativa-odontologica": {
+    "hash": "bba3e2512d882f86091bdc5659a663b735308bd0509f2685b5e01367e4684901",
+    "date": "2026-10-01"
+  },
+  "uniodonto-paulista-federacao-das-cooperativas-odontologicas-do-estado-de-sao-paulo": {
+    "hash": "806cec6795fcf4520e3d337766a03cb7c32b9966f7ddc88e3cd064f4905ea2e6",
+    "date": "2026-10-01"
+  },
+  "uniodonto-piracicaba-cooperativa-odontologica": {
+    "hash": "17928fa6f573a6484cc97f4b1d88189e3182e8a175ff7b32cc2711a64cdb8a2a",
+    "date": "2026-10-01"
+  },
+  "uniodonto-porto-alegre-cooperativa-odontologica-ltda": {
+    "hash": "0ab3254e359f0f6c9460f814323f4d77f8f3887f934a061c4200f4f0dd0754c5",
+    "date": "2026-10-01"
+  },
+  "uniodonto-regional-cooperativa-odontologica": {
+    "hash": "878fa2f206ff010cad8e9c6bd4b64901721bdccb59322247b515d7c545109873",
+    "date": "2026-10-01"
+  },
+  "unity-servicos-integrados-de-saude-ltda": {
+    "hash": "aceeef4c1d7d8a87a7c3a9b647316750031c5752b93c813ff7664eaff9adc5b4",
+    "date": "2026-10-01"
+  },
+  "univida-usa-operadora-em-saude-s-a": {
+    "hash": "237e963494b2ba8068d45f66f7cd63d3a4a26bb353043588fc1f5b4085df10a9",
+    "date": "2026-10-01"
+  },
+  "vale-s-a": {
+    "hash": "2ffc8007cc413d1e2774c49ea106aa08b59fac74933d00cbcdecb638c2bebf29",
+    "date": "2026-10-01"
+  },
+  "vita-assistencia-a-saude-ltda": {
+    "hash": "389897115f9dd48f0a6a89261266a002a3e1f5cb2d707917d29a5bd029850283",
+    "date": "2026-10-01"
+  },
+  "viver-saude-ltda": {
+    "hash": "dc668e6c63d0f49c4f1c16181ba3d50d7928c9cde543c42ca01080637c1b9b1a",
+    "date": "2026-10-01"
+  }
+}

@@ -1,0 +1,103 @@
+---
+interface Operadora {
+  slug: string;
+  nome: string;
+  nomeCurto: string;
+  modalidade: string;
+  total_planos: number;
+}
+
+interface Props {
+  currentSlug: string;
+  modalidade: string;
+  slice200: Operadora[];
+}
+
+const { currentSlug, modalidade, slice200 } = Astro.props;
+
+const sameModal = slice200
+  .filter((op) => op.modalidade === modalidade)
+  .sort((a, b) => b.total_planos - a.total_planos || a.slug.localeCompare(b.slug));
+
+const i = sameModal.findIndex((op) => op.slug === currentSlug);
+const len = sameModal.length;
+
+// Sliding window: 4 before + 4 after, circular
+const windowSlugs = new Set<string>();
+if (i !== -1 && len > 1) {
+  for (let d = -4; d <= 4; d++) {
+    if (d === 0) continue;
+    const idx = ((i + d) % len + len) % len;
+    if (idx === i) continue;  // wraparound back to self when len < 9
+    windowSlugs.add(sameModal[idx].slug);
+  }
+}
+
+const windowList = sameModal.filter((op) => windowSlugs.has(op.slug));
+
+// Fallback: fill to 8 from other modalidades by total_planos desc
+const others = slice200
+  .filter((op) => op.modalidade !== modalidade && op.slug !== currentSlug)
+  .sort((a, b) => b.total_planos - a.total_planos || a.slug.localeCompare(b.slug));
+
+const relacionadas = [...windowList, ...others].slice(0, 8);
+---
+
+{relacionadas.length > 0 && (
+  <section class="op-relacionadas">
+    <h2>Outras operadoras de {modalidade}</h2>
+    <ul>
+      {relacionadas.map((op) => (
+        <li>
+          <a href={`/planos/operadora/${op.slug}`}>
+            {op.nomeCurto}
+          </a>
+          <span>{op.total_planos} planos ativos</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<style>
+  .op-relacionadas {
+    margin-bottom: 2rem;
+  }
+  .op-relacionadas h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: system-ui, sans-serif;
+  }
+  .op-relacionadas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .op-relacionadas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 0.875rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: system-ui, sans-serif;
+    font-size: 0.9rem;
+  }
+  .op-relacionadas a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .op-relacionadas a:hover {
+    text-decoration: underline;
+  }
+  .op-relacionadas span {
+    color: #888;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+  }
+</style>

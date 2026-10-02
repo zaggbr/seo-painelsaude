@@ -1,32 +1,104 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import OperadorasRelacionadas from '../../../components/OperadorasRelacionadas.astro';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
+import { descricaoToHtml } from '../../../utils/descricaoToHtml.js';
 import fs from 'node:fs';
 
 export async function getStaticPaths() {
   const operadoras = JSON.parse(fs.readFileSync('./src/data/operadoras.json', 'utf-8'));
-  return operadoras.slice(0, 200).map((op) => ({
+  const overrides = JSON.parse(fs.readFileSync('./src/data/operadora-overrides.json', 'utf-8'));
+  const slice = operadoras.slice(0, 200);
+
+  function escRe(s: string) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  // Guard: fail the build if two slugs produce the same nomeCurto.
+  // Also builds nomeCurtoMap used to annotate slice200 for OperadorasRelacionadas.
+  const seen = new Map<string, string>();
+  const nomeCurtoMap = new Map<string, string>();
+  for (const op of slice) {
+    let n: string = overrides[op.slug] ?? op.nome;
+    if (!overrides[op.slug]) {
+      // mirror getNomeCurto pipeline on raw nome for duplicate detection
+      n = n
+        .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+        .replace(/\s*[\(\-]\s*[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+        .replace(/\s*[\(\-]\s*[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+        .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação.*$/i, '')
+        .replace(/\s+[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+        .replace(/\s+[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+        .replace(/\s+[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+        .replace(/\s+[Ee]m [Ll]iquidação.*$/i, '')
+        .replace(/\s+-\s+EPP.*$/i, '')
+        .replace(/\s+-\s+ME.*$/i, '')
+        .replace(/\s+S\.A\..*$/i, '')
+        .replace(/\s+S\/A.*$/i, '')
+        .replace(/\s+S\.A.*$/i, '')
+        .replace(/\s+Ltda\..*$/i, '')
+        .replace(/\s+Ltda.*$/i, '')
+        .replace(/\s+S\.S\..*$/i, '')
+        .replace(/\s+S\.S.*$/i, '')
+        .replace(/\s+Limitada\s*$/i, '')
+        .replace(/\s+Sa\s*$/, '')
+        .trim();
+      if (op.modalidade) {
+        n = n.replace(new RegExp('(?:\\s+-\\s+|\\s+)' + escRe(op.modalidade) + '\\s*$', 'i'), '').trim();
+      }
+      n = n
+        .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Planos\s+de\s+Sa[uú]de\s*/gi, ' ')
+        .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Plano\s+de\s+Sa[uú]de\s*/gi, ' ')
+        .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Planos\s*/gi, ' ')
+        .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Sa[uú]de\s*/gi, ' ')
+        .replace(/(?:\s*-\s*|\s+)[Ee]m\s+Sa[uú]de\s*/gi, ' ')
+        .replace(/\s+Operadora\s*$/i, '')
+        .replace(/^\s*-\s*/, '')
+        .replace(/\s*-\s*$/, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+      const ws = n.split(/\s+/);
+      if ((ws.length < 2 && n.length < 6) || !n) n = overrides[op.slug] ?? op.nome.trim();
+    }
+    const nomeCurto = n;
+    nomeCurtoMap.set(op.slug, nomeCurto);
+    const key = nomeCurto.toLowerCase();
+    if (seen.has(key)) {
+      throw new Error(
+        `[BUILD ERROR] nomeCurto duplicado: "${nomeCurto}"\n` +
+        `  slug 1: ${seen.get(key)}\n  slug 2: ${op.slug}\n` +
+        `  Adicione um override em src/data/operadora-overrides.json para um dos dois.`
+      );
+    }
+    seen.set(key, op.slug);
+  }
+
+  // Annotate each entry with its computed nomeCurto so OperadorasRelacionadas
+  // can use the same name as <title> / <h1> in anchor text.
+  const slice200 = slice.map((op: any) => ({ ...op, nomeCurto: nomeCurtoMap.get(op.slug) }));
+
+  return slice200.map((op: any) => ({
     params: { slug: op.slug },
-    props: { op },
+    props: { op, slice200 },
   }));
 }
 
-const TRATAMENTO_SLUGS = new Set(
-  JSON.parse(fs.readFileSync('./src/data/operadora-tratamento.json', 'utf-8'))
-);
 const NOME_OVERRIDES = JSON.parse(
   fs.readFileSync('./src/data/operadora-overrides.json', 'utf-8')
 );
 
-const { op } = Astro.props;
+const { op, slice200 } = Astro.props;
 const nomeFormatado = normalizarOperadora(op.nome);
-const anoReferencia = new Date().getFullYear();
 
-// Funções para otimização de CTR na SERP (limites: title <= 55 chars, 70 <= description <= 155 chars)
-function getNomeCurto(nome) {
-  return nome
-    .replace(/\s+-\s+Em Liquidação.*$/i, '')
+function getNomeCurto(nome: string, modalidade: string = ''): string {
+  let n = nome
+    .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+    .replace(/\s*[\(\-]\s*[Ee]m [Ll]iquidação.*$/i, '')
+    .replace(/\s+[Ee]m [Ll]iquidação [Ee]xtrajudicial.*$/i, '')
+    .replace(/\s+[Ee]m [Rr]ecuperação [Jj]udicial.*$/i, '')
+    .replace(/\s+[Ee]m [Dd]ireção [Ff]iscal.*$/i, '')
+    .replace(/\s+[Ee]m [Ll]iquidação.*$/i, '')
     .replace(/\s+-\s+EPP.*$/i, '')
     .replace(/\s+-\s+ME.*$/i, '')
     .replace(/\s+S\.A\..*$/i, '')
@@ -36,94 +108,67 @@ function getNomeCurto(nome) {
     .replace(/\s+Ltda.*$/i, '')
     .replace(/\s+S\.S\..*$/i, '')
     .replace(/\s+S\.S.*$/i, '')
-    .trim() || nome;
-}
+    .replace(/\s+Limitada\s*$/i, '')
+    .replace(/\s+Sa\s*$/, '')
+    .trim();
 
-function formatMetaTitle(nome, ano) {
-  const nomeCurto = getNomeCurto(nome);
-  const suffixes = [
-    ` | Planos, Preços e Cobertura ${ano}`,
-    ` | Planos, Preços e Cobertura`,
-    ` | Planos e Preços ${ano}`,
-    ` | Planos e Preços`,
-    ` | Planos ${ano}`,
-    ` | Planos`
-  ];
-  for (const s of suffixes) {
-    if (nomeCurto.length + s.length <= 59) {
-      return `${nomeCurto}${s}`;
-    }
+  if (modalidade) {
+    const mod = modalidade.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    n = n.replace(new RegExp('(?:\\s+-\\s+|\\s+)' + mod + '\\s*$', 'i'), '').trim();
   }
-  const shortest = ` | Planos`;
-  return `${nomeCurto.slice(0, 59 - shortest.length - 1).trim()}…${shortest}`;
+
+  n = n
+    .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Planos\s+de\s+Sa[uú]de\s*/gi, ' ')
+    .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Plano\s+de\s+Sa[uú]de\s*/gi, ' ')
+    .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Planos\s*/gi, ' ')
+    .replace(/(?:\s*-\s*|\s+)Operadora\s+de\s+Sa[uú]de\s*/gi, ' ')
+    .replace(/(?:\s*-\s*|\s+)[Ee]m\s+Sa[uú]de\s*/gi, ' ')
+    .replace(/\s+Operadora\s*$/i, '')
+    .replace(/^\s*-\s*/, '')
+    .replace(/\s*-\s*$/, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+
+  const words = n.split(/\s+/);
+  if ((words.length < 2 && n.length < 6) || !n) return nome;
+  return n;
 }
 
-function formatMetaDescription(nome, beneficiarios, uf, ano) {
+function formatMetaDescription(nome, beneficiarios, uf) {
   const benef = beneficiarios
     ? (typeof beneficiarios === 'number' ? beneficiarios.toLocaleString('pt-BR') : beneficiarios)
     : 'milhares de';
   const regiao = uf || 'todo o Brasil';
 
-  let desc = `${nome} atende ${benef} beneficiários em ${regiao}. Veja planos disponíveis, coberturas e valores de referência ${ano}.`;
+  let desc = `${nome} atende ${benef} beneficiários em ${regiao}. Veja planos disponíveis, coberturas e rede credenciada.`;
 
   if (desc.length > 155) {
-    desc = `${nome} atende ${benef} beneficiários em ${regiao}. Veja planos, coberturas e valores ${ano}.`;
+    desc = `${nome} atende ${benef} beneficiários em ${regiao}. Veja planos e coberturas.`;
   }
   if (desc.length > 155) {
-    desc = `${nome}: planos de saúde em ${regiao}. Veja coberturas, benefícios e valores de referência ${ano}.`;
+    desc = `${nome}: planos de saúde em ${regiao}. Coberturas, benefícios e rede credenciada.`;
   }
   if (desc.length > 155) {
     desc = desc.slice(0, 154).trim() + "…";
   }
 
   if (desc.length < 70) {
-    desc += ` Confira a rede credenciada e tabela completa de preços atualizada.`;
+    desc += ` Confira a rede credenciada e tabela completa de planos.`;
   }
 
   return desc;
 }
 
-// Título experimental para o grupo de tratamento (modificador comercial dinâmico).
-// Sufixo variável para manter o title final ≤59 chars após o Layout appender " | Painel Saúde"
-// quando titleBase ≤ 50. Layout não é tocado para não afetar o grupo de controle.
-//
-// Regra: Layout appenda 15 chars se base ≤ 50. Safe zones:
-//   base ≤ 44  → final = base+15 ≤ 59  → sufixo A (36 chars) exige nome ≤ 8
-//   base 45-50 → final = 60-65           → usar sufixo B (27 chars) → base 36-41, final 51-56
-//   base 51-59 → final = base ≤ 59       → sufixo A (36 chars) exige nome 15-23
-//   base 60-66 → final = 60-66           → usar sufixo B (27 chars) → nome 24-29
-function formatTratamentoTitle(slug, nomeBase, ano) {
-  const nome = NOME_OVERRIDES[slug] ?? getNomeCurto(nomeBase);
-  const sufA = ` | Planos Empresariais e Preços ${ano}`; // 36 chars
-  const sufB = ` | Planos Empresariais ${ano}`;           // 27 chars
-  for (const suf of [sufA, sufB]) {
-    const base = nome.length + suf.length;
-    const final = base <= 50 ? base + 15 : base;
-    if (final <= 59) return `${nome}${suf}`;
-  }
-  // Nenhum sufixo coube: encurtar o nome ao máximo que sufB permite (≤ 8 chars)
-  const maxNome = 8;
-  return `${nome.slice(0, maxNome).trim()}${sufB}`;
-}
-
-const metaTitle = TRATAMENTO_SLUGS.has(op.slug)
-  ? formatTratamentoTitle(op.slug, nomeFormatado, anoReferencia)
-  : formatMetaTitle(nomeFormatado, anoReferencia);
-const metaDescription = formatMetaDescription(nomeFormatado, op.beneficiarios, op.uf, anoReferencia);
+const nomeCurto = NOME_OVERRIDES[op.slug] ?? getNomeCurto(nomeFormatado, op.modalidade);
+const metaTitle = `${nomeCurto} | Planos e Cobertura`;
+const metaDescription = formatMetaDescription(nomeFormatado, op.beneficiarios, op.uf);
 
 const breadcrumbs = [
-  { name: 'Início', url: '/' },
-  { name: 'Planos de Saúde', url: '/planos' },
-  { name: nomeFormatado, url: `/planos/operadora/${op.slug}` }
+  { name: 'Início', url: '/', item: 'https://painelsaude.com.br/' },
+  { name: 'Planos de Saúde', url: '/planos', item: 'https://painelsaude.com.br/planos' },
+  { name: nomeCurto, url: `/planos/operadora/${op.slug}` },
 ];
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": nomeFormatado,
-  "description": metaDescription,
-  "url": `https://painelsaude.com.br/planos/operadora/${op.slug}`
-};
 ---
 <Layout
   title={metaTitle}
@@ -131,8 +176,6 @@ const jsonLd = {
   canonical={`https://painelsaude.com.br/planos/operadora/${op.slug}/`}
   breadcrumbs={breadcrumbs}
 >
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-
   <Breadcrumbs breadcrumbs={breadcrumbs} />
 
   <article>
@@ -140,13 +183,13 @@ const jsonLd = {
       <span style="font-size:0.8rem;background:#e3f2fd;color:#1565c0;padding:0.25rem 0.75rem;border-radius:99px">
         {op.modalidade}
       </span>
-      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{nomeFormatado}</h1>
+      <h1 style="margin-top:0.75rem;font-size:1.75rem;line-height:1.3">{nomeCurto}</h1>
       <p style="color:#666;margin-top:0.5rem">Registro ANS: {op.registro_ans}</p>
     </header>
 
     {op.descricao && (
-      <section style="margin-bottom:2rem;font-size:1rem;line-height:1.7;color:#444">
-        <p>{op.descricao}</p>
+      <section style="margin-bottom:2rem;font-size:1rem;line-height:1.7;color:#444" class="descricao-op">
+        <Fragment set:html={descricaoToHtml(op.descricao)} />
       </section>
     )}
 
@@ -164,32 +207,6 @@ const jsonLd = {
       </dl>
     </section>
 
-    <section style="background:#f0f7ff;border-radius:8px;padding:1.5rem;margin-bottom:2rem">
-      <h2 style="font-size:1rem;margin-bottom:1rem;color:#1565c0">💰 Valores de Referência ({anoReferencia})</h2>
-      <p style="font-size:0.8rem;color:#888;margin-bottom:1rem">Faixas estimadas. Consulte seu corretor para valores exatos.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;font-size:0.875rem">
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Individual</p>
-          <p style="color:#1565c0;font-weight:700">R$ 200 – R$ 900/mês</p>
-          <p style="color:#666;font-size:0.8rem">Cobertura ambulatorial e hospitalar</p>
-        </div>
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Familiar</p>
-          <p style="color:#1565c0;font-weight:700">R$ 600 – R$ 2.500/mês</p>
-          <p style="color:#666;font-size:0.8rem">Para 2 a 4 dependentes</p>
-        </div>
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Coletivo</p>
-          <p style="color:#1565c0;font-weight:700">R$ 150 – R$ 600/mês</p>
-          <p style="color:#666;font-size:0.8rem">Por beneficiário — empresas e associações</p>
-        </div>
-        <div style="background:white;padding:0.75rem;border-radius:6px;border:1px solid #e0e0e0">
-          <p style="font-weight:600;color:#333">Plano Odontológico</p>
-          <p style="color:#1565c0;font-weight:700">R$ 20 – R$ 100/mês</p>
-          <p style="color:#666;font-size:0.8rem">Por pessoa</p>
-        </div>
-      </div>
-    </section>
 
     <section style="margin-bottom:2rem">
       <h2 style="font-size:1.2rem;margin-bottom:1rem;color:#333">Tipos de cobertura disponíveis</h2>
@@ -243,6 +260,12 @@ const jsonLd = {
       </div>
     </section>
 
+    <OperadorasRelacionadas
+      currentSlug={op.slug}
+      modalidade={op.modalidade}
+      slice200={slice200}
+    />
+
     <section style="margin:2rem 0;text-align:center">
       <a href="/planos" style="display:inline-block;background:#1565c0;color:white;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem">
         Ver Lista Completa de Planos de Saúde
@@ -266,8 +289,6 @@ const jsonLd = {
         <div><dt style="font-weight:600;color:#1565c0">Abrangência</dt><dd style="color:#555;margin-top:0.2rem">Área geográfica onde o plano oferece cobertura: municipal, estadual, regional ou nacional.</dd></div>
         <div><dt style="font-weight:600;color:#1565c0">Fator moderador</dt><dd style="color:#555;margin-top:0.2rem">Mecanismo de regulação do uso: franquia, coparticipação ou desconto na mensalidade.</dd></div>
       </dl>
-      <div id="zgc-relacionados" data-pools="guia-planos-saude" data-qtd="8" data-modo="aleatorio"></div>
-      <script src="https://zgc-widgets.pages.dev/widgets/conteudo-relacionado.js" defer></script>
     </section>
 
     <section style="background:#fff8e1;border-left:3px solid #f9a825;padding:1rem 1.25rem;border-radius:4px;margin-bottom:2rem">
@@ -276,3 +297,9 @@ const jsonLd = {
     </section>
   </article>
 </Layout>
+
+<style>
+  .descricao-op p + p {
+    margin-top: 1rem;
+  }
+</style>
