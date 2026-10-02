@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import OperadorasRelacionadas from '../../../components/OperadorasRelacionadas.astro';
 import { normalizarOperadora } from '../../../utils/normalizarOperadora.js';
+import { descricaoToHtml } from '../../../utils/descricaoToHtml.js';
 import fs from 'node:fs';
 
 export async function getStaticPaths() {
@@ -187,8 +188,8 @@ const breadcrumbs = [
     </header>
 
     {op.descricao && (
-      <section style="margin-bottom:2rem;font-size:1rem;line-height:1.7;color:#444">
-        <p>{op.descricao}</p>
+      <section style="margin-bottom:2rem;font-size:1rem;line-height:1.7;color:#444" class="descricao-op">
+        <Fragment set:html={descricaoToHtml(op.descricao)} />
       </section>
     )}
 
@@ -296,3 +297,9 @@ const breadcrumbs = [
     </section>
   </article>
 </Layout>
+
+<style>
+  .descricao-op p + p {
+    margin-top: 1rem;
+  }
+</style>
