@@ -8,9 +8,12 @@ var worker_default = {
     if (path === "/" ||
         path.startsWith("/planos") ||
         path.startsWith("/simuladores") ||
+        path === "/responde" ||
+        path.startsWith("/responde/") ||
         path.startsWith("/_astro") ||
         path.startsWith("/sitemap-planos") ||
         path.startsWith("/sitemap-simuladores") ||
+        path.startsWith("/sitemap-responde") ||
         path.startsWith("/sitemap-index")) {
       const targetURL = `https://seo-painelsaude.pages.dev${path}${url.search}`;
       const response = await fetch(targetURL, {
