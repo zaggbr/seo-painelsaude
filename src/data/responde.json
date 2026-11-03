@@ -12,14 +12,35 @@
         "heading": "Prazos máximos de carência definidos pela ANS",
         "type": "table",
         "table": {
-          "headers": ["Tipo de atendimento", "Carência máxima permitida pela ANS"],
+          "headers": [
+            "Tipo de atendimento",
+            "Carência máxima permitida pela ANS"
+          ],
           "rows": [
-            ["Urgências e emergências", "24 horas"],
-            ["Consultas e exames simples (ambulatorial)", "30 dias"],
-            ["Internações e cirurgias (hospitalar)", "180 dias"],
-            ["Casos de alta complexidade (quimioterapia, diálise, transplantes)", "180 dias"],
-            ["Doenças e lesões preexistentes (DLP)", "Até 24 meses"],
-            ["Parto a termo (gravidez)", "300 dias (10 meses)"]
+            [
+              "Urgências e emergências",
+              "24 horas"
+            ],
+            [
+              "Consultas e exames simples (ambulatorial)",
+              "30 dias"
+            ],
+            [
+              "Internações e cirurgias (hospitalar)",
+              "180 dias"
+            ],
+            [
+              "Casos de alta complexidade (quimioterapia, diálise, transplantes)",
+              "180 dias"
+            ],
+            [
+              "Doenças e lesões preexistentes (DLP)",
+              "Até 24 meses"
+            ],
+            [
+              "Parto a termo (gravidez)",
+              "300 dias (10 meses)"
+            ]
           ]
         },
         "text": "Esses são os prazos **máximos** que a operadora pode exigir. Muitas operadoras praticam prazos menores — especialmente em planos coletivos. Os prazos valem para contratações novas; ao fazer portabilidade, os prazos já cumpridos são aproveitados."
@@ -59,9 +80,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/portabilidade-plano-de-saude-como-funciona/", "label": "Portabilidade de plano de saúde: como funciona" },
-      { "href": "/responde/o-que-e-coparticipacao-plano-de-saude/", "label": "O que é coparticipação?" },
-      { "href": "/planos/", "label": "Compare operadoras disponíveis na sua cidade" }
+      {
+        "href": "/responde/portabilidade-plano-de-saude-como-funciona/",
+        "label": "Portabilidade de plano de saúde: como funciona"
+      },
+      {
+        "href": "/responde/o-que-e-coparticipacao-plano-de-saude/",
+        "label": "O que é coparticipação?"
+      },
+      {
+        "href": "/planos/",
+        "label": "Compare operadoras disponíveis na sua cidade"
+      }
     ]
   },
   {
@@ -82,17 +112,57 @@
         "heading": "Principais categorias cobertas obrigatoriamente",
         "type": "table",
         "table": {
-          "headers": ["Categoria", "O que cobre", "Observação"],
+          "headers": [
+            "Categoria",
+            "O que cobre",
+            "Observação"
+          ],
           "rows": [
-            ["Consultas médicas", "Todas as especialidades reconhecidas pelo CFM", "Sem limite de consultas em planos com segmentação ambulatorial"],
-            ["Exames laboratoriais", "Hemograma, glicemia, colesterol, urina, e centenas de outros", "Lista completa no Anexo II da RN 465"],
-            ["Diagnóstico por imagem", "Raio-X, ultrassom, tomografia, ressonância magnética", "Com indicação médica"],
-            ["Internação hospitalar", "Quarto, UTI, honorários médicos, materiais e medicamentos de uso hospitalar", "Em planos com segmentação hospitalar"],
-            ["Cirurgias", "Todas as cirurgias eletivas e de urgência incluídas no Rol", "Incluindo cirurgia bariátrica após critérios"],
-            ["Saúde mental", "Consultas psiquiátricas, psicoterapia, internação em clínica psiquiátrica", "Ampliado pela Lei 14.454/2022"],
-            ["Oncologia", "Quimioterapia, radioterapia, imunoterapia", "Medicamentos oncológicos orais incluídos desde 2022"],
-            ["Parto", "Normal e cesárea (em planos com obstetrícia)", "Inclui acompanhante durante o parto"],
-            ["Saúde preventiva", "Vacinas do calendário, mamografia, papanicolau, PSA", "Conforme faixa etária e protocolo clínico"]
+            [
+              "Consultas médicas",
+              "Todas as especialidades reconhecidas pelo CFM",
+              "Sem limite de consultas em planos com segmentação ambulatorial"
+            ],
+            [
+              "Exames laboratoriais",
+              "Hemograma, glicemia, colesterol, urina, e centenas de outros",
+              "Lista completa no Anexo II da RN 465"
+            ],
+            [
+              "Diagnóstico por imagem",
+              "Raio-X, ultrassom, tomografia, ressonância magnética",
+              "Com indicação médica"
+            ],
+            [
+              "Internação hospitalar",
+              "Quarto, UTI, honorários médicos, materiais e medicamentos de uso hospitalar",
+              "Em planos com segmentação hospitalar"
+            ],
+            [
+              "Cirurgias",
+              "Todas as cirurgias eletivas e de urgência incluídas no Rol",
+              "Incluindo cirurgia bariátrica após critérios"
+            ],
+            [
+              "Saúde mental",
+              "Consultas psiquiátricas, psicoterapia, internação em clínica psiquiátrica",
+              "Ampliado pela Lei 14.454/2022"
+            ],
+            [
+              "Oncologia",
+              "Quimioterapia, radioterapia, imunoterapia",
+              "Medicamentos oncológicos orais incluídos desde 2022"
+            ],
+            [
+              "Parto",
+              "Normal e cesárea (em planos com obstetrícia)",
+              "Inclui acompanhante durante o parto"
+            ],
+            [
+              "Saúde preventiva",
+              "Vacinas do calendário, mamografia, papanicolau, PSA",
+              "Conforme faixa etária e protocolo clínico"
+            ]
           ]
         }
       },
@@ -131,9 +201,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/diferenca-ambulatorial-hospitalar-plano-de-saude/", "label": "Diferença entre plano ambulatorial e hospitalar" },
-      { "href": "/responde/como-reclamar-da-operadora-ans/", "label": "Como reclamar da operadora na ANS" },
-      { "href": "/planos/", "label": "Veja operadoras disponíveis na sua cidade" }
+      {
+        "href": "/planos/",
+        "label": "Diferença entre plano ambulatorial e hospitalar"
+      },
+      {
+        "href": "/responde/como-reclamar-da-operadora-ans/",
+        "label": "Como reclamar da operadora na ANS"
+      },
+      {
+        "href": "/planos/",
+        "label": "Veja operadoras disponíveis na sua cidade"
+      }
     ]
   },
   {
@@ -149,12 +228,37 @@
         "heading": "As quatro segmentações definidas pela ANS",
         "type": "table",
         "table": {
-          "headers": ["Segmentação", "O que cobre", "O que NÃO cobre", "Para quem é indicado"],
+          "headers": [
+            "Segmentação",
+            "O que cobre",
+            "O que NÃO cobre",
+            "Para quem é indicado"
+          ],
           "rows": [
-            ["Ambulatorial", "Consultas, exames, pequenas cirurgias ambulatoriais, pronto-socorro (até 12h)", "Internação, cirurgias com internação, UTI", "Quem já tem acesso ao SUS para emergências e quer cobertura preventiva e de rotina"],
-            ["Hospitalar sem obstetrícia", "Internações, cirurgias, UTI, materiais e medicamentos hospitalares", "Consultas de rotina, exames ambulatoriais, parto", "Quem quer proteção para casos graves mas não planeja ter filhos"],
-            ["Hospitalar com obstetrícia", "Tudo do hospitalar + parto normal e cesárea", "Consultas de rotina, exames ambulatoriais", "Mulheres em idade fértil ou casais que planejam filhos"],
-            ["Referência", "Cobertura mínima obrigatória ANS: urgência/emergência + parto + doenças infecciosas graves", "Maioria das consultas eletivas, exames de rotina, internações eletivas", "Apenas para quem busca o custo mais baixo possível"]
+            [
+              "Ambulatorial",
+              "Consultas, exames, pequenas cirurgias ambulatoriais, pronto-socorro (até 12h)",
+              "Internação, cirurgias com internação, UTI",
+              "Quem já tem acesso ao SUS para emergências e quer cobertura preventiva e de rotina"
+            ],
+            [
+              "Hospitalar sem obstetrícia",
+              "Internações, cirurgias, UTI, materiais e medicamentos hospitalares",
+              "Consultas de rotina, exames ambulatoriais, parto",
+              "Quem quer proteção para casos graves mas não planeja ter filhos"
+            ],
+            [
+              "Hospitalar com obstetrícia",
+              "Tudo do hospitalar + parto normal e cesárea",
+              "Consultas de rotina, exames ambulatoriais",
+              "Mulheres em idade fértil ou casais que planejam filhos"
+            ],
+            [
+              "Referência",
+              "Cobertura mínima obrigatória ANS: urgência/emergência + parto + doenças infecciosas graves",
+              "Maioria das consultas eletivas, exames de rotina, internações eletivas",
+              "Apenas para quem busca o custo mais baixo possível"
+            ]
           ]
         }
       },
@@ -167,13 +271,37 @@
         "heading": "Quanto custa cada segmentação (referência 2026)",
         "type": "table",
         "table": {
-          "headers": ["Segmentação", "Faixa de preço mensal (adulto 30-39 anos)", "Observação"],
+          "headers": [
+            "Segmentação",
+            "Faixa de preço mensal (adulto 30-39 anos)",
+            "Observação"
+          ],
           "rows": [
-            ["Ambulatorial puro", "R$ 120 – R$ 350", "Mais barato, mas sem cobertura para internações"],
-            ["Hospitalar sem obstetrícia", "R$ 180 – R$ 500", "Sem consultas de rotina"],
-            ["Hospitalar com obstetrícia", "R$ 220 – R$ 600", "Recomendado para mulheres em idade fértil"],
-            ["Ambulatorial + Hospitalar com obstetrícia", "R$ 300 – R$ 900", "Cobertura completa — a combinação mais comum"],
-            ["Referência", "R$ 100 – R$ 200", "Cobertura mínima — risco alto de lacunas"]
+            [
+              "Ambulatorial puro",
+              "R$ 120 – R$ 350",
+              "Mais barato, mas sem cobertura para internações"
+            ],
+            [
+              "Hospitalar sem obstetrícia",
+              "R$ 180 – R$ 500",
+              "Sem consultas de rotina"
+            ],
+            [
+              "Hospitalar com obstetrícia",
+              "R$ 220 – R$ 600",
+              "Recomendado para mulheres em idade fértil"
+            ],
+            [
+              "Ambulatorial + Hospitalar com obstetrícia",
+              "R$ 300 – R$ 900",
+              "Cobertura completa — a combinação mais comum"
+            ],
+            [
+              "Referência",
+              "R$ 100 – R$ 200",
+              "Cobertura mínima — risco alto de lacunas"
+            ]
           ]
         },
         "text": "Valores estimados com base em dados ANS 2026. Preços variam conforme operadora, cidade, faixa etária e modalidade (individual, coletivo)."
@@ -203,9 +331,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/o-que-e-coparticipacao-plano-de-saude/", "label": "O que é coparticipação?" },
-      { "href": "/responde/cobertura-obrigatoria-ans-lista-2026/", "label": "Cobertura obrigatória ANS 2026" },
-      { "href": "/planos/", "label": "Compare operadoras na sua cidade" }
+      {
+        "href": "/responde/o-que-e-coparticipacao-plano-de-saude/",
+        "label": "O que é coparticipação?"
+      },
+      {
+        "href": "/responde/cobertura-obrigatoria-ans-lista-2026/",
+        "label": "Cobertura obrigatória ANS 2026"
+      },
+      {
+        "href": "/planos/",
+        "label": "Compare operadoras na sua cidade"
+      }
     ]
   },
   {
@@ -226,14 +363,35 @@
         "heading": "Limites de coparticipação estabelecidos pela ANS",
         "type": "table",
         "table": {
-          "headers": ["Tipo de atendimento", "Limite máximo de coparticipação (ANS)"],
+          "headers": [
+            "Tipo de atendimento",
+            "Limite máximo de coparticipação (ANS)"
+          ],
           "rows": [
-            ["Consultas médicas eletivas", "Sem limite percentual definido pela ANS (definido em contrato)"],
-            ["Exames ambulatoriais", "Sem limite percentual definido pela ANS"],
-            ["Internações", "Máximo de 30% do valor do procedimento"],
-            ["Urgências e emergências", "Proibida coparticipação nas primeiras 12 horas"],
-            ["Doenças crônicas (tratamento continuado)", "Proibida coparticipação após 30 dias de internação contínua"],
-            ["Saúde mental (internação)", "Proibida coparticipação após 30 dias de internação contínua"]
+            [
+              "Consultas médicas eletivas",
+              "Sem limite percentual definido pela ANS (definido em contrato)"
+            ],
+            [
+              "Exames ambulatoriais",
+              "Sem limite percentual definido pela ANS"
+            ],
+            [
+              "Internações",
+              "Máximo de 30% do valor do procedimento"
+            ],
+            [
+              "Urgências e emergências",
+              "Proibida coparticipação nas primeiras 12 horas"
+            ],
+            [
+              "Doenças crônicas (tratamento continuado)",
+              "Proibida coparticipação após 30 dias de internação contínua"
+            ],
+            [
+              "Saúde mental (internação)",
+              "Proibida coparticipação após 30 dias de internação contínua"
+            ]
           ]
         }
       },
@@ -241,13 +399,37 @@
         "heading": "Plano com coparticipação vs sem coparticipação",
         "type": "table",
         "table": {
-          "headers": ["Critério", "Com coparticipação", "Sem coparticipação"],
+          "headers": [
+            "Critério",
+            "Com coparticipação",
+            "Sem coparticipação"
+          ],
           "rows": [
-            ["Mensalidade", "Menor (10–30% mais barato)", "Maior"],
-            ["Custo por uso", "Paga a cada atendimento", "Sem custo adicional por uso"],
-            ["Melhor para", "Quem usa o plano raramente", "Quem usa o plano com frequência"],
-            ["Previsibilidade de custo", "Menor — varia conforme o uso", "Alta — mensalidade fixa"],
-            ["Risco em caso de doença grave", "Pode ser caro se usar muito", "Custo controlado mesmo com uso intenso"]
+            [
+              "Mensalidade",
+              "Menor (10–30% mais barato)",
+              "Maior"
+            ],
+            [
+              "Custo por uso",
+              "Paga a cada atendimento",
+              "Sem custo adicional por uso"
+            ],
+            [
+              "Melhor para",
+              "Quem usa o plano raramente",
+              "Quem usa o plano com frequência"
+            ],
+            [
+              "Previsibilidade de custo",
+              "Menor — varia conforme o uso",
+              "Alta — mensalidade fixa"
+            ],
+            [
+              "Risco em caso de doença grave",
+              "Pode ser caro se usar muito",
+              "Custo controlado mesmo com uso intenso"
+            ]
           ]
         }
       },
@@ -276,9 +458,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/o-que-e-carencia-plano-de-saude/", "label": "O que é carência no plano de saúde?" },
-      { "href": "/responde/diferenca-ambulatorial-hospitalar-plano-de-saude/", "label": "Diferença entre plano ambulatorial e hospitalar" },
-      { "href": "/planos/", "label": "Compare planos disponíveis na sua cidade" }
+      {
+        "href": "/responde/o-que-e-carencia-plano-de-saude/",
+        "label": "O que é carência no plano de saúde?"
+      },
+      {
+        "href": "/responde/diferenca-ambulatorial-hospitalar-plano-de-saude/",
+        "label": "Diferença entre plano ambulatorial e hospitalar"
+      },
+      {
+        "href": "/planos/",
+        "label": "Compare planos disponíveis na sua cidade"
+      }
     ]
   },
   {
@@ -294,12 +485,37 @@
         "heading": "Regras de cancelamento por tipo de plano",
         "type": "table",
         "table": {
-          "headers": ["Tipo de plano", "Quem pode cancelar", "Prazo de aviso", "Multa por cancelamento antecipado"],
+          "headers": [
+            "Tipo de plano",
+            "Quem pode cancelar",
+            "Prazo de aviso",
+            "Multa por cancelamento antecipado"
+          ],
           "rows": [
-            ["Individual ou familiar", "Apenas o beneficiário — operadora não pode cancelar unilateralmente", "Sem prazo mínimo obrigatório", "Proibida pela ANS após o período de fidelidade"],
-            ["Coletivo empresarial (funcionário)", "Funcionário pode sair a qualquer momento", "Sem prazo mínimo", "Sem multa para o funcionário"],
-            ["Coletivo empresarial (empresa cancela o contrato)", "Empresa com aviso de 60 dias à operadora", "60 dias de aviso prévio", "Pode haver multa contratual para a empresa"],
-            ["Coletivo por adesão", "Beneficiário pode sair; entidade administradora com aviso de 60 dias", "Sem prazo para o beneficiário individual", "Verifique o contrato — pode haver fidelidade"]
+            [
+              "Individual ou familiar",
+              "Apenas o beneficiário — operadora não pode cancelar unilateralmente",
+              "Sem prazo mínimo obrigatório",
+              "Proibida pela ANS após o período de fidelidade"
+            ],
+            [
+              "Coletivo empresarial (funcionário)",
+              "Funcionário pode sair a qualquer momento",
+              "Sem prazo mínimo",
+              "Sem multa para o funcionário"
+            ],
+            [
+              "Coletivo empresarial (empresa cancela o contrato)",
+              "Empresa com aviso de 60 dias à operadora",
+              "60 dias de aviso prévio",
+              "Pode haver multa contratual para a empresa"
+            ],
+            [
+              "Coletivo por adesão",
+              "Beneficiário pode sair; entidade administradora com aviso de 60 dias",
+              "Sem prazo para o beneficiário individual",
+              "Verifique o contrato — pode haver fidelidade"
+            ]
           ]
         }
       },
@@ -338,9 +554,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/portabilidade-plano-de-saude-como-funciona/", "label": "Portabilidade de plano de saúde: como funciona" },
-      { "href": "/responde/como-reclamar-da-operadora-ans/", "label": "Como reclamar da operadora na ANS" },
-      { "href": "/planos/", "label": "Compare novas operadoras disponíveis na sua cidade" }
+      {
+        "href": "/responde/portabilidade-plano-de-saude-como-funciona/",
+        "label": "Portabilidade de plano de saúde: como funciona"
+      },
+      {
+        "href": "/responde/como-reclamar-da-operadora-ans/",
+        "label": "Como reclamar da operadora na ANS"
+      },
+      {
+        "href": "/planos/",
+        "label": "Compare novas operadoras disponíveis na sua cidade"
+      }
     ]
   },
   {
@@ -356,13 +581,31 @@
         "heading": "Condições para usar a portabilidade",
         "type": "table",
         "table": {
-          "headers": ["Condição", "Detalhe"],
+          "headers": [
+            "Condição",
+            "Detalhe"
+          ],
           "rows": [
-            ["Tempo mínimo no plano atual", "2 anos para portabilidade completa; 1 ano para carências simples (ambulatorial)"],
-            ["Situação contratual", "Contrato ativo e sem débitos com a operadora atual"],
-            ["Tipo de plano de destino", "Mesma segmentação ou inferior (ex: ambulatorial + hospitalar → pode ir para ambulatorial + hospitalar, mas não para plano de referência)"],
-            ["Período de portabilidade", "ANS abre janelas de portabilidade — verifique no site da ANS os períodos vigentes"],
-            ["Cobertura equivalente", "O novo plano deve cobrir os mesmos procedimentos ou menos — não pode ser downgrade disfarçado"]
+            [
+              "Tempo mínimo no plano atual",
+              "2 anos para portabilidade completa; 1 ano para carências simples (ambulatorial)"
+            ],
+            [
+              "Situação contratual",
+              "Contrato ativo e sem débitos com a operadora atual"
+            ],
+            [
+              "Tipo de plano de destino",
+              "Mesma segmentação ou inferior (ex: ambulatorial + hospitalar → pode ir para ambulatorial + hospitalar, mas não para plano de referência)"
+            ],
+            [
+              "Período de portabilidade",
+              "ANS abre janelas de portabilidade — verifique no site da ANS os períodos vigentes"
+            ],
+            [
+              "Cobertura equivalente",
+              "O novo plano deve cobrir os mesmos procedimentos ou menos — não pode ser downgrade disfarçado"
+            ]
           ]
         }
       },
@@ -401,9 +644,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/o-que-e-carencia-plano-de-saude/", "label": "O que é carência no plano de saúde?" },
-      { "href": "/responde/como-cancelar-plano-de-saude/", "label": "Como cancelar plano de saúde" },
-      { "href": "/planos/", "label": "Compare operadoras disponíveis na sua cidade" }
+      {
+        "href": "/responde/o-que-e-carencia-plano-de-saude/",
+        "label": "O que é carência no plano de saúde?"
+      },
+      {
+        "href": "/responde/como-cancelar-plano-de-saude/",
+        "label": "Como cancelar plano de saúde"
+      },
+      {
+        "href": "/planos/",
+        "label": "Compare operadoras disponíveis na sua cidade"
+      }
     ]
   },
   {
@@ -419,15 +671,55 @@
         "heading": "Canais de reclamação e quando usar cada um",
         "type": "table",
         "table": {
-          "headers": ["Canal", "Quando usar", "Prazo de resposta", "Contato"],
+          "headers": [
+            "Canal",
+            "Quando usar",
+            "Prazo de resposta",
+            "Contato"
+          ],
           "rows": [
-            ["SAC da operadora", "Primeiro passo obrigatório para qualquer reclamação", "5 dias úteis", "0800 da operadora (gratuito)"],
-            ["ANS — Disque ANS", "Negativa de cobertura, cobrança indevida, cancelamento irregular", "Até 10 dias úteis após protocolo", "0800 701 9656 (gratuito)"],
-            ["ANS — NIP (Notificação de Investigação Preliminar)", "Quando o SAC não resolver — a ANS notifica a operadora formalmente", "Operadora tem 5 dias úteis para resolver", "Site da ANS: ans.gov.br"],
-            ["Consumidor.gov.br", "Reclamações de consumo em geral — boa visibilidade pública", "Empresa tem 10 dias para responder", "consumidor.gov.br"],
-            ["Procon", "Relações de consumo — multa administrativa à operadora", "Varia por estado", "Procon do seu estado"],
-            ["Defensoria Pública", "Casos de baixa renda com negativa de cobertura urgente", "Imediato para urgências", "Defensoria do seu estado"],
-            ["Poder Judiciário (liminar)", "Situações urgentes — plano nega tratamento necessário", "Pode ser concedida em horas", "Advogado ou Defensoria Pública"]
+            [
+              "SAC da operadora",
+              "Primeiro passo obrigatório para qualquer reclamação",
+              "5 dias úteis",
+              "0800 da operadora (gratuito)"
+            ],
+            [
+              "ANS — Disque ANS",
+              "Negativa de cobertura, cobrança indevida, cancelamento irregular",
+              "Até 10 dias úteis após protocolo",
+              "0800 701 9656 (gratuito)"
+            ],
+            [
+              "ANS — NIP (Notificação de Investigação Preliminar)",
+              "Quando o SAC não resolver — a ANS notifica a operadora formalmente",
+              "Operadora tem 5 dias úteis para resolver",
+              "Site da ANS: ans.gov.br"
+            ],
+            [
+              "Consumidor.gov.br",
+              "Reclamações de consumo em geral — boa visibilidade pública",
+              "Empresa tem 10 dias para responder",
+              "consumidor.gov.br"
+            ],
+            [
+              "Procon",
+              "Relações de consumo — multa administrativa à operadora",
+              "Varia por estado",
+              "Procon do seu estado"
+            ],
+            [
+              "Defensoria Pública",
+              "Casos de baixa renda com negativa de cobertura urgente",
+              "Imediato para urgências",
+              "Defensoria do seu estado"
+            ],
+            [
+              "Poder Judiciário (liminar)",
+              "Situações urgentes — plano nega tratamento necessário",
+              "Pode ser concedida em horas",
+              "Advogado ou Defensoria Pública"
+            ]
           ]
         }
       },
@@ -440,14 +732,35 @@
         "heading": "Negativas mais comuns e como contestar",
         "type": "table",
         "table": {
-          "headers": ["Negativa da operadora", "Como contestar"],
+          "headers": [
+            "Negativa da operadora",
+            "Como contestar"
+          ],
           "rows": [
-            ["'Procedimento não está no Rol ANS'", "Verifique no site da ANS. Se estiver, protocole NIP imediatamente."],
-            ["'Carência não cumprida'", "Verifique os prazos legais. Em emergências, a carência máxima é 24h."],
-            ["'Médico/hospital fora da rede'", "Em urgências, a operadora é obrigada a cobrir mesmo fora da rede. Para eletivos, verifique a rede credenciada antes."],
-            ["'Medicamento não coberto'", "Medicamentos oncológicos orais são obrigatórios desde 2022. Medicamentos de uso hospitalar também. Verifique o Rol."],
-            ["'Doença preexistente — DLP'", "A carência máxima de DLP é 24 meses. Após isso, a cobertura é obrigatória sem exceção."],
-            ["'Procedimento experimental'", "Exija a fundamentação científica da negativa. Se houver consenso médico ou protocolo clínico, conteste na ANS."]
+            [
+              "'Procedimento não está no Rol ANS'",
+              "Verifique no site da ANS. Se estiver, protocole NIP imediatamente."
+            ],
+            [
+              "'Carência não cumprida'",
+              "Verifique os prazos legais. Em emergências, a carência máxima é 24h."
+            ],
+            [
+              "'Médico/hospital fora da rede'",
+              "Em urgências, a operadora é obrigada a cobrir mesmo fora da rede. Para eletivos, verifique a rede credenciada antes."
+            ],
+            [
+              "'Medicamento não coberto'",
+              "Medicamentos oncológicos orais são obrigatórios desde 2022. Medicamentos de uso hospitalar também. Verifique o Rol."
+            ],
+            [
+              "'Doença preexistente — DLP'",
+              "A carência máxima de DLP é 24 meses. Após isso, a cobertura é obrigatória sem exceção."
+            ],
+            [
+              "'Procedimento experimental'",
+              "Exija a fundamentação científica da negativa. Se houver consenso médico ou protocolo clínico, conteste na ANS."
+            ]
           ]
         }
       }
@@ -471,9 +784,18 @@
       }
     ],
     "internal_links": [
-      { "href": "/responde/cobertura-obrigatoria-ans-lista-2026/", "label": "Cobertura obrigatória ANS 2026" },
-      { "href": "/responde/como-cancelar-plano-de-saude/", "label": "Como cancelar plano de saúde" },
-      { "href": "/planos/", "label": "Compare operadoras disponíveis na sua cidade" }
+      {
+        "href": "/responde/cobertura-obrigatoria-ans-lista-2026/",
+        "label": "Cobertura obrigatória ANS 2026"
+      },
+      {
+        "href": "/responde/como-cancelar-plano-de-saude/",
+        "label": "Como cancelar plano de saúde"
+      },
+      {
+        "href": "/planos/",
+        "label": "Compare operadoras disponíveis na sua cidade"
+      }
     ]
   }
 ]
