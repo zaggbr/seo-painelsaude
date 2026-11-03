@@ -85,14 +85,15 @@
         "label": "Portabilidade de plano de saúde: como funciona"
       },
       {
-        "href": "/responde/o-que-e-coparticipacao-plano-de-saude/",
-        "label": "O que é coparticipação?"
+        "href": "https://painelsaude.com.br/plano-de-saude-com-coparticipacao-vs-sem-coparticipacao/",
+        "label": "Coparticipação no plano de saúde: o que é e como funciona"
       },
       {
         "href": "/planos/",
         "label": "Compare operadoras disponíveis na sua cidade"
       }
-    ]
+    ],
+    "updated": "2026-11-03"
   },
   {
     "slug": "cobertura-obrigatoria-ans-lista-2026",
@@ -185,7 +186,7 @@
     "faq": [
       {
         "q": "O Rol ANS 2026 inclui tratamento psicológico?",
-        "a": "Sim. O Rol inclui sessões de psicoterapia com psicólogo (planos ambulatoriais) e internação em clínica psiquiátrica (planos hospitalares). A Lei 14.454/2022 reforçou a obrigatoriedade da cobertura de saúde mental sem limite de sessões para quadros graves — embora limites para consultas de manutenção ainda sejam negociados contratualmente."
+        "a": "Sim. O Rol inclui sessões de psicoterapia com psicólogo (planos ambulatoriais) e internação em clínica psiquiátrica (planos hospitalares). A RN 541/2022 retirou as Diretrizes de Utilização (DUT) das sessões com psicólogo, terapeuta ocupacional e fonoaudiólogo — o que significa que não há mais limite de sessões definido pela ANS para nenhum beneficiário, independentemente de gravidade. As operadoras não podem impor limite numérico de sessões com base em DUTs revogadas — a continuidade do tratamento segue a indicação do profissional assistente."
       },
       {
         "q": "Cirurgia bariátrica é obrigatória pelo Rol ANS?",
@@ -213,7 +214,8 @@
         "href": "/planos/",
         "label": "Veja operadoras disponíveis na sua cidade"
       }
-    ]
+    ],
+    "updated": "2026-11-03"
   },
   {
     "slug": "diferenca-ambulatorial-hospitalar-plano-de-saude",
@@ -237,8 +239,8 @@
           "rows": [
             [
               "Ambulatorial",
-              "Consultas, exames, pequenas cirurgias ambulatoriais, pronto-socorro (até 12h)",
-              "Internação, cirurgias com internação, UTI",
+              "Consultas, exames, pequenas cirurgias ambulatoriais, pronto-socorro (até 12h — CONSU 13/1998)",
+              "Internação; atendimento de urgência/emergência que ultrapasse 12h e exija internação",
               "Quem já tem acesso ao SUS para emergências e quer cobertura preventiva e de rotina"
             ],
             [
@@ -315,7 +317,7 @@
     "faq": [
       {
         "q": "Posso ter só o plano ambulatorial e usar o SUS para internações?",
-        "a": "Tecnicamente sim — o SUS cobre internações gratuitamente. Na prática, a qualidade do atendimento e o tempo de espera variam muito por região e especialidade. Para quem vive em cidade com boa estrutura de SUS e tem risco de saúde baixo, o ambulatorial puro pode ser suficiente. Para quem tem condições crônicas ou faz procedimentos eletivos com frequência, o hospitalar é recomendado."
+        "a": "Tecnicamente sim — o SUS cobre internações gratuitamente. Na prática, a qualidade do atendimento e o tempo de espera variam muito por região e especialidade. Atenção: o plano ambulatorial puro cobre urgência e emergência apenas nas primeiras 12 horas (CONSU nº 13/1998). Se o atendimento exigir internação após esse prazo, o plano ambulatorial não cobre — você dependeria do SUS ou pagaria do próprio bolso. Para quem tem risco de saúde elevado ou mora em região com SUS sobrecarregado, o plano hospitalar é recomendado."
       },
       {
         "q": "O plano hospitalar cobre consultas antes da internação?",
@@ -332,145 +334,19 @@
     ],
     "internal_links": [
       {
-        "href": "/responde/o-que-e-coparticipacao-plano-de-saude/",
-        "label": "O que é coparticipação?"
-      },
-      {
         "href": "/responde/cobertura-obrigatoria-ans-lista-2026/",
         "label": "Cobertura obrigatória ANS 2026"
+      },
+      {
+        "href": "https://painelsaude.com.br/plano-de-saude-com-coparticipacao-vs-sem-coparticipacao/",
+        "label": "Coparticipação no plano de saúde: o que é e como funciona"
       },
       {
         "href": "/planos/",
         "label": "Compare operadoras na sua cidade"
       }
-    ]
-  },
-  {
-    "slug": "o-que-e-coparticipacao-plano-de-saude",
-    "title": "O Que é Coparticipação no Plano de Saúde? Como Funciona e Quando Vale a Pena",
-    "headline": "O Que é Coparticipação no Plano de Saúde?",
-    "description": "Coparticipação é o valor pago a cada uso do plano, além da mensalidade. Entenda como funciona, os limites da ANS, quando vale a pena e como comparar planos com e sem coparticipação.",
-    "keyword": "coparticipação plano de saúde",
-    "badge": "Glossário ANS",
-    "intro": "Coparticipação é o valor que o beneficiário paga diretamente à operadora ou ao prestador a cada vez que usa o plano — consulta, exame, internação ou cirurgia. É cobrada além da mensalidade mensal e varia conforme o tipo de procedimento e o contrato.",
-    "sections": [
-      {
-        "heading": "Como a coparticipação funciona na prática",
-        "type": "text",
-        "text": "Quando você vai ao médico com um plano que tem coparticipação, paga uma fração do valor do atendimento no momento do uso — como se fosse um 'ticket moderador'. A mensalidade continua sendo cobrada normalmente. O objetivo é reduzir o uso desnecessário do plano e, em troca, manter a mensalidade mais baixa."
-      },
-      {
-        "heading": "Limites de coparticipação estabelecidos pela ANS",
-        "type": "table",
-        "table": {
-          "headers": [
-            "Tipo de atendimento",
-            "Limite máximo de coparticipação (ANS)"
-          ],
-          "rows": [
-            [
-              "Consultas médicas eletivas",
-              "Sem limite percentual definido pela ANS (definido em contrato)"
-            ],
-            [
-              "Exames ambulatoriais",
-              "Sem limite percentual definido pela ANS"
-            ],
-            [
-              "Internações",
-              "Máximo de 30% do valor do procedimento"
-            ],
-            [
-              "Urgências e emergências",
-              "Proibida coparticipação nas primeiras 12 horas"
-            ],
-            [
-              "Doenças crônicas (tratamento continuado)",
-              "Proibida coparticipação após 30 dias de internação contínua"
-            ],
-            [
-              "Saúde mental (internação)",
-              "Proibida coparticipação após 30 dias de internação contínua"
-            ]
-          ]
-        }
-      },
-      {
-        "heading": "Plano com coparticipação vs sem coparticipação",
-        "type": "table",
-        "table": {
-          "headers": [
-            "Critério",
-            "Com coparticipação",
-            "Sem coparticipação"
-          ],
-          "rows": [
-            [
-              "Mensalidade",
-              "Menor (10–30% mais barato)",
-              "Maior"
-            ],
-            [
-              "Custo por uso",
-              "Paga a cada atendimento",
-              "Sem custo adicional por uso"
-            ],
-            [
-              "Melhor para",
-              "Quem usa o plano raramente",
-              "Quem usa o plano com frequência"
-            ],
-            [
-              "Previsibilidade de custo",
-              "Menor — varia conforme o uso",
-              "Alta — mensalidade fixa"
-            ],
-            [
-              "Risco em caso de doença grave",
-              "Pode ser caro se usar muito",
-              "Custo controlado mesmo com uso intenso"
-            ]
-          ]
-        }
-      },
-      {
-        "heading": "Franquia vs coparticipação — qual é a diferença?",
-        "type": "text",
-        "text": "**Franquia** é um valor fixo que você paga por evento (ex: R$ 300 por internação, independentemente do custo total). **Coparticipação** é um percentual do valor do procedimento (ex: 20% de cada consulta). A franquia é mais previsível; a coparticipação varia conforme o custo do atendimento. Ambas aparecem em planos coletivos com mais frequência que em individuais."
-      }
     ],
-    "faq": [
-      {
-        "q": "A operadora pode cobrar coparticipação em emergências?",
-        "a": "Não nas primeiras 12 horas de atendimento de urgência ou emergência. Após 12 horas, se a situação exigir internação, a coparticipação pode ser aplicada conforme o contrato, respeitando o limite de 30% para internações estabelecido pela ANS."
-      },
-      {
-        "q": "Posso negociar a coparticipação no plano da empresa?",
-        "a": "Em planos coletivos empresariais, as condições de coparticipação são negociadas entre a empresa e a operadora no momento da contratação — não pelo funcionário individualmente. Se você tem acesso a um plano corporativo com coparticipação e prefere um sem, a alternativa é avaliar planos individuais ou coletivos por adesão."
-      },
-      {
-        "q": "Coparticipação é cobrada mesmo em planos familiares?",
-        "a": "Sim. Cada beneficiário paga coparticipação individualmente a cada uso. Em famílias com crianças (que tendem a usar o plano com mais frequência), planos sem coparticipação geralmente são mais econômicos no total mesmo que a mensalidade seja maior."
-      },
-      {
-        "q": "Existe teto para a coparticipação mensal?",
-        "a": "A legislação não define um teto mensal obrigatório para coparticipação em consultas e exames ambulatoriais. Alguns contratos preveem um limite mensal máximo (cap), mas não é exigido por lei. Verifique se o contrato do plano que está avaliando tem esse teto — é uma vantagem importante para quem usa o plano com frequência."
-      }
-    ],
-    "internal_links": [
-      {
-        "href": "/responde/o-que-e-carencia-plano-de-saude/",
-        "label": "O que é carência no plano de saúde?"
-      },
-      {
-        "href": "/responde/diferenca-ambulatorial-hospitalar-plano-de-saude/",
-        "label": "Diferença entre plano ambulatorial e hospitalar"
-      },
-      {
-        "href": "/planos/",
-        "label": "Compare planos disponíveis na sua cidade"
-      }
-    ]
+    "updated": "2026-11-03"
   },
   {
     "slug": "como-cancelar-plano-de-saude",
@@ -542,11 +418,11 @@
       },
       {
         "q": "Saí da empresa — o que acontece com meu plano empresarial?",
-        "a": "Você perde o direito ao plano coletivo empresarial ao sair da empresa. Tem direito a manter o plano pelo período de 1/3 do tempo em que contribuiu, limitado a 12 meses (para quem tinha coparticipação) ou não tem esse direito (se a empresa pagava integralmente sem desconto em folha). Após esse período, pode solicitar conversão para plano individual na mesma operadora, se disponível."
+        "a": "Você perde o direito ao plano coletivo empresarial ao sair da empresa quando demitido sem justa causa (art. 30, Lei 9.656/98 (art. 30), RN 488/2022). Você tem direito a manter o plano pelo período de 1/3 do tempo em que contribuiu na mensalidade, com mínimo de 6 meses e máximo de 24 meses — desde que você tenha arcado com parte da mensalidade (desconto em folha). Se a empresa pagava integralmente, sem qualquer desconto em folha, não há direito à manutenção. Após esse período, pode solicitar conversão para plano individual na mesma operadora, se disponível."
       },
       {
         "q": "Existe fidelidade em planos de saúde?",
-        "a": "Sim, em alguns contratos coletivos por adesão e em planos com desconto de contratação (que embutem o desconto em um período mínimo de permanência). Planos individuais regulamentados pela ANS podem ter fidelidade máxima de 12 meses — e a multa de cancelamento antecipado deve estar prevista claramente no contrato."
+        "a": "Sim, em alguns contratos coletivos por adesão e em planos com desconto de contratação. Planos individuais regulamentados pela ANS podem ter fidelidade máxima de 12 meses — e a multa de cancelamento antecipado deve estar prevista claramente no contrato."
       },
       {
         "q": "Posso cancelar o plano durante a carência?",
@@ -566,7 +442,8 @@
         "href": "/planos/",
         "label": "Compare novas operadoras disponíveis na sua cidade"
       }
-    ]
+    ],
+    "updated": "2026-11-03"
   },
   {
     "slug": "portabilidade-plano-de-saude-como-funciona",
@@ -575,7 +452,7 @@
     "description": "Portabilidade de carências permite trocar de operadora sem cumprir novamente os prazos de carência. Veja as condições, os prazos da ANS, como solicitar e os erros a evitar.",
     "keyword": "portabilidade plano de saúde",
     "badge": "Direitos do Consumidor",
-    "intro": "A portabilidade de carências é o direito de trocar de plano de saúde sem precisar cumprir os prazos de carência novamente para coberturas equivalentes. Foi criada pela RN 186/2009 da ANS para estimular a concorrência e proteger o consumidor que quer trocar de operadora sem perder as carências já cumpridas.",
+    "intro": "A portabilidade de carências é o direito de trocar de plano de saúde sem precisar cumprir os prazos de carência novamente para coberturas equivalentes. Regulamentada atualmente pela RN 438/2018 da ANS para estimular a concorrência e proteger o consumidor que quer trocar de operadora sem perder as carências já cumpridas.",
     "sections": [
       {
         "heading": "Condições para usar a portabilidade",
@@ -612,7 +489,7 @@
       {
         "heading": "Passo a passo para fazer a portabilidade",
         "type": "text",
-        "text": "1. **Verifique se você cumpre os requisitos** — tempo mínimo de 1–2 anos, sem débitos, plano ativo.\n2. **Escolha a nova operadora** e confirme que o plano de destino tem segmentação equivalente ou inferior.\n3. **Solicite a carta de portabilidade** à operadora atual — prazo de entrega: 10 dias úteis.\n4. **Apresente a carta à nova operadora** junto com a proposta de adesão ao novo plano.\n5. **A nova operadora tem até 10 dias úteis** para aceitar ou recusar a portabilidade (a recusa deve ser justificada).\n6. **Aguarde a confirmação de início de vigência** do novo plano — a portabilidade é efetivada quando o novo contrato entra em vigor.\n7. **Cancele o plano anterior** após a confirmação do novo — nunca cancele antes de ter o novo plano confirmado."
+        "text": "1. **Verifique se você cumpre os requisitos** — tempo mínimo de 1–2 anos, sem débitos, plano ativo.\n2. **Escolha a nova operadora** e confirme que o plano de destino tem segmentação equivalente ou inferior.\n3. **Solicite a carta de portabilidade** à operadora atual — prazo de entrega: 10 dias úteis.\n4. **Apresente a carta à nova operadora** junto com a proposta de adesão ao novo plano.\n5. **A nova operadora tem até 10 dias úteis** para aceitar ou recusar a portabilidade (RN 438/2018). Se não houver resposta no prazo, a portabilidade é considerada aceita tacitamente.\n6. **Aguarde a confirmação de início de vigência** do novo plano — a portabilidade é efetivada quando o novo contrato entra em vigor.\n7. **Cancele o plano anterior** após a confirmação do novo — nunca cancele antes de ter o novo plano confirmado."
       },
       {
         "heading": "O que a portabilidade garante — e o que não garante",
@@ -632,7 +509,7 @@
       },
       {
         "q": "A nova operadora pode recusar minha portabilidade?",
-        "a": "Sim, mas apenas por motivos justificados — por exemplo, se o plano de destino não tem equivalência com o atual. A recusa arbitrária pode ser contestada na ANS. A operadora de destino tem 10 dias úteis para aceitar ou recusar."
+        "a": "Sim, mas apenas por motivos justificados — por exemplo, se o plano de destino não tem equivalência com o atual. Pela RN 438/2018, a operadora de destino tem até 10 dias úteis para aceitar ou recusar. Se não responder no prazo, a portabilidade é considerada aceita tacitamente. A recusa arbitrária pode ser contestada na ANS."
       },
       {
         "q": "Se eu tiver DLP, a portabilidade cobre?",
@@ -656,7 +533,8 @@
         "href": "/planos/",
         "label": "Compare operadoras disponíveis na sua cidade"
       }
-    ]
+    ],
+    "updated": "2026-11-03"
   },
   {
     "slug": "como-reclamar-da-operadora-ans",
@@ -771,8 +649,8 @@
         "a": "Sim. A ANS exige que qualquer negativa de cobertura seja comunicada por escrito ao beneficiário, com a justificativa clara e o fundamento contratual. Se a operadora se recusar a dar a negativa por escrito, registre isso no SAC e use como evidência na reclamação."
       },
       {
-        "q": "Quanto tempo tenho para reclamar de uma cobrança indevida?",
-        "a": "O Código de Defesa do Consumidor prevê prazo de 5 anos para cobranças indevidas em relações de consumo. Guarde todos os comprovantes de pagamento e extratos bancários. Para restituição de valores cobrados indevidamente pelo plano, esse prazo se aplica a partir da data de cada cobrança."
+        "q": "Qual o prazo para reclamar de cobrança indevida ou reembolso não pago?",
+        "a": "Depende do tipo de cobrança. Para devolução de valores pagos a mais por reajuste abusivo, o STJ (Tema 610) fixou prazo de 3 anos, contado da data de cada pagamento. Para reembolso de despesas cobertas pelo plano e não pagas pela operadora, o prazo é de 10 anos (STJ). Guarde todos os comprovantes de pagamento e extratos bancários."
       },
       {
         "q": "A ANS pode obrigar a operadora a cobrir meu tratamento?",
@@ -796,6 +674,7 @@
         "href": "/planos/",
         "label": "Compare operadoras disponíveis na sua cidade"
       }
-    ]
+    ],
+    "updated": "2026-11-03"
   }
 ]

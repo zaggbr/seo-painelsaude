@@ -3,12 +3,12 @@ import responde from '../data/responde.json';
 
 export const GET: APIRoute = () => {
   const BASE = 'https://painelsaude.com.br';
-  const today = new Date().toISOString().split('T')[0];
+  const INDEX_DATE = '2026-11-03';
 
   const urls = [
-    `<url><loc>${BASE}/responde/</loc><lastmod>${today}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>`,
+    `<url><loc>${BASE}/responde/</loc><lastmod>${INDEX_DATE}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>`,
     ...responde.map(item =>
-      `<url><loc>${BASE}/responde/${item.slug}/</loc><lastmod>${today}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`
+      `<url><loc>${BASE}/responde/${item.slug}/</loc><lastmod>${(item as any).updated || INDEX_DATE}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`
     )
   ].join('\n  ');
 
