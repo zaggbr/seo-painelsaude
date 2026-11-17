@@ -180,6 +180,9 @@ const silos = [
     #rss-feed-home { grid-template-columns: 1fr; }
     .hero-secundario img, .skeleton-small .skeleton-thumb { width: 84px; }
   }
+  .zgc-ad-bloco { text-align: center; margin: 1.5rem 0; min-height: 250px; }
+  .zgc-ad-bloco .zgc-ad-label { display: block; font-size: 11px; color: #999; margin-bottom: 4px; }
+  @media (max-width: 768px) { .zgc-ad-bloco { min-height: 280px; } }
 </style>
 
 <nav class="topbar">
@@ -240,7 +243,8 @@ const silos = [
   </div>
 
   <!-- Ad: meio da página (abaixo das ferramentas) -->
-  <div class="ad-slot" style="text-align:center;margin:1.5rem 0;">
+  <div class="zgc-ad-bloco">
+    <span class="zgc-ad-label">Publicidade</span>
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-6307491010120109"
