@@ -73,13 +73,14 @@ const silos = [
   .mag-wrap { max-width: 1140px; margin: 0 auto; padding: 0 1rem; }
   
   /* Topbar */
-  .topbar { background: var(--ps-dark); overflow-x: auto; white-space: nowrap; padding: 0.6rem 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .topbar { background: var(--ps-dark); overflow-x: auto; white-space: nowrap; padding: 0.45rem 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .topbar::-webkit-scrollbar { display: none; }
-  .topbar-inner { max-width: 1140px; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; gap: 0.5rem; }
-  .topbar-label { color: #fff; font-size: 0.75rem; font-weight: 700; margin-right: 0.5rem; flex-shrink: 0; }
-  .topbar a { display: inline-flex; align-items: center; gap: 0.3rem; background: #2a2a2a; color: #ddd; font-size: 0.78rem; font-weight: 500; padding: 0.35rem 0.8rem; border-radius: 20px; text-decoration: none; flex-shrink: 0; transition: background 0.2s, color 0.2s; }
-  .topbar a:hover { background: var(--ps-accent); color: #fff; }
-  .topbar-icon { font-size: 0.9rem; }
+  .topbar-inner { max-width: 1140px; margin: 0 auto; padding: 0 1rem; display: flex; align-items: center; }
+  .topbar-label { color: #94a3b8; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-right: 0.75rem; flex-shrink: 0; }
+  .topbar a { display: inline-flex; align-items: center; gap: 0.25rem; color: #aaa; font-size: 0.75rem; font-weight: 400; padding: 0.25rem 0.65rem; text-decoration: none; flex-shrink: 0; border-right: 1px solid #2e2e2e; transition: color 0.15s; }
+  .topbar a:last-child { border-right: none; }
+  .topbar a:hover { color: #fff; }
+  .topbar-icon { font-size: 0.8rem; opacity: 0.7; }
 
   /* Silos Section */
   .silos-section { background: rgba(0, 137, 123, 0.08); border-radius: var(--ps-radius); padding: 2rem 1.5rem; margin: 1.5rem auto 2rem; max-width: 1140px; border: 1px solid rgba(0, 137, 123, 0.12); }
@@ -180,9 +181,9 @@ const silos = [
     #rss-feed-home { grid-template-columns: 1fr; }
     .hero-secundario img, .skeleton-small .skeleton-thumb { width: 84px; }
   }
-  .zgc-ad-bloco { text-align: center; margin: 1.5rem 0; min-height: 250px; }
+  .zgc-ad-bloco { text-align: center; margin: 1.5rem 0; min-height: 70px; }
   .zgc-ad-bloco .zgc-ad-label { display: block; font-size: 11px; color: #999; margin-bottom: 4px; }
-  @media (max-width: 768px) { .zgc-ad-bloco { min-height: 280px; } }
+  @media (max-width: 768px) { .zgc-ad-bloco { min-height: 50px; } }
 </style>
 
 <nav class="topbar">
@@ -249,7 +250,7 @@ const silos = [
          style="display:block"
          data-ad-client="ca-pub-6307491010120109"
          data-ad-slot="1863988809"
-         data-ad-format="auto"
+         data-ad-format="horizontal"
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
