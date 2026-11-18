@@ -360,8 +360,8 @@ const silos = [
     if (!content) return;
 
     try {
-      const catId = await resolveIdBySlug(catSlug);
-      const url = catId 
+      const catId = catSlug ? await resolveIdBySlug(catSlug) : null;
+      const url = catId
         ? `${WP_URL}/wp-json/wp/v2/posts?categories=${catId}&per_page=4&_embed&_fields=id,title,link,date,excerpt,_links,_embedded`
         : `${WP_URL}/wp-json/wp/v2/posts?per_page=4&_embed&_fields=id,title,link,date,excerpt,_links,_embedded`;
 
@@ -484,7 +484,7 @@ const silos = [
   }
 
   Promise.all([
-    carregarHero('noticias'),
+    carregarHero(null),
     carregarCategoriaBySlug('noticias', 'cat-noticias', 'noticias'),
     carregarCategoriaBySlug('sua-saude', 'cat-saude', 'saude'),
     carregarCategoriaBySlug('ciencia', 'cat-ciencia', 'ciencia')
